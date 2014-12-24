@@ -34,7 +34,7 @@ module Service
 
   class Cricket
 
-    # Function <tt>get_dslam_list</tt> scraps DSLAM information on Cricket page hosted at GVT management network.
+    # Function <tt>get_dslam_list</tt> scraps DSLAM information on Cricket page hosted at management network.
     # Sample page: http://10.200.1.220/cricket/grapher.cgi?target=%2Fdslams%2FCAS
     # Regex evaluated with http://regexpal.com/
     # Scrapper engine: http://mechanize.rubyforge.org/
