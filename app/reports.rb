@@ -71,7 +71,7 @@ class Reports
             redundancy_alarms.each { |alarm| @keymile_alarms << "#{target}\t\tAlarm >> #{alarm}" }
           when /Zhone/
             system_alarms.each { |alarm| @zhone_alarms << "#{target}\t\tAlarm >> #{alarm}" }
-            card_alarms.each { |alarm| @zhone_alarms << "#{target}\t\tAlarm >> #{alarm}" }
+            card_alarms.each { |card| @zhone_alarms << "#{target}\t\tAlarm >> #{card[0]} - #{card[1]}" }
             redundancy_alarms.each { |alarm| @zhone_alarms << "#{target}\t\tAlarm >> #{alarm}" }
         end
 

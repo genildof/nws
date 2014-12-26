@@ -1,4 +1,3 @@
-
 message = <<-MSG
 
 >> Error: SNE-A20-99  RIN 134 - 10.209.33.133: #<NoMethodError: undefined method `strip' for nil:NilClass>
@@ -34,13 +33,25 @@ MSG
 
 
 require 'service'
-require 'reports'
+require_relative 'zhone-api'
 
-cricket_list = hosts = Service::Cricket.new.get_dslam_list('CAS')
-hosts = Service::Input.new.get_external_list.concat(cricket_list)
+hosts = Service::Cricket.new.get_dslam_list('SPO').select { |dslam| dslam.model.match(/Zhone/) }
 
-hosts.each do |host|
-  print "#{host.model} #{host.dms_id} #{host.rin} #{host.ip}\n"
-end
+hosts.each { |host|
+  target = "#{host.dms_id}\tRIN #{host.rin}\t\tat #{host.ip}"
 
-Reports.new.generate_report('CAS')
+  begin
+    dslam = Zhone::MXK.new(host.ip)
+    dslam.connect
+
+    print "\n#{target}"
+    dslam.get_card_alarms.each { |card|
+      print "\n\t\tAlarm >> #{card[0]} - #{card[1]}"
+    }
+
+    dslam.disconnect
+  rescue => err
+    puts "#{err.class} - #{err}"
+  end
+
+}

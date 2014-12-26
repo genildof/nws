@@ -168,8 +168,11 @@ module Zhone
         lines = sample.scan(REGEX_CARDS)
 
         lines.each do |line|
-          fields = line.scan(/\b\w+:.+\s\B/)
-          fields << line.scan(/\B\(.+\)\B/)
+          fields = Array.new
+
+          fields[0] = line.scan(/\b\w+:.+\s\B/)[0]
+          fields[1] = line.scan(/\B\(.+\)\B/)[0]
+
           result << fields
         end
         result
