@@ -11,7 +11,9 @@ require_relative 'reports'
 # https://github.com/meh/ruby-threadpool
 
 #CITY_LIST = %w"LZI VPO SCQ TDA PMJ RVD ACG CPE DOS ROI CBA BSA GNA"
-CITY_LIST = %w"SNE SBO MAU SVE SPO STS AUJ MCZ GRS OCO SOC VOM JAI VRP CAS IDU PAA RPO BRU ARQ"
+#CITY_LIST = %w"CAS"
+
+CITY_LIST = %w"SVE STS SNE SBO MAU AUJ MCZ SZN GRS OCO SOC VOM JAI VRP CAS IDU PAA RPO BRU ARQ SPO"
 
 def lets_go(cities) #cities is an array of string
   thread_list = [] #keep track of our threads
