@@ -43,13 +43,14 @@ module Service
     # @return [Array] data array.
     def get_dslam_list(cnl)
 
-      regex_rin = /\b[a-z]\d+[-]\w+[-]\d+\b/ # a01-rin-75
+      regex_rin = /\b[a-z]\d+[-]\w+[-]\d+\b(?=<br>)/ # a01-rin-75
       regex_dms_id = /\b[A-Z]{3}-[-\w\d]+\W\B/ # CAS-I02 or CAS-A02-0
       regex_ip = /\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b/ # 10.211.161.69
-      regex_model = /\b[M,Z][a-z]+\b/ # Milegate or Zhone
+      regex_model = /\b[M,Z][a-z]+\b(?= )/ # Milegate or Zhone
 
       # URL DSLAM page for the current CNL
-      url = "http://10.200.1.220/cricket/grapher.cgi?target=%2Fdslams%2F#{cnl.to_s.upcase}"
+      #url = "http://10.200.1.220/cricket/grapher.cgi?target=%2Fdslams%2F#{cnl.to_s.upcase}"
+      url = "http://10.200.1.135/static/dslams/#{cnl.to_s.upcase}/"
 
       result = []
 
@@ -57,11 +58,14 @@ module Service
       begin
         page = Mechanize.new.get(url)
 
-        # Iterates over each TR html tag in the page, scrapping RIN, DMS_ID, IP and DSLAM model to the bean
-        page.search('tr').each do |tr|
-          data = tr.inner_text
-          if data.scan(regex_ip).length > 0
+        puts page
 
+        # Iterates over each TR html tag in the page, scrapping RIN, DMS_ID, IP and DSLAM model to the bean
+        page.search('//tr').each do |tr|
+
+          data = tr.inner_text
+
+          if data.scan(regex_ip).length > 0
             result << Network_Element.new do
               self.rin = data.scan(regex_rin).to_s.scan(/\b\d+/).join
               self.dms_id = data.scan(regex_dms_id).join
