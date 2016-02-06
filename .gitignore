@@ -15,7 +15,8 @@ reports/
 /db/*.sqlite3-journal
 
 # Ignore all logfiles and tempfiles.
-/log/*.log
+/reports/Old/*.log
+/reports/Old_shdsl/*.log
 /tmp
 
 # Ignore other unneeded files.

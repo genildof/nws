@@ -75,7 +75,7 @@ if $0 == __FILE__
                      port.service_label] #port.description
               mg.get_shdsl_params(slot, port).each { |values| row << values }
 
-              # Conditions
+              # Conditions (let's specify some conditions for adding the value to the hash)
 
               memory_array << row
 
