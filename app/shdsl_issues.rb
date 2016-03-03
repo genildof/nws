@@ -77,6 +77,7 @@ if $0 == __FILE__
 
               # Conditions (let's specify some conditions for adding the value to the hash)
 
+
               memory_array << row
 
             end
