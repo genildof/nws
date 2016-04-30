@@ -1,4 +1,4 @@
-require_relative 'service'
+require_relative '/../cricket/service'
 require 'net/telnet'
 
 module Zhone

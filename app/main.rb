@@ -32,8 +32,8 @@ MSG
 #=> "From: person@example.com\nDate: 01-01-2011\nTo: friend@example.com\nSubject: This is the subject line"
 
 
-require 'service'
-require_relative 'zhone-api'
+require_relative '/../lib/cricket/service'
+require_relative '/../lib/zhone/zhone-api'
 
 hosts = Service::Cricket.new.get_dslam_list('SPO').select { |dslam| dslam.model.match(/Zhone/) }
 

@@ -1,5 +1,5 @@
-require_relative 'zhone-api'
-require_relative 'keymile-api'
+require_relative '/../lib/zhone/zhone-api'
+require_relative '/../lib/keymile/keymile-api'
 
 class Reports
 

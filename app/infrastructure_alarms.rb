@@ -1,4 +1,4 @@
-require_relative 'reports'
+require_relative File.expand_path('reports')
 
 # Me: Does Requires statement for all files in the current directory
 # Dir[File.dirname(__FILE__) + '/*.rb'].each {|file| require file}
