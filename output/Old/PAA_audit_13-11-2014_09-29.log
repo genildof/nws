@@ -1,0 +1,74 @@
++-------------------------------------- General status for PAA --------------------------------------+
+|
+| Total checked NEs: 84
+| Total remote access errors: 0
+| Total NE alarms: 15
+| Total cards checked: 1452
+| Total card alarms: 1
+| Total redundancy alarms: 41
+|
++----------------------------------------------------------------------------------------------------+
+|
+|
+| KEYMILE Alarms
+|	PAA-A01-0 	RIN 18		at 10.211.97.17		Alarm >> /unit-13/port-1 - Down
+|	PAA-A02 	RIN 15		at 10.211.97.14		Alarm >> Protecting CU Active
+|	PAA-A07-2 	RIN 12		at 10.211.97.11		Alarm >> Protecting CU Active
+|	PAA-A09-5 	RIN 264		at 10.211.97.51		Alarm >> Protecting CU Active
+|	PAA-A11 	RIN 55		at 10.211.97.54		Alarm >> Protecting CU Active
+|	PAA-A12-0 	RIN 46		at 10.211.97.45		Alarm >> Protecting CU Active
+|	PAA-A12-5 	RIN 91		at 10.211.97.47		Alarm >> /unit-13/port-1 - 
+|	PAA-A13-0 	RIN 6		at 10.211.97.5		Alarm >> /unit-13/port-1 - 
+|	PAA-A14-0 	RIN 62		at 10.211.97.61		Alarm >> alarm-1   -  Porta DG            -  Minor     
+|	PAA-A14-0 	RIN 62		at 10.211.97.61		Alarm >> /unit-13/port-1 - Down
+|	PAA-A15-5 	RIN 92		at 10.211.97.67		Alarm >> /unit-13/port-1 - 
+|	PAA-A16-5 	RIN 276		at 10.211.97.71		Alarm >> Protecting CU Active
+|	PAA-A16-0 	RIN 70		at 10.211.97.69		Alarm >> /unit-11/port-1 RxInputPower (-21)
+|	PAA-A17 	RIN 83		at 10.211.97.82		Alarm >> Protecting CU Active
+|	PAA-A17 	RIN 83		at 10.211.97.82		Alarm >> alarm-6   -  Porta Fusiveis        -  Minor     
+|	PAA-A18-5 	RIN 85		at 10.211.97.88		Alarm >> Protecting CU Active
+|	PAA-A18 	RIN 87		at 10.211.97.86		Alarm >> alarm-1   -  Door_Open           -  Minor     
+|	PAA-A18 	RIN 87		at 10.211.97.86		Alarm >> /unit-13/port-1 - Down
+|	PAA-A18-1 	RIN 88		at 10.211.97.87		Alarm >> /unit-13/port-1 - Down
+|	PAA-A19-4 	RIN 143		at 10.211.97.142		Alarm >> Protecting CU Active
+|	PAA-A24-4 	RIN 153		at 10.211.97.151		Alarm >> Protecting CU Active
+|	PAA-A26-6 	RIN 261		at 10.211.97.159		Alarm >> /unit-13/port-1 - Down
+|	PAA-A26-0 	RIN 331		at 10.211.97.157		Alarm >> unit-16 - SUPC4 R1G - Plugged
+|	PAA-A26-0 	RIN 331		at 10.211.97.157		Alarm >> /unit-13/port-1 - Down
+|	PAA-A26-4 	RIN 332		at 10.211.97.158		Alarm >> /unit-13/port-1 - Down
+|	PAA-A27-0 	RIN 333		at 10.211.97.89		Alarm >> /unit-13/port-1 - Down
+|	PAA-A27-4 	RIN 334		at 10.211.97.90		Alarm >> Protecting CU Active
+|	PAA-A27-4 	RIN 334		at 10.211.97.90		Alarm >> /unit-13/port-1 - Down
+|	PAA-A28-0 	RIN 335		at 10.211.97.91		Alarm >> /unit-13/port-1 - Down
+|	PAA-A28-4 	RIN 336		at 10.211.97.92		Alarm >> /unit-13/port-1 - Down
+|	PAA-A29-0 	RIN 318		at 10.211.97.93		Alarm >> /unit-13/port-1 - Down
+|	PAA-A29-4 	RIN 319		at 10.211.97.94		Alarm >> /unit-13/port-1 - Down
+|	PAA-I01 	RIN 102		at 10.211.97.102		Alarm >> /unit-11/port-1 - Down
+|	PAA-I01 	RIN 102		at 10.211.97.102		Alarm >> /unit-13/port-1 - Down
+|	PAA-I01-2 	RIN 103		at 10.211.97.103		Alarm >> /unit-11/port-1 - Down
+|	PAA-I01-2 	RIN 103		at 10.211.97.103		Alarm >> /unit-13/port-1 - Down
+|	PAA-T01-99 	RIN 501		at 10.211.97.253		Alarm >> /unit-11/port-1 - Down
+|	PAA-T01-99 	RIN 501		at 10.211.97.253		Alarm >> /unit-13/port-1 - 
+|
+| ZHONE Alarms
+|	PAA-A03-5 	RIN 512		at 10.211.97.23		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	PAA-A04-1 	RIN 28		at 10.211.97.27		Alarm >> power_supply_b_failure
+|	PAA-A04-1 	RIN 28		at 10.211.97.27		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	PAA-A05-1 	RIN 41		at 10.211.97.43		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	PAA-A17-0 	RIN 82		at 10.211.97.81		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	PAA-A18-0 	RIN 86		at 10.211.97.85		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	PAA-A19-0 	RIN 142		at 10.212.160.62		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	PAA-A20-0 	RIN 146		at 10.211.97.145		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	PAA-A20-1 	RIN 147		at 10.211.97.146		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	PAA-A21-0 	RIN 122		at 10.211.97.121		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	PAA-A21-1 	RIN 123		at 10.211.97.122		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	PAA-A22-0 	RIN 126		at 10.211.97.125		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	PAA-A22-1 	RIN 127		at 10.211.97.126		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	PAA-A23-0 	RIN 128		at 10.211.97.129		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	PAA-A23-1 	RIN 129		at 10.211.97.130		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	PAA-A24-0 	RIN 150		at 10.211.97.149		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	PAA-A24-1 	RIN 151		at 10.211.97.150		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	PAA-A25-0 	RIN 154		at 10.211.97.153		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	PAA-A25-1 	RIN 155		at 10.211.97.154		Alarm >> Secondary - 1-b-2-0/eth - Down
+|
++----------------------------------------------------------------------------------------------------+

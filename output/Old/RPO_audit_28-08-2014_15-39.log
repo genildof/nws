@@ -1,0 +1,35 @@
++-------------------------------------- General status for RPO --------------------------------------+
+|
+| Total checked NEs: 74
+| Total remote access errors: 1
+| Total NE alarms: 16
+| Total cards checked: 1377
+| Total card alarms: 1
+| Total redundancy alarms: 0
+|
++----------------------------------------------------------------------------------------------------+
+|
+|
+| KEYMILE Alarms
+|	RPO-A03-0 	RIN 3		at 10.214.41.18		Alarm >> unit-6 - SUV11 R1G - Plugged
+|	RPO-A08-0 	RIN 7		at 10.214.41.22		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	RPO-A11-0 	RIN 9		at 10.214.41.25		Alarm >> Protecting CU Active
+|	RPO-A19-0 	RIN 20		at 10.214.41.31		Alarm >> Protecting CU Active
+|	RPO-A20-0 	RIN 12		at 10.214.41.32		Alarm >> Protecting CU Active
+|	RPO-A21-0 	RIN 13		at 10.214.41.33		Alarm >> Protecting CU Active
+|	RPO-A23-0 	RIN 48		at 10.214.41.3		Alarm >> Protecting CU Active
+|	RPO-A26-0 	RIN 60		at 10.214.41.61		Alarm >> Protecting CU Active
+|	RPO-A28-0 	RIN 21		at 10.214.41.35		Alarm >> Protecting CU Active
+|	RPO-A30-0 	RIN 49		at 10.214.41.4		Alarm >> Protecting CU Active
+|	RPO-A33-0 	RIN 24		at 10.214.41.38		Alarm >> Protecting CU Active
+|	RPO-A39-0 	RIN 63		at 10.214.41.65		Alarm >> Protecting CU Active
+|	RPO-A48-0 	RIN 32		at 10.214.41.42		Alarm >> Protecting CU Active
+|	RPO-A50-0 	RIN 33		at 10.214.41.43		Alarm >> Protecting CU Active
+|	RPO-A52-4 	RIN 418		at 10.214.41.80		Alarm >> Protecting CU Active
+|	RPO-A61-0 	RIN 38		at 10.214.41.46		Alarm >> Protecting CU Active
+|	RPO-A88-0 	RIN 47		at 10.214.41.55		Error >> No remote access
+|	RPO-A91-0 	RIN 404		at 10.214.41.76		Alarm >> Protecting CU Active
+|
+| ZHONE Alarms
+|
++----------------------------------------------------------------------------------------------------+

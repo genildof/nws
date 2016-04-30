@@ -1,0 +1,24 @@
++-------------------------------------- General status for SVE --------------------------------------+
+|
+| Total checked NEs: 23
+| Total remote access errors: 0
+| Total NE alarms: 6
+| Total cards checked: 365
+| Total card alarms: 1
+| Total redundancy alarms: 0
+|
++----------------------------------------------------------------------------------------------------+
+|
+|
+| KEYMILE Alarms
+|	SVE-A15-0 	RIN 310		at 10.209.225.12		Alarm >> Protecting CU Active
+|	SVE-A15-4 	RIN 311		at 10.209.225.15		Alarm >> Protecting CU Active
+|
+| ZHONE Alarms
+|	SVE-A06-0 	RIN 266		at 10.209.233.8		Alarm >> power_supply_a_failure
+|	SVE-A10-1 	RIN 296		at 10.209.225.91		Alarm >> power_supply_a_failure
+|	SVE-A12-0 	RIN 274		at 10.209.233.12		Alarm >> power_supply_a_failure
+|	SVE-A14-0 	RIN 298		at 10.209.225.105		Alarm >> power_supply_b_failure
+|	SVE-I01-0 	RIN 500		at 10.209.233.24		Alarm >> ["1: MXK 72 PORT POTS ", ["(RESET)"]]
+|
++----------------------------------------------------------------------------------------------------+

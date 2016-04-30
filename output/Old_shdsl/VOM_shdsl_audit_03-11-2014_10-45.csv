@@ -1,0 +1,26 @@
+Shelf_ID;RIN;IP;Slot_ID;Slot_Name;Slot_Main_Mode;Slot_State;Slot_Alarm;Slot_Prop_Alarm;Port_ID;Port_Main_Mode;Port_State;Port_Alarm;Port_User_Label;Port_Service_Label;Port_Description;OperationalStatus;NearEnd_CurrentAttenuation;NearEnd_CurrentMargin;NearEnd_CurrentPowerBackOff;FarEnd_CurrentAttenuation;FarEnd_CurrentMargin;FarEnd_CurrentPowerBackOff
+VOM-A01-2 ;52;10.211.238.55;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Cleared;DIXIE TOGA LTDA;VOM-3019LTAC0;"";Up;12;22;0;12;20;2
+VOM-A01-2 ;52;10.211.238.55;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Major;Cliente: CARLOS ROBERTO;Designador: VOM-301KEB4O2-032;"";Down;128;127;255;128;127;255
+VOM-A01-2 ;52;10.211.238.55;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Major;Cliente:CARLOS_ROBERTO;Designador:VOM-301KEB4MZ;"";Down;128;127;255;128;127;255
+VOM-A02-1 ;527;10.211.238.58;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Cleared;SALMERON COM DE RESIDUOS RECI TRANSP LOC E SERV LTDA EPP;VOM-301CM1L4T-032;"";Up;8;22;2;8;20;3
+VOM-A02-1 ;527;10.211.238.58;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Cleared;SALMERON COM DE RESIDUOS RECI TRANSP LOC E SERV LTDA EPP;VOM301CM1L3R;"";Up;9;22;2;8;20;3
+VOM-A03-1 ;515;10.211.238.26;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Cleared;Cliente:ELETROGAMA MAT MANUTEN??O;Designador:VOM-3012VVSEP-032;"";Up;6;23;3;6;20;4
+VOM-A03-1 ;515;10.211.238.26;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Major;Cliente:ELETROGAMA MAT MANUTEN??O;Designador:VOM-3012VVSDT;"";Down;128;127;255;128;127;255
+VOM-A06-1 ;511;10.211.238.22;unit-17;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Cleared;Cliente: ECONOPAC DO BRASIL INDUSTRIA E COMERCIO LTDA;Designador:VOM-301J005J1-032;"";Up;13;21;0;12;20;1
+VOM-A06-1 ;511;10.211.238.22;unit-17;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Major;"";"";"";Down;128;127;255;128;127;255
+VOM-A06-1 ;511;10.211.238.22;unit-17;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-7;port-7;"";Cleared;CLIENTE_COMPUTADORUSADO;DESIGNADOR_VOM-301KEPCH1-032;"";Up;11;22;0;12;20;2
+VOM-A06-1 ;511;10.211.238.22;unit-17;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-8;port-8;"";Cleared;"";"";"";Up;13;22;0;12;20;1
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Major;Cliente: PRESTESERV;Desiganador: VOM_3011R886V-032;"";Down;128;127;255;128;127;255
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Cleared;Cliente: BANDEIRAS;Designador: VOM-30128VNKR;"";Down;128;127;255;128;127;255
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Cleared;Cliente: BANDEIRAS;Designador: VOM-30128VNLU-032;"";Down;128;127;255;128;127;255
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-4;port-4;"";Cleared;Cliente: BRAFFIX;Designador:VOM-3014JQTMV-032;"";Up;11;21;0;12;20;2
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-5;port-5;"";Cleared;CLIENTE: SANAMED_SAUDE;DESIGNADOR: VOM-30158P4XT;"";Up;10;22;0;10;21;0
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-6;port-6;"";Major;CLIENTE: SANAMED_SAUDE;DESIGNADOR: VOM-30158PUN0;"";Down;128;127;255;128;127;255
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-7;port-7;"";Cleared;Cliente:SEIREN PRODUTOS AUTOMOTIVOS;Designador:VOM-301GPF99R-032;"";Up;11;22;0;12;20;2
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-8;port-8;"";Cleared;Cliente:HORUS SERVICOS EM PREVENCAO;Designador:VOM-301ICJOHV-032;"";Up;13;21;0;14;20;1
+VOM-A07-2 ;16;10.211.238.19;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Cleared;Cliente:CRECHE S?O VICENTE DE PAULO;Designador:VOM-3012JLEUF-032;"";Up;5;23;4;4;21;4
+VOM-A07-2 ;16;10.211.238.19;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Major;VITORINO;VOM-3013MB8P7-032;"";Down;128;127;255;128;127;255
+VOM-A07-2 ;16;10.211.238.19;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Cleared;Cliente:FOLHA DE VOTORANTIM;Designador:VOM-3018LY6YL-032;"";Up;7;24;3;6;20;4
+VOM-A07-2 ;16;10.211.238.19;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-8;port-8;"";Major;Cliente:AGUAS_VOTORANTIM;Designador:VOM-301I3WQ4N-032;"";Up;7;23;3;6;20;0
+VOM-A12 ;504;10.211.238.10;unit-21;STIM1 R1B;stim1_r4d07;Ok;Cleared;Cleared;logport-1;port-1;"";Cleared;ITALTERM SISTEMAS E CONTROLES INDUSTRIAIS LTDA;VOM-3012F0QU3-032;"";Up;6;24;3;6;21;4
+VOM-A13-1 ;502;10.211.238.6;unit-18;STIM1 R1C;stim1_r4d07;Ok;Cleared;Cleared;logport-1;port-1;"";Cleared;"";"";"";Up;9;24;1;10;21;3

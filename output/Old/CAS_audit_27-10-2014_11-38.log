@@ -1,0 +1,189 @@
++-------------------------------------- General status for CAS --------------------------------------+
+|
+| Total checked NEs: 176
+| Total remote access errors: 166
+| Total NE alarms: 3
+| Total cards checked: 175
+| Total card alarms: 0
+| Total redundancy alarms: 3
+|
++----------------------------------------------------------------------------------------------------+
+|
+|
+| KEYMILE Alarms
+|	CAS-A01-5 	RIN 124		at 10.211.161.75		Alarm >> Protecting CU Active
+|	CAS-A01-5 	RIN 124		at 10.211.161.75		Alarm >> /unit-11/port-1 RxInputPower (-34)
+|	CAS-A01 	RIN 75		at 10.211.161.74		Alarm >> Partial Fan Breakdown
+|	CAS-A02-2 	RIN 72		at 10.211.161.71		Alarm >> /unit-13/port-1 - Down
+|	CAS-A04-0 	RIN 62		at 10.211.161.61		Error >> No remote access
+|	CAS-A04 	RIN 63		at 10.211.161.62		Error >> No remote access
+|	CAS-A05-0 	RIN 38		at 10.211.161.37		Error >> No remote access
+|	CAS-A05 	RIN 39		at 10.211.161.38		Error >> No remote access
+|	CAS-A05-2 	RIN 81		at 10.211.161.39		Error >> No remote access
+|	CAS-A07-5 	RIN 119		at 10.211.161.15		Error >> No remote access
+|	CAS-A07-0 	RIN 14		at 10.211.161.13		Error >> No remote access
+|	CAS-A07 	RIN 15		at 10.211.161.14		Error >> No remote access
+|	CAS-A08-5 	RIN 120		at 10.211.161.35		Error >> No remote access
+|	CAS-A08-0 	RIN 34		at 10.211.161.33		Error >> No remote access
+|	CAS-A08 	RIN 35		at 10.211.161.34		Error >> No remote access
+|	CAS-A09-0 	RIN 50		at 10.211.161.49		Error >> No remote access
+|	CAS-A09 	RIN 51		at 10.211.161.50		Error >> No remote access
+|	CAS-A10-0 	RIN 46		at 10.211.161.45		Error >> No remote access
+|	CAS-A10 	RIN 47		at 10.211.161.46		Error >> No remote access
+|	CAS-A10-5 	RIN 48		at 10.211.161.47		Error >> No remote access
+|	CAS-A11-0 	RIN 154		at 10.211.161.153		Error >> No remote access
+|	CAS-A11 	RIN 155		at 10.211.161.154		Error >> No remote access
+|	CAS-A14-0 	RIN 42		at 10.211.161.41		Error >> No remote access
+|	CAS-A14 	RIN 43		at 10.211.161.42		Error >> No remote access
+|	CAS-A15-5 	RIN 201		at 10.211.161.31		Error >> No remote access
+|	CAS-A15-0 	RIN 30		at 10.211.161.29		Error >> No remote access
+|	CAS-A15 	RIN 31		at 10.211.161.30		Error >> No remote access
+|	CAS-A16-0 	RIN 26		at 10.211.161.25		Error >> No remote access
+|	CAS-A16 	RIN 27		at 10.211.161.26		Error >> No remote access
+|	CAS-A17-0 	RIN 146		at 10.211.161.145		Error >> No remote access
+|	CAS-A17-4 	RIN 147		at 10.211.161.146		Error >> No remote access
+|	CAS-A17-5 	RIN 148		at 10.211.161.147		Error >> No remote access
+|	CAS-A18-0 	RIN 150		at 10.211.161.149		Error >> No remote access
+|	CAS-A18 	RIN 151		at 10.211.161.150		Error >> No remote access
+|	CAS-A18-5 	RIN 157		at 10.211.161.151		Error >> No remote access
+|	CAS-A20-0 	RIN 22		at 10.211.161.21		Error >> No remote access
+|	CAS-A20 	RIN 23		at 10.211.161.22		Error >> No remote access
+|	CAS-A21-0- 	RIN 205		at 10.211.161.7		Error >> No remote access
+|	CAS-A21-0 	RIN 6		at 10.211.161.5		Error >> No remote access
+|	CAS-A21 	RIN 7		at 10.211.161.6		Error >> No remote access
+|	CAS-A22-0 	RIN 10		at 10.211.161.9		Error >> No remote access
+|	CAS-A22 	RIN 11		at 10.211.161.10		Error >> No remote access
+|	CAS-A22-1 	RIN 12		at 10.211.161.11		Error >> No remote access
+|	CAS-A26-0 	RIN 182		at 10.211.161.181		Error >> No remote access
+|	CAS-A26 	RIN 183		at 10.211.161.182		Error >> No remote access
+|	CAS-A27-0 	RIN 2		at 10.211.161.1		Error >> No remote access
+|	CAS-A27 	RIN 3		at 10.211.161.2		Error >> No remote access
+|	CAS-A28-0 	RIN 130		at 10.211.161.129		Error >> No remote access
+|	CAS-A28 	RIN 131		at 10.211.161.130		Error >> No remote access
+|	CAS-A28-5 	RIN 132		at 10.211.161.131		Error >> No remote access
+|	CAS-A29-0 	RIN 122		at 10.211.161.121		Error >> No remote access
+|	CAS-A29 	RIN 123		at 10.211.161.122		Error >> No remote access
+|	CAS-A31-0 	RIN 162		at 10.211.161.161		Error >> No remote access
+|	CAS-A31 	RIN 163		at 10.211.161.162		Error >> No remote access
+|	CAS-A32-0 	RIN 170		at 10.211.161.169		Error >> No remote access
+|	CAS-A32 	RIN 171		at 10.211.161.170		Error >> No remote access
+|	CAS-A32-5 	RIN 279		at 10.211.161.171		Error >> No remote access
+|	CAS-A33-0 	RIN 166		at 10.211.161.165		Error >> No remote access
+|	CAS-A33 	RIN 167		at 10.211.161.166		Error >> No remote access
+|	CAS-A34-0 	RIN 174		at 10.211.161.173		Error >> No remote access
+|	CAS-A34 	RIN 175		at 10.211.161.174		Error >> No remote access
+|	CAS-A34-5 	RIN 176		at 10.211.161.175		Error >> No remote access
+|	CAS-A36-0 	RIN 178		at 10.211.161.177		Error >> No remote access
+|	CAS-A36 	RIN 179		at 10.211.161.178		Error >> No remote access
+|	CAS-A37-0 	RIN 190		at 10.211.161.189		Error >> No remote access
+|	CAS-A37 	RIN 191		at 10.211.161.190		Error >> No remote access
+|	CAS-A37-1 	RIN 192		at 10.211.161.191		Error >> No remote access
+|	CAS-A38-0 	RIN 186		at 10.211.161.185		Error >> No remote access
+|	CAS-A38 	RIN 187		at 10.211.161.186		Error >> No remote access
+|	CAS-A39-0 	RIN 142		at 10.211.161.141		Error >> No remote access
+|	CAS-A39 	RIN 143		at 10.211.161.142		Error >> No remote access
+|	CAS-A47-4 	RIN 204		at 10.211.161.203		Error >> No remote access
+|	CAS-A48-4 	RIN 208		at 10.211.161.207		Error >> No remote access
+|	CAS-A49-5 	RIN 212		at 10.211.161.211		Error >> No remote access
+|	CAS-A50 	RIN 216		at 10.211.161.215		Error >> No remote access
+|	CAS-A51-4 	RIN 223		at 10.211.161.222		Error >> No remote access
+|	CAS-A52-4 	RIN 227		at 10.211.161.226		Error >> No remote access
+|	CAS-A52-5 	RIN 228		at 10.211.161.227		Error >> No remote access
+|	CAS-A53-4 	RIN 231		at 10.211.161.230		Error >> No remote access
+|	CAS-A53-1 	RIN 232		at 10.211.161.231		Error >> No remote access
+|	CAS-A55-4 	RIN 87		at 10.211.161.86		Error >> No remote access
+|	CAS-A56-0 	RIN 54		at 10.211.161.53		Error >> No remote access
+|	CAS-A57-5 	RIN 233		at 10.211.161.235		Error >> No remote access
+|	CAS-A57 	RIN 235		at 10.211.161.234		Error >> No remote access
+|	CAS-A58-4 	RIN 196		at 10.211.161.195		Error >> No remote access
+|	CAS-A59-4 	RIN 200		at 10.211.161.199		Error >> No remote access
+|	CAS-A67-0 	RIN 293		at 10.211.167.49		Error >> No remote access
+|	CAS-A67-4 	RIN 294		at 10.211.167.50		Error >> No remote access
+|	CAS-A70-0 	RIN 277		at 10.211.167.33		Error >> No remote access
+|	CAS-A70-4 	RIN 278		at 10.211.167.34		Error >> No remote access
+|	CAS-A71-0 	RIN 281		at 10.211.167.37		Error >> No remote access
+|	CAS-A71-4 	RIN 282		at 10.211.167.38		Error >> No remote access
+|	CAS-A72-0 	RIN 301		at 10.211.167.57		Error >> No remote access
+|	CAS-A72-4 	RIN 302		at 10.211.167.58		Error >> No remote access
+|	CAS-A73-4 	RIN 306		at 10.211.167.70		Error >> No remote access
+|	CAS-A75-0 	RIN 92		at 10.211.161.57		Error >> No remote access
+|	CAS-A75-4 	RIN 93		at 10.211.161.58		Error >> No remote access
+|	CAS-A76-0 	RIN 95		at 10.211.161.93		Error >> No remote access
+|	CAS-A76-4 	RIN 96		at 10.211.161.94		Error >> No remote access
+|	CAS-A77-0 	RIN 100		at 10.211.161.97		Error >> No remote access
+|	CAS-A77-4 	RIN 98		at 10.211.161.98		Error >> No remote access
+|	CAS-A79-0 	RIN 106		at 10.211.167.9		Error >> No remote access
+|	CAS-A79-4 	RIN 107		at 10.211.167.10		Error >> No remote access
+|	CAS-A80-0 	RIN 109		at 10.211.167.13		Error >> No remote access
+|	CAS-A80-4 	RIN 110		at 10.211.167.14		Error >> No remote access
+|	CAS-A80-5 	RIN 111		at 10.211.167.15		Error >> No remote access
+|	CAS-A81-0 	RIN 133		at 10.211.167.162		Error >> No remote access
+|	CAS-A81-4 	RIN 134		at 10.211.167.163		Error >> No remote access
+|	CAS-A82-0 	RIN 135		at 10.211.167.164		Error >> No remote access
+|	CAS-A82-4 	RIN 136		at 10.211.167.165		Error >> No remote access
+|	CAS-A84-0 	RIN 158		at 10.211.167.158		Error >> No remote access
+|	CAS-A84-4 	RIN 159		at 10.211.167.159		Error >> No remote access
+|	CAS-A84-5 	RIN 160		at 10.211.167.160		Error >> No remote access
+|	CAS-A84-6 	RIN 161		at 10.211.167.161		Error >> No remote access
+|	CAS-A86-0 	RIN 168		at 10.211.167.154		Error >> No remote access
+|	CAS-A86-4 	RIN 177		at 10.211.167.155		Error >> No remote access
+|	CAS-A87-0 	RIN 172		at 10.211.167.156		Error >> No remote access
+|	CAS-I01 	RIN 242		at 10.211.161.242		Error >> No remote access
+|	CAS-I01-2 	RIN 243		at 10.211.161.243		Error >> No remote access
+|	CAS-I01-6 	RIN 285		at 10.211.161.244		Error >> No remote access
+|	CAS-I02-6 	RIN 125		at 10.211.161.128		Error >> No remote access
+|	CAS-I02 	RIN 126		at 10.211.161.126		Error >> No remote access
+|	CAS-I02-2 	RIN 127		at 10.211.161.127		Error >> No remote access
+|	CAS-T01-99 	RIN 500		at 10.211.161.253		Error >> No remote access
+|
+| ZHONE Alarms
+|	CAS-A03-5 	RIN 260		at 10.211.161.67		Alarm >> power_supply_a_failure
+|	CAS-A03-5 	RIN 260		at 10.211.161.67		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A09-1 	RIN 45		at 10.211.161.44		Error >> No remote access
+|	CAS-A11-1 	RIN 156		at 10.211.161.155		Error >> No remote access
+|	CAS-A14-1 	RIN 44		at 10.211.161.43		Error >> No remote access
+|	CAS-A26-1 	RIN 184		at 10.211.161.183		Error >> No remote access
+|	CAS-A27-5 	RIN 173		at 10.211.161.4		Error >> No remote access
+|	CAS-A33-5 	RIN 169		at 10.211.161.167		Error >> No remote access
+|	CAS-A36-1 	RIN 180		at 10.211.161.179		Error >> No remote access
+|	CAS-A39-1 	RIN 144		at 10.211.161.143		Error >> No remote access
+|	CAS-A47-0 	RIN 202		at 10.211.161.201		Error >> No remote access
+|	CAS-A47-1 	RIN 203		at 10.211.161.202		Error >> No remote access
+|	CAS-A48-0 	RIN 206		at 10.211.161.205		Error >> No remote access
+|	CAS-A48-1 	RIN 207		at 10.211.161.206		Error >> No remote access
+|	CAS-A49-0 	RIN 210		at 10.211.161.209		Error >> No remote access
+|	CAS-A49-1 	RIN 211		at 10.211.161.210		Error >> No remote access
+|	CAS-A50-0 	RIN 214		at 10.211.161.213		Error >> No remote access
+|	CAS-A50-1 	RIN 215		at 10.211.161.214		Error >> No remote access
+|	CAS-A51-0 	RIN 222		at 10.211.161.221		Error >> No remote access
+|	CAS-A51-1 	RIN 224		at 10.211.161.223		Error >> No remote access
+|	CAS-A52-0 	RIN 226		at 10.211.161.225		Error >> No remote access
+|	CAS-A53-0 	RIN 230		at 10.211.161.229		Error >> No remote access
+|	CAS-A55-0 	RIN 86		at 10.211.161.85		Error >> No remote access
+|	CAS-A56-1 	RIN 55		at 10.211.161.54		Error >> No remote access
+|	CAS-A57-0 	RIN 234		at 10.211.161.233		Error >> No remote access
+|	CAS-A58-0 	RIN 194		at 10.211.161.193		Error >> No remote access
+|	CAS-A58-1 	RIN 195		at 10.211.161.194		Error >> No remote access
+|	CAS-A59-0 	RIN 198		at 10.211.161.197		Error >> No remote access
+|	CAS-A59-1 	RIN 199		at 10.211.161.198		Error >> No remote access
+|	CAS-A60-0 	RIN 246		at 10.211.161.245		Error >> No remote access
+|	CAS-A60-1 	RIN 247		at 10.211.161.246		Error >> No remote access
+|	CAS-A61-0 	RIN 250		at 10.211.161.249		Error >> No remote access
+|	CAS-A61-1 	RIN 251		at 10.211.161.250		Error >> No remote access
+|	CAS-A62-0 	RIN 254		at 10.211.161.217		Error >> No remote access
+|	CAS-A62-1 	RIN 255		at 10.211.161.218		Error >> No remote access
+|	CAS-A63-0 	RIN 258		at 10.211.161.137		Error >> No remote access
+|	CAS-A63-1 	RIN 259		at 10.211.161.138		Error >> No remote access
+|	CAS-A64-0 	RIN 262		at 10.211.161.89		Error >> No remote access
+|	CAS-A64-1 	RIN 263		at 10.211.161.90		Error >> No remote access
+|	CAS-A65-0 	RIN 266		at 10.211.167.1		Error >> No remote access
+|	CAS-A65-1 	RIN 267		at 10.211.167.2		Error >> No remote access
+|	CAS-A66-0 	RIN 270		at 10.211.167.5		Error >> No remote access
+|	CAS-A66-1 	RIN 271		at 10.211.167.6		Error >> No remote access
+|	CAS-A68-0 	RIN 273		at 10.211.167.29		Error >> No remote access
+|	CAS-A68-1 	RIN 274		at 10.211.167.30		Error >> No remote access
+|	CAS-A69-0 	RIN 297		at 10.211.167.53		Error >> No remote access
+|	CAS-A69-1 	RIN 298		at 10.211.167.54		Error >> No remote access
+|	CAS-A73-0 	RIN 305		at 10.211.167.69		Error >> No remote access
+|
++----------------------------------------------------------------------------------------------------+

@@ -1,0 +1,19 @@
++-------------------------------------- General status for ARQ --------------------------------------+
+|
+| Total checked NEs: 3
+| Total remote access errors: 0
+| Total NE alarms: 0
+| Total cards checked: 47
+| Total card alarms: 2
+| Total redundancy alarms: 0
+|
++----------------------------------------------------------------------------------------------------+
+|
+|
+| KEYMILE Alarms
+|
+| ZHONE Alarms
+|	ARQ-A01 	RIN 2		at 10.214.57.2		Alarm >> ["b: MXK TWO TENGIGE EIGHT GIGE CLK ", ["(NOT_PROV)"]]
+|	ARQ-I01 	RIN 9		at 10.214.57.9		Alarm >> ["b: MXK TWO TENGIGE EIGHT GIGE CLK ", ["(NOT_PROV)"]]
+|
++----------------------------------------------------------------------------------------------------+

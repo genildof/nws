@@ -1,0 +1,101 @@
++-------------------------------------- General status for CPE --------------------------------------+
+|
+| Total checked NEs: 263
+| Total remote access errors: 10
+| Total NE alarms: 68
+| Total cards checked: 3789
+| Total card alarms: 0
+| Total redundancy alarms: 6
+|
++----------------------------------------------------------------------------------------------------+
+|
+|
+| KEYMILE Alarms
+|	CPE-A03-2 	RIN 24		at 10.161.115.132		Alarm >> Protecting CU Active
+|	CPE-A03-2 	RIN 24		at 10.161.115.132		Alarm >> /unit-13/port-1 RxInputPower (-26)
+|	CPE-A05-2 	RIN 28		at 10.161.116.7		Alarm >> alarm-1   -  Porta_DG            -  Minor     
+|	CPE-A09-0 	RIN 122		at 10.164.130.15		Alarm >> Loss Of Signal On PDH Clock Source 2
+|	CPE-A09-0 	RIN 122		at 10.164.130.15		Alarm >> Protecting CU Active
+|	CPE-A09-2 	RIN 18		at 10.161.116.34		Alarm >> Loss Of Signal On PDH Clock Source 2
+|	CPE-A10-0 	RIN 371		at 10.164.130.52		Error >> No remote access
+|	CPE-A11-4 	RIN 119		at 10.161.115.149		Alarm >> Protecting CU Active
+|	CPE-A11-2 	RIN 20		at 10.161.116.38		Alarm >> Loss Of Signal On PDH Clock Source 2
+|	CPE-A15-0 	RIN 372		at 10.161.115.58		Alarm >> Protecting CU Active
+|	CPE-A16-5 	RIN 134		at 10.161.116.19		Alarm >> Protecting CU Active
+|	CPE-A18 	RIN 129		at 10.161.115.159		Alarm >> Protecting CU Active
+|	CPE-A20-0 	RIN 374		at 10.161.115.5		Alarm >> alarm-5   -  (Porta_Equipamento)  -  Minor     
+|	CPE-A24-1 	RIN 375		at 10.164.130.54		Alarm >> Protecting CU Active
+|	CPE-A25-6 	RIN 55		at 10.161.116.113		Alarm >> Protecting CU Active
+|	CPE-A29-0 	RIN 377		at 10.164.130.56		Alarm >> Protecting CU Active
+|	CPE-A32-0 	RIN 379		at 10.161.115.75		Alarm >> alarm-4   -  Falha de Fan        -  Critical  
+|	CPE-A33-99 	RIN 95		at 10.161.116.84		Alarm >> Protecting CU Active
+|	CPE-A35-2 	RIN 50		at 10.161.116.110		Alarm >> Protecting CU Active
+|	CPE-A35-2 	RIN 50		at 10.161.116.110		Alarm >> /unit-13/port-1 RxInputPower (-24)
+|	CPE-A36 	RIN 49		at 10.161.115.210		Alarm >> Loss Of Signal On PDH Clock Source 4
+|	CPE-A36 	RIN 49		at 10.161.115.210		Alarm >> alarm-1   -  Door_Open           -  Minor     
+|	CPE-A36-0 	RIN 590		at 10.164.130.42		Alarm >> /unit-13/port-1 RxInputPower (-30)
+|	CPE-A37-0 	RIN 66		at 10.161.116.118		Alarm >> Loss Of Signal On PDH Clock Source 2
+|	CPE-A37-0 	RIN 66		at 10.161.116.118		Alarm >> Protecting CU Active
+|	CPE-A38-0 	RIN 354		at 10.164.130.17		Alarm >> Protecting CU Active
+|	CPE-A39-3 	RIN 43		at 10.161.116.29		Alarm >> Loss Of Signal On PDH Clock Source 2
+|	CPE-A41 	RIN 73		at 10.161.115.196		Alarm >> Partial Fan Breakdown
+|	CPE-A42-2 	RIN 111		at 10.161.115.227		Alarm >> Protecting CU Active
+|	CPE-A42-3 	RIN 114		at 10.161.115.228		Alarm >> Protecting CU Active
+|	CPE-A43-2 	RIN 104		at 10.161.115.243		Alarm >> Protecting CU Active
+|	CPE-A44-2 	RIN 152		at 10.161.115.230		Error >> No remote access
+|	CPE-A45-2 	RIN 100		at 10.161.115.240		Alarm >> Loss Of Signal On PDH Clock Source 4
+|	CPE-A45-2 	RIN 100		at 10.161.115.240		Alarm >> Partial Fan Breakdown
+|	CPE-A46-3 	RIN 52		at 10.161.116.109		Alarm >> Partial Fan Breakdown
+|	CPE-A47-3 	RIN 44		at 10.161.116.32		Alarm >> Partial Fan Breakdown
+|	CPE-A52-3 	RIN 63		at 10.161.116.36		Alarm >> Partial Fan Breakdown
+|	CPE-A53-0 	RIN 193		at 10.161.115.44		Alarm >> Protecting CU Active
+|	CPE-A53-0 	RIN 193		at 10.161.115.44		Alarm >> Partial Fan Breakdown
+|	CPE-A54-3 	RIN 190		at 10.161.116.102		Alarm >> Protecting CU Active
+|	CPE-A55 	RIN 117		at 10.161.115.233		Alarm >> Partial Fan Breakdown
+|	CPE-A55-3 	RIN 173		at 10.161.116.44		Alarm >> Protecting CU Active
+|	CPE-A56-0 	RIN 187		at 10.161.115.46		Alarm >> Loss Of Signal On PDH Clock Source 4
+|	CPE-A58-0 	RIN 157		at 10.161.115.235		Error >> No remote access
+|	CPE-A60-3 	RIN 112		at 10.161.116.83		Alarm >> Partial Fan Breakdown
+|	CPE-A60 	RIN 156		at 10.161.115.238		Error >> No remote access
+|	CPE-A62-3 	RIN 106		at 10.161.116.39		Alarm >> Partial Fan Breakdown
+|	CPE-A63-3 	RIN 153		at 10.161.116.88		Alarm >> Partial Fan Breakdown
+|	CPE-A64-6 	RIN 385		at 10.164.130.29		Alarm >> Protecting CU Active
+|	CPE-A66 	RIN 75		at 10.161.116.21		Alarm >> alarm-1   -  Porta_DG            -  Minor     
+|	CPE-A66-3 	RIN 97		at 10.161.116.107		Alarm >> Protecting CU Active
+|	CPE-A68-0 	RIN 87		at 10.161.116.80		Alarm >> Partial Fan Breakdown
+|	CPE-A68 	RIN 90		at 10.161.116.81		Alarm >> alarm-4   -  Falha de Fan      -  Critical  
+|	CPE-A69-0 	RIN 314		at 10.161.116.119		Alarm >> Protecting CU Active
+|	CPE-A69 	RIN 315		at 10.161.116.120		Alarm >> Protecting CU Active
+|	CPE-A70-0 	RIN 318		at 10.161.116.121		Alarm >> Protecting CU Active
+|	CPE-A70 	RIN 319		at 10.161.116.122		Alarm >> Protecting CU Active
+|	CPE-A70-4 	RIN 320		at 10.164.130.45		Alarm >> Protecting CU Active
+|	CPE-A71-4 	RIN 339		at 10.161.116.124		Alarm >> Protecting CU Active
+|	CPE-A72-0 	RIN 250		at 10.164.130.1		Alarm >> Protecting CU Active
+|	CPE-A73-5 	RIN 120		at 10.164.130.63		Error >> No remote access
+|	CPE-A73-0 	RIN 252		at 10.164.130.3		Alarm >> Protecting CU Active
+|	CPE-A73-0 	RIN 252		at 10.164.130.3		Alarm >> /unit-13/port-1 RxInputPower (-26)
+|	CPE-A73-4 	RIN 253		at 10.164.130.4		Alarm >> /unit-13/port-1 RxInputPower (-50)
+|	CPE-A74-4 	RIN 255		at 10.164.130.6		Alarm >> Protecting CU Active
+|	CPE-A74-5 	RIN 552		at 10.164.130.58		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	CPE-A74-5 	RIN 552		at 10.164.130.58		Alarm >> Loss Of Signal On PDH Clock Source 2
+|	CPE-A74-5 	RIN 552		at 10.164.130.58		Alarm >> Protecting CU Active
+|	CPE-A79-5 	RIN 70		at 10.164.130.62		Alarm >> Protecting CU Active
+|	CPE-A84-0 	RIN 316		at 10.164.130.38		Alarm >> Protecting CU Active
+|	CPE-V02-5 	RIN 387		at 10.164.130.31		Alarm >> /unit-13/port-1 RxInputPower (-35)
+|	CPE-V03-3 	RIN 179		at 10.161.116.116		Alarm >> Protecting CU Active
+|	CPE-V04-2 	RIN 113		at 10.161.116.93		Alarm >> Protecting CU Active
+|	CPE-V05 	RIN 138		at 10.161.115.207		Alarm >> Protecting CU Active
+|	CPE-V05-3 	RIN 145		at 10.161.115.232		Alarm >> Protecting CU Active
+|
+| ZHONE Alarms
+|	CPE-A03 	RIN 23		at 10.161.115.136		Alarm >> fan_power_supply_b_failure
+|	CPE-A12 	RIN 146		at 10.161.115.150		Error >> No remote access
+|	CPE-A13 	RIN 30		at 10.161.115.152		Alarm >> power_supply_a_failure
+|	CPE-A14 	RIN 137		at 10.161.115.154		Error >> No remote access
+|	CPE-A19 	RIN 128		at 10.161.115.161		Error >> No remote access
+|	CPE-A28-2 	RIN 9		at 10.161.116.69		Error >> No remote access
+|	CPE-A33 	RIN 103		at 10.161.115.185		Alarm >> fan_power_supply_b_failure
+|	CPE-A38 	RIN 38		at 10.161.115.192		Alarm >> power_supply_b_failure
+|	CPE-A56-3 	RIN 176		at 10.161.116.27		Error >> No remote access
+|
++----------------------------------------------------------------------------------------------------+

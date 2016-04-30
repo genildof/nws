@@ -1,0 +1,45 @@
++-------------------------------------- General status for STS --------------------------------------+
+|
+| Total checked NEs: 58
+| Total remote access errors: 6
+| Total NE alarms: 22
+| Total cards checked: 717
+| Total card alarms: 0
+| Total redundancy alarms: 0
+|
++----------------------------------------------------------------------------------------------------+
+|
+|
+| KEYMILE Alarms
+|	STS-A01-4 	RIN 147		at 10.209.225.114		Alarm >> Protecting CU Active
+|	STS-A03-4 	RIN 143		at 10.209.225.2		Error >> No remote access
+|	STS-A04-0 	RIN 166		at 10.209.225.9		Alarm >> Protecting CU Active
+|	STS-A04-4 	RIN 167		at 10.209.225.10		Error >> No remote access
+|	STS-A06 	RIN 175		at 10.209.225.126		Alarm >> Protecting CU Active
+|	STS-A08-4 	RIN 179		at 10.209.225.130		Error >> No remote access
+|	STS-A10-0 	RIN 134		at 10.209.225.21		Alarm >> Protecting CU Active
+|	STS-A11-0 	RIN 198		at 10.209.225.25		Alarm >> Protecting CU Active
+|	STS-A19-0 	RIN 38		at 10.209.225.7		Error >> No remote access
+|	STS-A19-4 	RIN 39		at 10.209.225.8		Error >> No remote access
+|	STS-A20-4 	RIN 43		at 10.209.225.146		Alarm >> Protecting CU Active
+|	STS-A25-4 	RIN 99		at 10.209.225.162		Alarm >> Protecting CU Active
+|	STS-A27-4 	RIN 0		at 10.209.225.50		Error >> No remote access
+|	STS-I01-4 	RIN 191		at 10.209.225.42		Alarm >> Protecting CU Active
+|
+| ZHONE Alarms
+|	STS-A05-0 	RIN 170		at 10.209.225.121		Alarm >> power_supply_b_failure
+|	STS-A06-0 	RIN 174		at 10.209.225.125		Alarm >> power_supply_b_failure
+|	STS-A08-0 	RIN 178		at 10.209.225.129		Alarm >> power_supply_b_failure
+|	STS-A14-0 	RIN 2		at 10.209.225.33		Alarm >> power_supply_b_failure
+|	STS-A15-0 	RIN 206		at 10.209.225.137		Alarm >> power_supply_b_failure
+|	STS-A16-0 	RIN 6		at 10.209.225.157		Alarm >> power_supply_b_failure
+|	STS-A20-0 	RIN 42		at 10.209.225.145		Alarm >> power_supply_a_failure
+|	STS-A25-0 	RIN 98		at 10.209.225.161		Alarm >> power_supply_b_failure
+|	STS-A26-0 	RIN 102		at 10.209.225.165		Alarm >> power_supply_b_failure
+|	STS-A27-0 	RIN 106		at 10.209.225.49		Alarm >> power_supply_a_failure
+|	STS-A28-0 	RIN 110		at 10.209.225.169		Alarm >> power_supply_b_failure
+|	STS-A33-0 	RIN 584		at 10.209.225.173		Alarm >> power_supply_b_failure
+|	STS-A34-0 	RIN 118		at 10.209.225.149		Alarm >> power_supply_b_failure
+|	STS-A35-0 	RIN 114		at 10.209.225.153		Alarm >> power_supply_b_failure
+|
++----------------------------------------------------------------------------------------------------+

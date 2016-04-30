@@ -1,0 +1,249 @@
+################## Milegate IDU-A11-4  RIN 265 at 10.211.167.170
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate IDU-A11-0  RIN 4 at 10.211.167.67
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (21 cards checked) **
+
+################## Milegate IDU-A12-0  RIN 8 at 10.211.167.71
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (15 cards checked) **
+
+################## Milegate IDU-A12-1  RIN 9 at 10.211.167.72
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate IDU-A13-4  RIN 283 at 10.211.167.80
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (11 cards checked) **
+
+################## Milegate IDU-A13-0  RIN 5 at 10.211.167.79
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate IDU-A14-0  RIN 13 at 10.211.167.83
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (15 cards checked) **
+
+################## Milegate IDU-A14-4  RIN 240 at 10.211.167.84
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate IDU-A16-0  RIN 16 at 10.211.167.87
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate IDU-A16-4  RIN 17 at 10.211.167.88
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate IDU-A17-0  RIN 79 at 10.211.167.143
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate IDU-A17-4  RIN 80 at 10.211.167.144
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate IDU-A19-0  RIN 20 at 10.211.167.91
+# System status:
+#	Alarm >> ne: System Time Not Available
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate IDU-A19-4  RIN 21 at 10.211.167.92
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (18 cards checked) **
+
+################## Milegate IDU-A20-0  RIN 24 at 10.211.167.95
+# System status:
+#	Alarm >> ne: Loss Of Signal On PDH Clock Source 1
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate IDU-A20-4  RIN 25 at 10.211.167.96
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate IDU-A21-0  RIN 32 at 10.211.167.75
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate IDU-A21-4  RIN 33 at 10.211.167.76
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (18 cards checked) **
+
+################## Milegate IDU-A22-4  RIN 238 at 10.211.167.100
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (11 cards checked) **
+
+################## Milegate IDU-A22-0  RIN 29 at 10.211.167.99
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate IDU-A23-0  RIN 36 at 10.211.167.107
+# System status:
+#	Alarm >> ne: Loss Of Signal On PDH Clock Source 1
+#	Alarm >> ne: Loss Of Signal On PDH Clock Source 3
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate IDU-A23-4  RIN 37 at 10.211.167.108
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (18 cards checked) **
+
+################## Milegate IDU-A24-0  RIN 52 at 10.211.167.111
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (13 cards checked) **
+
+################## Milegate IDU-A24-4  RIN 53 at 10.211.167.112
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate IDU-A26-0  RIN 40 at 10.211.167.119
+# System status:
+#	Alarm >> ne: Loss Of Signal On PDH Clock Source 1
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate IDU-A27-0  RIN 68 at 10.211.167.123
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (18 cards checked) **
+
+################## Milegate IDU-A27-4  RIN 69 at 10.211.167.124
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (18 cards checked) **
+
+################## Milegate IDU-A28-0  RIN 49 at 10.211.167.103
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate IDU-A29-4  RIN 257 at 10.211.167.128
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate IDU-A29-0  RIN 73 at 10.211.167.127
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (20 cards checked) **
+
+################## Milegate IDU-A30-4  RIN 252 at 10.211.167.132
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (11 cards checked) **
+
+################## Milegate IDU-A30-0  RIN 76 at 10.211.167.131
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (18 cards checked) **
+
+################## Milegate IDU-A31-0  RIN 113 at 10.211.167.149
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate IDU-A33-0  RIN 114 at 10.211.167.150
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate IDU-A33-4  RIN 115 at 10.211.167.151
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate IDU-A34-4  RIN 237 at 10.211.167.136
+# System status:
+#	Alarm >> ne: Loss Of Signal On PDH Clock Source 1
+# Cards status:
+#	** No alarmed cards (11 cards checked) **
+
+################## Milegate IDU-A34-0  RIN 77 at 10.211.167.135
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate IDU-A38-0  RIN 78 at 10.211.167.139
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (20 cards checked) **
+
+################## Milegate IDU-I01-0  RIN 64 at 10.211.167.115
+# System status:
+#	Alarm >> ne: Loss Of Signal On PDH Clock Source 1
+# Cards status:
+#	** No alarmed cards (21 cards checked) **
+
+################## Milegate IDU-I01-4  RIN 65 at 10.211.167.116
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (18 cards checked) **
+
+############### ** General status for IDU ** ###############
+# Total hosts checked: 40
+# Total system alarms: 22
+# Total cards alarms: 0
+# Total redundancy errors: 0
+############################################################

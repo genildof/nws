@@ -1,0 +1,198 @@
+################## Zhone SNE-A01-1  RIN 60 at 10.209.33.59
+# System status:
+#	Alarm >> system - power_supply_a_failure - minor
+# Cards status:
+#	** No alarmed cards (11 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SNE-A01-2  RIN 61 at 10.209.33.60
+# System status:
+#	Alarm >> system - power_supply_b_failure - minor
+# Cards status:
+#	** No alarmed cards (11 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SNE-A14-1  RIN 20 at 10.209.33.19
+# System status:
+#	Alarm >> system - power_supply_b_failure - minor
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SNE-A30-0  RIN 246 at 10.209.34.57
+# System status:
+#	Alarm >> system - power_supply_b_failure - minor
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SNE-A31-0  RIN 214 at 10.209.33.205
+# System status:
+#	Alarm >> system - power_supply_b_failure - minor
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SNE-A31-1  RIN 215 at 10.209.33.206
+# System status:
+#	Alarm >> system - power_supply_b_failure - minor
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SNE-A34-0  RIN 38 at 10.209.33.201
+# System status:
+#	Alarm >> system - power_supply_b_failure - minor
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SNE-A34-1  RIN 39 at 10.209.33.202
+# System status:
+#	Alarm >> system - power_supply_b_failure - minor
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SNE-A35-0  RIN 264 at 10.209.34.9
+# System status:
+#	Alarm >> system - power_supply_a_failure - minor
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SNE-A36-0  RIN 206 at 10.209.33.87
+# System status:
+#	Alarm >> system - power_supply_a_failure - minor
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SNE-A36-1  RIN 207 at 10.209.33.88
+# System status:
+#	Alarm >> system - power_supply_b_failure - minor
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SNE-A37-0  RIN 226 at 10.209.33.81
+# System status:
+#	Alarm >> system - power_supply_b_failure - minor
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SNE-A37-1  RIN 227 at 10.209.33.82
+# System status:
+#	Alarm >> system - power_supply_a_failure - minor
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SNE-A38-0  RIN 218 at 10.209.33.217
+# System status:
+#	Alarm >> system - power_supply_a_failure - minor
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SNE-A38-1  RIN 219 at 10.209.33.218
+# System status:
+#	Alarm >> system - power_supply_b_failure - minor
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SNE-A39-0  RIN 210 at 10.209.33.83
+# System status:
+#	Alarm >> system - power_supply_b_failure - minor
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SNE-A39-1  RIN 211 at 10.209.33.84
+# System status:
+#	Alarm >> system - power_supply_a_failure - minor
+# Cards status:
+#	** No alarmed cards (20 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SNE-A40-0  RIN 268 at 10.209.34.1
+# System status:
+#	Alarm >> system - power_supply_b_failure - minor
+# Cards status:
+#	** No alarmed cards (20 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SNE-A40-1  RIN 278 at 10.209.34.4
+# System status:
+#	Alarm >> system - power_supply_b_failure - minor
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SNE-A44-0  RIN 272 at 10.209.34.21
+# System status:
+#	Alarm >> system - power_supply_b_failure - minor
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SNE-A45-0  RIN 276 at 10.209.34.13
+# System status:
+#	Alarm >> system - power_supply_b_failure - minor
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SNE-A46-1  RIN 256 at 10.209.34.25
+# System status:
+#	Alarm >> system - power_supply_b_failure - minor
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SNE-A48-0  RIN 191 at 10.209.34.61
+# System status:
+#	Alarm >> system - power_supply_b_failure - minor
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SNE-A49-0  RIN 193 at 10.209.34.65
+# System status:
+#	Alarm >> system - power_supply_b_failure - minor
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+############### ** General status for SNE ** ###############
+# Total hosts checked: 24
+# Total system alarms: 24
+# Total cards alarms: 0
+# Total redundancy errors: 0
+############################################################

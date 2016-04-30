@@ -1,0 +1,39 @@
++-------------------------------------- General status for IDU --------------------------------------+
+|
+| Total checked NEs: 40
+| Total remote access errors: 0
+| Total NE alarms: 22
+| Total cards checked: 679
+| Total card alarms: 0
+| Total redundancy errors: 0
+|
++----------------------------------------------------------------------------------------------------+
+|
+|
+| KEYMILE Alarms
+|	IDU-A11-4 	RIN 265		at 10.211.167.170		Alarm >> Protecting CU Active
+|	IDU-A12-0 	RIN 8		at 10.211.167.71		Alarm >> Protecting CU Active
+|	IDU-A16-0 	RIN 16		at 10.211.167.87		Alarm >> Protecting CU Active
+|	IDU-A17-0 	RIN 79		at 10.211.167.143		Alarm >> Protecting CU Active
+|	IDU-A17-4 	RIN 80		at 10.211.167.144		Alarm >> Protecting CU Active
+|	IDU-A19-0 	RIN 20		at 10.211.167.91		Alarm >> System Time Not Available
+|	IDU-A20-0 	RIN 24		at 10.211.167.95		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	IDU-A20-0 	RIN 24		at 10.211.167.95		Alarm >> Protecting CU Active
+|	IDU-A20-4 	RIN 25		at 10.211.167.96		Alarm >> Protecting CU Active
+|	IDU-A23-0 	RIN 36		at 10.211.167.107		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	IDU-A23-0 	RIN 36		at 10.211.167.107		Alarm >> Loss Of Signal On PDH Clock Source 3
+|	IDU-A23-0 	RIN 36		at 10.211.167.107		Alarm >> Protecting CU Active
+|	IDU-A24-0 	RIN 52		at 10.211.167.111		Alarm >> Protecting CU Active
+|	IDU-A26-0 	RIN 40		at 10.211.167.119		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	IDU-A28-0 	RIN 49		at 10.211.167.103		Alarm >> Protecting CU Active
+|	IDU-A29-4 	RIN 257		at 10.211.167.128		Alarm >> Protecting CU Active
+|	IDU-A29-0 	RIN 73		at 10.211.167.127		Alarm >> Protecting CU Active
+|	IDU-A30-4 	RIN 252		at 10.211.167.132		Alarm >> Protecting CU Active
+|	IDU-A33-0 	RIN 114		at 10.211.167.150		Alarm >> Protecting CU Active
+|	IDU-A33-4 	RIN 115		at 10.211.167.151		Alarm >> Protecting CU Active
+|	IDU-A34-4 	RIN 237		at 10.211.167.136		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	IDU-I01-0 	RIN 64		at 10.211.167.115		Alarm >> Loss Of Signal On PDH Clock Source 1
+|
+| ZHONE Alarms
+|
++----------------------------------------------------------------------------------------------------+

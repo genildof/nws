@@ -1,0 +1,86 @@
+################## Milegate MCZ-A01-4  RIN 425 at 10.209.21.22
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (15 cards checked) **
+
+################## Milegate MCZ-A03-4  RIN 421 at 10.209.21.4
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate MCZ-A05-4  RIN 409 at 10.209.21.6
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (11 cards checked) **
+
+################## Milegate MCZ-A10-0  RIN 271 at 10.209.21.23
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (15 cards checked) **
+
+################## Milegate MCZ-A10-4  RIN 413 at 10.209.21.24
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate MCZ-A11-4  RIN 417 at 10.209.21.10
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (14 cards checked) **
+
+################## Milegate MCZ-A15-4  RIN 429 at 10.209.21.12
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (12 cards checked) **
+
+################## Milegate MCZ-A16-4  RIN 433 at 10.209.21.14
+# System status:
+#	Alarm >> ne: Loss Of Signal On PDH Clock Source 1
+# Cards status:
+#	** No alarmed cards (21 cards checked) **
+
+################## Milegate MCZ-A21-4  RIN 437 at 10.209.21.16
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (9 cards checked) **
+
+################## Milegate MCZ-A22  RIN 441 at 10.209.21.18
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate MCZ-A23-0  RIN 467 at 10.209.21.25
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (18 cards checked) **
+
+################## Milegate MCZ-A24-0  RIN 177 at 10.209.21.26
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (18 cards checked) **
+
+################## Milegate MCZ-A25-0  RIN 120 at 10.209.21.27
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (15 cards checked) **
+
+################## Milegate MCZ-I01-4  RIN 493 at 10.209.21.20
+################## Milegate MCZ-T01  RIN 501 at 10.209.21.2
+############### ** General status for MCZ ** ###############
+# Total hosts checked: 15
+# Total system alarms: 5
+# Total cards alarms: 0
+# Total redundancy errors: 0
+############################################################

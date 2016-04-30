@@ -1,0 +1,29 @@
++-------------------------------------- General status for VRP --------------------------------------+
+|
+| Total checked NEs: 23
+| Total remote access errors: 0
+| Total NE alarms: 0
+| Total cards checked: 403
+| Total card alarms: 12
+| Total redundancy alarms: 0
+|
++----------------------------------------------------------------------------------------------------+
+|
+|
+| KEYMILE Alarms
+|	VRP-A03-0 	RIN 25		at 10.211.193.107		Alarm >> unit-13 - COGE3 R1G - Plugged
+|	VRP-A04-0 	RIN 29		at 10.211.193.108		Alarm >> unit-13 - COGE3 R1G - Plugged
+|	VRP-A04-4 	RIN 40		at 10.211.193.140		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	VRP-A05-0 	RIN 32		at 10.211.193.133		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	VRP-A05-4 	RIN 58		at 10.211.193.100		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	VRP-A06-0 	RIN 33		at 10.211.193.134		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	VRP-A06-4 	RIN 60		at 10.211.193.98		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	VRP-A07-0 	RIN 36		at 10.211.193.135		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	VRP-A07-4 	RIN 61		at 10.211.193.99		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	VRP-A08-0 	RIN 37		at 10.211.193.136		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	VRP-A08-4 	RIN 53		at 10.211.193.128		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	VRP-A09-0 	RIN 38		at 10.211.193.137		Alarm >> unit-13 - COGE3 R1H - Plugged
+|
+| ZHONE Alarms
+|
++----------------------------------------------------------------------------------------------------+

@@ -1,0 +1,60 @@
+:: Alarm list for Zhone VOM-A02-0 RIN 526 at 10.211.238.57 ::
+=> system - power_supply_b_failure - minor
+
+:: Alarm list for Zhone VOM-A05-0 RIN 522 at 10.211.238.49 ::
+=> system - power_supply_a_failure - minor
+
+:: Alarm list for Zhone VOM-A05-1 RIN 523 at 10.211.238.50 ::
+=> system - power_supply_a_failure - minor
+
+:: Alarm list for Zhone VOM-A07-1 RIN 509 at 10.211.238.18 ::
+=> system - not_in_redundant_mode - major
+
+:: Alarm list for Zhone VOM-A10-0 RIN 38 at 10.211.238.41 ::
+=> system - power_supply_b_failure - minor
+
+:: Alarm list for Zhone VOM-A10-1 RIN 39 at 10.211.238.42 ::
+=> system - power_supply_b_failure - minor
+
+:: Alarm list for Zhone VOM-A11-0 RIN 517 at 10.211.238.37 ::
+=> system - power_supply_a_failure - minor
+
+:: Alarm list for Zhone VOM-A11-1 RIN 518 at 10.211.238.38 ::
+=> system - power_supply_b_failure - minor
+
+:: Alarm list for Zhone VOM-A12-0 RIN 503 at 10.211.238.9 ::
+=> system - power_supply_b_failure - minor
+
+:: Alarm list for Zhone VOM-A13-0 RIN 501 at 10.211.238.5 ::
+=> system - power_supply_b_failure - minor
+
+:: Alarm list for Zhone VOM-A02-0 RIN 526 at 10.211.238.57 ::
+=> system - power_supply_b_failure - minor
+
+:: Alarm list for Zhone VOM-A05-0 RIN 522 at 10.211.238.49 ::
+=> system - power_supply_a_failure - minor
+
+:: Alarm list for Zhone VOM-A05-1 RIN 523 at 10.211.238.50 ::
+=> system - power_supply_a_failure - minor
+
+:: Alarm list for Zhone VOM-A07-1 RIN 509 at 10.211.238.18 ::
+=> system - not_in_redundant_mode - major
+
+:: Alarm list for Zhone VOM-A10-0 RIN 38 at 10.211.238.41 ::
+=> system - power_supply_b_failure - minor
+
+:: Alarm list for Zhone VOM-A10-1 RIN 39 at 10.211.238.42 ::
+=> system - power_supply_b_failure - minor
+
+:: Alarm list for Zhone VOM-A11-0 RIN 517 at 10.211.238.37 ::
+=> system - power_supply_a_failure - minor
+
+:: Alarm list for Zhone VOM-A11-1 RIN 518 at 10.211.238.38 ::
+=> system - power_supply_b_failure - minor
+
+:: Alarm list for Zhone VOM-A12-0 RIN 503 at 10.211.238.9 ::
+=> system - power_supply_b_failure - minor
+
+:: Alarm list for Zhone VOM-A13-0 RIN 501 at 10.211.238.5 ::
+=> system - power_supply_b_failure - minor
+

@@ -1,0 +1,143 @@
+################## Zhone PAA-A03-5  RIN 512 at 10.211.97.23
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (6 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone PAA-A04-1  RIN 28 at 10.211.97.27
+# System status:
+#	Alarm >> system - power_supply_b_failure - minor
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone PAA-A05-1  RIN 41 at 10.211.97.43
+################## Zhone PAA-A17-0  RIN 82 at 10.211.97.81
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (11 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone PAA-A18-0  RIN 86 at 10.211.97.85
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (12 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone PAA-A19-0  RIN 142 at 10.212.160.62
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone PAA-A20-0  RIN 146 at 10.211.97.145
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone PAA-A20-1  RIN 147 at 10.211.97.146
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (20 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone PAA-A21-0  RIN 122 at 10.211.97.121
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone PAA-A21-1  RIN 123 at 10.211.97.122
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone PAA-A22-0  RIN 126 at 10.211.97.125
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone PAA-A22-1  RIN 127 at 10.211.97.126
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone PAA-A23-0  RIN 128 at 10.211.97.129
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone PAA-A23-1  RIN 129 at 10.211.97.130
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (20 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone PAA-A24-0  RIN 150 at 10.211.97.149
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone PAA-A24-1  RIN 151 at 10.211.97.150
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone PAA-A25-0  RIN 154 at 10.211.97.153
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone PAA-A25-1  RIN 155 at 10.211.97.154
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+############### ** General status for PAA ** ###############
+# Total hosts checked: 18
+# Total system alarms: 1
+# Total cards alarms: 0
+# Total redundancy errors: 0
+############################################################

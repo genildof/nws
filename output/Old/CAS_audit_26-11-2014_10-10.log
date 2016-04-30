@@ -1,0 +1,153 @@
++-------------------------------------- General status for CAS --------------------------------------+
+|
+| Total checked NEs: 176
+| Total remote access errors: 1
+| Total NE alarms: 35
+| Total cards checked: 2833
+| Total card alarms: 15
+| Total redundancy alarms: 85
+|
++----------------------------------------------------------------------------------------------------+
+|
+|
+| KEYMILE Alarms
+|	CAS-A01-5 	RIN 124		at 10.211.161.75		Alarm >> Protecting CU Active
+|	CAS-A01-5 	RIN 124		at 10.211.161.75		Alarm >> /unit-11/port-1 RxInputPower (-40)
+|	CAS-A02-2 	RIN 72		at 10.211.161.71		Alarm >> /unit-13/port-1 - Down
+|	CAS-A05-0 	RIN 38		at 10.211.161.37		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A05 	RIN 39		at 10.211.161.38		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A07-5 	RIN 119		at 10.211.161.15		Alarm >> /unit-13/port-1 RxInputPower (-28)
+|	CAS-A07-0 	RIN 14		at 10.211.161.13		Alarm >> alarm-1   -  Porta DG            -  Minor     
+|	CAS-A07-0 	RIN 14		at 10.211.161.13		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A07 	RIN 15		at 10.211.161.14		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A10-0 	RIN 46		at 10.211.161.45		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A10-5 	RIN 48		at 10.211.161.47		Error >> No remote access
+|	CAS-A11-0 	RIN 154		at 10.211.161.153		Alarm >> Protecting CU Active
+|	CAS-A14-0 	RIN 42		at 10.211.161.41		Alarm >> /unit-13/port-1 - Down
+|	CAS-A15-5 	RIN 201		at 10.211.161.31		Alarm >> /unit-13/port-1 - Down
+|	CAS-A16-0 	RIN 26		at 10.211.161.25		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A16 	RIN 27		at 10.211.161.26		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A17-0 	RIN 146		at 10.211.161.145		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A17-4 	RIN 147		at 10.211.161.146		Alarm >> unit-13 - COGE1 R4C - Plugged
+|	CAS-A17-5 	RIN 148		at 10.211.161.147		Alarm >> Protecting CU Active
+|	CAS-A18 	RIN 151		at 10.211.161.150		Alarm >> Protecting CU Active
+|	CAS-A20-0 	RIN 22		at 10.211.161.21		Alarm >> Protecting CU Active
+|	CAS-A20 	RIN 23		at 10.211.161.22		Alarm >> Protecting CU Active
+|	CAS-A22-0 	RIN 10		at 10.211.161.9		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A22 	RIN 11		at 10.211.161.10		Alarm >> unit-13 - COGE1 R4C - Plugged
+|	CAS-A26-0 	RIN 182		at 10.211.161.181		Alarm >> alarm-1   -  Porta DG           -  Minor     
+|	CAS-A26-0 	RIN 182		at 10.211.161.181		Alarm >> /unit-13/port-1 - Down
+|	CAS-A27-0 	RIN 2		at 10.211.161.1		Alarm >> alarm-1   -  Porta DG           -  Minor     
+|	CAS-A27-0 	RIN 2		at 10.211.161.1		Alarm >> unit-13 - COGE1 R4C - Plugged
+|	CAS-A27 	RIN 3		at 10.211.161.2		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A29-0 	RIN 122		at 10.211.161.121		Alarm >> Protecting CU Active
+|	CAS-A32-0 	RIN 170		at 10.211.161.169		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A32 	RIN 171		at 10.211.161.170		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A32-5 	RIN 279		at 10.211.161.171		Alarm >> Protecting CU Active
+|	CAS-A33-0 	RIN 166		at 10.211.161.165		Alarm >> alarm-1   -  Porta DG            -  Minor     
+|	CAS-A33 	RIN 167		at 10.211.161.166		Alarm >> /unit-13/port-1 - Down
+|	CAS-A36 	RIN 179		at 10.211.161.178		Alarm >> /unit-13/port-1 - Down
+|	CAS-A37-0 	RIN 190		at 10.211.161.189		Alarm >> /unit-13/port-1 RxInputPower (-19)
+|	CAS-A47-4 	RIN 204		at 10.211.161.203		Alarm >> Protecting CU Active
+|	CAS-A53-1 	RIN 232		at 10.211.161.231		Alarm >> /unit-13/port-1 - Down
+|	CAS-A57-5 	RIN 233		at 10.211.161.235		Alarm >> /unit-13/port-1 RxInputPower (-23)
+|	CAS-A57 	RIN 235		at 10.211.161.234		Alarm >> alarm-1   -  Door_Open           -  Minor     
+|	CAS-A57 	RIN 235		at 10.211.161.234		Alarm >> /unit-13/port-1 - Down
+|	CAS-A58-4 	RIN 196		at 10.211.161.195		Alarm >> Protecting CU Active
+|	CAS-A70-0 	RIN 277		at 10.211.167.33		Alarm >> Protecting CU Active
+|	CAS-A71-4 	RIN 282		at 10.211.167.38		Alarm >> Protecting CU Active
+|	CAS-A72-0 	RIN 301		at 10.211.167.57		Alarm >> Protecting CU Active
+|	CAS-A73-4 	RIN 306		at 10.211.167.70		Alarm >> /unit-13/port-1 - Down
+|	CAS-A75-0 	RIN 92		at 10.211.161.57		Alarm >> /unit-13/port-1 - Down
+|	CAS-A75-4 	RIN 93		at 10.211.161.58		Alarm >> Protecting CU Active
+|	CAS-A75-4 	RIN 93		at 10.211.161.58		Alarm >> /unit-13/port-1 - Down
+|	CAS-A76-0 	RIN 95		at 10.211.161.93		Alarm >> Protecting CU Active
+|	CAS-A76-0 	RIN 95		at 10.211.161.93		Alarm >> /unit-13/port-1 - Down
+|	CAS-A76-4 	RIN 96		at 10.211.161.94		Alarm >> /unit-13/port-1 - Down
+|	CAS-A77-0 	RIN 100		at 10.211.161.97		Alarm >> /unit-13/port-1 - Down
+|	CAS-A77-4 	RIN 98		at 10.211.161.98		Alarm >> Protecting CU Active
+|	CAS-A77-4 	RIN 98		at 10.211.161.98		Alarm >> /unit-13/port-1 - Down
+|	CAS-A79-0 	RIN 106		at 10.211.167.9		Alarm >> /unit-13/port-1 - Down
+|	CAS-A79-4 	RIN 107		at 10.211.167.10		Alarm >> /unit-13/port-1 - Down
+|	CAS-A80-0 	RIN 109		at 10.211.167.13		Alarm >> /unit-13/port-1 - Down
+|	CAS-A80-4 	RIN 110		at 10.211.167.14		Alarm >> /unit-13/port-1 - Down
+|	CAS-A80-5 	RIN 111		at 10.211.167.15		Alarm >> /unit-13/port-1 - Down
+|	CAS-A81-0 	RIN 133		at 10.211.167.162		Alarm >> Protecting CU Active
+|	CAS-A81-0 	RIN 133		at 10.211.167.162		Alarm >> /unit-13/port-1 - Down
+|	CAS-A81-4 	RIN 134		at 10.211.167.163		Alarm >> /unit-13/port-1 - Down
+|	CAS-A82-0 	RIN 135		at 10.211.167.164		Alarm >> /unit-13/port-1 - Down
+|	CAS-A82-4 	RIN 136		at 10.211.167.165		Alarm >> /unit-13/port-1 - Down
+|	CAS-A84-0 	RIN 158		at 10.211.167.158		Alarm >> /unit-13/port-1 - Down
+|	CAS-A84-4 	RIN 159		at 10.211.167.159		Alarm >> /unit-11/port-1 RxInputPower (-50)
+|	CAS-A84-4 	RIN 159		at 10.211.167.159		Alarm >> /unit-13/port-1 - Down
+|	CAS-A84-5 	RIN 160		at 10.211.167.160		Alarm >> Protecting CU Active
+|	CAS-A84-5 	RIN 160		at 10.211.167.160		Alarm >> /unit-13/port-1 - Down
+|	CAS-A84-6 	RIN 161		at 10.211.167.161		Alarm >> /unit-13/port-1 - Down
+|	CAS-A86-0 	RIN 168		at 10.211.167.154		Alarm >> /unit-13/port-1 - Down
+|	CAS-A86-4 	RIN 177		at 10.211.167.155		Alarm >> /unit-13/port-1 - Down
+|	CAS-A87-0 	RIN 172		at 10.211.167.156		Alarm >> Protecting CU Active
+|	CAS-A87-0 	RIN 172		at 10.211.167.156		Alarm >> /unit-13/port-1 - Down
+|	CAS-I01 	RIN 242		at 10.211.161.242		Alarm >> /unit-11/port-1 - Down
+|	CAS-I01 	RIN 242		at 10.211.161.242		Alarm >> /unit-13/port-1 - Down
+|	CAS-I01-2 	RIN 243		at 10.211.161.243		Alarm >> /unit-11/port-1 - Down
+|	CAS-I01-6 	RIN 285		at 10.211.161.244		Alarm >> /unit-13/port-1 - Down
+|
+| ZHONE Alarms
+|	CAS-A03-5 	RIN 260		at 10.211.161.67		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A09-1 	RIN 45		at 10.211.161.44		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A11-1 	RIN 156		at 10.211.161.155		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A14-1 	RIN 44		at 10.211.161.43		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A26-1 	RIN 184		at 10.211.161.183		Alarm >> power_supply_b_failure
+|	CAS-A26-1 	RIN 184		at 10.211.161.183		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A27-5 	RIN 173		at 10.211.161.4		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A33-5 	RIN 169		at 10.211.161.167		Alarm >> power_supply_a_failure
+|	CAS-A33-5 	RIN 169		at 10.211.161.167		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A36-1 	RIN 180		at 10.211.161.179		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A39-1 	RIN 144		at 10.211.161.143		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A47-1 	RIN 203		at 10.211.161.202		Alarm >> not_in_redundant_mode
+|	CAS-A47-1 	RIN 203		at 10.211.161.202		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A48-0 	RIN 206		at 10.211.161.205		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A48-1 	RIN 207		at 10.211.161.206		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A49-0 	RIN 210		at 10.211.161.209		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A49-1 	RIN 211		at 10.211.161.210		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A50-1 	RIN 215		at 10.211.161.214		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A51-0 	RIN 222		at 10.211.161.221		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A51-1 	RIN 224		at 10.211.161.223		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A52-0 	RIN 226		at 10.211.161.225		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A53-0 	RIN 230		at 10.211.161.229		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A55-0 	RIN 86		at 10.211.161.85		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A56-1 	RIN 55		at 10.211.161.54		Alarm >> power_supply_b_failure
+|	CAS-A56-1 	RIN 55		at 10.211.161.54		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A57-0 	RIN 234		at 10.211.161.233		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A58-0 	RIN 194		at 10.211.161.193		Alarm >> power_supply_b_failure
+|	CAS-A58-0 	RIN 194		at 10.211.161.193		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A58-1 	RIN 195		at 10.211.161.194		Alarm >> power_supply_b_failure
+|	CAS-A58-1 	RIN 195		at 10.211.161.194		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A59-0 	RIN 198		at 10.211.161.197		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A59-1 	RIN 199		at 10.211.161.198		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A60-0 	RIN 246		at 10.211.161.245		Alarm >> power_supply_b_failure
+|	CAS-A60-0 	RIN 246		at 10.211.161.245		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A60-1 	RIN 247		at 10.211.161.246		Alarm >> power_supply_b_failure
+|	CAS-A60-1 	RIN 247		at 10.211.161.246		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A61-0 	RIN 250		at 10.211.161.249		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A61-1 	RIN 251		at 10.211.161.250		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A62-0 	RIN 254		at 10.211.161.217		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A62-1 	RIN 255		at 10.211.161.218		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A63-0 	RIN 258		at 10.211.161.137		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A63-1 	RIN 259		at 10.211.161.138		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A64-0 	RIN 262		at 10.211.161.89		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A64-1 	RIN 263		at 10.211.161.90		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A65-0 	RIN 266		at 10.211.167.1		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A65-1 	RIN 267		at 10.211.167.2		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A66-0 	RIN 270		at 10.211.167.5		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A66-1 	RIN 271		at 10.211.167.6		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A68-0 	RIN 273		at 10.211.167.29		Alarm >> power_supply_b_failure
+|	CAS-A68-0 	RIN 273		at 10.211.167.29		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A68-1 	RIN 274		at 10.211.167.30		Alarm >> power_supply_b_failure
+|	CAS-A68-1 	RIN 274		at 10.211.167.30		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A69-0 	RIN 297		at 10.211.167.53		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A69-1 	RIN 298		at 10.211.167.54		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A73-0 	RIN 305		at 10.211.167.69		Alarm >> power_supply_b_failure
+|	CAS-A73-0 	RIN 305		at 10.211.167.69		Alarm >> Secondary - 1-b-2-0/eth - Down
+|
++----------------------------------------------------------------------------------------------------+

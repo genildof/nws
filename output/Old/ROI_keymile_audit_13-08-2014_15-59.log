@@ -1,0 +1,53 @@
+################## Milegate ROI-A01-4  RIN 59 at 10.164.113.5
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (15 cards checked) **
+
+################## Milegate ROI-A02-4  RIN 55 at 10.164.113.7
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (20 cards checked) **
+
+################## Milegate ROI-A03  RIN 63 at 10.164.113.9
+################## Milegate ROI-A05-4  RIN 51 at 10.164.113.13
+################## Milegate ROI-A06-4  RIN 67 at 10.164.113.17
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate ROI-A07-4  RIN 39 at 10.164.113.19
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate ROI-A08-4  RIN 3 at 10.164.113.11
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate ROI-A09-4  RIN 7 at 10.164.113.21
+################## Milegate ROI-A10-4  RIN 11 at 10.164.113.23
+################## Milegate ROI-A12-4  RIN 35 at 10.164.113.25
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (18 cards checked) **
+
+################## Milegate ROI-A13-4  RIN 15 at 10.164.113.27
+################## Milegate ROI-I01-4  RIN 75 at 10.164.113.15
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (12 cards checked) **
+
+############### ** General status for ROI ** ###############
+# Total hosts checked: 12
+# Total system alarms: 1
+# Total cards alarms: 0
+# Total redundancy errors: 0
+############################################################

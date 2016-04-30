@@ -1,0 +1,51 @@
++-------------------------------------- General status for MCZ --------------------------------------+
+|
+| Total checked NEs: 24
+| Total remote access errors: 1
+| Total NE alarms: 13
+| Total cards checked: 400
+| Total card alarms: 0
+| Total redundancy alarms: 20
+|
++----------------------------------------------------------------------------------------------------+
+|
+|
+| KEYMILE Alarms
+|	MCZ-A01-4 	RIN 425		at 10.209.21.22		Alarm >> /unit-13/port-1 RxInputPower (-50)
+|	MCZ-A03-4 	RIN 421		at 10.209.21.4		Alarm >> Protecting CU Active
+|	MCZ-A03-4 	RIN 421		at 10.209.21.4		Alarm >> /unit-13/port-1 RxInputPower (-50)
+|	MCZ-A05-4 	RIN 409		at 10.209.21.6		Alarm >> Protecting CU Active
+|	MCZ-A05-4 	RIN 409		at 10.209.21.6		Alarm >> /unit-13/port-1 RxInputPower (-31)
+|	MCZ-A10-0 	RIN 271		at 10.209.21.23		Alarm >> Protecting CU Active
+|	MCZ-A10-0 	RIN 271		at 10.209.21.23		Alarm >> /unit-13/port-1 RxInputPower (-25)
+|	MCZ-A10-4 	RIN 413		at 10.209.21.24		Alarm >> /unit-13/port-1 RxInputPower (-26)
+|	MCZ-A11-4 	RIN 417		at 10.209.21.10		Alarm >> /unit-13/port-1 RxInputPower (-50)
+|	MCZ-A15-4 	RIN 429		at 10.209.21.12		Alarm >> Protecting CU Active
+|	MCZ-A15-4 	RIN 429		at 10.209.21.12		Alarm >> /unit-13/port-1 RxInputPower (-28)
+|	MCZ-A16-4 	RIN 433		at 10.209.21.14		Alarm >> /unit-13/port-1 RxInputPower (-24)
+|	MCZ-A21-4 	RIN 437		at 10.209.21.16		Alarm >> /unit-13/port-1 RxInputPower (-31)
+|	MCZ-A22 	RIN 441		at 10.209.21.18		Alarm >> /unit-13/port-1 RxInputPower (-32)
+|	MCZ-A25-0 	RIN 120		at 10.209.21.27		Alarm >> Protecting CU Active
+|	MCZ-I01-4 	RIN 493		at 10.209.21.20		Alarm >> /unit-13/port-1 RxInputPower (-50)
+|	MCZ-T01 	RIN 501		at 10.209.21.2		Error >> No remote access
+|
+| ZHONE Alarms
+|	MCZ-A01 	RIN 424		at 10.209.21.21		Alarm >> power_supply_b_failure
+|	MCZ-A01 	RIN 424		at 10.209.21.21		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	MCZ-A03-0 	RIN 420		at 10.209.21.3		Alarm >> power_supply_b_failure
+|	MCZ-A03-0 	RIN 420		at 10.209.21.3		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	MCZ-A05-0 	RIN 408		at 10.209.21.5		Alarm >> power_supply_b_failure
+|	MCZ-A05-0 	RIN 408		at 10.209.21.5		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	MCZ-A11-0 	RIN 416		at 10.209.21.9		Alarm >> power_supply_b_failure
+|	MCZ-A11-0 	RIN 416		at 10.209.21.9		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	MCZ-A15 	RIN 428		at 10.209.21.11		Alarm >> power_supply_b_failure
+|	MCZ-A15 	RIN 428		at 10.209.21.11		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	MCZ-A16-0 	RIN 432		at 10.209.21.13		Alarm >> power_supply_b_failure
+|	MCZ-A16-0 	RIN 432		at 10.209.21.13		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	MCZ-A21-0 	RIN 436		at 10.209.21.15		Alarm >> power_supply_b_failure
+|	MCZ-A21-0 	RIN 436		at 10.209.21.15		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	MCZ-A22-0 	RIN 440		at 10.209.21.17		Alarm >> power_supply_b_failure
+|	MCZ-A22-0 	RIN 440		at 10.209.21.17		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	MCZ-I01 	RIN 492		at 10.209.21.19		Alarm >> Secondary - 1-b-2-0/eth - Down
+|
++----------------------------------------------------------------------------------------------------+

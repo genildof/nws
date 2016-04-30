@@ -1,0 +1,278 @@
+################## Milegate JAI-A01-0  RIN 62 at 10.211.193.61
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate JAI-A01  RIN 63 at 10.211.193.62
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (20 cards checked) **
+
+################## Milegate JAI-A01-5  RIN 65 at 10.211.193.64
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (13 cards checked) **
+
+################## Milegate JAI-A02-0  RIN 54 at 10.211.193.53
+# System status:
+#	Alarm >> ne: Loss Of Signal On PDH Clock Source 2
+#	Alarm >> ne: Loss Of Signal On PDH Clock Source 3
+# Cards status:
+#	** No alarmed cards (21 cards checked) **
+
+################## Milegate JAI-A02  RIN 55 at 10.211.193.54
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (20 cards checked) **
+
+################## Milegate JAI-A03-0  RIN 50 at 10.211.193.49
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (21 cards checked) **
+
+################## Milegate JAI-A03  RIN 51 at 10.211.193.50
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (20 cards checked) **
+
+################## Milegate JAI-A03-5  RIN 52 at 10.211.193.51
+# System status:
+#	Alarm >> ne: Loss Of Signal On PDH Clock Source 1
+# Cards status:
+#	** No alarmed cards (15 cards checked) **
+
+################## Milegate JAI-A04-0  RIN 46 at 10.211.193.45
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (13 cards checked) **
+
+################## Milegate JAI-A04  RIN 47 at 10.211.193.46
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (16 cards checked) **
+
+################## Milegate JAI-A05-0  RIN 66 at 10.211.193.65
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (21 cards checked) **
+
+################## Milegate JAI-A05  RIN 67 at 10.211.193.66
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (20 cards checked) **
+
+################## Milegate JAI-A05-2  RIN 68 at 10.211.193.67
+# System status:
+#	Alarm >> ne: Loss Of Signal On PDH Clock Source 2
+# Cards status:
+#	** No alarmed cards (15 cards checked) **
+
+################## Milegate JAI-A05-1  RIN 69 at 10.211.193.68
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (21 cards checked) **
+
+################## Milegate JAI-A06-0  RIN 42 at 10.211.193.41
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate JAI-A06  RIN 43 at 10.211.193.42
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (20 cards checked) **
+
+################## Milegate JAI-A07-0  RIN 2 at 10.211.193.1
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (21 cards checked) **
+
+################## Milegate JAI-A07  RIN 3 at 10.211.193.2
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate JAI-A07-6  RIN 81 at 10.211.193.4
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (13 cards checked) **
+
+################## Milegate JAI-A08-6  RIN 41 at 10.211.193.8
+################## Milegate JAI-A08-0  RIN 6 at 10.211.193.5
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate JAI-A08  RIN 7 at 10.211.193.6
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate JAI-A08-5  RIN 8 at 10.211.193.7
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (20 cards checked) **
+
+################## Milegate JAI-A10-0  RIN 10 at 10.211.193.9
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (15 cards checked) **
+
+################## Milegate JAI-A10  RIN 11 at 10.211.193.10
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (20 cards checked) **
+
+################## Milegate JAI-A11-0  RIN 26 at 10.211.193.25
+# System status:
+#	Alarm >> ne: Loss Of Signal On PDH Clock Source 1
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate JAI-A11  RIN 27 at 10.211.193.26
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (20 cards checked) **
+
+################## Milegate JAI-A11-5  RIN 80 at 10.211.193.28
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (5 cards checked) **
+
+################## Milegate JAI-A12-0  RIN 22 at 10.211.193.21
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (15 cards checked) **
+
+################## Milegate JAI-A12  RIN 23 at 10.211.193.22
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate JAI-A12-5  RIN 39 at 10.211.193.24
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (18 cards checked) **
+
+################## Milegate JAI-A13-0  RIN 70 at 10.211.193.69
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (16 cards checked) **
+
+################## Milegate JAI-A13  RIN 71 at 10.211.193.70
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate JAI-A14-0  RIN 74 at 10.211.193.73
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (13 cards checked) **
+
+################## Milegate JAI-A14  RIN 75 at 10.211.193.74
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate JAI-A15-0  RIN 14 at 10.211.193.121
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate JAI-A15  RIN 15 at 10.211.193.122
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate JAI-A16-0  RIN 18 at 10.211.193.17
+# System status:
+#	Alarm >> ne: Loss Of Signal On PDH Clock Source 1
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate JAI-A16  RIN 19 at 10.211.193.18
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate JAI-A18  RIN 87 at 10.211.193.86
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (20 cards checked) **
+
+################## Milegate JAI-A23-4  RIN 79 at 10.211.193.78
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (5 cards checked) **
+
+################## Milegate JAI-A25-4  RIN 127 at 10.211.193.130
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (20 cards checked) **
+
+################## Milegate JAI-I01-7  RIN 100 at 10.211.193.57
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (11 cards checked) **
+
+################## Milegate JAI-I01-6  RIN 17 at 10.211.193.16
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate JAI-I01  RIN 394 at 10.211.193.14
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (20 cards checked) **
+
+################## Milegate JAI-I01-2  RIN 395 at 10.211.193.15
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (18 cards checked) **
+
+############### ** General status for JAI ** ###############
+# Total hosts checked: 46
+# Total system alarms: 11
+# Total cards alarms: 0
+# Total redundancy errors: 0
+############################################################

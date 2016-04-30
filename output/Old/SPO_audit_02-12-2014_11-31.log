@@ -1,0 +1,65 @@
++-------------------------------------- General status for SPO --------------------------------------+
+|
+| Total checked NEs: 180
+| Total remote access errors: 0
+| Total NE alarms: 31
+| Total cards checked: 1878
+| Total card alarms: 7
+| Total redundancy alarms: 10
+|
++----------------------------------------------------------------------------------------------------+
+|
+|
+| KEYMILE Alarms
+|	SPO-A03-0 	RIN 56		at 10.214.3.62		Alarm >> Protecting CU Active
+|	SPO-A04-0 	RIN 57		at 10.214.3.64		Alarm >> /unit-11/port-1 RxInputPower (-21)
+|	SPO-A08-0 	RIN 75		at 10.214.3.84		Alarm >> Protecting CU Active
+|	SPO-A15-0 	RIN 27		at 10.214.3.22		Alarm >> Protecting CU Active
+|	SPO-A16-0 	RIN 28		at 10.214.3.24		Alarm >> Protecting CU Active
+|	SPO-A20-0 	RIN 61		at 10.214.3.72		Alarm >> Protecting CU Active
+|	SPO-A29-0 	RIN 84		at 10.214.3.102		Alarm >> /unit-11/port-1 RxInputPower (-16)
+|	SPO-A30-0 	RIN 63		at 10.214.3.76		Alarm >> Protecting CU Active
+|	SPO-A33-0 	RIN 86		at 10.214.3.106		Alarm >> Protecting CU Active
+|	SPO-A34-0 	RIN 87		at 10.214.3.108		Alarm >> Protecting CU Active
+|	SPO-A34-0 	RIN 87		at 10.214.3.108		Alarm >> /unit-13/port-1 RxInputPower (-17)
+|	SPO-A49-0 	RIN 37		at 10.214.3.42		Alarm >> Protecting CU Active
+|	SPO-A49-0 	RIN 37		at 10.214.3.42		Alarm >> /unit-11/port-1 RxInputPower (-21)
+|	SPO-A57-0 	RIN 38		at 10.214.3.44		Alarm >> Protecting CU Active
+|	SPO-A59-0 	RIN 39		at 10.214.3.46		Alarm >> /unit-13/port-1 RxInputPower (-17)
+|	SPO-A64-0 	RIN 95		at 10.214.3.124		Alarm >> Protecting CU Active
+|	SPO-A72-0 	RIN 10		at 10.214.3.142		Alarm >> Protecting CU Active
+|	SPO-A75-0 	RIN 44		at 10.214.3.56		Alarm >> /unit-11/port-1 RxInputPower (-19)
+|	SPO-A94-0 	RIN 102		at 10.214.25.38		Alarm >> Protecting CU Active
+|	SPO-A96-0 	RIN 45		at 10.214.25.66		Alarm >> Protecting CU Active
+|	SPO-B17-0 	RIN 108		at 10.214.25.50		Alarm >> /unit-11/port-1 RxInputPower (-22)
+|	SPO-B23-0 	RIN 135		at 10.214.25.100		Alarm >> Protecting CU Active
+|	SPO-B30-0 	RIN 136		at 10.214.25.102		Alarm >> Protecting CU Active
+|	SPO-B34-0 	RIN 112		at 10.214.25.58		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	SPO-B35-0 	RIN 144		at 10.214.25.76		Alarm >> Protecting CU Active
+|	SPO-B36-0 	RIN 113		at 10.214.25.60		Alarm >> Protecting CU Active
+|	SPO-B57-0 	RIN 162		at 10.214.33.56		Alarm >> Protecting CU Active
+|	SPO-B61-0 	RIN 25		at 10.214.33.10		Alarm >> Protecting CU Active
+|	SPO-B64-0 	RIN 166		at 10.214.33.64		Alarm >> Protecting CU Active
+|	SPO-B69-0 	RIN 174		at 10.214.33.70		Alarm >> Protecting CU Active
+|	SPO-B71-0 	RIN 176		at 10.214.33.36		Alarm >> Protecting CU Active
+|	SPO-B72-0 	RIN 53		at 10.214.33.14		Alarm >> Protecting CU Active
+|	SPO-B78-0 	RIN 54		at 10.214.33.16		Alarm >> Protecting CU Active
+|	SPO-B80-0 	RIN 177		at 10.214.33.76		Alarm >> /unit-13/port-1 RxInputPower (-15)
+|	SPO-B82-0 	RIN 121		at 10.214.33.28		Alarm >> /unit-13/port-1 RxInputPower (-16)
+|	SPO-B86-0 	RIN 187		at 10.214.3.154		Alarm >> Protecting CU Active
+|	SPO-B90-0 	RIN 191		at 10.214.3.162		Alarm >> Protecting CU Active
+|	SPO-B93-0 	RIN 193		at 10.214.3.168		Alarm >> /unit-13/port-1 RxInputPower (-25)
+|	SPO-C08-0 	RIN 204		at 10.214.3.198		Alarm >> Protecting CU Active
+|	SPO-C09-0 	RIN 205		at 10.214.3.200		Alarm >> Protecting CU Active
+|	SPO-I02-0 	RIN 3		at 10.214.3.144		Alarm >> Protecting CU Active
+|
+| ZHONE Alarms
+|	SPO-A78-0 	RIN 208		at 10.214.17.4		Alarm >> ["b: MXK TWO TENGIGE EIGHT GIGE CLK ", ["(NOT_PROV)"]]
+|	SPO-A79 	RIN 209		at 10.214.17.6		Alarm >> ["b: MXK TWO TENGIGE EIGHT GIGE ", ["(NOT_PROV)"]]
+|	SPO-A80-0 	RIN 210		at 10.214.17.8		Alarm >> ["b: MXK TWO TENGIGE EIGHT GIGE CLK ", ["(NOT_PROV)"]]
+|	SPO-A82 	RIN 172		at 10.214.33.86		Alarm >> ["b: MXK TWO TENGIGE EIGHT GIGE CLK ", ["(NOT_PROV)"]]
+|	SPO-I03 	RIN 4		at 10.214.33.84		Alarm >> ["b: MXK TWO TENGIGE EIGHT GIGE ", ["(NOT_PROV)"]]
+|	SPO-I04 	RIN 207		at 10.214.17.25		Alarm >> ["b: MXK TWO TENGIGE EIGHT GIGE CLK ", ["(NOT_PROV)"]]
+|	SPO-I04-1 	RIN 211		at 10.214.17.24		Alarm >> ["b: MXK TWO TENGIGE EIGHT GIGE CLK ", ["(NOT_PROV)"]]
+|
++----------------------------------------------------------------------------------------------------+

@@ -1,0 +1,47 @@
++-------------------------------------- General status for SVE --------------------------------------+
+|
+| Total checked NEs: 24
+| Total remote access errors: 0
+| Total NE alarms: 6
+| Total cards checked: 384
+| Total card alarms: 0
+| Total redundancy alarms: 24
+|
++----------------------------------------------------------------------------------------------------+
+|
+|
+| KEYMILE Alarms
+|	SVE-A03-0 	RIN 238		at 10.209.233.1		Alarm >> /unit-13/port-1 admin status = Down
+|	SVE-A03 	RIN 239		at 10.209.233.2		Alarm >> /unit-13/port-1 admin status = Down
+|	SVE-A04-0 	RIN 258		at 10.209.225.65		Alarm >> /unit-13/port-1 admin status = Down
+|	SVE-A04-4 	RIN 259		at 10.209.225.66		Alarm >> /unit-13/port-1 admin status = Down
+|	SVE-A05-0 	RIN 262		at 10.209.233.4		Alarm >> /unit-13/port-1 admin status = Down
+|	SVE-A05-4 	RIN 263		at 10.209.233.5		Alarm >> /unit-13/port-1 admin status = Down
+|	SVE-A06-4 	RIN 267		at 10.209.233.9		Alarm >> /unit-13/port-1 admin status = Down
+|	SVE-A10-0 	RIN 294		at 10.209.225.89		Alarm >> /unit-13/port-1 admin status = Down
+|	SVE-A10-4 	RIN 295		at 10.209.225.90		Alarm >> /unit-13/port-1 admin status = Down
+|	SVE-A11-0 	RIN 290		at 10.209.225.93		Alarm >> /unit-13/port-1 admin status = Down
+|	SVE-A11 	RIN 291		at 10.209.225.94		Alarm >> /unit-13/port-1 admin status = Down
+|	SVE-A13-4 	RIN 271		at 10.209.225.102		Alarm >> /unit-13/port-1 admin status = Down
+|	SVE-A14-4 	RIN 299		at 10.209.225.106		Alarm >> /unit-13/port-1 admin status = Down
+|	SVE-A15-0 	RIN 310		at 10.209.225.12		Alarm >> Protecting CU Active
+|	SVE-A15-0 	RIN 310		at 10.209.225.12		Alarm >> /unit-13/port-1 admin status = Down
+|	SVE-A15-4 	RIN 311		at 10.209.225.15		Alarm >> Protecting CU Active
+|	SVE-A15-4 	RIN 311		at 10.209.225.15		Alarm >> /unit-13/port-1 admin status = Down
+|	SVE-A16-0 	RIN 312		at 10.209.225.16		Alarm >> /unit-13/port-1 admin status = Down
+|	SVE-A16-4 	RIN 313		at 10.209.225.19		Alarm >> /unit-13/port-1 admin status = Down
+|	SVE-A16-5 	RIN 314		at 10.209.225.181		Alarm >> /unit-13/port-1 admin status = Down
+|	SVE-I01-4 	RIN 501		at 10.209.233.25		Alarm >> /unit-13/port-1 admin status = Down
+|
+| ZHONE Alarms
+|	SVE-A06-0 	RIN 266		at 10.209.233.8		Alarm >> power_supply_a_failure
+|	SVE-A06-0 	RIN 266		at 10.209.233.8		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	SVE-A10-1 	RIN 296		at 10.209.225.91		Alarm >> power_supply_a_failure
+|	SVE-A10-1 	RIN 296		at 10.209.225.91		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	SVE-A12-0 	RIN 274		at 10.209.233.12		Alarm >> power_supply_a_failure
+|	SVE-A12-0 	RIN 274		at 10.209.233.12		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	SVE-A14-0 	RIN 298		at 10.209.225.105		Alarm >> power_supply_b_failure
+|	SVE-A14-0 	RIN 298		at 10.209.225.105		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	SVE-I01-0 	RIN 500		at 10.209.233.24		Alarm >> Secondary - 1-b-2-0/eth - Down
+|
++----------------------------------------------------------------------------------------------------+

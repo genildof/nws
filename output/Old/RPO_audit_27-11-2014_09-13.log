@@ -1,0 +1,111 @@
++-------------------------------------- General status for RPO --------------------------------------+
+|
+| Total checked NEs: 80
+| Total remote access errors: 1
+| Total NE alarms: 18
+| Total cards checked: 1445
+| Total card alarms: 0
+| Total redundancy alarms: 75
+|
++----------------------------------------------------------------------------------------------------+
+|
+|
+| KEYMILE Alarms
+|	RPO-A01-0 	RIN 2		at 10.214.41.16		Alarm >> /unit-13/port-1 - Down
+|	RPO-A02-0 	RIN 15		at 10.214.41.17		Alarm >> /unit-13/port-1 - Down
+|	RPO-A03-0 	RIN 3		at 10.214.41.18		Alarm >> /unit-13/port-1 - Down
+|	RPO-A04-0 	RIN 4		at 10.214.41.19		Alarm >> /unit-13/port-1 - Down
+|	RPO-A05-0 	RIN 5		at 10.214.41.20		Alarm >> /unit-13/port-1 - Down
+|	RPO-A06-0 	RIN 6		at 10.214.41.21		Alarm >> /unit-13/port-1 - Down
+|	RPO-A08-0 	RIN 7		at 10.214.41.22		Alarm >> Protecting CU Active
+|	RPO-A08-0 	RIN 7		at 10.214.41.22		Alarm >> /unit-13/port-1 - Down
+|	RPO-A10-0 	RIN 8		at 10.214.41.24		Alarm >> /unit-13/port-1 - Down
+|	RPO-A11-0 	RIN 9		at 10.214.41.25		Alarm >> Protecting CU Active
+|	RPO-A11-0 	RIN 9		at 10.214.41.25		Alarm >> /unit-13/port-1 - Down
+|	RPO-A12-0 	RIN 17		at 10.214.41.26		Alarm >> /unit-13/port-1 - Down
+|	RPO-A14-0 	RIN 18		at 10.214.41.27		Alarm >> /unit-13/port-1 - Down
+|	RPO-A15-0 	RIN 19		at 10.214.41.28		Alarm >> /unit-13/port-1 - Down
+|	RPO-A17-0 	RIN 10		at 10.214.41.29		Alarm >> /unit-13/port-1 - Down
+|	RPO-A18-0 	RIN 11		at 10.214.41.30		Alarm >> /unit-13/port-1 - Down
+|	RPO-A19-0 	RIN 20		at 10.214.41.31		Alarm >> Protecting CU Active
+|	RPO-A19-0 	RIN 20		at 10.214.41.31		Alarm >> /unit-13/port-1 - Down
+|	RPO-A20-0 	RIN 12		at 10.214.41.32		Alarm >> Protecting CU Active
+|	RPO-A20-0 	RIN 12		at 10.214.41.32		Alarm >> /unit-13/port-1 - Down
+|	RPO-A21-0 	RIN 13		at 10.214.41.33		Alarm >> Protecting CU Active
+|	RPO-A21-0 	RIN 13		at 10.214.41.33		Alarm >> /unit-13/port-1 - Down
+|	RPO-A22-0 	RIN 14		at 10.214.41.34		Alarm >> /unit-13/port-1 - Down
+|	RPO-A23-0 	RIN 48		at 10.214.41.3		Alarm >> Protecting CU Active
+|	RPO-A23-0 	RIN 48		at 10.214.41.3		Alarm >> /unit-13/port-1 - Down
+|	RPO-A25-0 	RIN 59		at 10.214.41.60		Alarm >> /unit-13/port-1 - Down
+|	RPO-A26-0 	RIN 60		at 10.214.41.61		Alarm >> Protecting CU Active
+|	RPO-A26-0 	RIN 60		at 10.214.41.61		Alarm >> /unit-13/port-1 - Down
+|	RPO-A27-0 	RIN 61		at 10.214.41.62		Alarm >> /unit-13/port-1 - Down
+|	RPO-A28-0 	RIN 21		at 10.214.41.35		Alarm >> Protecting CU Active
+|	RPO-A28-0 	RIN 21		at 10.214.41.35		Alarm >> /unit-11/port-1 - Down
+|	RPO-A29-0 	RIN 22		at 10.214.41.36		Alarm >> /unit-13/port-1 - Down
+|	RPO-A30-0 	RIN 49		at 10.214.41.4		Alarm >> Protecting CU Active
+|	RPO-A30-0 	RIN 49		at 10.214.41.4		Alarm >> /unit-13/port-1 - Down
+|	RPO-A31-0 	RIN 23		at 10.214.41.37		Alarm >> /unit-13/port-1 - Down
+|	RPO-A32-0 	RIN 50		at 10.214.41.5		Alarm >> /unit-13/port-1 - Down
+|	RPO-A33-0 	RIN 24		at 10.214.41.38		Alarm >> Protecting CU Active
+|	RPO-A33-0 	RIN 24		at 10.214.41.38		Alarm >> /unit-13/port-1 - Down
+|	RPO-A34-0 	RIN 51		at 10.214.41.6		Alarm >> /unit-13/port-1 - Down
+|	RPO-A35-0 	RIN 43		at 10.214.41.63		Alarm >> /unit-13/port-1 - Down
+|	RPO-A36-0 	RIN 25		at 10.214.41.39		Alarm >> /unit-13/port-1 - Down
+|	RPO-A37-0 	RIN 26		at 10.214.41.40		Alarm >> Protecting CU Active
+|	RPO-A37-0 	RIN 26		at 10.214.41.40		Alarm >> /unit-13/port-1 - Down
+|	RPO-A38-0 	RIN 62		at 10.214.41.64		Alarm >> /unit-13/port-1 - Down
+|	RPO-A39-0 	RIN 63		at 10.214.41.65		Alarm >> Protecting CU Active
+|	RPO-A39-0 	RIN 63		at 10.214.41.65		Alarm >> /unit-13/port-1 - Down
+|	RPO-A40-0 	RIN 27		at 10.214.41.7		Alarm >> /unit-13/port-1 - Down
+|	RPO-A41-0 	RIN 64		at 10.214.41.66		Alarm >> /unit-13/port-1 - Down
+|	RPO-A42-0 	RIN 52		at 10.214.41.8		Alarm >> /unit-13/port-1 - Down
+|	RPO-A43-0 	RIN 28		at 10.214.41.9		Alarm >> /unit-13/port-1 - Down
+|	RPO-A44-0 	RIN 53		at 10.214.41.10		Alarm >> /unit-13/port-1 - Down
+|	RPO-A45-0 	RIN 29		at 10.214.41.11		Alarm >> /unit-11/port-1 RxInputPower (-16)
+|	RPO-A45-0 	RIN 29		at 10.214.41.11		Alarm >> /unit-13/port-1 - Down
+|	RPO-A46-0 	RIN 30		at 10.214.41.12		Alarm >> /unit-13/port-1 - Down
+|	RPO-A47-0 	RIN 31		at 10.214.41.41		Alarm >> /unit-13/port-1 - Down
+|	RPO-A48-0 	RIN 32		at 10.214.41.42		Alarm >> Protecting CU Active
+|	RPO-A48-0 	RIN 32		at 10.214.41.42		Alarm >> /unit-13/port-1 - Down
+|	RPO-A49-0 	RIN 88		at 10.214.41.67		Alarm >> /unit-13/port-1 - Down
+|	RPO-A50-0 	RIN 33		at 10.214.41.43		Alarm >> Protecting CU Active
+|	RPO-A50-0 	RIN 33		at 10.214.41.43		Alarm >> /unit-13/port-1 - Down
+|	RPO-A51-0 	RIN 34		at 10.214.41.13		Alarm >> /unit-13/port-1 - Down
+|	RPO-A51-4 	RIN 417		at 10.214.41.79		Alarm >> /unit-11/port-1 - Down
+|	RPO-A51-4 	RIN 417		at 10.214.41.79		Alarm >> /unit-13/port-1 - Down
+|	RPO-A52-4 	RIN 418		at 10.214.41.80		Alarm >> Protecting CU Active
+|	RPO-A52-4 	RIN 418		at 10.214.41.80		Alarm >> /unit-13/port-1 - Down
+|	RPO-A52-0 	RIN 54		at 10.214.41.14		Alarm >> /unit-13/port-1 - Down
+|	RPO-A53-0 	RIN 35		at 10.214.41.44		Alarm >> /unit-13/port-1 - Down
+|	RPO-A53 	RIN 92		at 10.214.41.69		Alarm >> /unit-13/port-1 - Down
+|	RPO-A54-0 	RIN 36		at 10.214.41.15		Alarm >> /unit-13/port-1 - Down
+|	RPO-A54 	RIN 93		at 10.214.41.70		Alarm >> /unit-13/port-1 - Down
+|	RPO-A55-0 	RIN 37		at 10.214.41.45		Alarm >> /unit-13/port-1 - Down
+|	RPO-A61-0 	RIN 38		at 10.214.41.46		Alarm >> Protecting CU Active
+|	RPO-A61-0 	RIN 38		at 10.214.41.46		Alarm >> /unit-13/port-1 - Down
+|	RPO-A62-0 	RIN 39		at 10.214.41.47		Alarm >> /unit-13/port-1 - Down
+|	RPO-A63-0 	RIN 40		at 10.214.41.48		Alarm >> /unit-13/port-1 - Down
+|	RPO-A66-0 	RIN 72		at 10.214.41.68		Alarm >> /unit-13/port-1 - Down
+|	RPO-A68-0 	RIN 41		at 10.214.41.49		Alarm >> /unit-13/port-1 - Down
+|	RPO-A70-0 	RIN 75		at 10.214.41.56		Alarm >> /unit-13/port-1 - Down
+|	RPO-A71-0 	RIN 42		at 10.214.41.50		Alarm >> /unit-13/port-1 - Down
+|	RPO-A74-0 	RIN 78		at 10.214.41.51		Alarm >> /unit-13/port-1 - Down
+|	RPO-A75-0 	RIN 44		at 10.214.41.52		Alarm >> /unit-13/port-1 - Down
+|	RPO-A76-0 	RIN 45		at 10.214.41.53		Alarm >> /unit-13/port-1 - Down
+|	RPO-A83-0 	RIN 46		at 10.214.41.54		Alarm >> /unit-13/port-1 - Down
+|	RPO-A86-0 	RIN 85		at 10.214.41.57		Alarm >> /unit-13/port-1 - Down
+|	RPO-A88-0 	RIN 47		at 10.214.41.55		Error >> No remote access
+|	RPO-A90-0 	RIN 91		at 10.214.41.74		Alarm >> /unit-13/port-1 - Down
+|	RPO-A91-0 	RIN 404		at 10.214.41.76		Alarm >> Protecting CU Active
+|	RPO-A91-0 	RIN 404		at 10.214.41.76		Alarm >> /unit-13/port-1 - Down
+|	RPO-A94-0 	RIN 145		at 10.214.41.75		Alarm >> /unit-13/port-1 - Down
+|	RPO-A95-0 	RIN 402		at 10.214.41.72		Alarm >> /unit-13/port-1 - Down
+|	RPO-A97-0 	RIN 140		at 10.214.41.77		Alarm >> /unit-13/port-1 - Down
+|	RPO-A98-0 	RIN 403		at 10.214.41.73		Alarm >> /unit-13/port-1 - Down
+|	RPO-A99-0 	RIN 130		at 10.214.41.78		Alarm >> Protecting CU Active
+|	RPO-I02-0 	RIN 58		at 10.214.41.59		Alarm >> /unit-13/port-1 - Down
+|
+| ZHONE Alarms
+|
++----------------------------------------------------------------------------------------------------+

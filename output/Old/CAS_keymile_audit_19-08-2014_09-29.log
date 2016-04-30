@@ -1,0 +1,771 @@
+################## Milegate CAS-A01-5  RIN 124 at 10.211.161.75
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate CAS-A01-0  RIN 74 at 10.211.161.73
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (20 cards checked) **
+
+################## Milegate CAS-A01  RIN 75 at 10.211.161.74
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (20 cards checked) **
+
+################## Milegate CAS-A02-0  RIN 70 at 10.211.161.69
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (21 cards checked) **
+
+################## Milegate CAS-A02  RIN 71 at 10.211.161.70
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (20 cards checked) **
+
+################## Milegate CAS-A02-2  RIN 72 at 10.211.161.71
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (15 cards checked) **
+
+################## Milegate CAS-A03-0  RIN 66 at 10.211.161.65
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate CAS-A03  RIN 67 at 10.211.161.66
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (20 cards checked) **
+
+################## Milegate CAS-A04-5  RIN 272 at 10.211.161.64
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (11 cards checked) **
+
+################## Milegate CAS-A04-0  RIN 62 at 10.211.161.61
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (20 cards checked) **
+
+################## Milegate CAS-A04  RIN 63 at 10.211.161.62
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (21 cards checked) **
+
+################## Milegate CAS-A05-0  RIN 38 at 10.211.161.37
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate CAS-A05  RIN 39 at 10.211.161.38
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (20 cards checked) **
+
+################## Milegate CAS-A05-2  RIN 81 at 10.211.161.39
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate CAS-A07-5  RIN 119 at 10.211.161.15
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (13 cards checked) **
+
+################## Milegate CAS-A07-0  RIN 14 at 10.211.161.13
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate CAS-A07  RIN 15 at 10.211.161.14
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (16 cards checked) **
+
+################## Milegate CAS-A08-5  RIN 120 at 10.211.161.35
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate CAS-A08-0  RIN 34 at 10.211.161.33
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate CAS-A08  RIN 35 at 10.211.161.34
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (16 cards checked) **
+
+################## Milegate CAS-A09-0  RIN 50 at 10.211.161.49
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (15 cards checked) **
+
+################## Milegate CAS-A09  RIN 51 at 10.211.161.50
+# System status:
+#	Alarm >> fan: Partial Fan Breakdown
+# Cards status:
+#	** No alarmed cards (6 cards checked) **
+
+################## Milegate CAS-A10-0  RIN 46 at 10.211.161.45
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (21 cards checked) **
+
+################## Milegate CAS-A10  RIN 47 at 10.211.161.46
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (16 cards checked) **
+
+################## Milegate CAS-A10-5  RIN 48 at 10.211.161.47
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (20 cards checked) **
+
+################## Milegate CAS-A11-0  RIN 154 at 10.211.161.153
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate CAS-A11  RIN 155 at 10.211.161.154
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (6 cards checked) **
+
+################## Milegate CAS-A14-0  RIN 42 at 10.211.161.41
+# System status:
+#	Alarm >> fan: Partial Fan Breakdown
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate CAS-A14  RIN 43 at 10.211.161.42
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (14 cards checked) **
+
+################## Milegate CAS-A15-0  RIN 30 at 10.211.161.29
+# System status:
+#	Alarm >> ne: Loss Of Signal On PDH Clock Source 2
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate CAS-A15  RIN 31 at 10.211.161.30
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (16 cards checked) **
+
+################## Milegate CAS-A16-0  RIN 26 at 10.211.161.25
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (18 cards checked) **
+
+################## Milegate CAS-A16  RIN 27 at 10.211.161.26
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (13 cards checked) **
+
+################## Milegate CAS-A17-0  RIN 146 at 10.211.161.145
+# System status:
+#	Alarm >> fan: Partial Fan Breakdown
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate CAS-A17-4  RIN 147 at 10.211.161.146
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (15 cards checked) **
+
+################## Milegate CAS-A17-5  RIN 148 at 10.211.161.147
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (7 cards checked) **
+
+################## Milegate CAS-A18-0  RIN 150 at 10.211.161.149
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate CAS-A18  RIN 151 at 10.211.161.150
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (15 cards checked) **
+
+################## Milegate CAS-A18-5  RIN 157 at 10.211.161.151
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (13 cards checked) **
+
+################## Milegate CAS-A20-0  RIN 22 at 10.211.161.21
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate CAS-A20  RIN 23 at 10.211.161.22
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (20 cards checked) **
+
+################## Milegate CAS-A21-0-  RIN 205 at 10.211.161.7
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (11 cards checked) **
+
+################## Milegate CAS-A21-0  RIN 6 at 10.211.161.5
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (21 cards checked) **
+
+################## Milegate CAS-A21  RIN 7 at 10.211.161.6
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (20 cards checked) **
+
+################## Milegate CAS-A22-0  RIN 10 at 10.211.161.9
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (21 cards checked) **
+
+################## Milegate CAS-A22  RIN 11 at 10.211.161.10
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (20 cards checked) **
+
+################## Milegate CAS-A22-1  RIN 12 at 10.211.161.11
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate CAS-A26-0  RIN 182 at 10.211.161.181
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (15 cards checked) **
+
+################## Milegate CAS-A26  RIN 183 at 10.211.161.182
+# System status:
+#	Alarm >> fan: Partial Fan Breakdown
+# Cards status:
+#	** No alarmed cards (20 cards checked) **
+
+################## Milegate CAS-A27-0  RIN 2 at 10.211.161.1
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate CAS-A27  RIN 3 at 10.211.161.2
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (20 cards checked) **
+
+################## Milegate CAS-A28-0  RIN 130 at 10.211.161.129
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (20 cards checked) **
+
+################## Milegate CAS-A28  RIN 131 at 10.211.161.130
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (7 cards checked) **
+
+################## Milegate CAS-A28-5  RIN 132 at 10.211.161.131
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate CAS-A29-0  RIN 122 at 10.211.161.121
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate CAS-A29  RIN 123 at 10.211.161.122
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (18 cards checked) **
+
+################## Milegate CAS-A31-0  RIN 162 at 10.211.161.161
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate CAS-A31  RIN 163 at 10.211.161.162
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (20 cards checked) **
+
+################## Milegate CAS-A32-0  RIN 170 at 10.211.161.169
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (18 cards checked) **
+
+################## Milegate CAS-A32  RIN 171 at 10.211.161.170
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (21 cards checked) **
+
+################## Milegate CAS-A32-5  RIN 279 at 10.211.161.171
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (13 cards checked) **
+
+################## Milegate CAS-A33-0  RIN 166 at 10.211.161.165
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate CAS-A33  RIN 167 at 10.211.161.166
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (16 cards checked) **
+
+################## Milegate CAS-A34-0  RIN 174 at 10.211.161.173
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate CAS-A34  RIN 175 at 10.211.161.174
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (20 cards checked) **
+
+################## Milegate CAS-A34-5  RIN 176 at 10.211.161.175
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (9 cards checked) **
+
+################## Milegate CAS-A36-0  RIN 178 at 10.211.161.177
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (21 cards checked) **
+
+################## Milegate CAS-A36  RIN 179 at 10.211.161.178
+# System status:
+#	Alarm >> fan: Partial Fan Breakdown
+# Cards status:
+#	** No alarmed cards (21 cards checked) **
+
+################## Milegate CAS-A37-0  RIN 190 at 10.211.161.189
+# System status:
+#	Alarm >> fan: Partial Fan Breakdown
+# Cards status:
+#	** No alarmed cards (21 cards checked) **
+
+################## Milegate CAS-A37  RIN 191 at 10.211.161.190
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate CAS-A37-1  RIN 192 at 10.211.161.191
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate CAS-A38-0  RIN 186 at 10.211.161.185
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate CAS-A38  RIN 187 at 10.211.161.186
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (20 cards checked) **
+
+################## Milegate CAS-A39-0  RIN 142 at 10.211.161.141
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (21 cards checked) **
+
+################## Milegate CAS-A39  RIN 143 at 10.211.161.142
+# System status:
+#	Alarm >> ne: Loss Of Signal On PDH Clock Source 1
+#	Alarm >> ne: Loss Of Signal On PDH Clock Source 2
+#	Alarm >> ne: Loss Of Signal On PDH Clock Source 3
+#	Alarm >> ne: Loss Of Signal On PDH Clock Source 4
+# Cards status:
+#	** No alarmed cards (6 cards checked) **
+
+################## Milegate CAS-A47-4  RIN 204 at 10.211.161.203
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (15 cards checked) **
+
+################## Milegate CAS-A48-4  RIN 208 at 10.211.161.207
+# System status:
+#	Alarm >> ne: Loss Of Signal On PDH Clock Source 1
+# Cards status:
+#	** No alarmed cards (14 cards checked) **
+
+################## Milegate CAS-A49-5  RIN 212 at 10.211.161.211
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (13 cards checked) **
+
+################## Milegate CAS-A50  RIN 216 at 10.211.161.215
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (10 cards checked) **
+
+################## Milegate CAS-A51-4  RIN 223 at 10.211.161.222
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (14 cards checked) **
+
+################## Milegate CAS-A52-4  RIN 227 at 10.211.161.226
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (21 cards checked) **
+
+################## Milegate CAS-A52-5  RIN 228 at 10.211.161.227
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (7 cards checked) **
+
+################## Milegate CAS-A53-4  RIN 231 at 10.211.161.230
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (20 cards checked) **
+
+################## Milegate CAS-A53-1  RIN 232 at 10.211.161.231
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (13 cards checked) **
+
+################## Milegate CAS-A55-4  RIN 87 at 10.211.161.86
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (15 cards checked) **
+
+################## Milegate CAS-A56-0  RIN 54 at 10.211.161.53
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (15 cards checked) **
+
+################## Milegate CAS-A57-5  RIN 233 at 10.211.161.235
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (9 cards checked) **
+
+################## Milegate CAS-A57  RIN 235 at 10.211.161.234
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (6 cards checked) **
+
+################## Milegate CAS-A58-4  RIN 196 at 10.211.161.195
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (13 cards checked) **
+
+################## Milegate CAS-A59-4  RIN 200 at 10.211.161.199
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (13 cards checked) **
+
+################## Milegate CAS-A67-0  RIN 293 at 10.211.167.49
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (21 cards checked) **
+
+################## Milegate CAS-A67-4  RIN 294 at 10.211.167.50
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate CAS-A70-0  RIN 277 at 10.211.167.33
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate CAS-A70-4  RIN 278 at 10.211.167.34
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate CAS-A71-0  RIN 281 at 10.211.167.37
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate CAS-A71-4  RIN 282 at 10.211.167.38
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (16 cards checked) **
+
+################## Milegate CAS-A72-0  RIN 301 at 10.211.167.57
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate CAS-A72-4  RIN 302 at 10.211.167.58
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (12 cards checked) **
+
+################## Milegate CAS-A73-4  RIN 306 at 10.211.167.70
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate CAS-A75-0  RIN 92 at 10.211.161.57
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (11 cards checked) **
+
+################## Milegate CAS-A75-4  RIN 93 at 10.211.161.58
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate CAS-A76-0  RIN 95 at 10.211.161.93
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (14 cards checked) **
+
+################## Milegate CAS-A76-4  RIN 96 at 10.211.161.94
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate CAS-A77-0  RIN 100 at 10.211.161.97
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (16 cards checked) **
+
+################## Milegate CAS-A77-4  RIN 98 at 10.211.161.98
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (18 cards checked) **
+
+################## Milegate CAS-A79-0  RIN 106 at 10.211.167.9
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate CAS-A79-4  RIN 107 at 10.211.167.10
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate CAS-A80-0  RIN 109 at 10.211.167.13
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate CAS-A80-4  RIN 110 at 10.211.167.14
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate CAS-A80-5  RIN 111 at 10.211.167.15
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate CAS-A81-0  RIN 133 at 10.211.167.162
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate CAS-A81-4  RIN 134 at 10.211.167.163
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate CAS-A82-0  RIN 135 at 10.211.167.164
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate CAS-A82-4  RIN 136 at 10.211.167.165
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (15 cards checked) **
+
+################## Milegate CAS-A84-0  RIN 158 at 10.211.167.158
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (15 cards checked) **
+
+################## Milegate CAS-A84-4  RIN 159 at 10.211.167.159
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate CAS-A84-5  RIN 160 at 10.211.167.160
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate CAS-A84-6  RIN 161 at 10.211.167.161
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate CAS-A86-0  RIN 168 at 10.211.167.154
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate CAS-A87-0  RIN 172 at 10.211.167.156
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate CAS-I01  RIN 242 at 10.211.161.242
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (20 cards checked) **
+
+################## Milegate CAS-I01-2  RIN 243 at 10.211.161.243
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate CAS-I01-6  RIN 285 at 10.211.161.244
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (11 cards checked) **
+
+################## Milegate CAS-I02-6  RIN 125 at 10.211.161.128
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (8 cards checked) **
+
+################## Milegate CAS-I02  RIN 126 at 10.211.161.126
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (21 cards checked) **
+
+################## Milegate CAS-I02-2  RIN 127 at 10.211.161.127
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (7 cards checked) **
+
+################## Milegate CAS-T01-99  RIN 500 at 10.211.161.253
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (12 cards checked) **
+
+############### ** General status for CAS ** ###############
+# Total hosts checked: 127
+# Total system alarms: 33
+# Total cards alarms: 0
+# Total redundancy errors: 0
+############################################################

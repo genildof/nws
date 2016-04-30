@@ -1,0 +1,26 @@
++-------------------------------------- General status for BRU --------------------------------------+
+|
+| Total checked NEs: 38
+| Total remote access errors: 1
+| Total NE alarms: 2
+| Total cards checked: 621
+| Total card alarms: 5
+| Total redundancy alarms: 1
+|
++----------------------------------------------------------------------------------------------------+
+|
+|
+| KEYMILE Alarms
+|	BRU-A03-0 	RIN 91		at 10.214.9.6		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	BRU-A05-0 	RIN 7		at 10.214.9.36		Alarm >> Unit Not Available
+|	BRU-A24-0 	RIN 110		at 10.214.9.32		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	BRU-A28-0 	RIN 114		at 10.214.9.27		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	BRU-A31-4 	RIN 590		at 10.214.9.37		Alarm >> Protecting CU Active
+|	BRU-A31-4 	RIN 590		at 10.214.9.37		Alarm >> /unit-11/port-1 - Down
+|	BRU-A31-0 	RIN 6		at 10.214.9.35		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	BRU-A32-0 	RIN 117		at 10.214.9.30		Error >> No remote access
+|	BRU-T01-0 	RIN 600		at 10.214.9.252		Alarm >> unit-13 - COGE3 R1G - Plugged
+|
+| ZHONE Alarms
+|
++----------------------------------------------------------------------------------------------------+

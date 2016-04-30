@@ -1,0 +1,86 @@
++-------------------------------------- General status for SOC --------------------------------------+
+|
+| Total checked NEs: 152
+| Total remote access errors: 3
+| Total NE alarms: 66
+| Total cards checked: 2472
+| Total card alarms: 0
+| Total redundancy errors: 0
+|
++----------------------------------------------------------------------------------------------------+
+|
+|
+| KEYMILE Alarms
+|	SOC-A02-0 	RIN 162		at 10.211.225.161		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	SOC-A03-0 	RIN 154		at 10.211.225.153		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	SOC-A04-0 	RIN 150		at 10.211.225.149		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	SOC-A05-0 	RIN 146		at 10.211.225.145		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	SOC-A05-5 	RIN 403		at 10.211.225.147		Error >> No remote access
+|	SOC-A06-0 	RIN 171		at 10.211.225.170		Alarm >> Loss Of Signal On PDH Clock Source 2
+|	SOC-A07 	RIN 175		at 10.211.225.174		Alarm >> Protecting CU Active
+|	SOC-A08-5 	RIN 144		at 10.211.225.143		Error >> No remote access
+|	SOC-A09-5 	RIN 24		at 10.211.225.23		Alarm >> Protecting CU Active
+|	SOC-A10 	RIN 27		at 10.211.225.26		Alarm >> Protecting CU Active
+|	SOC-A10-5 	RIN 29		at 10.211.225.27		Alarm >> Protecting CU Active
+|	SOC-A12 	RIN 183		at 10.211.225.182		Alarm >> Protecting CU Active
+|	SOC-A19-5 	RIN 196		at 10.211.225.195		Alarm >> Protecting CU Active
+|	SOC-A20-0 	RIN 190		at 10.211.225.189		Alarm >> Loss Of Signal On PDH Clock Source 2
+|	SOC-A20-0 	RIN 190		at 10.211.225.189		Alarm >> Protecting CU Active
+|	SOC-A21-5 	RIN 13		at 10.211.225.15		Alarm >> Protecting CU Active
+|	SOC-A21-0 	RIN 14		at 10.211.225.13		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	SOC-A21-0 	RIN 14		at 10.211.225.13		Alarm >> Loss Of Signal On PDH Clock Source 2
+|	SOC-A23 	RIN 139		at 10.211.225.138		Alarm >> Protecting CU Active
+|	SOC-A25-0 	RIN 130		at 10.211.225.129		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	SOC-A25-6 	RIN 133		at 10.211.225.132		Alarm >> Loss Of Signal On PDH Clock Source 2
+|	SOC-A27-0 	RIN 126		at 10.211.225.125		Alarm >> Partial Fan Breakdown
+|	SOC-A27 	RIN 127		at 10.211.225.126		Alarm >> Protecting CU Active
+|	SOC-A27-5 	RIN 128		at 10.211.225.127		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	SOC-A27-5 	RIN 128		at 10.211.225.127		Alarm >> Loss Of Signal On PDH Clock Source 2
+|	SOC-A29-0 	RIN 6		at 10.211.225.5		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	SOC-A30-5 	RIN 104		at 10.211.225.3		Error >> No remote access
+|	SOC-A30 	RIN 3		at 10.211.225.2		Alarm >> Protecting CU Active
+|	SOC-A31-1 	RIN 207		at 10.211.225.206		Alarm >> Protecting CU Active
+|	SOC-A33-0 	RIN 202		at 10.211.225.201		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	SOC-A34-5 	RIN 224		at 10.211.225.223		Alarm >> Protecting CU Active
+|	SOC-A36-4 	RIN 65		at 10.211.225.64		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	SOC-A38-4 	RIN 235		at 10.211.225.242		Alarm >> Protecting CU Active
+|	SOC-A44-1 	RIN 19		at 10.211.225.18		Alarm >> Loss Of Signal On PDH Clock Source 2
+|	SOC-A50-1 	RIN 231		at 10.211.225.230		Alarm >> Protecting CU Active
+|	SOC-A55-4 	RIN 285		at 10.211.238.80		Alarm >> Protecting CU Active
+|	SOC-A62-0 	RIN 295		at 10.211.238.91		Alarm >> Protecting CU Active
+|
+| ZHONE Alarms
+|	SOC-A11-5 	RIN 188		at 10.211.225.187		Alarm >> power_supply_a_failure
+|	SOC-A12-5 	RIN 184		at 10.211.225.183		Alarm >> power_supply_a_failure
+|	SOC-A20-1 	RIN 192		at 10.211.225.191		Alarm >> power_supply_b_failure
+|	SOC-A23-5 	RIN 141		at 10.211.225.139		Alarm >> power_supply_a_failure
+|	SOC-A34 	RIN 222		at 10.211.225.221		Alarm >> power_supply_a_failure
+|	SOC-A34 	RIN 222		at 10.211.225.221		Alarm >> fan_speed_error
+|	SOC-A36 	RIN 62		at 10.211.225.61		Alarm >> power_supply_b_failure
+|	SOC-A36-1 	RIN 63		at 10.211.225.62		Alarm >> power_supply_b_failure
+|	SOC-A36-1 	RIN 63		at 10.211.225.62		Alarm >> fan_speed_error
+|	SOC-A36-2 	RIN 64		at 10.211.225.63		Alarm >> power_supply_b_failure
+|	SOC-A37-0 	RIN 66		at 10.211.225.65		Alarm >> power_supply_a_failure
+|	SOC-A37-1 	RIN 67		at 10.211.225.66		Alarm >> power_supply_a_failure
+|	SOC-A37-2 	RIN 68		at 10.211.225.67		Alarm >> power_supply_b_failure
+|	SOC-A38-0 	RIN 234		at 10.211.225.241		Alarm >> fan_power_supply_a_failure
+|	SOC-A41-0 	RIN 46		at 10.211.225.45		Alarm >> power_supply_b_failure
+|	SOC-A41-1 	RIN 47		at 10.211.225.46		Alarm >> power_supply_b_failure
+|	SOC-A42-0 	RIN 50		at 10.211.225.49		Alarm >> power_supply_b_failure
+|	SOC-A42-1 	RIN 51		at 10.211.225.50		Alarm >> power_supply_a_failure
+|	SOC-A44-0 	RIN 18		at 10.211.225.17		Alarm >> power_supply_a_failure
+|	SOC-A45-0 	RIN 70		at 10.211.225.69		Alarm >> power_supply_b_failure
+|	SOC-A45-1 	RIN 71		at 10.211.225.70		Alarm >> power_supply_a_failure
+|	SOC-A46-0 	RIN 74		at 10.211.225.73		Alarm >> power_supply_b_failure
+|	SOC-A46-1 	RIN 75		at 10.211.225.74		Alarm >> power_supply_a_failure
+|	SOC-A47-0 	RIN 270		at 10.211.225.81		Alarm >> power_supply_b_failure
+|	SOC-A47-4 	RIN 271		at 10.211.225.82		Alarm >> power_supply_a_failure
+|	SOC-A48-0 	RIN 274		at 10.211.225.85		Alarm >> power_supply_b_failure
+|	SOC-A48-1 	RIN 275		at 10.211.225.86		Alarm >> power_supply_b_failure
+|	SOC-A49-0 	RIN 278		at 10.211.225.89		Alarm >> power_supply_b_failure
+|	SOC-A49-1 	RIN 279		at 10.211.225.90		Alarm >> power_supply_a_failure
+|	SOC-A50-0 	RIN 230		at 10.211.225.229		Alarm >> power_supply_a_failure
+|	SOC-A52-0 	RIN 214		at 10.211.225.213		Alarm >> power_supply_b_failure
+|	SOC-A52-1 	RIN 215		at 10.211.225.214		Alarm >> power_supply_a_failure
+|
++----------------------------------------------------------------------------------------------------+

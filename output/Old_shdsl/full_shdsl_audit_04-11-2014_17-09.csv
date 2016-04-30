@@ -1,0 +1,512 @@
+Shelf_ID;RIN;IP;Slot_ID;Slot_Name;Slot_Main_Mode;Slot_State;Slot_Alarm;Slot_Prop_Alarm;Port_ID;Port_Main_Mode;Port_State;Port_Alarm;Port_User_Label;Port_Service_Label;Port_Description;OperationalStatus;NearEnd_CurrentAttenuation;NearEnd_CurrentMargin;NearEnd_CurrentPowerBackOff;FarEnd_CurrentAttenuation;FarEnd_CurrentMargin;FarEnd_CurrentPowerBackOff
+VOM-A01-2 ;52;10.211.238.55;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Cleared;DIXIE TOGA LTDA;VOM-3019LTAC0;"";Up;12;22;0;12;20;2
+VOM-A01-2 ;52;10.211.238.55;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Cleared;DIXIE TOGA LTDA;VOM-3019LTAC0;"";Up;12;22;0;12;20;2
+VOM-A01-2 ;52;10.211.238.55;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Cleared;DIXIE TOGA LTDA;VOM-3019LTAC0;"";Up;12;22;0;12;20;2
+VOM-A01-2 ;52;10.211.238.55;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Cleared;DIXIE TOGA LTDA;VOM-3019LTAC0;"";Up;12;22;0;12;20;2
+VOM-A01-2 ;52;10.211.238.55;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Cleared;DIXIE TOGA LTDA;VOM-3019LTAC0;"";Up;12;22;0;12;20;2
+VOM-A01-2 ;52;10.211.238.55;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Cleared;DIXIE TOGA LTDA;VOM-3019LTAC0;"";Up;12;22;0;12;20;2
+VOM-A01-2 ;52;10.211.238.55;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Cleared;DIXIE TOGA LTDA;VOM-3019LTAC0;"";Up;12;22;0;12;20;2
+VOM-A01-2 ;52;10.211.238.55;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Major;Cliente: CARLOS ROBERTO;Designador: VOM-301KEB4O2-032;"";Down;128;127;255;128;127;255
+VOM-A01-2 ;52;10.211.238.55;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Major;Cliente: CARLOS ROBERTO;Designador: VOM-301KEB4O2-032;"";Down;128;127;255;128;127;255
+VOM-A01-2 ;52;10.211.238.55;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Major;Cliente: CARLOS ROBERTO;Designador: VOM-301KEB4O2-032;"";Down;128;127;255;128;127;255
+VOM-A01-2 ;52;10.211.238.55;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Major;Cliente: CARLOS ROBERTO;Designador: VOM-301KEB4O2-032;"";Down;128;127;255;128;127;255
+VOM-A01-2 ;52;10.211.238.55;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Major;Cliente: CARLOS ROBERTO;Designador: VOM-301KEB4O2-032;"";Down;128;127;255;128;127;255
+VOM-A01-2 ;52;10.211.238.55;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Major;Cliente: CARLOS ROBERTO;Designador: VOM-301KEB4O2-032;"";Down;128;127;255;128;127;255
+VOM-A01-2 ;52;10.211.238.55;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Major;Cliente: CARLOS ROBERTO;Designador: VOM-301KEB4O2-032;"";Down;128;127;255;128;127;255
+VOM-A01-2 ;52;10.211.238.55;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Major;Cliente:CARLOS_ROBERTO;Designador:VOM-301KEB4MZ;"";Down;128;127;255;128;127;255
+VOM-A01-2 ;52;10.211.238.55;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Major;Cliente:CARLOS_ROBERTO;Designador:VOM-301KEB4MZ;"";Down;128;127;255;128;127;255
+VOM-A01-2 ;52;10.211.238.55;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Major;Cliente:CARLOS_ROBERTO;Designador:VOM-301KEB4MZ;"";Down;128;127;255;128;127;255
+VOM-A01-2 ;52;10.211.238.55;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Major;Cliente:CARLOS_ROBERTO;Designador:VOM-301KEB4MZ;"";Down;128;127;255;128;127;255
+VOM-A01-2 ;52;10.211.238.55;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Major;Cliente:CARLOS_ROBERTO;Designador:VOM-301KEB4MZ;"";Down;128;127;255;128;127;255
+VOM-A01-2 ;52;10.211.238.55;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Major;Cliente:CARLOS_ROBERTO;Designador:VOM-301KEB4MZ;"";Down;128;127;255;128;127;255
+VOM-A01-2 ;52;10.211.238.55;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Major;Cliente:CARLOS_ROBERTO;Designador:VOM-301KEB4MZ;"";Down;128;127;255;128;127;255
+VOM-A02-1 ;527;10.211.238.58;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Major;SALMERON COM DE RESIDUOS RECI TRANSP LOC E SERV LTDA EPP;VOM-301CM1L4T-032;"";Down;128;127;255;128;127;255
+VOM-A02-1 ;527;10.211.238.58;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Major;SALMERON COM DE RESIDUOS RECI TRANSP LOC E SERV LTDA EPP;VOM-301CM1L4T-032;"";Down;128;127;255;128;127;255
+VOM-A02-1 ;527;10.211.238.58;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Major;SALMERON COM DE RESIDUOS RECI TRANSP LOC E SERV LTDA EPP;VOM-301CM1L4T-032;"";Down;128;127;255;128;127;255
+VOM-A02-1 ;527;10.211.238.58;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Major;SALMERON COM DE RESIDUOS RECI TRANSP LOC E SERV LTDA EPP;VOM-301CM1L4T-032;"";Down;128;127;255;128;127;255
+VOM-A02-1 ;527;10.211.238.58;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Major;SALMERON COM DE RESIDUOS RECI TRANSP LOC E SERV LTDA EPP;VOM-301CM1L4T-032;"";Down;128;127;255;128;127;255
+VOM-A02-1 ;527;10.211.238.58;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Major;SALMERON COM DE RESIDUOS RECI TRANSP LOC E SERV LTDA EPP;VOM-301CM1L4T-032;"";Down;128;127;255;128;127;255
+VOM-A02-1 ;527;10.211.238.58;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Major;SALMERON COM DE RESIDUOS RECI TRANSP LOC E SERV LTDA EPP;VOM-301CM1L4T-032;"";Down;128;127;255;128;127;255
+VOM-A02-1 ;527;10.211.238.58;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Cleared;SALMERON COM DE RESIDUOS RECI TRANSP LOC E SERV LTDA EPP;VOM301CM1L3R;"";Up;8;23;1;8;20;3
+VOM-A02-1 ;527;10.211.238.58;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Cleared;SALMERON COM DE RESIDUOS RECI TRANSP LOC E SERV LTDA EPP;VOM301CM1L3R;"";Up;8;23;1;8;20;3
+VOM-A02-1 ;527;10.211.238.58;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Cleared;SALMERON COM DE RESIDUOS RECI TRANSP LOC E SERV LTDA EPP;VOM301CM1L3R;"";Up;8;23;1;8;20;3
+VOM-A02-1 ;527;10.211.238.58;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Cleared;SALMERON COM DE RESIDUOS RECI TRANSP LOC E SERV LTDA EPP;VOM301CM1L3R;"";Up;8;23;1;8;20;3
+VOM-A02-1 ;527;10.211.238.58;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Cleared;SALMERON COM DE RESIDUOS RECI TRANSP LOC E SERV LTDA EPP;VOM301CM1L3R;"";Up;8;23;1;8;20;3
+VOM-A02-1 ;527;10.211.238.58;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Cleared;SALMERON COM DE RESIDUOS RECI TRANSP LOC E SERV LTDA EPP;VOM301CM1L3R;"";Up;8;23;1;8;20;3
+VOM-A02-1 ;527;10.211.238.58;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Cleared;SALMERON COM DE RESIDUOS RECI TRANSP LOC E SERV LTDA EPP;VOM301CM1L3R;"";Up;8;23;1;8;20;3
+VOM-A03-1 ;515;10.211.238.26;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Cleared;Cliente:ELETROGAMA MAT MANUTEN??O;Designador:VOM-3012VVSEP-032;"";Up;6;24;3;6;21;4
+VOM-A03-1 ;515;10.211.238.26;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Cleared;Cliente:ELETROGAMA MAT MANUTEN??O;Designador:VOM-3012VVSEP-032;"";Up;6;24;3;6;21;4
+VOM-A03-1 ;515;10.211.238.26;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Cleared;Cliente:ELETROGAMA MAT MANUTEN??O;Designador:VOM-3012VVSEP-032;"";Up;6;24;3;6;21;4
+VOM-A03-1 ;515;10.211.238.26;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Cleared;Cliente:ELETROGAMA MAT MANUTEN??O;Designador:VOM-3012VVSEP-032;"";Up;6;24;3;6;21;4
+VOM-A03-1 ;515;10.211.238.26;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Cleared;Cliente:ELETROGAMA MAT MANUTEN??O;Designador:VOM-3012VVSEP-032;"";Up;6;24;3;6;21;4
+VOM-A03-1 ;515;10.211.238.26;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Cleared;Cliente:ELETROGAMA MAT MANUTEN??O;Designador:VOM-3012VVSEP-032;"";Up;6;24;3;6;21;4
+VOM-A03-1 ;515;10.211.238.26;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Cleared;Cliente:ELETROGAMA MAT MANUTEN??O;Designador:VOM-3012VVSEP-032;"";Up;6;24;3;6;21;4
+VOM-A03-1 ;515;10.211.238.26;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Major;Cliente:ELETROGAMA MAT MANUTEN??O;Designador:VOM-3012VVSDT;"";Down;128;127;255;128;127;255
+VOM-A03-1 ;515;10.211.238.26;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Major;Cliente:ELETROGAMA MAT MANUTEN??O;Designador:VOM-3012VVSDT;"";Down;128;127;255;128;127;255
+VOM-A03-1 ;515;10.211.238.26;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Major;Cliente:ELETROGAMA MAT MANUTEN??O;Designador:VOM-3012VVSDT;"";Down;128;127;255;128;127;255
+VOM-A03-1 ;515;10.211.238.26;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Major;Cliente:ELETROGAMA MAT MANUTEN??O;Designador:VOM-3012VVSDT;"";Down;128;127;255;128;127;255
+VOM-A03-1 ;515;10.211.238.26;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Major;Cliente:ELETROGAMA MAT MANUTEN??O;Designador:VOM-3012VVSDT;"";Down;128;127;255;128;127;255
+VOM-A03-1 ;515;10.211.238.26;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Major;Cliente:ELETROGAMA MAT MANUTEN??O;Designador:VOM-3012VVSDT;"";Down;128;127;255;128;127;255
+VOM-A03-1 ;515;10.211.238.26;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Major;Cliente:ELETROGAMA MAT MANUTEN??O;Designador:VOM-3012VVSDT;"";Down;128;127;255;128;127;255
+VOM-A06-1 ;511;10.211.238.22;unit-17;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Cleared;Cliente: ECONOPAC DO BRASIL INDUSTRIA E COMERCIO LTDA;Designador:VOM-301J005J1-032;"";Up;12;22;0;12;20;1
+VOM-A06-1 ;511;10.211.238.22;unit-17;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Cleared;Cliente: ECONOPAC DO BRASIL INDUSTRIA E COMERCIO LTDA;Designador:VOM-301J005J1-032;"";Up;12;22;0;12;20;1
+VOM-A06-1 ;511;10.211.238.22;unit-17;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Cleared;Cliente: ECONOPAC DO BRASIL INDUSTRIA E COMERCIO LTDA;Designador:VOM-301J005J1-032;"";Up;12;22;0;12;20;1
+VOM-A06-1 ;511;10.211.238.22;unit-17;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Cleared;Cliente: ECONOPAC DO BRASIL INDUSTRIA E COMERCIO LTDA;Designador:VOM-301J005J1-032;"";Up;12;22;0;12;20;1
+VOM-A06-1 ;511;10.211.238.22;unit-17;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Cleared;Cliente: ECONOPAC DO BRASIL INDUSTRIA E COMERCIO LTDA;Designador:VOM-301J005J1-032;"";Up;12;22;0;12;20;1
+VOM-A06-1 ;511;10.211.238.22;unit-17;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Cleared;Cliente: ECONOPAC DO BRASIL INDUSTRIA E COMERCIO LTDA;Designador:VOM-301J005J1-032;"";Up;12;22;0;12;20;1
+VOM-A06-1 ;511;10.211.238.22;unit-17;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Cleared;Cliente: ECONOPAC DO BRASIL INDUSTRIA E COMERCIO LTDA;Designador:VOM-301J005J1-032;"";Up;12;22;0;12;20;1
+VOM-A06-1 ;511;10.211.238.22;unit-17;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Major;"";"";"";Down;128;127;255;128;127;255
+VOM-A06-1 ;511;10.211.238.22;unit-17;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Major;"";"";"";Down;128;127;255;128;127;255
+VOM-A06-1 ;511;10.211.238.22;unit-17;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Major;"";"";"";Down;128;127;255;128;127;255
+VOM-A06-1 ;511;10.211.238.22;unit-17;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Major;"";"";"";Down;128;127;255;128;127;255
+VOM-A06-1 ;511;10.211.238.22;unit-17;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Major;"";"";"";Down;128;127;255;128;127;255
+VOM-A06-1 ;511;10.211.238.22;unit-17;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Major;"";"";"";Down;128;127;255;128;127;255
+VOM-A06-1 ;511;10.211.238.22;unit-17;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Major;"";"";"";Down;128;127;255;128;127;255
+VOM-A06-1 ;511;10.211.238.22;unit-17;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-7;port-7;"";Cleared;CLIENTE_COMPUTADORUSADO;DESIGNADOR_VOM-301KEPCH1-032;"";Up;11;22;0;10;20;2
+VOM-A06-1 ;511;10.211.238.22;unit-17;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-7;port-7;"";Cleared;CLIENTE_COMPUTADORUSADO;DESIGNADOR_VOM-301KEPCH1-032;"";Up;11;22;0;10;20;2
+VOM-A06-1 ;511;10.211.238.22;unit-17;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-7;port-7;"";Cleared;CLIENTE_COMPUTADORUSADO;DESIGNADOR_VOM-301KEPCH1-032;"";Up;11;22;0;10;20;2
+VOM-A06-1 ;511;10.211.238.22;unit-17;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-7;port-7;"";Cleared;CLIENTE_COMPUTADORUSADO;DESIGNADOR_VOM-301KEPCH1-032;"";Up;11;22;0;10;20;2
+VOM-A06-1 ;511;10.211.238.22;unit-17;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-7;port-7;"";Cleared;CLIENTE_COMPUTADORUSADO;DESIGNADOR_VOM-301KEPCH1-032;"";Up;11;22;0;10;20;2
+VOM-A06-1 ;511;10.211.238.22;unit-17;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-7;port-7;"";Cleared;CLIENTE_COMPUTADORUSADO;DESIGNADOR_VOM-301KEPCH1-032;"";Up;11;22;0;10;20;2
+VOM-A06-1 ;511;10.211.238.22;unit-17;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-7;port-7;"";Cleared;CLIENTE_COMPUTADORUSADO;DESIGNADOR_VOM-301KEPCH1-032;"";Up;11;22;0;10;20;2
+VOM-A06-1 ;511;10.211.238.22;unit-17;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-8;port-8;"";Cleared;"";"";"";Up;12;22;0;12;20;1
+VOM-A06-1 ;511;10.211.238.22;unit-17;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-8;port-8;"";Cleared;"";"";"";Up;12;22;0;12;20;1
+VOM-A06-1 ;511;10.211.238.22;unit-17;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-8;port-8;"";Cleared;"";"";"";Up;12;22;0;12;20;1
+VOM-A06-1 ;511;10.211.238.22;unit-17;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-8;port-8;"";Cleared;"";"";"";Up;12;22;0;12;20;1
+VOM-A06-1 ;511;10.211.238.22;unit-17;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-8;port-8;"";Cleared;"";"";"";Up;12;22;0;12;20;1
+VOM-A06-1 ;511;10.211.238.22;unit-17;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-8;port-8;"";Cleared;"";"";"";Up;12;22;0;12;20;1
+VOM-A06-1 ;511;10.211.238.22;unit-17;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-8;port-8;"";Cleared;"";"";"";Up;12;22;0;12;20;1
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Major;Cliente: PRESTESERV;Desiganador: VOM_3011R886V-032;"";Down;128;127;255;128;127;255
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Major;Cliente: PRESTESERV;Desiganador: VOM_3011R886V-032;"";Down;128;127;255;128;127;255
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Major;Cliente: PRESTESERV;Desiganador: VOM_3011R886V-032;"";Down;128;127;255;128;127;255
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Major;Cliente: PRESTESERV;Desiganador: VOM_3011R886V-032;"";Down;128;127;255;128;127;255
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Major;Cliente: PRESTESERV;Desiganador: VOM_3011R886V-032;"";Down;128;127;255;128;127;255
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Major;Cliente: PRESTESERV;Desiganador: VOM_3011R886V-032;"";Down;128;127;255;128;127;255
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Major;Cliente: PRESTESERV;Desiganador: VOM_3011R886V-032;"";Down;128;127;255;128;127;255
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Cleared;Cliente: BANDEIRAS;Designador: VOM-30128VNKR;"";Down;128;127;255;128;127;255
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Cleared;Cliente: BANDEIRAS;Designador: VOM-30128VNKR;"";Down;128;127;255;128;127;255
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Cleared;Cliente: BANDEIRAS;Designador: VOM-30128VNKR;"";Down;128;127;255;128;127;255
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Cleared;Cliente: BANDEIRAS;Designador: VOM-30128VNKR;"";Down;128;127;255;128;127;255
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Cleared;Cliente: BANDEIRAS;Designador: VOM-30128VNKR;"";Down;128;127;255;128;127;255
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Cleared;Cliente: BANDEIRAS;Designador: VOM-30128VNKR;"";Down;128;127;255;128;127;255
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Cleared;Cliente: BANDEIRAS;Designador: VOM-30128VNKR;"";Down;128;127;255;128;127;255
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Cleared;Cliente: BANDEIRAS;Designador: VOM-30128VNLU-032;"";Down;128;127;255;128;127;255
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Cleared;Cliente: BANDEIRAS;Designador: VOM-30128VNLU-032;"";Down;128;127;255;128;127;255
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Cleared;Cliente: BANDEIRAS;Designador: VOM-30128VNLU-032;"";Down;128;127;255;128;127;255
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Cleared;Cliente: BANDEIRAS;Designador: VOM-30128VNLU-032;"";Down;128;127;255;128;127;255
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Cleared;Cliente: BANDEIRAS;Designador: VOM-30128VNLU-032;"";Down;128;127;255;128;127;255
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Cleared;Cliente: BANDEIRAS;Designador: VOM-30128VNLU-032;"";Down;128;127;255;128;127;255
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Cleared;Cliente: BANDEIRAS;Designador: VOM-30128VNLU-032;"";Down;128;127;255;128;127;255
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-4;port-4;"";Cleared;Cliente: BRAFFIX;Designador:VOM-3014JQTMV-032;"";Up;11;22;0;12;20;2
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-4;port-4;"";Cleared;Cliente: BRAFFIX;Designador:VOM-3014JQTMV-032;"";Up;11;22;0;12;20;2
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-4;port-4;"";Cleared;Cliente: BRAFFIX;Designador:VOM-3014JQTMV-032;"";Up;11;22;0;12;20;2
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-4;port-4;"";Cleared;Cliente: BRAFFIX;Designador:VOM-3014JQTMV-032;"";Up;11;22;0;12;20;2
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-4;port-4;"";Cleared;Cliente: BRAFFIX;Designador:VOM-3014JQTMV-032;"";Up;11;22;0;12;20;2
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-4;port-4;"";Cleared;Cliente: BRAFFIX;Designador:VOM-3014JQTMV-032;"";Up;11;22;0;12;20;2
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-4;port-4;"";Cleared;Cliente: BRAFFIX;Designador:VOM-3014JQTMV-032;"";Up;11;22;0;12;20;2
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-5;port-5;"";Cleared;CLIENTE: SANAMED_SAUDE;DESIGNADOR: VOM-30158P4XT;"";Up;10;22;1;10;20;2
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-5;port-5;"";Cleared;CLIENTE: SANAMED_SAUDE;DESIGNADOR: VOM-30158P4XT;"";Up;10;22;1;10;20;2
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-5;port-5;"";Cleared;CLIENTE: SANAMED_SAUDE;DESIGNADOR: VOM-30158P4XT;"";Up;10;22;1;10;20;2
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-5;port-5;"";Cleared;CLIENTE: SANAMED_SAUDE;DESIGNADOR: VOM-30158P4XT;"";Up;10;22;1;10;20;2
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-5;port-5;"";Cleared;CLIENTE: SANAMED_SAUDE;DESIGNADOR: VOM-30158P4XT;"";Up;10;22;1;10;20;2
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-5;port-5;"";Cleared;CLIENTE: SANAMED_SAUDE;DESIGNADOR: VOM-30158P4XT;"";Up;10;22;1;10;20;2
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-5;port-5;"";Cleared;CLIENTE: SANAMED_SAUDE;DESIGNADOR: VOM-30158P4XT;"";Up;10;22;1;10;20;2
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-6;port-6;"";Major;CLIENTE: SANAMED_SAUDE;DESIGNADOR: VOM-30158PUN0;"";Down;128;127;255;128;127;255
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-6;port-6;"";Major;CLIENTE: SANAMED_SAUDE;DESIGNADOR: VOM-30158PUN0;"";Down;128;127;255;128;127;255
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-6;port-6;"";Major;CLIENTE: SANAMED_SAUDE;DESIGNADOR: VOM-30158PUN0;"";Down;128;127;255;128;127;255
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-6;port-6;"";Major;CLIENTE: SANAMED_SAUDE;DESIGNADOR: VOM-30158PUN0;"";Down;128;127;255;128;127;255
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-6;port-6;"";Major;CLIENTE: SANAMED_SAUDE;DESIGNADOR: VOM-30158PUN0;"";Down;128;127;255;128;127;255
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-6;port-6;"";Major;CLIENTE: SANAMED_SAUDE;DESIGNADOR: VOM-30158PUN0;"";Down;128;127;255;128;127;255
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-6;port-6;"";Major;CLIENTE: SANAMED_SAUDE;DESIGNADOR: VOM-30158PUN0;"";Down;128;127;255;128;127;255
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-7;port-7;"";Cleared;Cliente:SEIREN PRODUTOS AUTOMOTIVOS;Designador:VOM-301GPF99R-032;"";Up;11;22;0;10;21;2
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-7;port-7;"";Cleared;Cliente:SEIREN PRODUTOS AUTOMOTIVOS;Designador:VOM-301GPF99R-032;"";Up;11;22;0;10;21;2
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-7;port-7;"";Cleared;Cliente:SEIREN PRODUTOS AUTOMOTIVOS;Designador:VOM-301GPF99R-032;"";Up;11;22;0;10;21;2
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-7;port-7;"";Cleared;Cliente:SEIREN PRODUTOS AUTOMOTIVOS;Designador:VOM-301GPF99R-032;"";Up;11;22;0;10;21;2
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-7;port-7;"";Cleared;Cliente:SEIREN PRODUTOS AUTOMOTIVOS;Designador:VOM-301GPF99R-032;"";Up;11;22;0;10;21;2
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-7;port-7;"";Cleared;Cliente:SEIREN PRODUTOS AUTOMOTIVOS;Designador:VOM-301GPF99R-032;"";Up;11;22;0;10;21;2
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-7;port-7;"";Cleared;Cliente:SEIREN PRODUTOS AUTOMOTIVOS;Designador:VOM-301GPF99R-032;"";Up;11;22;0;10;21;2
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-8;port-8;"";Cleared;Cliente:HORUS SERVICOS EM PREVENCAO;Designador:VOM-301ICJOHV-032;"";Up;13;21;0;12;20;1
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-8;port-8;"";Cleared;Cliente:HORUS SERVICOS EM PREVENCAO;Designador:VOM-301ICJOHV-032;"";Up;13;21;0;12;20;1
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-8;port-8;"";Cleared;Cliente:HORUS SERVICOS EM PREVENCAO;Designador:VOM-301ICJOHV-032;"";Up;13;21;0;12;20;1
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-8;port-8;"";Cleared;Cliente:HORUS SERVICOS EM PREVENCAO;Designador:VOM-301ICJOHV-032;"";Up;13;21;0;12;20;1
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-8;port-8;"";Cleared;Cliente:HORUS SERVICOS EM PREVENCAO;Designador:VOM-301ICJOHV-032;"";Up;13;21;0;12;20;1
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-8;port-8;"";Cleared;Cliente:HORUS SERVICOS EM PREVENCAO;Designador:VOM-301ICJOHV-032;"";Up;13;21;0;12;20;1
+VOM-A06-1 ;511;10.211.238.22;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-8;port-8;"";Cleared;Cliente:HORUS SERVICOS EM PREVENCAO;Designador:VOM-301ICJOHV-032;"";Up;13;21;0;12;20;1
+VOM-A07-2 ;16;10.211.238.19;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Cleared;Cliente:CRECHE S?O VICENTE DE PAULO;Designador:VOM-3012JLEUF-032;"";Up;5;22;3;4;16;4
+VOM-A07-2 ;16;10.211.238.19;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Cleared;Cliente:CRECHE S?O VICENTE DE PAULO;Designador:VOM-3012JLEUF-032;"";Up;5;22;3;4;16;4
+VOM-A07-2 ;16;10.211.238.19;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Cleared;Cliente:CRECHE S?O VICENTE DE PAULO;Designador:VOM-3012JLEUF-032;"";Up;5;22;3;4;16;4
+VOM-A07-2 ;16;10.211.238.19;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Cleared;Cliente:CRECHE S?O VICENTE DE PAULO;Designador:VOM-3012JLEUF-032;"";Up;5;22;3;4;16;4
+VOM-A07-2 ;16;10.211.238.19;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Cleared;Cliente:CRECHE S?O VICENTE DE PAULO;Designador:VOM-3012JLEUF-032;"";Up;5;22;3;4;16;4
+VOM-A07-2 ;16;10.211.238.19;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Cleared;Cliente:CRECHE S?O VICENTE DE PAULO;Designador:VOM-3012JLEUF-032;"";Up;5;22;3;4;16;4
+VOM-A07-2 ;16;10.211.238.19;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Cleared;Cliente:CRECHE S?O VICENTE DE PAULO;Designador:VOM-3012JLEUF-032;"";Up;5;22;3;4;16;4
+VOM-A07-2 ;16;10.211.238.19;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Major;VITORINO;VOM-3013MB8P7-032;"";Down;128;127;255;128;127;255
+VOM-A07-2 ;16;10.211.238.19;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Major;VITORINO;VOM-3013MB8P7-032;"";Down;128;127;255;128;127;255
+VOM-A07-2 ;16;10.211.238.19;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Major;VITORINO;VOM-3013MB8P7-032;"";Down;128;127;255;128;127;255
+VOM-A07-2 ;16;10.211.238.19;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Major;VITORINO;VOM-3013MB8P7-032;"";Down;128;127;255;128;127;255
+VOM-A07-2 ;16;10.211.238.19;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Major;VITORINO;VOM-3013MB8P7-032;"";Down;128;127;255;128;127;255
+VOM-A07-2 ;16;10.211.238.19;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Major;VITORINO;VOM-3013MB8P7-032;"";Down;128;127;255;128;127;255
+VOM-A07-2 ;16;10.211.238.19;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Major;VITORINO;VOM-3013MB8P7-032;"";Down;128;127;255;128;127;255
+VOM-A07-2 ;16;10.211.238.19;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Cleared;Cliente:FOLHA DE VOTORANTIM;Designador:VOM-3018LY6YL-032;"";Up;7;24;3;6;21;4
+VOM-A07-2 ;16;10.211.238.19;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Cleared;Cliente:FOLHA DE VOTORANTIM;Designador:VOM-3018LY6YL-032;"";Up;7;24;3;6;21;4
+VOM-A07-2 ;16;10.211.238.19;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Cleared;Cliente:FOLHA DE VOTORANTIM;Designador:VOM-3018LY6YL-032;"";Up;7;24;3;6;21;4
+VOM-A07-2 ;16;10.211.238.19;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Cleared;Cliente:FOLHA DE VOTORANTIM;Designador:VOM-3018LY6YL-032;"";Up;7;24;3;6;21;4
+VOM-A07-2 ;16;10.211.238.19;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Cleared;Cliente:FOLHA DE VOTORANTIM;Designador:VOM-3018LY6YL-032;"";Up;7;24;3;6;21;4
+VOM-A07-2 ;16;10.211.238.19;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Cleared;Cliente:FOLHA DE VOTORANTIM;Designador:VOM-3018LY6YL-032;"";Up;7;24;3;6;21;4
+VOM-A07-2 ;16;10.211.238.19;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Cleared;Cliente:FOLHA DE VOTORANTIM;Designador:VOM-3018LY6YL-032;"";Up;7;24;3;6;21;4
+VOM-A07-2 ;16;10.211.238.19;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-8;port-8;"";Major;Cliente:AGUAS_VOTORANTIM;Designador:VOM-301I3WQ4N-032;"";Up;6;23;3;6;20;0
+VOM-A07-2 ;16;10.211.238.19;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-8;port-8;"";Major;Cliente:AGUAS_VOTORANTIM;Designador:VOM-301I3WQ4N-032;"";Up;6;23;3;6;20;0
+VOM-A07-2 ;16;10.211.238.19;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-8;port-8;"";Major;Cliente:AGUAS_VOTORANTIM;Designador:VOM-301I3WQ4N-032;"";Up;6;23;3;6;20;0
+VOM-A07-2 ;16;10.211.238.19;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-8;port-8;"";Major;Cliente:AGUAS_VOTORANTIM;Designador:VOM-301I3WQ4N-032;"";Up;6;23;3;6;20;0
+VOM-A07-2 ;16;10.211.238.19;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-8;port-8;"";Major;Cliente:AGUAS_VOTORANTIM;Designador:VOM-301I3WQ4N-032;"";Up;6;23;3;6;20;0
+VOM-A07-2 ;16;10.211.238.19;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-8;port-8;"";Major;Cliente:AGUAS_VOTORANTIM;Designador:VOM-301I3WQ4N-032;"";Up;6;23;3;6;20;0
+VOM-A07-2 ;16;10.211.238.19;unit-21;STIM1 R1C;stim1_r4d07;Ok;Cleared;Major;logport-8;port-8;"";Major;Cliente:AGUAS_VOTORANTIM;Designador:VOM-301I3WQ4N-032;"";Up;6;23;3;6;20;0
+VOM-A12 ;504;10.211.238.10;unit-21;STIM1 R1B;stim1_r4d07;Ok;Cleared;Minor;logport-1;port-1;"";Cleared;ITALTERM SISTEMAS E CONTROLES INDUSTRIAIS LTDA;VOM-3012F0QU3-032;"";Up;6;24;3;6;21;4
+VOM-A12 ;504;10.211.238.10;unit-21;STIM1 R1B;stim1_r4d07;Ok;Cleared;Minor;logport-1;port-1;"";Cleared;ITALTERM SISTEMAS E CONTROLES INDUSTRIAIS LTDA;VOM-3012F0QU3-032;"";Up;6;24;3;6;21;4
+VOM-A12 ;504;10.211.238.10;unit-21;STIM1 R1B;stim1_r4d07;Ok;Cleared;Minor;logport-1;port-1;"";Cleared;ITALTERM SISTEMAS E CONTROLES INDUSTRIAIS LTDA;VOM-3012F0QU3-032;"";Up;6;24;3;6;21;4
+VOM-A12 ;504;10.211.238.10;unit-21;STIM1 R1B;stim1_r4d07;Ok;Cleared;Minor;logport-1;port-1;"";Cleared;ITALTERM SISTEMAS E CONTROLES INDUSTRIAIS LTDA;VOM-3012F0QU3-032;"";Up;6;24;3;6;21;4
+VOM-A12 ;504;10.211.238.10;unit-21;STIM1 R1B;stim1_r4d07;Ok;Cleared;Minor;logport-1;port-1;"";Cleared;ITALTERM SISTEMAS E CONTROLES INDUSTRIAIS LTDA;VOM-3012F0QU3-032;"";Up;6;24;3;6;21;4
+VOM-A12 ;504;10.211.238.10;unit-21;STIM1 R1B;stim1_r4d07;Ok;Cleared;Minor;logport-1;port-1;"";Cleared;ITALTERM SISTEMAS E CONTROLES INDUSTRIAIS LTDA;VOM-3012F0QU3-032;"";Up;6;24;3;6;21;4
+VOM-A12 ;504;10.211.238.10;unit-21;STIM1 R1B;stim1_r4d07;Ok;Cleared;Minor;logport-1;port-1;"";Cleared;ITALTERM SISTEMAS E CONTROLES INDUSTRIAIS LTDA;VOM-3012F0QU3-032;"";Up;6;24;3;6;21;4
+VOM-A13-1 ;502;10.211.238.6;unit-18;STIM1 R1C;stim1_r4d07;Ok;Cleared;Cleared;logport-1;port-1;"";Cleared;"";"";"";Up;9;24;1;8;21;3
+VOM-A13-1 ;502;10.211.238.6;unit-18;STIM1 R1C;stim1_r4d07;Ok;Cleared;Cleared;logport-1;port-1;"";Cleared;"";"";"";Up;9;24;1;8;21;3
+VOM-A13-1 ;502;10.211.238.6;unit-18;STIM1 R1C;stim1_r4d07;Ok;Cleared;Cleared;logport-1;port-1;"";Cleared;"";"";"";Up;9;24;1;8;21;3
+VOM-A13-1 ;502;10.211.238.6;unit-18;STIM1 R1C;stim1_r4d07;Ok;Cleared;Cleared;logport-1;port-1;"";Cleared;"";"";"";Up;9;24;1;8;21;3
+VOM-A13-1 ;502;10.211.238.6;unit-18;STIM1 R1C;stim1_r4d07;Ok;Cleared;Cleared;logport-1;port-1;"";Cleared;"";"";"";Up;9;24;1;8;21;3
+VOM-A13-1 ;502;10.211.238.6;unit-18;STIM1 R1C;stim1_r4d07;Ok;Cleared;Cleared;logport-1;port-1;"";Cleared;"";"";"";Up;9;24;1;8;21;3
+VOM-A13-1 ;502;10.211.238.6;unit-18;STIM1 R1C;stim1_r4d07;Ok;Cleared;Cleared;logport-1;port-1;"";Cleared;"";"";"";Up;9;24;1;8;21;3
+VRP-A04-0 ;29;10.211.193.108;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-7;port-7;"";Cleared;"";"";"";Up;8;24;2;8;21;4
+VRP-A04-0 ;29;10.211.193.108;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-7;port-7;"";Cleared;"";"";"";Up;8;24;2;8;21;4
+VRP-A04-0 ;29;10.211.193.108;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-7;port-7;"";Cleared;"";"";"";Up;8;24;2;8;21;4
+VRP-A04-0 ;29;10.211.193.108;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-7;port-7;"";Cleared;"";"";"";Up;8;24;2;8;21;4
+VRP-A04-0 ;29;10.211.193.108;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-7;port-7;"";Cleared;"";"";"";Up;8;24;2;8;21;4
+VRP-A04-0 ;29;10.211.193.108;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-7;port-7;"";Cleared;"";"";"";Up;8;24;2;8;21;4
+VRP-A04-0 ;29;10.211.193.108;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-7;port-7;"";Cleared;"";"";"";Up;8;24;2;8;21;4
+VRP-A05-0 ;32;10.211.193.133;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Cleared;TRANSVARZEA - VOX;VRP-301JZYB30-032;"";Up;6;23;3;6;20;4
+VRP-A05-0 ;32;10.211.193.133;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Cleared;TRANSVARZEA - VOX;VRP-301JZYB30-032;"";Up;6;23;3;6;20;4
+VRP-A05-0 ;32;10.211.193.133;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Cleared;TRANSVARZEA - VOX;VRP-301JZYB30-032;"";Up;6;23;3;6;20;4
+VRP-A05-0 ;32;10.211.193.133;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Cleared;TRANSVARZEA - VOX;VRP-301JZYB30-032;"";Up;6;23;3;6;20;4
+VRP-A05-0 ;32;10.211.193.133;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Cleared;TRANSVARZEA - VOX;VRP-301JZYB30-032;"";Up;6;23;3;6;20;4
+VRP-A05-0 ;32;10.211.193.133;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Cleared;TRANSVARZEA - VOX;VRP-301JZYB30-032;"";Up;6;23;3;6;20;4
+VRP-A05-0 ;32;10.211.193.133;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Cleared;TRANSVARZEA - VOX;VRP-301JZYB30-032;"";Up;6;23;3;6;20;4
+VRP-A05-0 ;32;10.211.193.133;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Cleared;Cliente: TRANSPORTADORA;Designador:VRP-301JZYBA4;"";Up;7;23;3;6;21;4
+VRP-A05-0 ;32;10.211.193.133;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Cleared;Cliente: TRANSPORTADORA;Designador:VRP-301JZYBA4;"";Up;7;23;3;6;21;4
+VRP-A05-0 ;32;10.211.193.133;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Cleared;Cliente: TRANSPORTADORA;Designador:VRP-301JZYBA4;"";Up;7;23;3;6;21;4
+VRP-A05-0 ;32;10.211.193.133;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Cleared;Cliente: TRANSPORTADORA;Designador:VRP-301JZYBA4;"";Up;7;23;3;6;21;4
+VRP-A05-0 ;32;10.211.193.133;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Cleared;Cliente: TRANSPORTADORA;Designador:VRP-301JZYBA4;"";Up;7;23;3;6;21;4
+VRP-A05-0 ;32;10.211.193.133;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Cleared;Cliente: TRANSPORTADORA;Designador:VRP-301JZYBA4;"";Up;7;23;3;6;21;4
+VRP-A05-0 ;32;10.211.193.133;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Cleared;Cliente: TRANSPORTADORA;Designador:VRP-301JZYBA4;"";Up;7;23;3;6;21;4
+VRP-A06-0 ;33;10.211.193.134;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-1;port-1;"";Cleared;POLLO COMERCIO DE PE?AS;WO - 16882225;VRP-301K7DSZ-032;Up;7;25;2;8;20;0
+VRP-A06-0 ;33;10.211.193.134;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-1;port-1;"";Cleared;POLLO COMERCIO DE PE?AS;WO - 16882225;VRP-301K7DSZ-032;Up;7;25;2;8;20;0
+VRP-A06-0 ;33;10.211.193.134;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-1;port-1;"";Cleared;POLLO COMERCIO DE PE?AS;WO - 16882225;VRP-301K7DSZ-032;Up;7;25;2;8;20;0
+VRP-A06-0 ;33;10.211.193.134;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-1;port-1;"";Cleared;POLLO COMERCIO DE PE?AS;WO - 16882225;VRP-301K7DSZ-032;Up;7;25;2;8;20;0
+VRP-A06-0 ;33;10.211.193.134;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-1;port-1;"";Cleared;POLLO COMERCIO DE PE?AS;WO - 16882225;VRP-301K7DSZ-032;Up;7;25;2;8;20;0
+VRP-A06-0 ;33;10.211.193.134;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-1;port-1;"";Cleared;POLLO COMERCIO DE PE?AS;WO - 16882225;VRP-301K7DSZ-032;Up;7;25;2;8;20;0
+VRP-A06-0 ;33;10.211.193.134;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-1;port-1;"";Cleared;POLLO COMERCIO DE PE?AS;WO - 16882225;VRP-301K7DSZ-032;Up;7;25;2;8;20;0
+VRP-A06-0 ;33;10.211.193.134;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-3;port-3;"";Cleared;Cliente: UNITUBOS;Designador: VRP-301KEG84J-032;"";Up;10;23;0;10;21;0
+VRP-A06-0 ;33;10.211.193.134;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-3;port-3;"";Cleared;Cliente: UNITUBOS;Designador: VRP-301KEG84J-032;"";Up;10;23;0;10;21;0
+VRP-A06-0 ;33;10.211.193.134;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-3;port-3;"";Cleared;Cliente: UNITUBOS;Designador: VRP-301KEG84J-032;"";Up;10;23;0;10;21;0
+VRP-A06-0 ;33;10.211.193.134;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-3;port-3;"";Cleared;Cliente: UNITUBOS;Designador: VRP-301KEG84J-032;"";Up;10;23;0;10;21;0
+VRP-A06-0 ;33;10.211.193.134;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-3;port-3;"";Cleared;Cliente: UNITUBOS;Designador: VRP-301KEG84J-032;"";Up;10;23;0;10;21;0
+VRP-A06-0 ;33;10.211.193.134;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-3;port-3;"";Cleared;Cliente: UNITUBOS;Designador: VRP-301KEG84J-032;"";Up;10;23;0;10;21;0
+VRP-A06-0 ;33;10.211.193.134;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-3;port-3;"";Cleared;Cliente: UNITUBOS;Designador: VRP-301KEG84J-032;"";Up;10;23;0;10;21;0
+VRP-A07-0 ;36;10.211.193.135;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Major;Cliente:EYFEO USINAGEM;"";"";Down;128;127;255;128;127;255
+VRP-A07-0 ;36;10.211.193.135;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Major;Cliente:EYFEO USINAGEM;"";"";Down;128;127;255;128;127;255
+VRP-A07-0 ;36;10.211.193.135;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Major;Cliente:EYFEO USINAGEM;"";"";Down;128;127;255;128;127;255
+VRP-A07-0 ;36;10.211.193.135;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Major;Cliente:EYFEO USINAGEM;"";"";Down;128;127;255;128;127;255
+VRP-A07-0 ;36;10.211.193.135;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Major;Cliente:EYFEO USINAGEM;"";"";Down;128;127;255;128;127;255
+VRP-A07-0 ;36;10.211.193.135;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Major;Cliente:EYFEO USINAGEM;"";"";Down;128;127;255;128;127;255
+VRP-A07-0 ;36;10.211.193.135;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Major;Cliente:EYFEO USINAGEM;"";"";Down;128;127;255;128;127;255
+VRP-A07-0 ;36;10.211.193.135;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Cleared;Cliente: EPLAST;"";"";Up;5;24;3;6;21;4
+VRP-A07-0 ;36;10.211.193.135;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Cleared;Cliente: EPLAST;"";"";Up;5;24;3;6;21;4
+VRP-A07-0 ;36;10.211.193.135;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Cleared;Cliente: EPLAST;"";"";Up;5;24;3;6;21;4
+VRP-A07-0 ;36;10.211.193.135;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Cleared;Cliente: EPLAST;"";"";Up;5;24;3;6;21;4
+VRP-A07-0 ;36;10.211.193.135;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Cleared;Cliente: EPLAST;"";"";Up;5;24;3;6;21;4
+VRP-A07-0 ;36;10.211.193.135;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Cleared;Cliente: EPLAST;"";"";Up;5;24;3;6;21;4
+VRP-A07-0 ;36;10.211.193.135;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Cleared;Cliente: EPLAST;"";"";Up;5;24;3;6;21;4
+VRP-A07-0 ;36;10.211.193.135;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Cleared;MARQUES CAR;VRP-301JTOBCV-032;"";Up;3;23;5;4;20;6
+VRP-A07-0 ;36;10.211.193.135;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Cleared;MARQUES CAR;VRP-301JTOBCV-032;"";Up;3;23;5;4;20;6
+VRP-A07-0 ;36;10.211.193.135;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Cleared;MARQUES CAR;VRP-301JTOBCV-032;"";Up;3;23;5;4;20;6
+VRP-A07-0 ;36;10.211.193.135;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Cleared;MARQUES CAR;VRP-301JTOBCV-032;"";Up;3;23;5;4;20;6
+VRP-A07-0 ;36;10.211.193.135;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Cleared;MARQUES CAR;VRP-301JTOBCV-032;"";Up;3;23;5;4;20;6
+VRP-A07-0 ;36;10.211.193.135;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Cleared;MARQUES CAR;VRP-301JTOBCV-032;"";Up;3;23;5;4;20;6
+VRP-A07-0 ;36;10.211.193.135;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Cleared;MARQUES CAR;VRP-301JTOBCV-032;"";Up;3;23;5;4;20;6
+VRP-A07-0 ;36;10.211.193.135;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-4;port-4;"";Major;CLIENTE_COMERCIO DE VEICULOS;DESIGNADOR_VRP-301KCNVKJ-032;"";Down;128;127;255;128;127;255
+VRP-A07-0 ;36;10.211.193.135;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-4;port-4;"";Major;CLIENTE_COMERCIO DE VEICULOS;DESIGNADOR_VRP-301KCNVKJ-032;"";Down;128;127;255;128;127;255
+VRP-A07-0 ;36;10.211.193.135;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-4;port-4;"";Major;CLIENTE_COMERCIO DE VEICULOS;DESIGNADOR_VRP-301KCNVKJ-032;"";Down;128;127;255;128;127;255
+VRP-A07-0 ;36;10.211.193.135;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-4;port-4;"";Major;CLIENTE_COMERCIO DE VEICULOS;DESIGNADOR_VRP-301KCNVKJ-032;"";Down;128;127;255;128;127;255
+VRP-A07-0 ;36;10.211.193.135;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-4;port-4;"";Major;CLIENTE_COMERCIO DE VEICULOS;DESIGNADOR_VRP-301KCNVKJ-032;"";Down;128;127;255;128;127;255
+VRP-A07-0 ;36;10.211.193.135;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-4;port-4;"";Major;CLIENTE_COMERCIO DE VEICULOS;DESIGNADOR_VRP-301KCNVKJ-032;"";Down;128;127;255;128;127;255
+VRP-A07-0 ;36;10.211.193.135;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-4;port-4;"";Major;CLIENTE_COMERCIO DE VEICULOS;DESIGNADOR_VRP-301KCNVKJ-032;"";Down;128;127;255;128;127;255
+VRP-A07-0 ;36;10.211.193.135;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-5;port-5;"";Major;Cliente:COMERCIO VEICULOS;Designador: VRP-301KCO43J;"";Down;128;127;255;128;127;255
+VRP-A07-0 ;36;10.211.193.135;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-5;port-5;"";Major;Cliente:COMERCIO VEICULOS;Designador: VRP-301KCO43J;"";Down;128;127;255;128;127;255
+VRP-A07-0 ;36;10.211.193.135;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-5;port-5;"";Major;Cliente:COMERCIO VEICULOS;Designador: VRP-301KCO43J;"";Down;128;127;255;128;127;255
+VRP-A07-0 ;36;10.211.193.135;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-5;port-5;"";Major;Cliente:COMERCIO VEICULOS;Designador: VRP-301KCO43J;"";Down;128;127;255;128;127;255
+VRP-A07-0 ;36;10.211.193.135;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-5;port-5;"";Major;Cliente:COMERCIO VEICULOS;Designador: VRP-301KCO43J;"";Down;128;127;255;128;127;255
+VRP-A07-0 ;36;10.211.193.135;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-5;port-5;"";Major;Cliente:COMERCIO VEICULOS;Designador: VRP-301KCO43J;"";Down;128;127;255;128;127;255
+VRP-A07-0 ;36;10.211.193.135;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-5;port-5;"";Major;Cliente:COMERCIO VEICULOS;Designador: VRP-301KCO43J;"";Down;128;127;255;128;127;255
+VRP-A08-0 ;37;10.211.193.136;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Minor;logport-1;port-1;"";Cleared;Cliente: ESCRITORIO CONTABIL PASQUALINO;"";"";Up;7;23;2;8;21;3
+VRP-A08-0 ;37;10.211.193.136;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Minor;logport-1;port-1;"";Cleared;Cliente: ESCRITORIO CONTABIL PASQUALINO;"";"";Up;7;23;2;8;21;3
+VRP-A08-0 ;37;10.211.193.136;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Minor;logport-1;port-1;"";Cleared;Cliente: ESCRITORIO CONTABIL PASQUALINO;"";"";Up;7;23;2;8;21;3
+VRP-A08-0 ;37;10.211.193.136;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Minor;logport-1;port-1;"";Cleared;Cliente: ESCRITORIO CONTABIL PASQUALINO;"";"";Up;7;23;2;8;21;3
+VRP-A08-0 ;37;10.211.193.136;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Minor;logport-1;port-1;"";Cleared;Cliente: ESCRITORIO CONTABIL PASQUALINO;"";"";Up;7;23;2;8;21;3
+VRP-A08-0 ;37;10.211.193.136;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Minor;logport-1;port-1;"";Cleared;Cliente: ESCRITORIO CONTABIL PASQUALINO;"";"";Up;7;23;2;8;21;3
+VRP-A08-0 ;37;10.211.193.136;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Minor;logport-1;port-1;"";Cleared;Cliente: ESCRITORIO CONTABIL PASQUALINO;"";"";Up;7;23;2;8;21;3
+VRP-A08-0 ;37;10.211.193.136;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Minor;logport-2;port-2;"";Cleared;"Cliente; SILVIA PASSOS CORRETOR";VRP-301J3VIXR-032;"";Up;8;23;2;8;20;3
+VRP-A08-0 ;37;10.211.193.136;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Minor;logport-2;port-2;"";Cleared;"Cliente; SILVIA PASSOS CORRETOR";VRP-301J3VIXR-032;"";Up;8;23;2;8;20;3
+VRP-A08-0 ;37;10.211.193.136;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Minor;logport-2;port-2;"";Cleared;"Cliente; SILVIA PASSOS CORRETOR";VRP-301J3VIXR-032;"";Up;8;23;2;8;20;3
+VRP-A08-0 ;37;10.211.193.136;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Minor;logport-2;port-2;"";Cleared;"Cliente; SILVIA PASSOS CORRETOR";VRP-301J3VIXR-032;"";Up;8;23;2;8;20;3
+VRP-A08-0 ;37;10.211.193.136;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Minor;logport-2;port-2;"";Cleared;"Cliente; SILVIA PASSOS CORRETOR";VRP-301J3VIXR-032;"";Up;8;23;2;8;20;3
+VRP-A08-0 ;37;10.211.193.136;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Minor;logport-2;port-2;"";Cleared;"Cliente; SILVIA PASSOS CORRETOR";VRP-301J3VIXR-032;"";Up;8;23;2;8;20;3
+VRP-A08-0 ;37;10.211.193.136;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Minor;logport-2;port-2;"";Cleared;"Cliente; SILVIA PASSOS CORRETOR";VRP-301J3VIXR-032;"";Up;8;23;2;8;20;3
+VRP-A08-0 ;37;10.211.193.136;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Minor;logport-4;port-4;"";Cleared;CLIENTE_LUMAUTO;DESIGNADOR_VRP-301KE89JV-032;"";Up;4;21;4;4;20;0
+VRP-A08-0 ;37;10.211.193.136;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Minor;logport-4;port-4;"";Cleared;CLIENTE_LUMAUTO;DESIGNADOR_VRP-301KE89JV-032;"";Up;4;21;4;4;20;0
+VRP-A08-0 ;37;10.211.193.136;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Minor;logport-4;port-4;"";Cleared;CLIENTE_LUMAUTO;DESIGNADOR_VRP-301KE89JV-032;"";Up;4;21;4;4;20;0
+VRP-A08-0 ;37;10.211.193.136;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Minor;logport-4;port-4;"";Cleared;CLIENTE_LUMAUTO;DESIGNADOR_VRP-301KE89JV-032;"";Up;4;21;4;4;20;0
+VRP-A08-0 ;37;10.211.193.136;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Minor;logport-4;port-4;"";Cleared;CLIENTE_LUMAUTO;DESIGNADOR_VRP-301KE89JV-032;"";Up;4;21;4;4;20;0
+VRP-A08-0 ;37;10.211.193.136;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Minor;logport-4;port-4;"";Cleared;CLIENTE_LUMAUTO;DESIGNADOR_VRP-301KE89JV-032;"";Up;4;21;4;4;20;0
+VRP-A08-0 ;37;10.211.193.136;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Minor;logport-4;port-4;"";Cleared;CLIENTE_LUMAUTO;DESIGNADOR_VRP-301KE89JV-032;"";Up;4;21;4;4;20;0
+VRP-A08-0 ;37;10.211.193.136;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Minor;logport-5;port-5;"";Cleared;CLI: HIT_WORLD_TELECOMUNICACOES;DEG: VRP-301JP4ESP;"";Up;4;22;4;4;20;5
+VRP-A08-0 ;37;10.211.193.136;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Minor;logport-5;port-5;"";Cleared;CLI: HIT_WORLD_TELECOMUNICACOES;DEG: VRP-301JP4ESP;"";Up;4;22;4;4;20;5
+VRP-A08-0 ;37;10.211.193.136;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Minor;logport-5;port-5;"";Cleared;CLI: HIT_WORLD_TELECOMUNICACOES;DEG: VRP-301JP4ESP;"";Up;4;22;4;4;20;5
+VRP-A08-0 ;37;10.211.193.136;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Minor;logport-5;port-5;"";Cleared;CLI: HIT_WORLD_TELECOMUNICACOES;DEG: VRP-301JP4ESP;"";Up;4;22;4;4;20;5
+VRP-A08-0 ;37;10.211.193.136;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Minor;logport-5;port-5;"";Cleared;CLI: HIT_WORLD_TELECOMUNICACOES;DEG: VRP-301JP4ESP;"";Up;4;22;4;4;20;5
+VRP-A08-0 ;37;10.211.193.136;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Minor;logport-5;port-5;"";Cleared;CLI: HIT_WORLD_TELECOMUNICACOES;DEG: VRP-301JP4ESP;"";Up;4;22;4;4;20;5
+VRP-A08-0 ;37;10.211.193.136;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Minor;logport-5;port-5;"";Cleared;CLI: HIT_WORLD_TELECOMUNICACOES;DEG: VRP-301JP4ESP;"";Up;4;22;4;4;20;5
+VRP-A08-0 ;37;10.211.193.136;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Minor;logport-8;port-8;"";Cleared;"";"";"";Up;6;24;3;6;21;0
+VRP-A08-0 ;37;10.211.193.136;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Minor;logport-8;port-8;"";Cleared;"";"";"";Up;6;24;3;6;21;0
+VRP-A08-0 ;37;10.211.193.136;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Minor;logport-8;port-8;"";Cleared;"";"";"";Up;6;24;3;6;21;0
+VRP-A08-0 ;37;10.211.193.136;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Minor;logport-8;port-8;"";Cleared;"";"";"";Up;6;24;3;6;21;0
+VRP-A08-0 ;37;10.211.193.136;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Minor;logport-8;port-8;"";Cleared;"";"";"";Up;6;24;3;6;21;0
+VRP-A08-0 ;37;10.211.193.136;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Minor;logport-8;port-8;"";Cleared;"";"";"";Up;6;24;3;6;21;0
+VRP-A08-0 ;37;10.211.193.136;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Minor;logport-8;port-8;"";Cleared;"";"";"";Up;6;24;3;6;21;0
+VRP-A09-0 ;38;10.211.193.137;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-1;port-1;"";Cleared;RBW-COMERCIAL;"";VRP-301IXOB7N-032;Up;3;23;5;4;21;5
+VRP-A09-0 ;38;10.211.193.137;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-1;port-1;"";Cleared;RBW-COMERCIAL;"";VRP-301IXOB7N-032;Up;3;23;5;4;21;5
+VRP-A09-0 ;38;10.211.193.137;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-1;port-1;"";Cleared;RBW-COMERCIAL;"";VRP-301IXOB7N-032;Up;3;23;5;4;21;5
+VRP-A09-0 ;38;10.211.193.137;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-1;port-1;"";Cleared;RBW-COMERCIAL;"";VRP-301IXOB7N-032;Up;3;23;5;4;21;5
+VRP-A09-0 ;38;10.211.193.137;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-1;port-1;"";Cleared;RBW-COMERCIAL;"";VRP-301IXOB7N-032;Up;3;23;5;4;21;5
+VRP-A09-0 ;38;10.211.193.137;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-1;port-1;"";Cleared;RBW-COMERCIAL;"";VRP-301IXOB7N-032;Up;3;23;5;4;21;5
+VRP-A09-0 ;38;10.211.193.137;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-1;port-1;"";Cleared;RBW-COMERCIAL;"";VRP-301IXOB7N-032;Up;3;23;5;4;21;5
+VRP-A09-0 ;38;10.211.193.137;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-2;port-2;"";Cleared;KEEPER AUTO POSTO;"";VRP-301JA5UXJ-032;Up;8;22;2;8;20;4
+VRP-A09-0 ;38;10.211.193.137;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-2;port-2;"";Cleared;KEEPER AUTO POSTO;"";VRP-301JA5UXJ-032;Up;8;22;2;8;20;4
+VRP-A09-0 ;38;10.211.193.137;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-2;port-2;"";Cleared;KEEPER AUTO POSTO;"";VRP-301JA5UXJ-032;Up;8;22;2;8;20;4
+VRP-A09-0 ;38;10.211.193.137;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-2;port-2;"";Cleared;KEEPER AUTO POSTO;"";VRP-301JA5UXJ-032;Up;8;22;2;8;20;4
+VRP-A09-0 ;38;10.211.193.137;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-2;port-2;"";Cleared;KEEPER AUTO POSTO;"";VRP-301JA5UXJ-032;Up;8;22;2;8;20;4
+VRP-A09-0 ;38;10.211.193.137;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-2;port-2;"";Cleared;KEEPER AUTO POSTO;"";VRP-301JA5UXJ-032;Up;8;22;2;8;20;4
+VRP-A09-0 ;38;10.211.193.137;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-2;port-2;"";Cleared;KEEPER AUTO POSTO;"";VRP-301JA5UXJ-032;Up;8;22;2;8;20;4
+VRP-A09-0 ;38;10.211.193.137;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-3;port-3;"";Cleared;Cliente:NITRAN DE OFESANA;Designador:VRP-301JIGX4V-032;"";Up;10;22;1;10;21;3
+VRP-A09-0 ;38;10.211.193.137;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-3;port-3;"";Cleared;Cliente:NITRAN DE OFESANA;Designador:VRP-301JIGX4V-032;"";Up;10;22;1;10;21;3
+VRP-A09-0 ;38;10.211.193.137;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-3;port-3;"";Cleared;Cliente:NITRAN DE OFESANA;Designador:VRP-301JIGX4V-032;"";Up;10;22;1;10;21;3
+VRP-A09-0 ;38;10.211.193.137;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-3;port-3;"";Cleared;Cliente:NITRAN DE OFESANA;Designador:VRP-301JIGX4V-032;"";Up;10;22;1;10;21;3
+VRP-A09-0 ;38;10.211.193.137;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-3;port-3;"";Cleared;Cliente:NITRAN DE OFESANA;Designador:VRP-301JIGX4V-032;"";Up;10;22;1;10;21;3
+VRP-A09-0 ;38;10.211.193.137;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-3;port-3;"";Cleared;Cliente:NITRAN DE OFESANA;Designador:VRP-301JIGX4V-032;"";Up;10;22;1;10;21;3
+VRP-A09-0 ;38;10.211.193.137;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-3;port-3;"";Cleared;Cliente:NITRAN DE OFESANA;Designador:VRP-301JIGX4V-032;"";Up;10;22;1;10;21;3
+IDU-A11-0 ;4;10.211.167.67;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-1;port-1;"";Cleared;Cliente: ESTRELA DO VALE CONS;Designador: IDU-301IKIVXB;"";Up;6;24;2;6;21;4
+IDU-A11-0 ;4;10.211.167.67;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-1;port-1;"";Cleared;Cliente: ESTRELA DO VALE CONS;Designador: IDU-301IKIVXB;"";Up;6;24;2;6;21;4
+IDU-A11-0 ;4;10.211.167.67;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-1;port-1;"";Cleared;Cliente: ESTRELA DO VALE CONS;Designador: IDU-301IKIVXB;"";Up;6;24;2;6;21;4
+IDU-A11-0 ;4;10.211.167.67;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-1;port-1;"";Cleared;Cliente: ESTRELA DO VALE CONS;Designador: IDU-301IKIVXB;"";Up;6;24;2;6;21;4
+IDU-A11-0 ;4;10.211.167.67;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-1;port-1;"";Cleared;Cliente: ESTRELA DO VALE CONS;Designador: IDU-301IKIVXB;"";Up;6;24;2;6;21;4
+IDU-A11-0 ;4;10.211.167.67;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-1;port-1;"";Cleared;Cliente: ESTRELA DO VALE CONS;Designador: IDU-301IKIVXB;"";Up;6;24;2;6;21;4
+IDU-A11-0 ;4;10.211.167.67;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-1;port-1;"";Cleared;Cliente: ESTRELA DO VALE CONS;Designador: IDU-301IKIVXB;"";Up;6;24;2;6;21;4
+IDU-A11-0 ;4;10.211.167.67;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-2;port-2;"";Cleared;"";"";"";Up;6;23;2;6;21;4
+IDU-A11-0 ;4;10.211.167.67;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-2;port-2;"";Cleared;"";"";"";Up;6;23;2;6;21;4
+IDU-A11-0 ;4;10.211.167.67;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-2;port-2;"";Cleared;"";"";"";Up;6;23;2;6;21;4
+IDU-A11-0 ;4;10.211.167.67;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-2;port-2;"";Cleared;"";"";"";Up;6;23;2;6;21;4
+IDU-A11-0 ;4;10.211.167.67;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-2;port-2;"";Cleared;"";"";"";Up;6;23;2;6;21;4
+IDU-A11-0 ;4;10.211.167.67;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-2;port-2;"";Cleared;"";"";"";Up;6;23;2;6;21;4
+IDU-A11-0 ;4;10.211.167.67;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-2;port-2;"";Cleared;"";"";"";Up;6;23;2;6;21;4
+IDU-A19-0 ;20;10.211.167.91;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-1;port-1;"";Cleared;IDU-301IVWH53-032;"";"";Up;5;24;3;6;21;4
+IDU-A19-0 ;20;10.211.167.91;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-1;port-1;"";Cleared;IDU-301IVWH53-032;"";"";Up;5;24;3;6;21;4
+IDU-A19-0 ;20;10.211.167.91;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-1;port-1;"";Cleared;IDU-301IVWH53-032;"";"";Up;5;24;3;6;21;4
+IDU-A19-0 ;20;10.211.167.91;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-1;port-1;"";Cleared;IDU-301IVWH53-032;"";"";Up;5;24;3;6;21;4
+IDU-A19-0 ;20;10.211.167.91;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-1;port-1;"";Cleared;IDU-301IVWH53-032;"";"";Up;5;24;3;6;21;4
+IDU-A19-0 ;20;10.211.167.91;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-1;port-1;"";Cleared;IDU-301IVWH53-032;"";"";Up;5;24;3;6;21;4
+IDU-A19-0 ;20;10.211.167.91;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-1;port-1;"";Cleared;IDU-301IVWH53-032;"";"";Up;5;24;3;6;21;4
+IDU-A19-0 ;20;10.211.167.91;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-2;port-2;"";Cleared;"";"";"";Up;4;22;3;4;20;5
+IDU-A19-0 ;20;10.211.167.91;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-2;port-2;"";Cleared;"";"";"";Up;4;22;3;4;20;5
+IDU-A19-0 ;20;10.211.167.91;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-2;port-2;"";Cleared;"";"";"";Up;4;22;3;4;20;5
+IDU-A19-0 ;20;10.211.167.91;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-2;port-2;"";Cleared;"";"";"";Up;4;22;3;4;20;5
+IDU-A19-0 ;20;10.211.167.91;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-2;port-2;"";Cleared;"";"";"";Up;4;22;3;4;20;5
+IDU-A19-0 ;20;10.211.167.91;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-2;port-2;"";Cleared;"";"";"";Up;4;22;3;4;20;5
+IDU-A19-0 ;20;10.211.167.91;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-2;port-2;"";Cleared;"";"";"";Up;4;22;3;4;20;5
+IDU-A19-0 ;20;10.211.167.91;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-3;port-3;"";Cleared;"";"";"";Up;4;23;3;4;20;5
+IDU-A19-0 ;20;10.211.167.91;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-3;port-3;"";Cleared;"";"";"";Up;4;23;3;4;20;5
+IDU-A19-0 ;20;10.211.167.91;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-3;port-3;"";Cleared;"";"";"";Up;4;23;3;4;20;5
+IDU-A19-0 ;20;10.211.167.91;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-3;port-3;"";Cleared;"";"";"";Up;4;23;3;4;20;5
+IDU-A19-0 ;20;10.211.167.91;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-3;port-3;"";Cleared;"";"";"";Up;4;23;3;4;20;5
+IDU-A19-0 ;20;10.211.167.91;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-3;port-3;"";Cleared;"";"";"";Up;4;23;3;4;20;5
+IDU-A19-0 ;20;10.211.167.91;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-3;port-3;"";Cleared;"";"";"";Up;4;23;3;4;20;5
+IDU-A20-0 ;24;10.211.167.95;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-2;port-2;"";Cleared;Cliente: FEMINA CLINICA;Designador: IDU-301IUAJF6-032;"";Up;7;23;2;8;20;3
+IDU-A20-0 ;24;10.211.167.95;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-2;port-2;"";Cleared;Cliente: FEMINA CLINICA;Designador: IDU-301IUAJF6-032;"";Up;7;23;2;8;20;3
+IDU-A20-0 ;24;10.211.167.95;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-2;port-2;"";Cleared;Cliente: FEMINA CLINICA;Designador: IDU-301IUAJF6-032;"";Up;7;23;2;8;20;3
+IDU-A20-0 ;24;10.211.167.95;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-2;port-2;"";Cleared;Cliente: FEMINA CLINICA;Designador: IDU-301IUAJF6-032;"";Up;7;23;2;8;20;3
+IDU-A20-0 ;24;10.211.167.95;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-2;port-2;"";Cleared;Cliente: FEMINA CLINICA;Designador: IDU-301IUAJF6-032;"";Up;7;23;2;8;20;3
+IDU-A20-0 ;24;10.211.167.95;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-2;port-2;"";Cleared;Cliente: FEMINA CLINICA;Designador: IDU-301IUAJF6-032;"";Up;7;23;2;8;20;3
+IDU-A20-0 ;24;10.211.167.95;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-2;port-2;"";Cleared;Cliente: FEMINA CLINICA;Designador: IDU-301IUAJF6-032;"";Up;7;23;2;8;20;3
+IDU-A20-0 ;24;10.211.167.95;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-3;port-3;"";Cleared;Cliente:HIT WORLD;Designador:IDU-301JP49R4;"";Up;5;23;3;6;21;5
+IDU-A20-0 ;24;10.211.167.95;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-3;port-3;"";Cleared;Cliente:HIT WORLD;Designador:IDU-301JP49R4;"";Up;5;23;3;6;21;5
+IDU-A20-0 ;24;10.211.167.95;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-3;port-3;"";Cleared;Cliente:HIT WORLD;Designador:IDU-301JP49R4;"";Up;5;23;3;6;21;5
+IDU-A20-0 ;24;10.211.167.95;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-3;port-3;"";Cleared;Cliente:HIT WORLD;Designador:IDU-301JP49R4;"";Up;5;23;3;6;21;5
+IDU-A20-0 ;24;10.211.167.95;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-3;port-3;"";Cleared;Cliente:HIT WORLD;Designador:IDU-301JP49R4;"";Up;5;23;3;6;21;5
+IDU-A20-0 ;24;10.211.167.95;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-3;port-3;"";Cleared;Cliente:HIT WORLD;Designador:IDU-301JP49R4;"";Up;5;23;3;6;21;5
+IDU-A20-0 ;24;10.211.167.95;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-3;port-3;"";Cleared;Cliente:HIT WORLD;Designador:IDU-301JP49R4;"";Up;5;23;3;6;21;5
+IDU-A20-0 ;24;10.211.167.95;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-4;port-4;"";Cleared;Cliente:GP GUARDA PATRIMONIA;Designador:IDU-301K5207E;"";Up;5;23;3;6;21;5
+IDU-A20-0 ;24;10.211.167.95;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-4;port-4;"";Cleared;Cliente:GP GUARDA PATRIMONIA;Designador:IDU-301K5207E;"";Up;5;23;3;6;21;5
+IDU-A20-0 ;24;10.211.167.95;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-4;port-4;"";Cleared;Cliente:GP GUARDA PATRIMONIA;Designador:IDU-301K5207E;"";Up;5;23;3;6;21;5
+IDU-A20-0 ;24;10.211.167.95;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-4;port-4;"";Cleared;Cliente:GP GUARDA PATRIMONIA;Designador:IDU-301K5207E;"";Up;5;23;3;6;21;5
+IDU-A20-0 ;24;10.211.167.95;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-4;port-4;"";Cleared;Cliente:GP GUARDA PATRIMONIA;Designador:IDU-301K5207E;"";Up;5;23;3;6;21;5
+IDU-A20-0 ;24;10.211.167.95;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-4;port-4;"";Cleared;Cliente:GP GUARDA PATRIMONIA;Designador:IDU-301K5207E;"";Up;5;23;3;6;21;5
+IDU-A20-0 ;24;10.211.167.95;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-4;port-4;"";Cleared;Cliente:GP GUARDA PATRIMONIA;Designador:IDU-301K5207E;"";Up;5;23;3;6;21;5
+IDU-A20-0 ;24;10.211.167.95;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-5;port-5;"";Cleared;Cliente:LIG-BEM_MATERIAIS;Designador:IDU-301KB54S3-032;"";Up;7;24;3;6;21;4
+IDU-A20-0 ;24;10.211.167.95;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-5;port-5;"";Cleared;Cliente:LIG-BEM_MATERIAIS;Designador:IDU-301KB54S3-032;"";Up;7;24;3;6;21;4
+IDU-A20-0 ;24;10.211.167.95;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-5;port-5;"";Cleared;Cliente:LIG-BEM_MATERIAIS;Designador:IDU-301KB54S3-032;"";Up;7;24;3;6;21;4
+IDU-A20-0 ;24;10.211.167.95;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-5;port-5;"";Cleared;Cliente:LIG-BEM_MATERIAIS;Designador:IDU-301KB54S3-032;"";Up;7;24;3;6;21;4
+IDU-A20-0 ;24;10.211.167.95;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-5;port-5;"";Cleared;Cliente:LIG-BEM_MATERIAIS;Designador:IDU-301KB54S3-032;"";Up;7;24;3;6;21;4
+IDU-A20-0 ;24;10.211.167.95;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-5;port-5;"";Cleared;Cliente:LIG-BEM_MATERIAIS;Designador:IDU-301KB54S3-032;"";Up;7;24;3;6;21;4
+IDU-A20-0 ;24;10.211.167.95;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-5;port-5;"";Cleared;Cliente:LIG-BEM_MATERIAIS;Designador:IDU-301KB54S3-032;"";Up;7;24;3;6;21;4
+IDU-A20-0 ;24;10.211.167.95;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-7;port-7;"";Cleared;MICROIND;IDU-301JVXTGN;"";Up;4;23;4;4;21;5
+IDU-A20-0 ;24;10.211.167.95;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-7;port-7;"";Cleared;MICROIND;IDU-301JVXTGN;"";Up;4;23;4;4;21;5
+IDU-A20-0 ;24;10.211.167.95;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-7;port-7;"";Cleared;MICROIND;IDU-301JVXTGN;"";Up;4;23;4;4;21;5
+IDU-A20-0 ;24;10.211.167.95;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-7;port-7;"";Cleared;MICROIND;IDU-301JVXTGN;"";Up;4;23;4;4;21;5
+IDU-A20-0 ;24;10.211.167.95;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-7;port-7;"";Cleared;MICROIND;IDU-301JVXTGN;"";Up;4;23;4;4;21;5
+IDU-A20-0 ;24;10.211.167.95;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-7;port-7;"";Cleared;MICROIND;IDU-301JVXTGN;"";Up;4;23;4;4;21;5
+IDU-A20-0 ;24;10.211.167.95;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-7;port-7;"";Cleared;MICROIND;IDU-301JVXTGN;"";Up;4;23;4;4;21;5
+IDU-A21-0 ;32;10.211.167.75;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-1;port-1;"";Cleared;ELCIO CARDOSO DA SILVA CONSULTORIA;IDU-301IK28MB-032;"";Up;8;24;1;8;21;3
+IDU-A21-0 ;32;10.211.167.75;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-1;port-1;"";Cleared;ELCIO CARDOSO DA SILVA CONSULTORIA;IDU-301IK28MB-032;"";Up;8;24;1;8;21;3
+IDU-A21-0 ;32;10.211.167.75;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-1;port-1;"";Cleared;ELCIO CARDOSO DA SILVA CONSULTORIA;IDU-301IK28MB-032;"";Up;8;24;1;8;21;3
+IDU-A21-0 ;32;10.211.167.75;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-1;port-1;"";Cleared;ELCIO CARDOSO DA SILVA CONSULTORIA;IDU-301IK28MB-032;"";Up;8;24;1;8;21;3
+IDU-A21-0 ;32;10.211.167.75;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-1;port-1;"";Cleared;ELCIO CARDOSO DA SILVA CONSULTORIA;IDU-301IK28MB-032;"";Up;8;24;1;8;21;3
+IDU-A21-0 ;32;10.211.167.75;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-1;port-1;"";Cleared;ELCIO CARDOSO DA SILVA CONSULTORIA;IDU-301IK28MB-032;"";Up;8;24;1;8;21;3
+IDU-A21-0 ;32;10.211.167.75;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-1;port-1;"";Cleared;ELCIO CARDOSO DA SILVA CONSULTORIA;IDU-301IK28MB-032;"";Up;8;24;1;8;21;3
+IDU-A23-0 ;36;10.211.167.107;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-3;port-3;"";Cleared;Cliente:AS DE PAIS E AMIGOS;Designador:IDU-301IR7POF-032;"";Up;9;24;1;8;21;3
+IDU-A23-0 ;36;10.211.167.107;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-3;port-3;"";Cleared;Cliente:AS DE PAIS E AMIGOS;Designador:IDU-301IR7POF-032;"";Up;9;24;1;8;21;3
+IDU-A23-0 ;36;10.211.167.107;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-3;port-3;"";Cleared;Cliente:AS DE PAIS E AMIGOS;Designador:IDU-301IR7POF-032;"";Up;9;24;1;8;21;3
+IDU-A23-0 ;36;10.211.167.107;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-3;port-3;"";Cleared;Cliente:AS DE PAIS E AMIGOS;Designador:IDU-301IR7POF-032;"";Up;9;24;1;8;21;3
+IDU-A23-0 ;36;10.211.167.107;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-3;port-3;"";Cleared;Cliente:AS DE PAIS E AMIGOS;Designador:IDU-301IR7POF-032;"";Up;9;24;1;8;21;3
+IDU-A23-0 ;36;10.211.167.107;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-3;port-3;"";Cleared;Cliente:AS DE PAIS E AMIGOS;Designador:IDU-301IR7POF-032;"";Up;9;24;1;8;21;3
+IDU-A23-0 ;36;10.211.167.107;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-3;port-3;"";Cleared;Cliente:AS DE PAIS E AMIGOS;Designador:IDU-301IR7POF-032;"";Up;9;24;1;8;21;3
+IDU-A27-0 ;68;10.211.167.123;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-2;port-2;"";Cleared;"";"";"";Up;3;23;4;4;21;5
+IDU-A27-0 ;68;10.211.167.123;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-2;port-2;"";Cleared;"";"";"";Up;3;23;4;4;21;5
+IDU-A27-0 ;68;10.211.167.123;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-2;port-2;"";Cleared;"";"";"";Up;3;23;4;4;21;5
+IDU-A27-0 ;68;10.211.167.123;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-2;port-2;"";Cleared;"";"";"";Up;3;23;4;4;21;5
+IDU-A27-0 ;68;10.211.167.123;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-2;port-2;"";Cleared;"";"";"";Up;3;23;4;4;21;5
+IDU-A27-0 ;68;10.211.167.123;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-2;port-2;"";Cleared;"";"";"";Up;3;23;4;4;21;5
+IDU-A27-0 ;68;10.211.167.123;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-2;port-2;"";Cleared;"";"";"";Up;3;23;4;4;21;5
+IDU-A27-0 ;68;10.211.167.123;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-3;port-3;"";Cleared;CLC NEGOCIOS IMOBILIARIOS LTDA - EPP;OS: 15082652;"";Up;5;23;3;6;21;5
+IDU-A27-0 ;68;10.211.167.123;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-3;port-3;"";Cleared;CLC NEGOCIOS IMOBILIARIOS LTDA - EPP;OS: 15082652;"";Up;5;23;3;6;21;5
+IDU-A27-0 ;68;10.211.167.123;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-3;port-3;"";Cleared;CLC NEGOCIOS IMOBILIARIOS LTDA - EPP;OS: 15082652;"";Up;5;23;3;6;21;5
+IDU-A27-0 ;68;10.211.167.123;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-3;port-3;"";Cleared;CLC NEGOCIOS IMOBILIARIOS LTDA - EPP;OS: 15082652;"";Up;5;23;3;6;21;5
+IDU-A27-0 ;68;10.211.167.123;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-3;port-3;"";Cleared;CLC NEGOCIOS IMOBILIARIOS LTDA - EPP;OS: 15082652;"";Up;5;23;3;6;21;5
+IDU-A27-0 ;68;10.211.167.123;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-3;port-3;"";Cleared;CLC NEGOCIOS IMOBILIARIOS LTDA - EPP;OS: 15082652;"";Up;5;23;3;6;21;5
+IDU-A27-0 ;68;10.211.167.123;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-3;port-3;"";Cleared;CLC NEGOCIOS IMOBILIARIOS LTDA - EPP;OS: 15082652;"";Up;5;23;3;6;21;5
+IDU-A27-0 ;68;10.211.167.123;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-6;port-6;"";Cleared;"";"";"";Up;7;24;2;6;20;4
+IDU-A27-0 ;68;10.211.167.123;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-6;port-6;"";Cleared;"";"";"";Up;7;24;2;6;20;4
+IDU-A27-0 ;68;10.211.167.123;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-6;port-6;"";Cleared;"";"";"";Up;7;24;2;6;20;4
+IDU-A27-0 ;68;10.211.167.123;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-6;port-6;"";Cleared;"";"";"";Up;7;24;2;6;20;4
+IDU-A27-0 ;68;10.211.167.123;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-6;port-6;"";Cleared;"";"";"";Up;7;24;2;6;20;4
+IDU-A27-0 ;68;10.211.167.123;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-6;port-6;"";Cleared;"";"";"";Up;7;24;2;6;20;4
+IDU-A27-0 ;68;10.211.167.123;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-6;port-6;"";Cleared;"";"";"";Up;7;24;2;6;20;4
+IDU-A27-0 ;68;10.211.167.123;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-7;port-7;"";Cleared;Cliente:HR TURISMO E PASSAGENS LTDA - ME;Designador: IDU_301J2TNL7_032;"";Up;6;22;3;6;20;4
+IDU-A27-0 ;68;10.211.167.123;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-7;port-7;"";Cleared;Cliente:HR TURISMO E PASSAGENS LTDA - ME;Designador: IDU_301J2TNL7_032;"";Up;6;22;3;6;20;4
+IDU-A27-0 ;68;10.211.167.123;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-7;port-7;"";Cleared;Cliente:HR TURISMO E PASSAGENS LTDA - ME;Designador: IDU_301J2TNL7_032;"";Up;6;22;3;6;20;4
+IDU-A27-0 ;68;10.211.167.123;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-7;port-7;"";Cleared;Cliente:HR TURISMO E PASSAGENS LTDA - ME;Designador: IDU_301J2TNL7_032;"";Up;6;22;3;6;20;4
+IDU-A27-0 ;68;10.211.167.123;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-7;port-7;"";Cleared;Cliente:HR TURISMO E PASSAGENS LTDA - ME;Designador: IDU_301J2TNL7_032;"";Up;6;22;3;6;20;4
+IDU-A27-0 ;68;10.211.167.123;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-7;port-7;"";Cleared;Cliente:HR TURISMO E PASSAGENS LTDA - ME;Designador: IDU_301J2TNL7_032;"";Up;6;22;3;6;20;4
+IDU-A27-0 ;68;10.211.167.123;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-7;port-7;"";Cleared;Cliente:HR TURISMO E PASSAGENS LTDA - ME;Designador: IDU_301J2TNL7_032;"";Up;6;22;3;6;20;4
+IDU-A29-0 ;73;10.211.167.127;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-1;port-1;"";Cleared;"";"";"";Up;7;19;1;8;20;0
+IDU-A29-0 ;73;10.211.167.127;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-1;port-1;"";Cleared;"";"";"";Up;7;19;1;8;20;0
+IDU-A29-0 ;73;10.211.167.127;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-1;port-1;"";Cleared;"";"";"";Up;7;19;1;8;20;0
+IDU-A29-0 ;73;10.211.167.127;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-1;port-1;"";Cleared;"";"";"";Up;7;19;1;8;20;0
+IDU-A29-0 ;73;10.211.167.127;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-1;port-1;"";Cleared;"";"";"";Up;7;19;1;8;20;0
+IDU-A29-0 ;73;10.211.167.127;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-1;port-1;"";Cleared;"";"";"";Up;7;19;1;8;20;0
+IDU-A29-0 ;73;10.211.167.127;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Cleared;logport-1;port-1;"";Cleared;"";"";"";Up;7;19;1;8;20;0
+IDU-A30-0 ;76;10.211.167.131;unit-20;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Major;Cliente: NOLOGIA EM SISTEMAS;Designador: IDU-301IGBFUA-032;"";Down;128;127;255;128;127;255
+IDU-A30-0 ;76;10.211.167.131;unit-20;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Major;Cliente: NOLOGIA EM SISTEMAS;Designador: IDU-301IGBFUA-032;"";Down;128;127;255;128;127;255
+IDU-A30-0 ;76;10.211.167.131;unit-20;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Major;Cliente: NOLOGIA EM SISTEMAS;Designador: IDU-301IGBFUA-032;"";Down;128;127;255;128;127;255
+IDU-A30-0 ;76;10.211.167.131;unit-20;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Major;Cliente: NOLOGIA EM SISTEMAS;Designador: IDU-301IGBFUA-032;"";Down;128;127;255;128;127;255
+IDU-A30-0 ;76;10.211.167.131;unit-20;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Major;Cliente: NOLOGIA EM SISTEMAS;Designador: IDU-301IGBFUA-032;"";Down;128;127;255;128;127;255
+IDU-A30-0 ;76;10.211.167.131;unit-20;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Major;Cliente: NOLOGIA EM SISTEMAS;Designador: IDU-301IGBFUA-032;"";Down;128;127;255;128;127;255
+IDU-A30-0 ;76;10.211.167.131;unit-20;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-1;port-1;"";Major;Cliente: NOLOGIA EM SISTEMAS;Designador: IDU-301IGBFUA-032;"";Down;128;127;255;128;127;255
+IDU-A30-0 ;76;10.211.167.131;unit-20;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Cleared;Cliente: HIT WORLD TELECOMUNICA??ES;Designador:IDU-301JXYMYN;"";Up;8;24;2;8;21;3
+IDU-A30-0 ;76;10.211.167.131;unit-20;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Cleared;Cliente: HIT WORLD TELECOMUNICA??ES;Designador:IDU-301JXYMYN;"";Up;8;24;2;8;21;3
+IDU-A30-0 ;76;10.211.167.131;unit-20;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Cleared;Cliente: HIT WORLD TELECOMUNICA??ES;Designador:IDU-301JXYMYN;"";Up;8;24;2;8;21;3
+IDU-A30-0 ;76;10.211.167.131;unit-20;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Cleared;Cliente: HIT WORLD TELECOMUNICA??ES;Designador:IDU-301JXYMYN;"";Up;8;24;2;8;21;3
+IDU-A30-0 ;76;10.211.167.131;unit-20;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Cleared;Cliente: HIT WORLD TELECOMUNICA??ES;Designador:IDU-301JXYMYN;"";Up;8;24;2;8;21;3
+IDU-A30-0 ;76;10.211.167.131;unit-20;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Cleared;Cliente: HIT WORLD TELECOMUNICA??ES;Designador:IDU-301JXYMYN;"";Up;8;24;2;8;21;3
+IDU-A30-0 ;76;10.211.167.131;unit-20;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Cleared;Cliente: HIT WORLD TELECOMUNICA??ES;Designador:IDU-301JXYMYN;"";Up;8;24;2;8;21;3
+IDU-A38-0 ;78;10.211.167.139;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-1;port-1;"";Cleared;"";"";"";Up;8;21;2;8;18;3
+IDU-A38-0 ;78;10.211.167.139;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-1;port-1;"";Cleared;"";"";"";Up;8;21;2;8;18;3
+IDU-A38-0 ;78;10.211.167.139;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-1;port-1;"";Cleared;"";"";"";Up;8;21;2;8;18;3
+IDU-A38-0 ;78;10.211.167.139;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-1;port-1;"";Cleared;"";"";"";Up;8;21;2;8;18;3
+IDU-A38-0 ;78;10.211.167.139;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-1;port-1;"";Cleared;"";"";"";Up;8;21;2;8;18;3
+IDU-A38-0 ;78;10.211.167.139;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-1;port-1;"";Cleared;"";"";"";Up;8;21;2;8;18;3
+IDU-A38-0 ;78;10.211.167.139;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-1;port-1;"";Cleared;"";"";"";Up;8;21;2;8;18;3
+IDU-A38-0 ;78;10.211.167.139;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-2;port-2;"";Cleared;"";"";"";Up;9;23;1;8;20;0
+IDU-A38-0 ;78;10.211.167.139;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-2;port-2;"";Cleared;"";"";"";Up;9;23;1;8;20;0
+IDU-A38-0 ;78;10.211.167.139;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-2;port-2;"";Cleared;"";"";"";Up;9;23;1;8;20;0
+IDU-A38-0 ;78;10.211.167.139;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-2;port-2;"";Cleared;"";"";"";Up;9;23;1;8;20;0
+IDU-A38-0 ;78;10.211.167.139;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-2;port-2;"";Cleared;"";"";"";Up;9;23;1;8;20;0
+IDU-A38-0 ;78;10.211.167.139;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-2;port-2;"";Cleared;"";"";"";Up;9;23;1;8;20;0
+IDU-A38-0 ;78;10.211.167.139;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-2;port-2;"";Cleared;"";"";"";Up;9;23;1;8;20;0
+IDU-A38-0 ;78;10.211.167.139;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-4;port-4;"";Cleared;AWR;18117969;"";Up;10;23;0;10;21;0
+IDU-A38-0 ;78;10.211.167.139;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-4;port-4;"";Cleared;AWR;18117969;"";Up;10;23;0;10;21;0
+IDU-A38-0 ;78;10.211.167.139;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-4;port-4;"";Cleared;AWR;18117969;"";Up;10;23;0;10;21;0
+IDU-A38-0 ;78;10.211.167.139;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-4;port-4;"";Cleared;AWR;18117969;"";Up;10;23;0;10;21;0
+IDU-A38-0 ;78;10.211.167.139;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-4;port-4;"";Cleared;AWR;18117969;"";Up;10;23;0;10;21;0
+IDU-A38-0 ;78;10.211.167.139;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-4;port-4;"";Cleared;AWR;18117969;"";Up;10;23;0;10;21;0
+IDU-A38-0 ;78;10.211.167.139;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Warning;logport-4;port-4;"";Cleared;AWR;18117969;"";Up;10;23;0;10;21;0
+IDU-I01-0 ;64;10.211.167.115;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Major;Cliente: ROBSON_RODRIGUES;Designador: IDU-301KCEBBN-032;"";Down;128;127;255;128;127;255
+IDU-I01-0 ;64;10.211.167.115;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Major;Cliente: ROBSON_RODRIGUES;Designador: IDU-301KCEBBN-032;"";Down;128;127;255;128;127;255
+IDU-I01-0 ;64;10.211.167.115;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Major;Cliente: ROBSON_RODRIGUES;Designador: IDU-301KCEBBN-032;"";Down;128;127;255;128;127;255
+IDU-I01-0 ;64;10.211.167.115;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Major;Cliente: ROBSON_RODRIGUES;Designador: IDU-301KCEBBN-032;"";Down;128;127;255;128;127;255
+IDU-I01-0 ;64;10.211.167.115;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Major;Cliente: ROBSON_RODRIGUES;Designador: IDU-301KCEBBN-032;"";Down;128;127;255;128;127;255
+IDU-I01-0 ;64;10.211.167.115;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Major;Cliente: ROBSON_RODRIGUES;Designador: IDU-301KCEBBN-032;"";Down;128;127;255;128;127;255
+IDU-I01-0 ;64;10.211.167.115;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Major;Cliente: ROBSON_RODRIGUES;Designador: IDU-301KCEBBN-032;"";Down;128;127;255;128;127;255
+IDU-I01-0 ;64;10.211.167.115;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Cleared;"";"";"";Up;9;24;0;10;20;0
+IDU-I01-0 ;64;10.211.167.115;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Cleared;"";"";"";Up;9;24;0;10;20;0
+IDU-I01-0 ;64;10.211.167.115;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Cleared;"";"";"";Up;9;24;0;10;20;0
+IDU-I01-0 ;64;10.211.167.115;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Cleared;"";"";"";Up;9;24;0;10;20;0
+IDU-I01-0 ;64;10.211.167.115;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Cleared;"";"";"";Up;9;24;0;10;20;0
+IDU-I01-0 ;64;10.211.167.115;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Cleared;"";"";"";Up;9;24;0;10;20;0
+IDU-I01-0 ;64;10.211.167.115;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Cleared;"";"";"";Up;9;24;0;10;20;0
+IDU-I01-0 ;64;10.211.167.115;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-4;port-4;"";Cleared;MRI METODOS;IDU-301KJKTF3-032;"";Up;8;24;1;8;21;3
+IDU-I01-0 ;64;10.211.167.115;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-4;port-4;"";Cleared;MRI METODOS;IDU-301KJKTF3-032;"";Up;8;24;1;8;21;3
+IDU-I01-0 ;64;10.211.167.115;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-4;port-4;"";Cleared;MRI METODOS;IDU-301KJKTF3-032;"";Up;8;24;1;8;21;3
+IDU-I01-0 ;64;10.211.167.115;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-4;port-4;"";Cleared;MRI METODOS;IDU-301KJKTF3-032;"";Up;8;24;1;8;21;3
+IDU-I01-0 ;64;10.211.167.115;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-4;port-4;"";Cleared;MRI METODOS;IDU-301KJKTF3-032;"";Up;8;24;1;8;21;3
+IDU-I01-0 ;64;10.211.167.115;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-4;port-4;"";Cleared;MRI METODOS;IDU-301KJKTF3-032;"";Up;8;24;1;8;21;3
+IDU-I01-0 ;64;10.211.167.115;unit-18;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-4;port-4;"";Cleared;MRI METODOS;IDU-301KJKTF3-032;"";Up;8;24;1;8;21;3
+IDU-I01-0 ;64;10.211.167.115;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Cleared;Cliente: CARREIRA MULLER ASSOCIADOS CONSULT EMPRES SC LTDA;Designador: IDU-301ILS1RV-032;"";Up;6;24;3;6;20;4
+IDU-I01-0 ;64;10.211.167.115;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Cleared;Cliente: CARREIRA MULLER ASSOCIADOS CONSULT EMPRES SC LTDA;Designador: IDU-301ILS1RV-032;"";Up;6;24;3;6;20;4
+IDU-I01-0 ;64;10.211.167.115;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Cleared;Cliente: CARREIRA MULLER ASSOCIADOS CONSULT EMPRES SC LTDA;Designador: IDU-301ILS1RV-032;"";Up;6;24;3;6;20;4
+IDU-I01-0 ;64;10.211.167.115;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Cleared;Cliente: CARREIRA MULLER ASSOCIADOS CONSULT EMPRES SC LTDA;Designador: IDU-301ILS1RV-032;"";Up;6;24;3;6;20;4
+IDU-I01-0 ;64;10.211.167.115;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Cleared;Cliente: CARREIRA MULLER ASSOCIADOS CONSULT EMPRES SC LTDA;Designador: IDU-301ILS1RV-032;"";Up;6;24;3;6;20;4
+IDU-I01-0 ;64;10.211.167.115;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Cleared;Cliente: CARREIRA MULLER ASSOCIADOS CONSULT EMPRES SC LTDA;Designador: IDU-301ILS1RV-032;"";Up;6;24;3;6;20;4
+IDU-I01-0 ;64;10.211.167.115;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-2;port-2;"";Cleared;Cliente: CARREIRA MULLER ASSOCIADOS CONSULT EMPRES SC LTDA;Designador: IDU-301ILS1RV-032;"";Up;6;24;3;6;20;4
+IDU-I01-0 ;64;10.211.167.115;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Cleared;Cliente: ARAGUAIA SISTEMAS;Designador:IDU-301JCS9SX-032;"";Up;4;24;4;4;21;5
+IDU-I01-0 ;64;10.211.167.115;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Cleared;Cliente: ARAGUAIA SISTEMAS;Designador:IDU-301JCS9SX-032;"";Up;4;24;4;4;21;5
+IDU-I01-0 ;64;10.211.167.115;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Cleared;Cliente: ARAGUAIA SISTEMAS;Designador:IDU-301JCS9SX-032;"";Up;4;24;4;4;21;5
+IDU-I01-0 ;64;10.211.167.115;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Cleared;Cliente: ARAGUAIA SISTEMAS;Designador:IDU-301JCS9SX-032;"";Up;4;24;4;4;21;5
+IDU-I01-0 ;64;10.211.167.115;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Cleared;Cliente: ARAGUAIA SISTEMAS;Designador:IDU-301JCS9SX-032;"";Up;4;24;4;4;21;5
+IDU-I01-0 ;64;10.211.167.115;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Cleared;Cliente: ARAGUAIA SISTEMAS;Designador:IDU-301JCS9SX-032;"";Up;4;24;4;4;21;5
+IDU-I01-0 ;64;10.211.167.115;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-3;port-3;"";Cleared;Cliente: ARAGUAIA SISTEMAS;Designador:IDU-301JCS9SX-032;"";Up;4;24;4;4;21;5
+IDU-I01-0 ;64;10.211.167.115;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-4;port-4;"";Cleared;Cliente: CENTRO_OFTALMOLOGICO;Designador: IDU-301JIB5VR-032;"";Up;5;23;3;6;21;4
+IDU-I01-0 ;64;10.211.167.115;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-4;port-4;"";Cleared;Cliente: CENTRO_OFTALMOLOGICO;Designador: IDU-301JIB5VR-032;"";Up;5;23;3;6;21;4
+IDU-I01-0 ;64;10.211.167.115;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-4;port-4;"";Cleared;Cliente: CENTRO_OFTALMOLOGICO;Designador: IDU-301JIB5VR-032;"";Up;5;23;3;6;21;4
+IDU-I01-0 ;64;10.211.167.115;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-4;port-4;"";Cleared;Cliente: CENTRO_OFTALMOLOGICO;Designador: IDU-301JIB5VR-032;"";Up;5;23;3;6;21;4
+IDU-I01-0 ;64;10.211.167.115;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-4;port-4;"";Cleared;Cliente: CENTRO_OFTALMOLOGICO;Designador: IDU-301JIB5VR-032;"";Up;5;23;3;6;21;4
+IDU-I01-0 ;64;10.211.167.115;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-4;port-4;"";Cleared;Cliente: CENTRO_OFTALMOLOGICO;Designador: IDU-301JIB5VR-032;"";Up;5;23;3;6;21;4
+IDU-I01-0 ;64;10.211.167.115;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-4;port-4;"";Cleared;Cliente: CENTRO_OFTALMOLOGICO;Designador: IDU-301JIB5VR-032;"";Up;5;23;3;6;21;4
+IDU-I01-0 ;64;10.211.167.115;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-5;port-5;"";Major;Cliente:SANDRA MANOEL;Designador:IDU-301K34S95-032;"";Down;128;127;255;128;127;255
+IDU-I01-0 ;64;10.211.167.115;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-5;port-5;"";Major;Cliente:SANDRA MANOEL;Designador:IDU-301K34S95-032;"";Down;128;127;255;128;127;255
+IDU-I01-0 ;64;10.211.167.115;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-5;port-5;"";Major;Cliente:SANDRA MANOEL;Designador:IDU-301K34S95-032;"";Down;128;127;255;128;127;255
+IDU-I01-0 ;64;10.211.167.115;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-5;port-5;"";Major;Cliente:SANDRA MANOEL;Designador:IDU-301K34S95-032;"";Down;128;127;255;128;127;255
+IDU-I01-0 ;64;10.211.167.115;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-5;port-5;"";Major;Cliente:SANDRA MANOEL;Designador:IDU-301K34S95-032;"";Down;128;127;255;128;127;255
+IDU-I01-0 ;64;10.211.167.115;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-5;port-5;"";Major;Cliente:SANDRA MANOEL;Designador:IDU-301K34S95-032;"";Down;128;127;255;128;127;255
+IDU-I01-0 ;64;10.211.167.115;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-5;port-5;"";Major;Cliente:SANDRA MANOEL;Designador:IDU-301K34S95-032;"";Down;128;127;255;128;127;255
+IDU-I01-0 ;64;10.211.167.115;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-8;port-8;"";Cleared;Cliente: QUALYQUIMICA;Designador: IDU-301K8IJ2V-032;"";Up;4;23;4;4;21;5
+IDU-I01-0 ;64;10.211.167.115;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-8;port-8;"";Cleared;Cliente: QUALYQUIMICA;Designador: IDU-301K8IJ2V-032;"";Up;4;23;4;4;21;5
+IDU-I01-0 ;64;10.211.167.115;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-8;port-8;"";Cleared;Cliente: QUALYQUIMICA;Designador: IDU-301K8IJ2V-032;"";Up;4;23;4;4;21;5
+IDU-I01-0 ;64;10.211.167.115;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-8;port-8;"";Cleared;Cliente: QUALYQUIMICA;Designador: IDU-301K8IJ2V-032;"";Up;4;23;4;4;21;5
+IDU-I01-0 ;64;10.211.167.115;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-8;port-8;"";Cleared;Cliente: QUALYQUIMICA;Designador: IDU-301K8IJ2V-032;"";Up;4;23;4;4;21;5
+IDU-I01-0 ;64;10.211.167.115;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-8;port-8;"";Cleared;Cliente: QUALYQUIMICA;Designador: IDU-301K8IJ2V-032;"";Up;4;23;4;4;21;5
+IDU-I01-0 ;64;10.211.167.115;unit-21;STIM1 R1D;stim1_r4d07;Ok;Cleared;Major;logport-8;port-8;"";Cleared;Cliente: QUALYQUIMICA;Designador: IDU-301K8IJ2V-032;"";Up;4;23;4;4;21;5

@@ -1,0 +1,24 @@
++-------------------------------------- General status for CAS --------------------------------------+
+|
+| Total checked NEs: 10
+| Total remote access errors: 0
+| Total NE alarms: 0
+| Total cards checked: 70
+| Total card alarms: 7
+| Total redundancy alarms: 0
+|
++----------------------------------------------------------------------------------------------------+
+|
+|
+| KEYMILE Alarms
+|	CAS-A02-CORP	RIN CORP		at 10.211.161.71		Alarm >> unit-13 - COGE3 R1E - Plugged
+|	CAS-A04-CORP	RIN CORP		at 10.211.161.63		Alarm >> unit-13 - COGE3 R1C - Plugged
+|	CAS-A56-CORP	RIN CORP		at 10.211.161.55		Alarm >> unit-13 - COGE3 R1C - Plugged
+|	CAS-A57-CORP	RIN CORP		at 10.211.161.235		Alarm >> unit-13 - COGE3 R1D - Plugged
+|	CAS-A60-CORP	RIN CORP		at 10.211.161.247		Alarm >> unit-13 - COGE3 R1C - Plugged
+|	CAS-A68-CORP	RIN CORP		at 10.211.167.31		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	CAS-A69-CORP	RIN CORP		at 10.211.167.55		Alarm >> unit-13 - COGE3 R1E - Plugged
+|
+| ZHONE Alarms
+|
++----------------------------------------------------------------------------------------------------+

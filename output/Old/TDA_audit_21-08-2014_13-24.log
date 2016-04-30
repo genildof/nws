@@ -1,0 +1,23 @@
++-------------------------------------- General status for TDA --------------------------------------+
+|
+| Total checked NEs: 22
+| Total remote access errors: 0
+| Total NE alarms: 6
+| Total cards checked: 374
+| Total card alarms: 0
+| Total redundancy errors: 0
+|
++----------------------------------------------------------------------------------------------------+
+|
+|
+| KEYMILE Alarms
+|	TDA-A01-0 	RIN 77		at 10.164.32.126		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	TDA-A02-4 	RIN 493		at 10.164.32.131		Alarm >> Protecting CU Active
+|	TDA-A04-0 	RIN 100		at 10.164.37.3		Alarm >> Protecting CU Active
+|	TDA-A04 	RIN 408		at 10.164.37.16		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	TDA-A04 	RIN 408		at 10.164.37.16		Alarm >> Protecting CU Active
+|	TDA-A05-5 	RIN 57		at 10.164.37.15		Alarm >> Loss Of Signal On PDH Clock Source 2
+|
+| ZHONE Alarms
+|
++----------------------------------------------------------------------------------------------------+

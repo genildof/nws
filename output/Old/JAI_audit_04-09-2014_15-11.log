@@ -1,0 +1,59 @@
++-------------------------------------- General status for JAI --------------------------------------+
+|
+| Total checked NEs: 60
+| Total remote access errors: 1
+| Total NE alarms: 16
+| Total cards checked: 1020
+| Total card alarms: 0
+| Total redundancy alarms: 25
+|
++----------------------------------------------------------------------------------------------------+
+|
+|
+| KEYMILE Alarms
+|	JAI-A01-0 	RIN 62		at 10.211.193.61		Alarm >> /unit-11/port-1 RxInputPower (-18)
+|	JAI-A01 	RIN 63		at 10.211.193.62		Alarm >> Protecting CU Active
+|	JAI-A04-0 	RIN 46		at 10.211.193.45		Alarm >> alarm-1   -  Porta DG           -  Minor     
+|	JAI-A08-6 	RIN 41		at 10.211.193.8		Error >> No remote access
+|	JAI-A11-0 	RIN 26		at 10.211.193.25		Alarm >> alarm-1   -  Door_Open           -  Minor     
+|	JAI-A13-0 	RIN 70		at 10.211.193.69		Alarm >> /unit-13/port-1 RxInputPower (-23)
+|	JAI-A14 	RIN 75		at 10.211.193.74		Alarm >> /unit-13/port-1 RxInputPower (-50)
+|	JAI-A15-0 	RIN 14		at 10.211.193.121		Alarm >> alarm-4   -  Falha de Fan        -  Minor     
+|	JAI-A15 	RIN 15		at 10.211.193.122		Alarm >> Protecting CU Active
+|	JAI-A15 	RIN 15		at 10.211.193.122		Alarm >> /unit-11/port-1 RxInputPower (-31)
+|	JAI-A16-0 	RIN 18		at 10.211.193.17		Alarm >> alarm-1   -  Open_Door           -  Minor     
+|	JAI-A16-0 	RIN 18		at 10.211.193.17		Alarm >> /unit-13/port-1 RxInputPower (-30)
+|	JAI-A16 	RIN 19		at 10.211.193.18		Alarm >> Protecting CU Active
+|	JAI-A16 	RIN 19		at 10.211.193.18		Alarm >> /unit-11/port-1 RxInputPower (-26)
+|	JAI-I01-7 	RIN 100		at 10.211.193.57		Alarm >> Protecting CU Active
+|	JAI-I01-6 	RIN 17		at 10.211.193.16		Alarm >> /unit-11/port-1 RxInputPower (-50)
+|	JAI-I01-6 	RIN 17		at 10.211.193.16		Alarm >> /unit-13/port-1 RxInputPower (-26)
+|	JAI-I01 	RIN 394		at 10.211.193.14		Alarm >> /unit-11/port-1 RxInputPower (-26)
+|	JAI-I01 	RIN 394		at 10.211.193.14		Alarm >> /unit-13/port-1 RxInputPower (-26)
+|	JAI-I01-2 	RIN 395		at 10.211.193.15		Alarm >> Protecting CU Active
+|	JAI-I01-2 	RIN 395		at 10.211.193.15		Alarm >> /unit-11/port-1 RxInputPower (-28)
+|
+| ZHONE Alarms
+|	JAI-A01-1 	RIN 64		at 10.211.193.63		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	JAI-A10-1 	RIN 12		at 10.211.193.11		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	JAI-A11-1 	RIN 28		at 10.211.193.27		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	JAI-A12-1 	RIN 24		at 10.211.193.23		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	JAI-A13-1 	RIN 72		at 10.211.193.71		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	JAI-A13-2 	RIN 73		at 10.211.193.72		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	JAI-A14-1 	RIN 76		at 10.211.193.75		Alarm >> fan_speed_error
+|	JAI-A14-1 	RIN 76		at 10.211.193.75		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	JAI-A15-1 	RIN 16		at 10.211.193.123		Alarm >> power_supply_b_failure
+|	JAI-A15-1 	RIN 16		at 10.211.193.123		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	JAI-A18-0 	RIN 86		at 10.211.193.85		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	JAI-A18-2 	RIN 88		at 10.211.193.87		Alarm >> power_supply_b_failure
+|	JAI-A18-2 	RIN 88		at 10.211.193.87		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	JAI-A22-0 	RIN 102		at 10.211.193.101		Alarm >> power_supply_b_failure
+|	JAI-A22-0 	RIN 102		at 10.211.193.101		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	JAI-A22-1 	RIN 103		at 10.211.193.102		Alarm >> power_supply_b_failure
+|	JAI-A22-1 	RIN 103		at 10.211.193.102		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	JAI-A23-0 	RIN 78		at 10.211.193.77		Alarm >> power_supply_b_failure
+|	JAI-A23-0 	RIN 78		at 10.211.193.77		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	JAI-A25-0 	RIN 126		at 10.211.193.129		Alarm >> power_supply_a_failure
+|	JAI-A25-0 	RIN 126		at 10.211.193.129		Alarm >> Secondary - 1-b-2-0/eth - Down
+|
++----------------------------------------------------------------------------------------------------+

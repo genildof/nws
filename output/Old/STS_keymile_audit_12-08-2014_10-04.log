@@ -1,0 +1,236 @@
+################## Milegate STS-A01-0  RIN 146 at 10.209.225.113
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (14 cards checked) **
+
+################## Milegate STS-A01-4  RIN 147 at 10.209.225.114
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (8 cards checked) **
+
+################## Milegate STS-A02-0  RIN 162 at 10.209.225.5
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (13 cards checked) **
+
+################## Milegate STS-A02-4  RIN 163 at 10.209.225.6
+# System status:
+#	Alarm >> ne: Loss Of Signal On PDH Clock Source 1
+# Cards status:
+#	** No alarmed cards (5 cards checked) **
+
+################## Milegate STS-A03-0  RIN 142 at 10.209.225.1
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (12 cards checked) **
+
+################## Milegate STS-A03-4  RIN 143 at 10.209.225.2
+################## Milegate STS-A04-0  RIN 166 at 10.209.225.9
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (14 cards checked) **
+
+################## Milegate STS-A04-4  RIN 167 at 10.209.225.10
+################## Milegate STS-A05  RIN 171 at 10.209.225.122
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate STS-A06  RIN 175 at 10.209.225.126
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (7 cards checked) **
+
+################## Milegate STS-A07-0  RIN 138 at 10.209.225.13
+# System status:
+#	Alarm >> ne: Loss Of Signal On PDH Clock Source 2
+# Cards status:
+#	** No alarmed cards (14 cards checked) **
+
+################## Milegate STS-A07-4  RIN 139 at 10.209.225.14
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (10 cards checked) **
+
+################## Milegate STS-A08-4  RIN 179 at 10.209.225.130
+################## Milegate STS-A09-0  RIN 194 at 10.209.225.17
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (14 cards checked) **
+
+################## Milegate STS-A09  RIN 195 at 10.209.225.18
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (9 cards checked) **
+
+################## Milegate STS-A10-0  RIN 134 at 10.209.225.21
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (14 cards checked) **
+
+################## Milegate STS-A10-4  RIN 135 at 10.209.225.22
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate STS-A11-0  RIN 198 at 10.209.225.25
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (12 cards checked) **
+
+################## Milegate STS-A11  RIN 199 at 10.209.225.26
+# System status:
+#	Alarm >> ne: Loss Of Signal On PDH Clock Source 1
+# Cards status:
+#	** No alarmed cards (5 cards checked) **
+
+################## Milegate STS-A12-0  RIN 130 at 10.209.225.29
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (13 cards checked) **
+
+################## Milegate STS-A12  RIN 131 at 10.209.225.30
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (5 cards checked) **
+
+################## Milegate STS-A14-4  RIN 3 at 10.209.225.34
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (6 cards checked) **
+
+################## Milegate STS-A15-4  RIN 207 at 10.209.225.138
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (20 cards checked) **
+
+################## Milegate STS-A16-4  RIN 7 at 10.209.225.158
+# System status:
+#	Alarm >> ne: Loss Of Signal On PDH Clock Source 1
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate STS-A18-0  RIN 10 at 10.209.225.3
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (16 cards checked) **
+
+################## Milegate STS-A18-4  RIN 11 at 10.209.225.4
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (4 cards checked) **
+
+################## Milegate STS-A19-0  RIN 38 at 10.209.225.7
+################## Milegate STS-A19-4  RIN 39 at 10.209.225.8
+################## Milegate STS-A20-4  RIN 43 at 10.209.225.146
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (21 cards checked) **
+
+################## Milegate STS-A24-0  RIN 46 at 10.209.225.45
+# System status:
+#	Alarm >> ne: Loss Of Signal On PDH Clock Source 1
+# Cards status:
+#	** No alarmed cards (14 cards checked) **
+
+################## Milegate STS-A24  RIN 47 at 10.209.225.46
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (10 cards checked) **
+
+################## Milegate STS-A25-4  RIN 99 at 10.209.225.162
+# System status:
+#	Alarm >> ne: Protecting CU Active
+#	Alarm >> fan: Partial Fan Breakdown
+# Cards status:
+#	** No alarmed cards (9 cards checked) **
+
+################## Milegate STS-A26-4  RIN 103 at 10.209.225.166
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (9 cards checked) **
+
+################## Milegate STS-A27-4  RIN 0 at 10.209.225.50
+################## Milegate STS-A28  RIN 111 at 10.209.225.170
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (3 cards checked) **
+
+################## Milegate STS-A31-0  RIN 78 at 10.209.225.37
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (14 cards checked) **
+
+################## Milegate STS-A31-4  RIN 79 at 10.209.225.38
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (4 cards checked) **
+
+################## Milegate STS-A32-4  RIN 588 at 10.209.225.118
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (4 cards checked) **
+
+################## Milegate STS-A32-0  RIN 589 at 10.209.225.117
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate STS-A33  RIN 585 at 10.209.225.174
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (21 cards checked) **
+
+################## Milegate STS-A34-4  RIN 119 at 10.209.225.150
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (4 cards checked) **
+
+################## Milegate STS-A35-4  RIN 115 at 10.209.225.154
+# System status:
+#	Alarm >> ne: Loss Of Signal On PDH Clock Source 1
+#	Alarm >> ne: Loss Of Signal On PDH Clock Source 2
+# Cards status:
+#	** No alarmed cards (11 cards checked) **
+
+################## Milegate STS-I01-4  RIN 191 at 10.209.225.42
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (20 cards checked) **
+
+############### ** General status for STS ** ###############
+# Total hosts checked: 43
+# Total system alarms: 17
+# Total cards alarms: 0
+# Total redundancy errors: 0
+############################################################

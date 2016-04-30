@@ -1,0 +1,141 @@
++-------------------------------------- General status for BSA --------------------------------------+
+|
+| Total checked NEs: 661
+| Total remote access errors: 11
+| Total NE alarms: 112
+| Total cards checked: 10848
+| Total card alarms: 1
+| Total redundancy errors: 0
+|
++----------------------------------------------------------------------------------------------------+
+|
+|
+| KEYMILE Alarms
+|	BSA-A0U-3 	RIN 		at 10.161.18.249		Error >> No remote access
+|	BSA-A10 	RIN 73		at 10.161.18.138		Alarm >> Total Fan Breakdown
+|	BSA-A10-2 	RIN 74		at 10.161.15.4		Alarm >> Protecting CU Active
+|	BSA-A10-2 	RIN 74		at 10.161.15.4		Alarm >> Partial Fan Breakdown
+|	BSA-A14-6 	RIN 557		at 10.164.43.181		Alarm >> Protecting CU Active
+|	BSA-A16 	RIN 225		at 10.161.243.182		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	BSA-A16 	RIN 225		at 10.161.243.182		Alarm >> Loss Of Signal On PDH Clock Source 2
+|	BSA-A1F-2 	RIN 		at 10.161.18.200		Alarm >> System Time Not Available
+|	BSA-A26-3 	RIN 251		at 10.161.17.147		Alarm >> Total Fan Breakdown
+|	BSA-A27 	RIN 254		at 10.161.17.171		Error >> No remote access
+|	BSA-A30 	RIN 273		at 10.161.17.179		Alarm >> Protecting CU Active
+|	BSA-A33 	RIN 66		at 10.161.18.139		Alarm >> Protecting CU Active
+|	BSA-A37-3 	RIN 44		at 10.161.243.97		Error >> No remote access
+|	BSA-A38-2 	RIN 48		at 10.161.18.207		Alarm >> Partial Fan Breakdown
+|	BSA-A55-2 	RIN 280		at 10.161.243.14		Alarm >> Partial Fan Breakdown
+|	BSA-A60-2 	RIN 2		at 10.161.243.6		Alarm >> Loss Of Signal On PDH Clock Source 2
+|	BSA-A60-2 	RIN 2		at 10.161.243.6		Alarm >> Unit Not Available
+|	BSA-A61-2 	RIN 4		at 10.161.243.8		Error >> No remote access
+|	BSA-A62-3 	RIN 297		at 10.161.15.15		Alarm >> Protecting CU Active
+|	BSA-A63-6 	RIN 490		at 10.161.253.113		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	BSA-A63-6 	RIN 490		at 10.161.253.113		Alarm >> Loss Of Signal On PDH Clock Source 2
+|	BSA-A68-2 	RIN 43		at 10.161.18.170		Alarm >> Protecting CU Active
+|	BSA-A69 	RIN 343		at 10.161.243.12		Alarm >> Protecting CU Active
+|	BSA-A70-0 	RIN 109		at 10.161.17.110		Alarm >> Partial Fan Breakdown
+|	BSA-A71 	RIN 102		at 10.161.18.161		Alarm >> Loss Of Signal On PDH Clock Source 2
+|	BSA-A72-2 	RIN 145		at 10.161.18.174		Alarm >> Protecting CU Active
+|	BSA-A75-3 	RIN 83		at 10.161.241.24		Alarm >> Total Fan Breakdown
+|	BSA-A77-0 	RIN 576		at 10.161.17.54		Alarm >> Protecting CU Active
+|	BSA-A78-2 	RIN 336		at 10.161.243.81		Alarm >> Protecting CU Active
+|	BSA-A79-4 	RIN 106		at 10.161.243.253		Alarm >> Protecting CU Active
+|	BSA-A82-0 	RIN 122		at 10.161.17.50		Alarm >> Total Fan Breakdown
+|	BSA-A84-99 	RIN 126		at 10.161.18.198		Alarm >> Protecting CU Active
+|	BSA-A85-3 	RIN 166		at 10.161.18.242		Alarm >> Protecting CU Active
+|	BSA-A87-3 	RIN 242		at 10.161.18.253		Error >> No remote access
+|	BSA-A90-2 	RIN 193		at 10.161.18.227		Alarm >> Total Fan Breakdown
+|	BSA-A91-2 	RIN 111		at 10.161.15.161		Alarm >> Protecting CU Active
+|	BSA-A91-6 	RIN 501		at 10.161.253.118		Alarm >> Protecting CU Active
+|	BSA-A92-2 	RIN 161		at 10.161.243.91		Alarm >> Protecting CU Active
+|	BSA-A97-6 	RIN 234		at 10.161.17.216		Alarm >> Protecting CU Active
+|	BSA-A98-2 	RIN 32		at 10.161.243.113		Alarm >> Partial Fan Breakdown
+|	BSA-A99-3 	RIN 39		at 10.161.15.159		Alarm >> Protecting CU Active
+|	BSA-C03-2 	RIN 282		at 10.161.243.4		Alarm >> Protecting CU Active
+|	BSA-C06 	RIN 23		at 10.161.243.73		Alarm >> Protecting CU Active
+|	BSA-C06-2 	RIN 35		at 10.161.243.193		Alarm >> Protecting CU Active
+|	BSA-C06-2 	RIN 35		at 10.161.243.193		Alarm >> Partial Fan Breakdown
+|	BSA-C07-5 	RIN 212		at 10.161.15.35		Alarm >> Protecting CU Active
+|	BSA-C08-4 	RIN 218		at 10.161.253.12		Alarm >> Partial Fan Breakdown
+|	BSA-C09-2 	RIN 111		at 10.161.243.112		Alarm >> Partial Fan Breakdown
+|	BSA-C10 	RIN 83		at 10.161.243.108		Error >> No remote access
+|	BSA-C11-3 	RIN 80		at 10.161.18.208		Alarm >> Protecting CU Active
+|	BSA-C11-3 	RIN 80		at 10.161.18.208		Alarm >> Partial Fan Breakdown
+|	BSA-C12 	RIN 86		at 10.161.243.107		Alarm >> Protecting CU Active
+|	BSA-C13 	RIN 172		at 10.161.243.138		Alarm >> Protecting CU Active
+|	BSA-C13-5 	RIN 176		at 10.161.241.27		Alarm >> Loss Of Signal On PDH Clock Source 3
+|	BSA-C19-6 	RIN 106		at 10.161.253.125		Alarm >> Protecting CU Active
+|	BSA-C21 	RIN 219		at 10.161.243.187		Error >> No remote access
+|	BSA-C21-2 	RIN 220		at 10.161.243.237		Error >> No remote access
+|	BSA-C21-3 	RIN 33		at 10.161.15.67		Error >> No remote access
+|	BSA-C22-6 	RIN 122		at 10.161.253.122		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	BSA-C23 	RIN 127		at 10.161.243.247		Alarm >> Protecting CU Active
+|	BSA-C23 	RIN 127		at 10.161.243.247		Alarm >> Partial Fan Breakdown
+|	BSA-C25-6 	RIN 328		at 10.161.253.120		Alarm >> Protecting CU Active
+|	BSA-C26 	RIN 132		at 10.161.243.252		Alarm >> Partial Fan Breakdown
+|	BSA-C28-3 	RIN 5		at 10.161.15.155		Alarm >> Protecting CU Active
+|	BSA-C29-0 	RIN 300		at 10.161.15.70		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	BSA-C29-1 	RIN 8		at 10.161.15.148		Alarm >> Protecting CU Active
+|	BSA-C30-4 	RIN 291		at 10.161.15.86		Alarm >> Protecting CU Active
+|	BSA-C30-6 	RIN 325		at 10.161.15.85		Alarm >> Protecting CU Active
+|	BSA-C30-3 	RIN 326		at 10.161.15.154		Alarm >> Protecting CU Active
+|	BSA-C30-3 	RIN 326		at 10.161.15.154		Alarm >> Partial Fan Breakdown
+|	BSA-C33-3 	RIN 271		at 10.161.15.153		Alarm >> Protecting CU Active
+|	BSA-C34-5 	RIN 223		at 10.161.253.27		Alarm >> Protecting CU Active
+|	BSA-C34-99 	RIN 36		at 10.161.15.75		Alarm >> Partial Fan Breakdown
+|	BSA-C34-2-99 	RIN 37		at 10.161.15.76		Alarm >> Protecting CU Active
+|	BSA-C35-1 	RIN 285		at 10.161.15.112		Alarm >> Protecting CU Active
+|	BSA-C35-3 	RIN 287		at 10.161.15.195		Alarm >> Protecting CU Active
+|	BSA-C36-1 	RIN 289		at 10.161.15.114		Alarm >> Protecting CU Active
+|	BSA-C36-3 	RIN 297		at 10.161.15.199		Alarm >> unit-21 - SUEN6 R1C - Failed
+|	BSA-C37-2 	RIN 298		at 10.161.15.200		Alarm >> Protecting CU Active
+|	BSA-C38-2 	RIN 307		at 10.161.15.119		Alarm >> Protecting CU Active
+|	BSA-C40-6 	RIN 316		at 10.161.15.204		Alarm >> Loss Of Signal On PDH Clock Source 2
+|	BSA-C40-6 	RIN 316		at 10.161.15.204		Alarm >> Protecting CU Active
+|	BSA-C41-6 	RIN 320		at 10.161.15.206		Alarm >> Loss Of Signal On PDH Clock Source 2
+|	BSA-C42-3 	RIN 33		at 10.161.15.162		Alarm >> Protecting CU Active
+|	BSA-C44-6 	RIN 41		at 10.161.15.131		Alarm >> Protecting CU Active
+|	BSA-C46-0 	RIN 155		at 10.161.15.139		Alarm >> Protecting CU Active
+|	BSA-C46-3 	RIN 158		at 10.161.15.186		Alarm >> Protecting CU Active
+|	BSA-C51-2 	RIN 113		at 10.161.15.181		Alarm >> Protecting CU Active
+|	BSA-C57-5 	RIN 403		at 10.161.253.54		Alarm >> Protecting CU Active
+|	BSA-C57-0 	RIN 88		at 10.161.15.249		Alarm >> Protecting CU Active
+|	BSA-C59-5 	RIN 415		at 10.161.253.50		Alarm >> Protecting CU Active
+|	BSA-C66-5 	RIN 293		at 10.161.253.67		Error >> No remote access
+|	BSA-C74 	RIN 330		at 10.161.253.30		Alarm >> Protecting CU Active
+|	BSA-C75 	RIN 396		at 10.161.253.31		Alarm >> Protecting CU Active
+|	BSA-C78-4 	RIN 457		at 10.164.1.52		Alarm >> Protecting CU Active
+|	BSA-C80-0 	RIN 476		at 10.164.1.55		Alarm >> Protecting CU Active
+|	BSA-C80-4 	RIN 477		at 10.164.1.56		Alarm >> Protecting CU Active
+|	BSA-C82 	RIN 453		at 10.164.1.60		Alarm >> Protecting CU Active
+|	BSA-C84-4 	RIN 429		at 10.161.253.72		Alarm >> Protecting CU Active
+|	BSA-C87-4 	RIN 528		at 10.161.253.76		Alarm >> Loss Of Signal On PDH Clock Source 2
+|	BSA-C87-5 	RIN 549		at 10.161.253.98		Alarm >> Protecting CU Active
+|	BSA-C96-5 	RIN 580		at 10.164.1.108		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	BSA-C96-6 	RIN 581		at 10.164.1.109		Alarm >> Protecting CU Active
+|	BSA-C99-0 	RIN 533		at 10.164.1.125		Alarm >> Protecting CU Active
+|	BSA-C99-6 	RIN 536		at 10.164.1.134		Alarm >> Protecting CU Active
+|	BSA-D02-4 	RIN 542		at 10.164.1.123		Alarm >> Partial Fan Breakdown
+|	BSA-D03-4 	RIN 546		at 10.164.1.128		Alarm >> Protecting CU Active
+|	BSA-D08-0 	RIN 442		at 10.164.1.155		Alarm >> Protecting CU Active
+|	BSA-D08-6 	RIN 463		at 10.164.1.164		Alarm >> Protecting CU Active
+|	BSA-D10-5 	RIN 454		at 10.164.1.161		Alarm >> Protecting CU Active
+|	BSA-D11-5 	RIN 465		at 10.164.1.171		Alarm >> Protecting CU Active
+|	BSA-D14-0 	RIN 553		at 10.164.1.181		Alarm >> Protecting CU Active
+|	BSA-D22-0 	RIN 452		at 10.164.1.222		Alarm >> Loss Of Signal On PDH Clock Source 3
+|	BSA-I04-6 	RIN 532		at 10.161.253.132		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	BSA-I04-6 	RIN 532		at 10.161.253.132		Alarm >> Loss Of Signal On PDH Clock Source 2
+|	BSA-I06 	RIN 229		at 10.161.10.36		Error >> No remote access
+|	BSA-V07-2 	RIN 29		at 10.161.17.219		Alarm >> Partial Fan Breakdown
+|	BSA-V12-5 	RIN 324		at 10.161.17.165		Alarm >> Protecting CU Active
+|	BSA-V12-6 	RIN 325		at 10.161.17.182		Alarm >> Partial Fan Breakdown
+|	BSA-V16 	RIN 178		at 10.161.17.164		Alarm >> Partial Fan Breakdown
+|
+| ZHONE Alarms
+|	BSA-A15-2 	RIN 209		at 10.161.17.253		Alarm >> fan_power_supply_b_failure
+|	BSA-A50 	RIN 319		at 10.161.17.201		Alarm >> power_supply_a_failure
+|	BSA-C08-2 	RIN 216		at 10.161.243.104		Alarm >> fan_speed_error
+|	BSA-V19-2 	RIN 214		at 10.161.17.224		Alarm >> power_supply_b_failure
+|
++----------------------------------------------------------------------------------------------------+

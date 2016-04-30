@@ -1,0 +1,209 @@
++-------------------------------------- General status for CAS --------------------------------------+
+|
+| Total checked NEs: 190
+| Total remote access errors: 2
+| Total NE alarms: 14
+| Total cards checked: 2999
+| Total card alarms: 169
+| Total redundancy alarms: 7
+|
++----------------------------------------------------------------------------------------------------+
+|
+|
+| KEYMILE Alarms
+|	CAS-A01-5 	RIN 124		at 10.211.161.75		Alarm >> Protecting CU Active
+|	CAS-A01-5 	RIN 124		at 10.211.161.75		Alarm >> /unit-11/port-1 RxInputPower (-40)
+|	CAS-A01-0 	RIN 74		at 10.211.161.73		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A01 	RIN 75		at 10.211.161.74		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A02-0 	RIN 70		at 10.211.161.69		Alarm >> unit-13 - COGE1 R4C - Plugged
+|	CAS-A02 	RIN 71		at 10.211.161.70		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A02-2 	RIN 72		at 10.211.161.71		Alarm >> unit-13 - COGE3 R1E - Plugged
+|	CAS-A03-0 	RIN 66		at 10.211.161.65		Alarm >> unit-13 - COGE1 - Plugged
+|	CAS-A03 	RIN 67		at 10.211.161.66		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A04-5 	RIN 272		at 10.211.161.64		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	CAS-A04-0 	RIN 62		at 10.211.161.61		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A04 	RIN 63		at 10.211.161.62		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A05-0 	RIN 38		at 10.211.161.37		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A05 	RIN 39		at 10.211.161.38		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A05-2 	RIN 81		at 10.211.161.39		Alarm >> unit-13 - COGE1 R4E - Plugged
+|	CAS-A07-5 	RIN 119		at 10.211.161.15		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	CAS-A07-0 	RIN 14		at 10.211.161.13		Alarm >> alarm-1   -  Porta DG            -  Minor     
+|	CAS-A07-0 	RIN 14		at 10.211.161.13		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A07 	RIN 15		at 10.211.161.14		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A08-5 	RIN 120		at 10.211.161.35		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	CAS-A08-0 	RIN 34		at 10.211.161.33		Alarm >> unit-13 - COGE1 R4C - Plugged
+|	CAS-A08 	RIN 35		at 10.211.161.34		Alarm >> unit-13 - COGE1 R4C - Plugged
+|	CAS-A09-0 	RIN 50		at 10.211.161.49		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A09 	RIN 51		at 10.211.161.50		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A10-0 	RIN 46		at 10.211.161.45		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A10 	RIN 47		at 10.211.161.46		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A10-5 	RIN 48		at 10.211.161.47		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	CAS-A11-0 	RIN 154		at 10.211.161.153		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A11 	RIN 155		at 10.211.161.154		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A14-0 	RIN 42		at 10.211.161.41		Alarm >> alarm-1   -  Porta DG           -  Minor     
+|	CAS-A14-0 	RIN 42		at 10.211.161.41		Alarm >> unit-13 - COGE1 - Plugged
+|	CAS-A14 	RIN 43		at 10.211.161.42		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A15 	RIN 31		at 10.211.161.30		Alarm >> unit-13 - COGE1 - Plugged
+|	CAS-A16-0 	RIN 26		at 10.211.161.25		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A16-4 	RIN 27		at 10.211.161.26		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A17-0 	RIN 146		at 10.211.161.145		Alarm >> alarm-1   -  Porta DG           -  Minor     
+|	CAS-A17-0 	RIN 146		at 10.211.161.145		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A17-4 	RIN 147		at 10.211.161.146		Alarm >> unit-13 - COGE1 R4C - Plugged
+|	CAS-A17-5 	RIN 148		at 10.211.161.147		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	CAS-A18-0 	RIN 150		at 10.211.161.149		Alarm >> unit-13 - COGE1 R4C - Plugged
+|	CAS-A18-5 	RIN 157		at 10.211.161.151		Alarm >> unit-13 - COGE3 R1E - Plugged
+|	CAS-A20-0 	RIN 22		at 10.211.161.21		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A20 	RIN 23		at 10.211.161.22		Alarm >> unit-13 - COGE1 R4C - Plugged
+|	CAS-A21-0- 	RIN 205		at 10.211.161.7		Alarm >> unit-13 - COGE3 R1E - Plugged
+|	CAS-A21-0 	RIN 6		at 10.211.161.5		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A21 	RIN 7		at 10.211.161.6		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A22-0 	RIN 10		at 10.211.161.9		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A22 	RIN 11		at 10.211.161.10		Alarm >> unit-13 - COGE1 R4C - Plugged
+|	CAS-A22-1 	RIN 12		at 10.211.161.11		Alarm >> unit-13 - COGE1 R4C - Plugged
+|	CAS-A26-0 	RIN 182		at 10.211.161.181		Alarm >> alarm-1   -  Porta DG           -  Minor     
+|	CAS-A26-0 	RIN 182		at 10.211.161.181		Alarm >> alarm-6   -  Porta Fusiveis     -  Critical  
+|	CAS-A26-0 	RIN 182		at 10.211.161.181		Alarm >> unit-13 - COGE1 - Plugged
+|	CAS-A26 	RIN 183		at 10.211.161.182		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A27-0 	RIN 2		at 10.211.161.1		Alarm >> unit-13 - COGE1 R4C - Plugged
+|	CAS-A27 	RIN 3		at 10.211.161.2		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A28-0 	RIN 130		at 10.211.161.129		Alarm >> unit-13 - COGE1 R4C - Plugged
+|	CAS-A28 	RIN 131		at 10.211.161.130		Alarm >> unit-13 - COGE1 R4C - Plugged
+|	CAS-A28-5 	RIN 132		at 10.211.161.131		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	CAS-A29-0 	RIN 122		at 10.211.161.121		Alarm >> Protecting CU Active
+|	CAS-A29 	RIN 123		at 10.211.161.122		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A31-0 	RIN 162		at 10.211.161.161		Alarm >> unit-13 - COGE1 R4C - Plugged
+|	CAS-A31 	RIN 163		at 10.211.161.162		Alarm >> unit-13 - COGE1 R4C - Plugged
+|	CAS-A32-0 	RIN 170		at 10.211.161.169		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A32 	RIN 171		at 10.211.161.170		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A32-5 	RIN 279		at 10.211.161.171		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	CAS-A33-0 	RIN 166		at 10.211.161.165		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A33 	RIN 167		at 10.211.161.166		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A34-0 	RIN 174		at 10.211.161.173		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A34 	RIN 175		at 10.211.161.174		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A34-5 	RIN 176		at 10.211.161.175		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	CAS-A36-0 	RIN 178		at 10.211.161.177		Alarm >> alarm-1   -  Porta DG            -  Minor     
+|	CAS-A36-0 	RIN 178		at 10.211.161.177		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A36 	RIN 179		at 10.211.161.178		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A37-0 	RIN 190		at 10.211.161.189		Alarm >> unit-13 - COGE1 - Plugged
+|	CAS-A37 	RIN 191		at 10.211.161.190		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A37-1 	RIN 192		at 10.211.161.191		Alarm >> unit-13 - COGE3 R1E - Plugged
+|	CAS-A38-0 	RIN 186		at 10.211.161.185		Alarm >> alarm-1   -  Porta DG           -  Minor     
+|	CAS-A38-0 	RIN 186		at 10.211.161.185		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A38 	RIN 187		at 10.211.161.186		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A39-0 	RIN 142		at 10.211.161.141		Alarm >> unit-13 - COGE1 R4C - Plugged
+|	CAS-A39 	RIN 143		at 10.211.161.142		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A47-4 	RIN 204		at 10.211.161.203		Alarm >> unit-13 - COGE1 R4E - Plugged
+|	CAS-A48-4 	RIN 208		at 10.211.161.207		Alarm >> alarm-1   -  PORTA DG            -  Minor     
+|	CAS-A48-4 	RIN 208		at 10.211.161.207		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A49-5 	RIN 212		at 10.211.161.211		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A50 	RIN 216		at 10.211.161.215		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A51-4 	RIN 223		at 10.211.161.222		Alarm >> unit-13 - COGE1 R4E - Plugged
+|	CAS-A52-4 	RIN 227		at 10.211.161.226		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A53-4 	RIN 231		at 10.211.161.230		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A53-1 	RIN 232		at 10.211.161.231		Alarm >> unit-13 - COGE3 R1C - Plugged
+|	CAS-A55-4 	RIN 87		at 10.211.161.86		Alarm >> unit-13 - COGE3 R1B - Plugged
+|	CAS-A56-0 	RIN 54		at 10.211.161.53		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A57-5 	RIN 233		at 10.211.161.235		Alarm >> unit-13 - COGE3 R1D - Plugged
+|	CAS-A57 	RIN 235		at 10.211.161.234		Alarm >> alarm-1   -  Porta_DG            -  Minor     
+|	CAS-A57 	RIN 235		at 10.211.161.234		Alarm >> unit-13 - COGE3 R1C - Plugged
+|	CAS-A58-4 	RIN 196		at 10.211.161.195		Alarm >> unit-13 - COGE3 R1E - Plugged
+|	CAS-A59-4 	RIN 200		at 10.211.161.199		Alarm >> unit-13 - COGE3 R1D - Plugged
+|	CAS-A67-4 	RIN 294		at 10.211.167.50		Alarm >> unit-13 - COGE3 R1D - Plugged
+|	CAS-A70-0 	RIN 277		at 10.211.167.33		Alarm >> unit-13 - COGE3 R1D - Plugged
+|	CAS-A70-4 	RIN 278		at 10.211.167.34		Alarm >> unit-13 - COGE3 R1D - Plugged
+|	CAS-A71-0 	RIN 281		at 10.211.167.37		Alarm >> unit-13 - COGE3 R1D - Plugged
+|	CAS-A71-4 	RIN 282		at 10.211.167.38		Alarm >> unit-13 - COGE3 R1C - Plugged
+|	CAS-A72-0 	RIN 301		at 10.211.167.57		Alarm >> unit-13 - COGE3 R1D - Plugged
+|	CAS-A72-4 	RIN 302		at 10.211.167.58		Alarm >> unit-13 - COGE3 R1D - Plugged
+|	CAS-A73-4 	RIN 306		at 10.211.167.70		Alarm >> unit-13 - COGE3 R1D - Plugged
+|	CAS-A75-0 	RIN 92		at 10.211.161.57		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	CAS-A75-4 	RIN 93		at 10.211.161.58		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	CAS-A76-0 	RIN 95		at 10.211.161.93		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	CAS-A76-4 	RIN 96		at 10.211.161.94		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	CAS-A77-0 	RIN 100		at 10.211.161.97		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	CAS-A77-4 	RIN 98		at 10.211.161.98		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	CAS-A79-0 	RIN 106		at 10.211.167.9		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	CAS-A79-4 	RIN 107		at 10.211.167.10		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	CAS-A80-0 	RIN 109		at 10.211.167.13		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	CAS-A80-4 	RIN 110		at 10.211.167.14		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	CAS-A80-5 	RIN 111		at 10.211.167.15		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	CAS-A81-0 	RIN 133		at 10.211.167.162		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	CAS-A81-4 	RIN 134		at 10.211.167.163		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	CAS-A82-0 	RIN 135		at 10.211.167.164		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	CAS-A82-4 	RIN 136		at 10.211.167.165		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	CAS-A84-0 	RIN 158		at 10.211.167.158		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	CAS-A84-4 	RIN 159		at 10.211.167.159		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	CAS-A84-4 	RIN 159		at 10.211.167.159		Alarm >> /unit-11/port-1 RxInputPower (-50)
+|	CAS-A84-5 	RIN 160		at 10.211.167.160		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	CAS-A84-6 	RIN 161		at 10.211.167.161		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	CAS-A86-0 	RIN 168		at 10.211.167.154		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	CAS-A86-4 	RIN 177		at 10.211.167.155		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	CAS-A87-0 	RIN 172		at 10.211.167.156		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	CAS-I01 	RIN 242		at 10.211.161.242		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-I01 	RIN 242		at 10.211.161.242		Alarm >> /unit-11/port-1 - Down
+|	CAS-I01-2 	RIN 243		at 10.211.161.243		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-I01-2 	RIN 243		at 10.211.161.243		Alarm >> /unit-11/port-1 - Down
+|	CAS-I01-6 	RIN 285		at 10.211.161.244		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	CAS-I02-6 	RIN 125		at 10.211.161.128		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	CAS-I02 	RIN 126		at 10.211.161.126		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-I02-2 	RIN 127		at 10.211.161.127		Alarm >> unit-13 - COGE1 R4D - Plugged
+|	CAS-A02-CORP	RIN CORP		at 10.211.161.71		Alarm >> unit-13 - COGE3 R1E - Plugged
+|	CAS-A04-CORP	RIN CORP		at 10.211.161.63		Alarm >> unit-13 - COGE3 R1C - Plugged
+|	CAS-A56-CORP	RIN CORP		at 10.211.161.55		Alarm >> unit-13 - COGE3 R1C - Plugged
+|	CAS-A57-CORP	RIN CORP		at 10.211.161.235		Alarm >> unit-13 - COGE3 R1D - Plugged
+|	CAS-A68-CORP	RIN CORP		at 10.211.167.31		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	CAS-A69-CORP	RIN CORP		at 10.211.167.55		Alarm >> unit-13 - COGE3 R1E - Plugged
+|
+| ZHONE Alarms
+|	CAS-A03-5 	RIN 260		at 10.211.161.67		Alarm >> b: MXK FOUR GIGE  - (RESET_HOLD)
+|	CAS-A09-1 	RIN 45		at 10.211.161.44		Alarm >> b: MXK FOUR GIGE  - (RESET_HOLD)
+|	CAS-A11-1 	RIN 156		at 10.211.161.155		Alarm >> b: MXK FOUR GIGE  - (RESET_HOLD)
+|	CAS-A14-1 	RIN 44		at 10.211.161.43		Alarm >> b: MXK FOUR GIGE  - (RESET_HOLD)
+|	CAS-A26-1 	RIN 184		at 10.211.161.183		Alarm >> b: MXK FOUR GIGE  - (RESET_HOLD)
+|	CAS-A27-5 	RIN 173		at 10.211.161.4		Alarm >> b: MXK FOUR GIGE  - (RESET_HOLD)
+|	CAS-A33-5 	RIN 169		at 10.211.161.167		Error >> No remote access
+|	CAS-A36-1 	RIN 180		at 10.211.161.179		Alarm >> b: MXK FOUR GIGE  - (RESET_HOLD)
+|	CAS-A39-1 	RIN 144		at 10.211.161.143		Alarm >> b: MXK FOUR GIGE  - (RESET_HOLD)
+|	CAS-A47-0 	RIN 202		at 10.211.161.201		Alarm >> not_in_redundant_mode
+|	CAS-A47-0 	RIN 202		at 10.211.161.201		Alarm >> b: MXK FOUR GIGE  - (RESET_HOLD)
+|	CAS-A47-0 	RIN 202		at 10.211.161.201		Alarm >> Secondary - 1-b-2-0/eth - Inactive
+|	CAS-A47-1 	RIN 203		at 10.211.161.202		Alarm >> not_in_redundant_mode
+|	CAS-A47-1 	RIN 203		at 10.211.161.202		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	CAS-A48-0 	RIN 206		at 10.211.161.205		Alarm >> b: MXK FOUR GIGE  - (RESET_HOLD)
+|	CAS-A48-1 	RIN 207		at 10.211.161.206		Alarm >> b: MXK FOUR GIGE  - (RESET_HOLD)
+|	CAS-A49-0 	RIN 210		at 10.211.161.209		Alarm >> b: MXK FOUR GIGE  - (RESET_HOLD)
+|	CAS-A49-1 	RIN 211		at 10.211.161.210		Alarm >> b: MXK FOUR GIGE  - (RESET_HOLD)
+|	CAS-A50-1 	RIN 215		at 10.211.161.214		Alarm >> b: MXK FOUR GIGE  - (RESET_HOLD)
+|	CAS-A51-0 	RIN 222		at 10.211.161.221		Alarm >> b: MXK FOUR GIGE  - (RESET_HOLD)
+|	CAS-A51-1 	RIN 224		at 10.211.161.223		Alarm >> b: MXK FOUR GIGE  - (RESET_HOLD)
+|	CAS-A52-0 	RIN 226		at 10.211.161.225		Alarm >> b: MXK FOUR GIGE  - (RESET_HOLD)
+|	CAS-A53-0 	RIN 230		at 10.211.161.229		Alarm >> b: MXK FOUR GIGE  - (RESET_HOLD)
+|	CAS-A55-0 	RIN 86		at 10.211.161.85		Alarm >> b: MXK FOUR GIGE  - (RESET_HOLD)
+|	CAS-A56-1 	RIN 55		at 10.211.161.54		Alarm >> b: MXK FOUR GIGE  - (RESET_HOLD)
+|	CAS-A57-0 	RIN 234		at 10.211.161.233		Alarm >> b: MXK FOUR GIGE  - (RESET_HOLD)
+|	CAS-A58-0 	RIN 194		at 10.211.161.193		Alarm >> b: MXK FOUR GIGE  - (RESET_HOLD)
+|	CAS-A58-1 	RIN 195		at 10.211.161.194		Alarm >> b: MXK FOUR GIGE  - (RESET_HOLD)
+|	CAS-A59-0 	RIN 198		at 10.211.161.197		Alarm >> b: MXK FOUR GIGE  - (RESET_HOLD)
+|	CAS-A59-1 	RIN 199		at 10.211.161.198		Alarm >> b: MXK FOUR GIGE  - (RESET_HOLD)
+|	CAS-A60-0 	RIN 246		at 10.211.161.245		Alarm >> b: MXK FOUR GIGE  - (RESET_HOLD)
+|	CAS-A60-1 	RIN 247		at 10.211.161.246		Alarm >> b: MXK FOUR GIGE  - (RESET_HOLD)
+|	CAS-A61-0 	RIN 250		at 10.211.161.249		Alarm >> b: MXK FOUR GIGE  - (RESET_HOLD)
+|	CAS-A61-1 	RIN 251		at 10.211.161.250		Alarm >> b: MXK FOUR GIGE  - (RESET_HOLD)
+|	CAS-A62-0 	RIN 254		at 10.211.161.217		Alarm >> b: MXK FOUR GIGE  - (NOT_PROV)
+|	CAS-A62-1 	RIN 255		at 10.211.161.218		Alarm >> b: MXK FOUR GIGE  - (RESET_HOLD)
+|	CAS-A63-0 	RIN 258		at 10.211.161.137		Alarm >> b: MXK FOUR GIGE  - (RESET_HOLD)
+|	CAS-A63-1 	RIN 259		at 10.211.161.138		Error >> No remote access
+|	CAS-A64-0 	RIN 262		at 10.211.161.89		Alarm >> b: MXK FOUR GIGE  - (RESET_HOLD)
+|	CAS-A64-1 	RIN 263		at 10.211.161.90		Alarm >> b: MXK FOUR GIGE  - (RESET_HOLD)
+|	CAS-A65-0 	RIN 266		at 10.211.167.1		Alarm >> b: MXK FOUR GIGE  - (RESET_HOLD)
+|	CAS-A65-1 	RIN 267		at 10.211.167.2		Alarm >> b: MXK FOUR GIGE  - (RESET_HOLD)
+|	CAS-A66-0 	RIN 270		at 10.211.167.5		Alarm >> not_in_redundant_mode
+|	CAS-A66-0 	RIN 270		at 10.211.167.5		Alarm >> Secondary - 1-b-2-0/eth - Inactive
+|	CAS-A66-1 	RIN 271		at 10.211.167.6		Alarm >> b: MXK FOUR GIGE  - (RESET_HOLD)
+|	CAS-A68-0 	RIN 273		at 10.211.167.29		Alarm >> b: MXK FOUR GIGE  - (RESET_HOLD)
+|	CAS-A68-1 	RIN 274		at 10.211.167.30		Alarm >> b: MXK FOUR GIGE  - (RESET_HOLD)
+|	CAS-A69-0 	RIN 297		at 10.211.167.53		Alarm >> b: MXK FOUR GIGE  - (RESET_HOLD)
+|	CAS-A69-1 	RIN 298		at 10.211.167.54		Alarm >> b: MXK FOUR GIGE  - (RESET_HOLD)
+|	CAS-A73-0 	RIN 305		at 10.211.167.69		Alarm >> b: MXK FOUR GIGE  - (RESET_HOLD)
+|
++----------------------------------------------------------------------------------------------------+

@@ -1,0 +1,236 @@
+:: Alarm list for Zhone SOC-A11-5 RIN 188 at 10.211.225.187 ::
+=> system - power_supply_a_failure - minor
+
+:: Alarm list for Zhone SOC-A12-5 RIN 184 at 10.211.225.183 ::
+=> system - power_supply_a_failure - minor
+
+:: Alarm list for Zhone SOC-A18-5 RIN 532 at 10.211.225.31 ::
+=> system - power_supply_a_failure - minor
+
+:: Alarm list for Zhone SOC-A20-1 RIN 192 at 10.211.225.191 ::
+=> system - power_supply_b_failure - minor
+
+:: Alarm list for Zhone SOC-A23-5 RIN 141 at 10.211.225.139 ::
+=> system - power_supply_a_failure - minor
+
+:: Alarm list for Zhone SOC-A28-5 RIN 189 at 10.211.225.35 ::
+=> system - power_supply_a_failure - minor
+
+:: Alarm list for Zhone SOC-A34 RIN 222 at 10.211.225.221 ::
+=> system - power_supply_a_failure - minor
+
+:: Alarm list for Zhone SOC-A35-0 RIN 226 at 10.211.225.225 ::
+=> system - power_supply_b_failure - minor
+
+:: Alarm list for Zhone SOC-A36 RIN 62 at 10.211.225.61 ::
+=> system - power_supply_b_failure - minor
+
+:: Alarm list for Zhone SOC-A36-1 RIN 63 at 10.211.225.62 ::
+=> system - power_supply_b_failure - minor
+=> system - fan_speed_error - minor
+
+:: Alarm list for Zhone SOC-A36-2 RIN 64 at 10.211.225.63 ::
+=> system - power_supply_b_failure - minor
+
+:: Alarm list for Zhone SOC-A37-0 RIN 66 at 10.211.225.65 ::
+=> system - power_supply_a_failure - minor
+
+:: Alarm list for Zhone SOC-A37-1 RIN 67 at 10.211.225.66 ::
+=> system - power_supply_a_failure - minor
+
+:: Alarm list for Zhone SOC-A37-2 RIN 68 at 10.211.225.67 ::
+=> system - power_supply_b_failure - minor
+
+:: Alarm list for Zhone SOC-A38-0 RIN 234 at 10.211.225.241 ::
+=> system - fan_power_supply_a_failure - critical
+
+:: Alarm list for Zhone SOC-A38-5 RIN 236 at 10.211.225.243 ::
+=> system - power_supply_a_failure - minor
+=> system - fan_speed_error - minor
+=> system - temp_over_limit - critical
+
+:: Alarm list for Zhone SOC-A41-0 RIN 46 at 10.211.225.45 ::
+=> system - power_supply_b_failure - minor
+
+:: Alarm list for Zhone SOC-A41-1 RIN 47 at 10.211.225.46 ::
+=> system - power_supply_b_failure - minor
+
+:: Alarm list for Zhone SOC-A42-0 RIN 50 at 10.211.225.49 ::
+=> system - power_supply_b_failure - minor
+
+:: Alarm list for Zhone SOC-A42-1 RIN 51 at 10.211.225.50 ::
+=> system - power_supply_a_failure - minor
+
+:: Alarm list for Zhone SOC-A43-0 RIN 54 at 10.211.225.53 ::
+=> system - power_supply_a_failure - minor
+
+:: Alarm list for Zhone SOC-A43-1 RIN 55 at 10.211.225.54 ::
+=> system - power_supply_a_failure - minor
+
+:: Alarm list for Zhone SOC-A44-0 RIN 18 at 10.211.225.17 ::
+=> system - power_supply_a_failure - minor
+
+:: Alarm list for Zhone SOC-A45-0 RIN 70 at 10.211.225.69 ::
+=> system - power_supply_b_failure - minor
+
+:: Alarm list for Zhone SOC-A45-1 RIN 71 at 10.211.225.70 ::
+=> system - power_supply_a_failure - minor
+
+:: Alarm list for Zhone SOC-A46-0 RIN 74 at 10.211.225.73 ::
+=> system - power_supply_b_failure - minor
+
+:: Alarm list for Zhone SOC-A46-1 RIN 75 at 10.211.225.74 ::
+=> system - power_supply_a_failure - minor
+
+:: Alarm list for Zhone SOC-A47-0 RIN 270 at 10.211.225.81 ::
+=> system - power_supply_b_failure - minor
+
+:: Alarm list for Zhone SOC-A47-4 RIN 271 at 10.211.225.82 ::
+=> system - power_supply_a_failure - minor
+
+:: Alarm list for Zhone SOC-A48-0 RIN 274 at 10.211.225.85 ::
+=> system - power_supply_b_failure - minor
+
+:: Alarm list for Zhone SOC-A48-1 RIN 275 at 10.211.225.86 ::
+=> system - power_supply_b_failure - minor
+
+:: Alarm list for Zhone SOC-A49-0 RIN 278 at 10.211.225.89 ::
+=> system - power_supply_b_failure - minor
+
+:: Alarm list for Zhone SOC-A49-1 RIN 279 at 10.211.225.90 ::
+=> system - power_supply_a_failure - minor
+
+:: Alarm list for Zhone SOC-A50-0 RIN 230 at 10.211.225.229 ::
+=> system - power_supply_a_failure - minor
+
+:: Alarm list for Zhone SOC-A52-0 RIN 214 at 10.211.225.213 ::
+=> system - power_supply_b_failure - minor
+
+:: Alarm list for Zhone SOC-A52-1 RIN 215 at 10.211.225.214 ::
+=> system - power_supply_a_failure - minor
+
+:: Alarm list for Zhone SOC-A53 RIN 218 at 10.211.225.217 ::
+=> system - power_supply_b_failure - minor
+=> system - fan_speed_error - minor
+
+:: Alarm list for Zhone SOC-A53-1 RIN 219 at 10.211.225.218 ::
+=> system - power_supply_a_failure - minor
+
+:: Alarm list for Zhone SOC-A11-5 RIN 188 at 10.211.225.187 ::
+=> system - power_supply_a_failure - minor
+
+:: Alarm list for Zhone SOC-A12-5 RIN 184 at 10.211.225.183 ::
+=> system - power_supply_a_failure - minor
+
+:: Alarm list for Zhone SOC-A18-5 RIN 532 at 10.211.225.31 ::
+=> system - power_supply_a_failure - minor
+
+:: Alarm list for Zhone SOC-A20-1 RIN 192 at 10.211.225.191 ::
+=> system - power_supply_b_failure - minor
+
+:: Alarm list for Zhone SOC-A23-5 RIN 141 at 10.211.225.139 ::
+=> system - power_supply_a_failure - minor
+
+:: Alarm list for Zhone SOC-A28-5 RIN 189 at 10.211.225.35 ::
+=> system - power_supply_a_failure - minor
+
+:: Alarm list for Zhone SOC-A34 RIN 222 at 10.211.225.221 ::
+=> system - power_supply_a_failure - minor
+
+:: Alarm list for Zhone SOC-A35-0 RIN 226 at 10.211.225.225 ::
+=> system - power_supply_b_failure - minor
+
+:: Alarm list for Zhone SOC-A36 RIN 62 at 10.211.225.61 ::
+=> system - power_supply_b_failure - minor
+
+:: Alarm list for Zhone SOC-A36-1 RIN 63 at 10.211.225.62 ::
+=> system - power_supply_b_failure - minor
+=> system - fan_speed_error - minor
+
+:: Alarm list for Zhone SOC-A36-2 RIN 64 at 10.211.225.63 ::
+=> system - power_supply_b_failure - minor
+
+:: Alarm list for Zhone SOC-A37-0 RIN 66 at 10.211.225.65 ::
+=> system - power_supply_a_failure - minor
+
+:: Alarm list for Zhone SOC-A37-1 RIN 67 at 10.211.225.66 ::
+=> system - power_supply_a_failure - minor
+
+:: Alarm list for Zhone SOC-A37-2 RIN 68 at 10.211.225.67 ::
+=> system - power_supply_b_failure - minor
+
+:: Alarm list for Zhone SOC-A38-0 RIN 234 at 10.211.225.241 ::
+=> system - fan_power_supply_a_failure - critical
+
+:: Alarm list for Zhone SOC-A38-5 RIN 236 at 10.211.225.243 ::
+=> system - power_supply_a_failure - minor
+=> system - fan_speed_error - minor
+=> system - temp_over_limit - critical
+
+:: Alarm list for Zhone SOC-A41-0 RIN 46 at 10.211.225.45 ::
+=> system - power_supply_b_failure - minor
+
+:: Alarm list for Zhone SOC-A41-1 RIN 47 at 10.211.225.46 ::
+=> system - power_supply_b_failure - minor
+
+:: Alarm list for Zhone SOC-A42-0 RIN 50 at 10.211.225.49 ::
+=> system - power_supply_b_failure - minor
+
+:: Alarm list for Zhone SOC-A42-1 RIN 51 at 10.211.225.50 ::
+=> system - power_supply_a_failure - minor
+
+:: Alarm list for Zhone SOC-A43-0 RIN 54 at 10.211.225.53 ::
+=> system - power_supply_a_failure - minor
+
+:: Alarm list for Zhone SOC-A43-1 RIN 55 at 10.211.225.54 ::
+=> system - power_supply_a_failure - minor
+
+:: Alarm list for Zhone SOC-A44-0 RIN 18 at 10.211.225.17 ::
+=> system - power_supply_a_failure - minor
+
+:: Alarm list for Zhone SOC-A45-0 RIN 70 at 10.211.225.69 ::
+=> system - power_supply_b_failure - minor
+
+:: Alarm list for Zhone SOC-A45-1 RIN 71 at 10.211.225.70 ::
+=> system - power_supply_a_failure - minor
+
+:: Alarm list for Zhone SOC-A46-0 RIN 74 at 10.211.225.73 ::
+=> system - power_supply_b_failure - minor
+
+:: Alarm list for Zhone SOC-A46-1 RIN 75 at 10.211.225.74 ::
+=> system - power_supply_a_failure - minor
+
+:: Alarm list for Zhone SOC-A47-0 RIN 270 at 10.211.225.81 ::
+=> system - power_supply_b_failure - minor
+
+:: Alarm list for Zhone SOC-A47-4 RIN 271 at 10.211.225.82 ::
+=> system - power_supply_a_failure - minor
+
+:: Alarm list for Zhone SOC-A48-0 RIN 274 at 10.211.225.85 ::
+=> system - power_supply_b_failure - minor
+
+:: Alarm list for Zhone SOC-A48-1 RIN 275 at 10.211.225.86 ::
+=> system - power_supply_b_failure - minor
+
+:: Alarm list for Zhone SOC-A49-0 RIN 278 at 10.211.225.89 ::
+=> system - power_supply_b_failure - minor
+
+:: Alarm list for Zhone SOC-A49-1 RIN 279 at 10.211.225.90 ::
+=> system - power_supply_a_failure - minor
+
+:: Alarm list for Zhone SOC-A50-0 RIN 230 at 10.211.225.229 ::
+=> system - power_supply_a_failure - minor
+
+:: Alarm list for Zhone SOC-A52-0 RIN 214 at 10.211.225.213 ::
+=> system - power_supply_b_failure - minor
+
+:: Alarm list for Zhone SOC-A52-1 RIN 215 at 10.211.225.214 ::
+=> system - power_supply_a_failure - minor
+
+:: Alarm list for Zhone SOC-A53 RIN 218 at 10.211.225.217 ::
+=> system - power_supply_b_failure - minor
+=> system - fan_speed_error - minor
+
+:: Alarm list for Zhone SOC-A53-1 RIN 219 at 10.211.225.218 ::
+=> system - power_supply_a_failure - minor
+

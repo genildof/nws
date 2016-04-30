@@ -1,0 +1,336 @@
+################## Zhone SOC-A11-5  RIN 188 at 10.211.225.187
+# System status:
+#	Alarm >> system - power_supply_a_failure - minor
+# Cards status:
+#	** No alarmed cards (6 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SOC-A12-5  RIN 184 at 10.211.225.183
+# System status:
+#	Alarm >> system - power_supply_a_failure - minor
+# Cards status:
+#	** No alarmed cards (6 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SOC-A18-5  RIN 532 at 10.211.225.31
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (6 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SOC-A20-1  RIN 192 at 10.211.225.191
+# System status:
+#	Alarm >> system - power_supply_b_failure - minor
+# Cards status:
+#	** No alarmed cards (20 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SOC-A23-5  RIN 141 at 10.211.225.139
+# System status:
+#	Alarm >> system - power_supply_a_failure - minor
+# Cards status:
+#	** No alarmed cards (6 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SOC-A28-5  RIN 189 at 10.211.225.35
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (6 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SOC-A34  RIN 222 at 10.211.225.221
+# System status:
+#	Alarm >> system - power_supply_a_failure - minor
+#	Alarm >> system - fan_speed_error - minor
+# Cards status:
+#	** No alarmed cards (11 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SOC-A35-0  RIN 226 at 10.211.225.225
+# System status:
+#	Alarm >> system - power_supply_b_failure - minor
+# Cards status:
+#	** No alarmed cards (12 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SOC-A36  RIN 62 at 10.211.225.61
+# System status:
+#	Alarm >> system - power_supply_b_failure - minor
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SOC-A36-1  RIN 63 at 10.211.225.62
+# System status:
+#	Alarm >> system - power_supply_b_failure - minor
+#	Alarm >> system - fan_speed_error - minor
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SOC-A36-2  RIN 64 at 10.211.225.63
+# System status:
+#	Alarm >> system - power_supply_b_failure - minor
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SOC-A37-0  RIN 66 at 10.211.225.65
+# System status:
+#	Alarm >> system - power_supply_a_failure - minor
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SOC-A37-1  RIN 67 at 10.211.225.66
+# System status:
+#	Alarm >> system - power_supply_a_failure - minor
+# Cards status:
+#	** No alarmed cards (18 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SOC-A37-2  RIN 68 at 10.211.225.67
+# System status:
+#	Alarm >> system - power_supply_b_failure - minor
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SOC-A38-0  RIN 234 at 10.211.225.241
+# System status:
+#	Alarm >> system - fan_power_supply_a_failure - critical
+# Cards status:
+#	** No alarmed cards (11 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SOC-A38-5  RIN 236 at 10.211.225.243
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (6 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SOC-A39-0  RIN 42 at 10.211.225.41
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (11 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SOC-A40-0  RIN 445 at 10.211.225.245
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (11 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SOC-A41-0  RIN 46 at 10.211.225.45
+# System status:
+#	Alarm >> system - power_supply_b_failure - minor
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SOC-A41-1  RIN 47 at 10.211.225.46
+# System status:
+#	Alarm >> system - power_supply_b_failure - minor
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SOC-A42-0  RIN 50 at 10.211.225.49
+# System status:
+#	Alarm >> system - power_supply_b_failure - minor
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SOC-A42-1  RIN 51 at 10.211.225.50
+# System status:
+#	Alarm >> system - power_supply_a_failure - minor
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SOC-A43-0  RIN 54 at 10.211.225.53
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SOC-A43-1  RIN 55 at 10.211.225.54
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (20 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SOC-A44-0  RIN 18 at 10.211.225.17
+# System status:
+#	Alarm >> system - power_supply_a_failure - minor
+# Cards status:
+#	** No alarmed cards (20 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SOC-A45-0  RIN 70 at 10.211.225.69
+# System status:
+#	Alarm >> system - power_supply_b_failure - minor
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SOC-A45-1  RIN 71 at 10.211.225.70
+# System status:
+#	Alarm >> system - power_supply_a_failure - minor
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SOC-A46-0  RIN 74 at 10.211.225.73
+# System status:
+#	Alarm >> system - power_supply_b_failure - minor
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SOC-A46-1  RIN 75 at 10.211.225.74
+# System status:
+#	Alarm >> system - power_supply_a_failure - minor
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SOC-A47-0  RIN 270 at 10.211.225.81
+# System status:
+#	Alarm >> system - power_supply_b_failure - minor
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SOC-A47-4  RIN 271 at 10.211.225.82
+# System status:
+#	Alarm >> system - power_supply_a_failure - minor
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SOC-A48-0  RIN 274 at 10.211.225.85
+# System status:
+#	Alarm >> system - power_supply_b_failure - minor
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SOC-A48-1  RIN 275 at 10.211.225.86
+# System status:
+#	Alarm >> system - power_supply_b_failure - minor
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SOC-A49-0  RIN 278 at 10.211.225.89
+# System status:
+#	Alarm >> system - power_supply_b_failure - minor
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SOC-A49-1  RIN 279 at 10.211.225.90
+# System status:
+#	Alarm >> system - power_supply_a_failure - minor
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SOC-A50-0  RIN 230 at 10.211.225.229
+# System status:
+#	Alarm >> system - power_supply_a_failure - minor
+# Cards status:
+#	** No alarmed cards (20 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SOC-A51  RIN 282 at 10.211.238.69
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SOC-A52-0  RIN 214 at 10.211.225.213
+# System status:
+#	Alarm >> system - power_supply_b_failure - minor
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SOC-A52-1  RIN 215 at 10.211.225.214
+# System status:
+#	Alarm >> system - power_supply_a_failure - minor
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SOC-A53  RIN 218 at 10.211.225.217
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SOC-A53-1  RIN 219 at 10.211.225.218
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (18 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+############### ** General status for SOC ** ###############
+# Total hosts checked: 41
+# Total system alarms: 33
+# Total cards alarms: 0
+# Total redundancy errors: 0
+############################################################

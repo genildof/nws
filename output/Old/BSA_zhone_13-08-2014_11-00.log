@@ -1,0 +1,887 @@
+################## Zhone BSA-A01  RIN 23 at 10.161.17.191
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (10 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A02  RIN 45 at 10.161.17.136
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (10 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A0O  RIN  at 10.161.17.192
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (9 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A0S  RIN  at 10.161.243.19
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (9 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A0S-2  RIN  at 10.161.243.20
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (8 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A0T  RIN  at 10.161.17.194
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (8 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A0U  RIN  at 10.161.18.247
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (8 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A0U-2  RIN  at 10.161.18.248
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (8 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A0V  RIN  at 10.161.18.195
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (8 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A11  RIN 49 at 10.161.17.151
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (10 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A13-2  RIN 250 at 10.161.17.175
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (10 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A14  RIN 53 at 10.161.17.139
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (9 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A15-2  RIN 209 at 10.161.17.253
+# System status:
+#	Alarm >> system - fan_power_supply_b_failure - critical
+# Cards status:
+#	** No alarmed cards (8 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A1E  RIN  at 10.161.17.196
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (9 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A1F  RIN  at 10.161.18.199
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (10 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A1G  RIN  at 10.161.17.144
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (8 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A1G-2  RIN  at 10.161.17.157
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (9 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A31  RIN 70 at 10.161.18.136
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (8 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A31-2  RIN 71 at 10.161.18.149
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (7 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A35  RIN 62 at 10.161.18.141
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (9 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A35-2  RIN 63 at 10.161.18.156
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (10 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A37  RIN 42 at 10.161.17.197
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (9 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A37-2  RIN 43 at 10.161.17.198
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (6 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A38  RIN 46 at 10.161.17.199
+################## Zhone BSA-A40  RIN 50 at 10.161.243.23
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (8 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A41  RIN 21 at 10.161.17.200
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (9 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A41-2  RIN 22 at 10.161.18.142
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (8 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A42  RIN 54 at 10.161.243.25
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (9 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A43  RIN 152 at 10.161.17.134
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (7 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A43-2  RIN 153 at 10.161.17.140
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (7 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A44  RIN 156 at 10.161.17.132
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (8 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A45  RIN 352 at 10.161.243.45
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (8 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A46  RIN 287 at 10.161.243.1
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (9 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A46-2  RIN 289 at 10.161.243.106
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (5 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A47  RIN 271 at 10.161.17.153
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (9 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A49  RIN 323 at 10.161.243.51
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (8 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A50  RIN 319 at 10.161.17.201
+# System status:
+#	Alarm >> system - power_supply_a_failure - minor
+# Cards status:
+#	** No alarmed cards (8 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A51  RIN 316 at 10.161.17.202
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (8 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A52  RIN 307 at 10.161.17.203
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (7 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A53  RIN 283 at 10.161.17.135
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (7 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A53-2  RIN 284 at 10.161.17.141
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (8 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A54  RIN 303 at 10.161.243.55
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (8 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A56  RIN 369 at 10.161.17.138
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (9 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A57  RIN 364 at 10.161.17.204
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (9 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A59  RIN 16 at 10.161.243.9
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (10 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A60  RIN 1 at 10.161.243.5
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (9 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A61  RIN 3 at 10.161.243.7
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (9 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A62  RIN 295 at 10.161.18.144
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (8 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A63  RIN 275 at 10.161.243.2
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (9 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A64-99  RIN 299 at 10.161.243.52
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (9 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A64-2  RIN 300 at 10.161.243.53
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (9 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A65  RIN 65 at 10.161.17.133
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (9 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A66  RIN 61 at 10.161.17.155
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (9 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A66-2  RIN 62 at 10.161.17.146
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (10 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A68  RIN 42 at 10.161.17.149
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (10 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A75  RIN 81 at 10.161.17.205
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (8 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A75-2  RIN 82 at 10.161.17.206
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (7 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A76  RIN 85 at 10.161.18.206
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (9 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A77  RIN 331 at 10.161.17.207
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (9 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A78  RIN 335 at 10.161.17.208
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (8 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A79  RIN 101 at 10.161.18.201
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (8 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A79-2  RIN 103 at 10.161.18.202
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (7 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A80  RIN 339 at 10.161.17.209
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (10 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A81  RIN 107 at 10.161.17.210
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (9 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A82  RIN 120 at 10.161.17.211
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (9 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A82-2  RIN 121 at 10.161.17.212
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (8 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A83  RIN 116 at 10.161.17.190
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (8 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A84  RIN 29 at 10.161.17.214
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (5 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A85  RIN 164 at 10.161.18.240
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (8 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A86  RIN 236 at 10.161.18.245
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (8 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A86-2  RIN 237 at 10.161.18.246
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (8 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A87  RIN 240 at 10.161.18.251
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (8 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A87-2  RIN 241 at 10.161.18.252
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (8 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A89  RIN 196 at 10.161.17.158
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (8 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A89-2  RIN 197 at 10.161.17.159
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (8 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A89-3  RIN 198 at 10.161.243.133
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (8 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A97-4  RIN 232 at 10.161.17.215
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (8 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A97-5  RIN 233 at 10.161.17.247
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (9 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A98  RIN 25 at 10.161.18.234
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (11 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A99  RIN 35 at 10.161.18.235
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (12 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-A99-2  RIN 37 at 10.161.18.236
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (9 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-C01-4  RIN 13 at 10.161.15.58
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (6 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-C01-2  RIN 269 at 10.161.243.136
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (9 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-C01  RIN 270 at 10.161.18.228
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (12 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-C02  RIN 277 at 10.161.18.237
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (11 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-C03  RIN 281 at 10.161.18.239
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (12 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-C04  RIN 265 at 10.161.18.229
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (11 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-C05  RIN 180 at 10.161.243.85
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (11 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-C07-4  RIN 211 at 10.161.243.93
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (10 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-C08-2  RIN 216 at 10.161.243.104
+# System status:
+#	Alarm >> system - fan_speed_error - minor
+# Cards status:
+#	** No alarmed cards (11 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-C13-4  RIN 173 at 10.161.243.197
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (10 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-C15  RIN 26 at 10.161.243.148
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (10 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-C15-2  RIN 27 at 10.161.243.149
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (9 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-C15-4  RIN 29 at 10.161.243.206
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (9 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-C16  RIN 98 at 10.161.243.150
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (9 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-C16-2  RIN 99 at 10.161.243.151
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (9 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-I05  RIN 69 at 10.161.17.150
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (5 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-I10-4  RIN 257 at 10.161.243.188
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (7 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-V02  RIN 135 at 10.161.243.250
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (9 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-V07-4  RIN 31 at 10.161.18.222
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (7 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-V09  RIN 202 at 10.161.17.160
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (9 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-V09-2  RIN 207 at 10.161.17.161
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (8 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-V11  RIN 306 at 10.161.17.220
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (8 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-V11-2  RIN 308 at 10.161.17.221
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (8 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-V12  RIN 323 at 10.161.17.222
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (9 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-V17-0  RIN 139 at 10.161.15.6
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (8 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-V17-1  RIN 140 at 10.161.15.7
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (9 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-V19  RIN 213 at 10.161.17.223
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (8 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-V19-2  RIN 214 at 10.161.17.224
+# System status:
+#	Alarm >> system - power_supply_b_failure - minor
+# Cards status:
+#	** No alarmed cards (8 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-V19-3  RIN 215 at 10.161.17.225
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (8 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone BSA-V21-3  RIN 95 at 10.161.243.144
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (9 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+############### ** General status for BSA ** ###############
+# Total hosts checked: 111
+# Total system alarms: 4
+# Total cards alarms: 0
+# Total redundancy errors: 0
+############################################################

@@ -1,0 +1,54 @@
++-------------------------------------- General status for RPO --------------------------------------+
+|
+| Total checked NEs: 93
+| Total remote access errors: 0
+| Total NE alarms: 12
+| Total cards checked: 1557
+| Total card alarms: 12
+| Total redundancy alarms: 13
+|
++----------------------------------------------------------------------------------------------------+
+|
+|
+| KEYMILE Alarms
+|	RPO-A02-0 	RIN 15		at 10.214.41.17		Alarm >> unit-20 - LOMI8 R1C - Plugged
+|	RPO-A02-0 	RIN 15		at 10.214.41.17		Alarm >> unit-21 - STIM1 R1D - Plugged
+|	RPO-A08-0 	RIN 7		at 10.214.41.22		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	RPO-A11-0 	RIN 9		at 10.214.41.25		Alarm >> Protecting CU Active
+|	RPO-A11-0 	RIN 9		at 10.214.41.25		Alarm >> /unit-13/port-1 - Down
+|	RPO-A19-0 	RIN 20		at 10.214.41.31		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	RPO-A20-0 	RIN 12		at 10.214.41.32		Alarm >> Protecting CU Active
+|	RPO-A20-0 	RIN 12		at 10.214.41.32		Alarm >> /unit-13/port-1 - Down
+|	RPO-A21-0 	RIN 13		at 10.214.41.33		Alarm >> /unit-13/port-1 - Down
+|	RPO-A23-0 	RIN 48		at 10.214.41.3		Alarm >> Protecting CU Active
+|	RPO-A23-0 	RIN 48		at 10.214.41.3		Alarm >> /unit-13/port-1 - Down
+|	RPO-A25-0 	RIN 59		at 10.214.41.60		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	RPO-A26-0 	RIN 60		at 10.214.41.61		Alarm >> /unit-13/port-1 - Down
+|	RPO-A28-0 	RIN 21		at 10.214.41.35		Alarm >> Protecting CU Active
+|	RPO-A28-0 	RIN 21		at 10.214.41.35		Alarm >> /unit-11/port-1 - Down
+|	RPO-A30-0 	RIN 49		at 10.214.41.4		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	RPO-A33-0 	RIN 24		at 10.214.41.38		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	RPO-A36-0 	RIN 25		at 10.214.41.39		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	RPO-A37-0 	RIN 26		at 10.214.41.40		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	RPO-A39-0 	RIN 63		at 10.214.41.65		Alarm >> /unit-13/port-1 - Down
+|	RPO-A48-0 	RIN 32		at 10.214.41.42		Alarm >> /unit-13/port-1 - Down
+|	RPO-A50-0 	RIN 33		at 10.214.41.43		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	RPO-A50-0 	RIN 33		at 10.214.41.43		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	RPO-A51-4 	RIN 417		at 10.214.41.79		Alarm >> /unit-11/port-1 - Down
+|	RPO-A52-4 	RIN 418		at 10.214.41.80		Alarm >> /unit-13/port-1 - Down
+|	RPO-A52-0 	RIN 54		at 10.214.41.14		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	RPO-A53-0 	RIN 35		at 10.214.41.44		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	RPO-A53 	RIN 92		at 10.214.41.69		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	RPO-A54-0 	RIN 36		at 10.214.41.15		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	RPO-A54 	RIN 93		at 10.214.41.70		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	RPO-A61-0 	RIN 38		at 10.214.41.46		Alarm >> /unit-13/port-1 - Down
+|	RPO-A89-0 	RIN 87		at 10.214.41.81		Alarm >> Protecting CU Active
+|	RPO-A89-0 	RIN 87		at 10.214.41.81		Alarm >> /unit-13/port-1 RxInputPower (-17)
+|	RPO-A91-0 	RIN 404		at 10.214.41.76		Alarm >> Protecting CU Active
+|	RPO-A91-0 	RIN 404		at 10.214.41.76		Alarm >> /unit-13/port-1 - Down
+|	RPO-I02-0 	RIN 58		at 10.214.41.59		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	RPO-I02-0 	RIN 58		at 10.214.41.59		Alarm >> unit-13 - COGE3 R1G - Plugged
+|
+| ZHONE Alarms
+|
++----------------------------------------------------------------------------------------------------+

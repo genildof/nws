@@ -1,0 +1,62 @@
+################## Zhone SPO-A78-0  RIN 208 at 10.214.17.4
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (15 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SPO-A79  RIN 209 at 10.214.17.6
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (14 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SPO-A80-0  RIN 210 at 10.214.17.8
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (13 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SPO-A82  RIN 172 at 10.214.33.86
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (14 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SPO-I03  RIN 4 at 10.214.33.84
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (14 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SPO-I04  RIN 207 at 10.214.17.25
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (11 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone SPO-I04-1  RIN 211 at 10.214.17.24
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (7 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+############### ** General status for SPO ** ###############
+# Total hosts checked: 7
+# Total system alarms: 0
+# Total cards alarms: 0
+# Total redundancy errors: 0
+############################################################

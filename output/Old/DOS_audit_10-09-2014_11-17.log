@@ -1,0 +1,34 @@
++-------------------------------------- General status for DOS --------------------------------------+
+|
+| Total checked NEs: 60
+| Total remote access errors: 8
+| Total NE alarms: 8
+| Total cards checked: 838
+| Total card alarms: 1
+| Total redundancy alarms: 0
+|
++----------------------------------------------------------------------------------------------------+
+|
+|
+| KEYMILE Alarms
+|	DOS-A03-4 	RIN 131		at 10.164.97.7		Error >> No remote access
+|	DOS-A04 	RIN 127		at 10.164.97.9		Error >> No remote access
+|	DOS-A07-4 	RIN 99		at 10.164.97.15		Alarm >> Protecting CU Active
+|	DOS-A12 	RIN 7		at 10.164.97.19		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	DOS-A15-4 	RIN 19		at 10.164.97.43		Alarm >> Protecting CU Active
+|	DOS-A16-4 	RIN 51		at 10.164.97.25		Error >> No remote access
+|	DOS-A17-4 	RIN 55		at 10.164.97.27		Error >> No remote access
+|	DOS-A19-4 	RIN 63		at 10.164.97.31		Error >> No remote access
+|	DOS-A20-5 	RIN 529		at 10.164.97.63		Error >> No remote access
+|	DOS-A20-0 	RIN 66		at 10.164.97.47		Error >> No remote access
+|	DOS-A25-5 	RIN 17		at 10.164.97.67		Alarm >> Protecting CU Active
+|	DOS-A25-0 	RIN 30		at 10.164.97.49		Error >> No remote access
+|	DOS-A25-4 	RIN 31		at 10.164.97.50		Alarm >> Protecting CU Active
+|	DOS-A28 	RIN 87		at 10.164.97.52		Alarm >> Protecting CU Active
+|	DOS-A31-0 	RIN 68		at 10.164.97.70		Alarm >> Protecting CU Active
+|
+| ZHONE Alarms
+|	DOS-A05-0 	RIN 122		at 10.164.97.10		Alarm >> ["6: MXK 24 PORT VDSL2 POTS ", ["(FAULT)"]]
+|	DOS-A16-0 	RIN 50		at 10.164.97.24		Alarm >> not_in_redundant_mode
+|
++----------------------------------------------------------------------------------------------------+

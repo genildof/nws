@@ -1,0 +1,48 @@
++-------------------------------------- General status for MCZ --------------------------------------+
+|
+| Total checked NEs: 26
+| Total remote access errors: 1
+| Total NE alarms: 6
+| Total cards checked: 431
+| Total card alarms: 16
+| Total redundancy alarms: 8
+|
++----------------------------------------------------------------------------------------------------+
+|
+|
+| KEYMILE Alarms
+|	MCZ-A01-4 	RIN 425		at 10.209.21.22		Alarm >> unit-13 - COGE3 R1D - Plugged
+|	MCZ-A03-4 	RIN 421		at 10.209.21.4		Alarm >> Protecting CU Active
+|	MCZ-A03-4 	RIN 421		at 10.209.21.4		Alarm >> /unit-13/port-1 - Down
+|	MCZ-A05-4 	RIN 409		at 10.209.21.6		Alarm >> Protecting CU Active
+|	MCZ-A05-4 	RIN 409		at 10.209.21.6		Alarm >> /unit-13/port-1 - Down
+|	MCZ-A10-0 	RIN 271		at 10.209.21.23		Alarm >> Protecting CU Active
+|	MCZ-A10-0 	RIN 271		at 10.209.21.23		Alarm >> /unit-13/port-1 - Down
+|	MCZ-A10-4 	RIN 413		at 10.209.21.24		Alarm >> unit-13 - COGE3 R1D - Plugged
+|	MCZ-A11-4 	RIN 417		at 10.209.21.10		Alarm >> unit-13 - COGE3 R1D - Plugged
+|	MCZ-A15-4 	RIN 429		at 10.209.21.12		Alarm >> Protecting CU Active
+|	MCZ-A15-4 	RIN 429		at 10.209.21.12		Alarm >> /unit-13/port-1 - Down
+|	MCZ-A16-4 	RIN 433		at 10.209.21.14		Alarm >> Protecting CU Active
+|	MCZ-A16-4 	RIN 433		at 10.209.21.14		Alarm >> /unit-13/port-1 - Down
+|	MCZ-A21-4 	RIN 437		at 10.209.21.16		Alarm >> unit-13 - COGE3 R1D - Plugged
+|	MCZ-A22 	RIN 441		at 10.209.21.18		Alarm >> unit-13 - COGE3 R1D - Plugged
+|	MCZ-A23-0 	RIN 467		at 10.209.21.25		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	MCZ-A24-0 	RIN 177		at 10.209.21.26		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	MCZ-A25-0 	RIN 120		at 10.209.21.27		Alarm >> Protecting CU Active
+|	MCZ-A25-0 	RIN 120		at 10.209.21.27		Alarm >> /unit-13/port-1 - Down
+|	MCZ-A27-0 	RIN 125		at 10.209.21.28		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	MCZ-I01-4 	RIN 493		at 10.209.21.20		Alarm >> unit-13 - COGE3 R1D - Plugged
+|	MCZ-T01 	RIN 501		at 10.209.21.2		Error >> No remote access
+|
+| ZHONE Alarms
+|	MCZ-A01 	RIN 424		at 10.209.21.21		Alarm >> b: MXK FOUR GIGE  - (NOT_PROV)
+|	MCZ-A03-0 	RIN 420		at 10.209.21.3		Alarm >> b: MXK FOUR GIGE  - (NOT_PROV)
+|	MCZ-A05-0 	RIN 408		at 10.209.21.5		Alarm >> b: MXK FOUR GIGE  - (NOT_PROV)
+|	MCZ-A11-0 	RIN 416		at 10.209.21.9		Alarm >> b: MXK FOUR GIGE  - (NOT_PROV)
+|	MCZ-A15 	RIN 428		at 10.209.21.11		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	MCZ-A16-0 	RIN 432		at 10.209.21.13		Alarm >> b: MXK FOUR GIGE  - (NOT_PROV)
+|	MCZ-A21-0 	RIN 436		at 10.209.21.15		Alarm >> b: MXK FOUR GIGE  - (NOT_PROV)
+|	MCZ-A22-0 	RIN 440		at 10.209.21.17		Alarm >> Secondary - 1-b-2-0/eth - Down
+|	MCZ-I01 	RIN 492		at 10.209.21.19		Alarm >> b: MXK FOUR GIGE  - (NOT_PROV)
+|
++----------------------------------------------------------------------------------------------------+

@@ -1,0 +1,199 @@
++-------------------------------------- General status for GNA --------------------------------------+
+|
+| Total checked NEs: 595
+| Total remote access errors: 8
+| Total NE alarms: 148
+| Total cards checked: 9878
+| Total card alarms: 1
+| Total redundancy alarms: 25
+|
++----------------------------------------------------------------------------------------------------+
+|
+|
+| KEYMILE Alarms
+|	GNA-A02-2 	RIN 255		at 10.161.145.237		Alarm >> Protecting CU Active
+|	GNA-A03-2 	RIN 188		at 10.161.145.217		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	GNA-A04-2 	RIN 247		at 10.161.139.152		Alarm >> alarm-1   -  Door_Open           -  Minor     
+|	GNA-A0G-4 	RIN 		at 10.161.139.234		Alarm >> Partial Fan Breakdown
+|	GNA-A0G-3 	RIN 		at 10.161.140.217		Alarm >> alarm-1   -  Door_Open         -  Minor     
+|	GNA-A0I-2 	RIN 		at 10.161.139.110		Alarm >> Protecting CU Active
+|	GNA-A0I-2 	RIN 		at 10.161.139.110		Alarm >> alarm-4   -  Falha de Fan        -  Minor     
+|	GNA-A0M-0 	RIN 		at 10.161.137.73		Alarm >> alarm-3   -  Falha de AC        -  Critical  
+|	GNA-A0S-2 	RIN 		at 10.161.145.227		Alarm >> Total Fan Breakdown
+|	GNA-A0S-2 	RIN 		at 10.161.145.227		Alarm >> alarm-1   -  Door_Open           -  Minor     
+|	GNA-A0T-2 	RIN 		at 10.161.145.200		Alarm >> alarm-2   -  High_Temp          -  Critical  
+|	GNA-A0T-2 	RIN 		at 10.161.145.200		Alarm >> alarm-3   -  Ac_Main_Fail       -  Critical  
+|	GNA-A0W-2 	RIN 		at 10.161.139.89		Alarm >> Protecting CU Active
+|	GNA-A0W-2 	RIN 		at 10.161.139.89		Alarm >> Partial Fan Breakdown
+|	GNA-A13-4 	RIN 173		at 10.164.43.183		Alarm >> /unit-13/port-1 RxInputPower (-33)
+|	GNA-A14-2 	RIN 147		at 10.161.139.120		Alarm >> Partial Fan Breakdown
+|	GNA-A19-5 	RIN 88		at 10.161.139.86		Alarm >> alarm-1   -  Door_Open           -  Minor     
+|	GNA-A1J-99 	RIN 		at 10.161.137.43		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	GNA-A1J-99 	RIN 		at 10.161.137.43		Alarm >> Loss Of Signal On PDH Clock Source 2
+|	GNA-A1J-2 	RIN 		at 10.161.139.117		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	GNA-A1J-2 	RIN 		at 10.161.139.117		Alarm >> Protecting CU Active
+|	GNA-A1J-6 	RIN 		at 10.164.43.30		Alarm >> Protecting CU Active
+|	GNA-A1L-7 	RIN 		at 10.161.139.165		Alarm >> Protecting CU Active
+|	GNA-A1M-2 	RIN 		at 10.161.139.56		Alarm >> Protecting CU Active
+|	GNA-A1M-2 	RIN 		at 10.161.139.56		Alarm >> Partial Fan Breakdown
+|	GNA-A25-6 	RIN 567		at 10.164.43.180		Error >> No remote access
+|	GNA-A28-2 	RIN 303		at 10.161.93.219		Alarm >> alarm-1   -  Door_Open         -  Minor     
+|	GNA-A34-2 	RIN 351		at 10.161.139.107		Alarm >> Protecting CU Active
+|	GNA-A38-6 	RIN 348		at 10.164.32.197		Alarm >> Protecting CU Active
+|	GNA-A39-0 	RIN 576		at 10.161.141.29		Alarm >> alarm-1   -  Door_open         -  Minor     
+|	GNA-A40-99 	RIN 270		at 10.161.145.240		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	GNA-A40-1 	RIN 273		at 10.164.43.48		Alarm >> Protecting CU Active
+|	GNA-A42-99 	RIN 24		at 10.164.32.45		Alarm >> Protecting CU Active
+|	GNA-A42-99 	RIN 24		at 10.164.32.45		Alarm >> Partial Fan Breakdown
+|	GNA-A43 	RIN 218		at 10.161.139.220		Alarm >> Protecting CU Active
+|	GNA-A43 	RIN 218		at 10.161.139.220		Alarm >> Partial Fan Breakdown
+|	GNA-A44 	RIN 66		at 10.161.139.149		Alarm >> alarm-1   -  Door_Open           -  Minor     
+|	GNA-A44 	RIN 66		at 10.161.139.149		Alarm >> alarm-3   -  Falha de AC         -  Critical  
+|	GNA-A46-3 	RIN 332		at 10.161.139.225		Alarm >> Loss Of Signal On PDH Clock Source 2
+|	GNA-A48-0 	RIN 109		at 10.161.137.86		Alarm >> alarm-1   -  Door_Open         -  Minor     
+|	GNA-A53-5 	RIN 395		at 10.161.93.211		Alarm >> Protecting CU Active
+|	GNA-A53-5 	RIN 395		at 10.161.93.211		Alarm >> alarm-1   -  Door_Open         -  Minor     
+|	GNA-A58-2 	RIN 391		at 10.161.93.228		Error >> No remote access
+|	GNA-A59-2 	RIN 28		at 10.161.93.209		Alarm >> alarm-1   -  Door_Open           -  Minor     
+|	GNA-A60-2 	RIN 205		at 10.164.43.179		Error >> No remote access
+|	GNA-A61-3 	RIN 86		at 10.161.139.243		Alarm >> Protecting CU Active
+|	GNA-A65 	RIN 452		at 10.164.43.175		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	GNA-A74-3 	RIN 216		at 10.164.43.56		Alarm >> alarm-1   -  Door_Open         -  Minor     
+|	GNA-A76-3 	RIN 128		at 10.161.139.81		Alarm >> /unit-11/port-1 RxInputPower (-17)
+|	GNA-A76-0 	RIN 129		at 10.161.137.120		Alarm >> Protecting CU Active
+|	GNA-A81-0 	RIN 124		at 10.161.137.52		Alarm >> alarm-4   -  Falha de Fan      -  Minor     
+|	GNA-A81-0 	RIN 124		at 10.161.137.52		Alarm >> /unit-11/port-1 RxInputPower (-15)
+|	GNA-A90-4 	RIN 133		at 10.161.141.34		Alarm >> Partial Fan Breakdown
+|	GNA-A94-2 	RIN 163		at 10.161.139.66		Alarm >> alarm-1   -  Door_Open         -  Minor     
+|	GNA-A94-2 	RIN 163		at 10.161.139.66		Alarm >> /unit-11/port-1 RxInputPower (-21)
+|	GNA-A98 	RIN 170		at 10.161.139.7		Alarm >> Protecting CU Active
+|	GNA-A99-0 	RIN 136		at 10.161.137.14		Alarm >> Partial Fan Breakdown
+|	GNA-B04-2 	RIN 55		at 10.161.139.104		Alarm >> Total Fan Breakdown
+|	GNA-B05-2 	RIN 44		at 10.164.43.7		Alarm >> Protecting CU Active
+|	GNA-B12-3 	RIN 212		at 10.161.139.209		Alarm >> Partial Fan Breakdown
+|	GNA-B13-0 	RIN 571		at 10.161.140.178		Alarm >> /unit-13/port-1 RxInputPower (-50)
+|	GNA-B14 	RIN 262		at 10.161.145.232		Alarm >> Protecting CU Active
+|	GNA-B15 	RIN 42		at 10.161.139.71		Alarm >> Total Fan Breakdown
+|	GNA-B15-3 	RIN 44		at 10.161.139.113		Alarm >> Protecting CU Active
+|	GNA-B16-3 	RIN 212		at 10.161.145.248		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	GNA-B17 	RIN 386		at 10.161.139.73		Alarm >> Protecting CU Active
+|	GNA-B17-0 	RIN 420		at 10.161.137.118		Alarm >> alarm-2   -  Temperatura Alta    -  Critical  
+|	GNA-B19-3 	RIN 172		at 10.161.145.197		Alarm >> Protecting CU Active
+|	GNA-B20 	RIN 15		at 10.161.93.202		Error >> No remote access
+|	GNA-B21-3 	RIN 93		at 10.161.139.192		Alarm >> Protecting CU Active
+|	GNA-B21-3 	RIN 93		at 10.161.139.192		Alarm >> Partial Fan Breakdown
+|	GNA-B22 	RIN 181		at 10.161.145.214		Alarm >> Partial Fan Breakdown
+|	GNA-B22-3 	RIN 184		at 10.161.139.141		Alarm >> Partial Fan Breakdown
+|	GNA-B23-3 	RIN 116		at 10.164.32.52		Alarm >> Partial Fan Breakdown
+|	GNA-B26-2 	RIN 23		at 10.161.145.213		Alarm >> Protecting CU Active
+|	GNA-B27 	RIN 30		at 10.161.145.220		Error >> No remote access
+|	GNA-B28-2 	RIN 27		at 10.161.145.252		Alarm >> Protecting CU Active
+|	GNA-B31 	RIN 17		at 10.161.93.217		Alarm >> Partial Fan Breakdown
+|	GNA-B33 	RIN 4		at 10.161.93.224		Alarm >> Protecting CU Active
+|	GNA-B40-1 	RIN 429		at 10.161.141.23		Alarm >> Protecting CU Active
+|	GNA-B42-3 	RIN 356		at 10.161.93.233		Alarm >> Protecting CU Active
+|	GNA-B42-3 	RIN 356		at 10.161.93.233		Alarm >> Partial Fan Breakdown
+|	GNA-B43 	RIN 138		at 10.161.139.166		Alarm >> Protecting CU Active
+|	GNA-B45-2 	RIN 359		at 10.161.139.222		Alarm >> Loss Of Signal On PDH Clock Source 2
+|	GNA-B45-2 	RIN 359		at 10.161.139.222		Alarm >> Protecting CU Active
+|	GNA-B45-0 	RIN 361		at 10.161.140.214		Alarm >> Protecting CU Active
+|	GNA-B46 	RIN 531		at 10.161.139.218		Alarm >> Protecting CU Active
+|	GNA-B47-2-99 	RIN 315		at 10.161.139.245		Alarm >> alarm-4   -  Falha de Fan        -  Minor     
+|	GNA-B48-1 	RIN 468		at 10.164.32.103		Alarm >> Protecting CU Active
+|	GNA-B49-0 	RIN 193		at 10.164.32.8		Alarm >> alarm-1   -  Door_Open         -  Minor     
+|	GNA-B50-1 	RIN 51		at 10.164.32.22		Alarm >> /unit-11/port-1 RxInputPower (-18)
+|	GNA-B51 	RIN 282		at 10.164.32.10		Alarm >> alarm-1   -  Door_Open           -  Minor     
+|	GNA-B51-1 	RIN 283		at 10.164.32.11		Alarm >> Partial Fan Breakdown
+|	GNA-B52-0 	RIN 2		at 10.164.32.14		Alarm >> Protecting CU Active
+|	GNA-B52-1 	RIN 3		at 10.164.32.15		Alarm >> Protecting CU Active
+|	GNA-B53 	RIN 286		at 10.164.32.16		Alarm >> alarm-2   -  Temperatura Alta    -  Critical  
+|	GNA-B55-0 	RIN 40		at 10.164.32.28		Alarm >> Loss Of Signal On PDH Clock Source 2
+|	GNA-B55-0 	RIN 40		at 10.164.32.28		Alarm >> /unit-11/port-1 RxInputPower (-18)
+|	GNA-B57 	RIN 118		at 10.164.32.33		Alarm >> Loss Of Signal On PDH Clock Source 2
+|	GNA-B57 	RIN 118		at 10.164.32.33		Alarm >> alarm-1   -  Door_Open           -  Minor     
+|	GNA-B57 	RIN 118		at 10.164.32.33		Alarm >> alarm-4   -  Falha de Fan        -  Minor     
+|	GNA-B59-0 	RIN 33		at 10.164.32.61		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	GNA-B59-4 	RIN 34		at 10.164.32.62		Alarm >> Protecting CU Active
+|	GNA-B60-5 	RIN 149		at 10.164.43.103		Alarm >> /unit-13/port-1 RxInputPower (-24)
+|	GNA-B63-0 	RIN 422		at 10.164.32.74		Alarm >> alarm-1   -  Door_Open         -  Minor     
+|	GNA-B63-0 	RIN 422		at 10.164.32.74		Alarm >> alarm-2   -  Temperatura Alta  -  Critical  
+|	GNA-B64-0 	RIN 401		at 10.164.32.63		Alarm >> Partial Fan Breakdown
+|	GNA-B64-6 	RIN 497		at 10.164.43.190		Alarm >> Protecting CU Active
+|	GNA-B65-0 	RIN 405		at 10.164.32.67		Alarm >> alarm-1   -  Door_Open         -  Minor     
+|	GNA-B66-0 	RIN 409		at 10.164.32.65		Alarm >> alarm-1   -  Door_Open           -  Minor     
+|	GNA-B66-0 	RIN 409		at 10.164.32.65		Alarm >> alarm-4   -  Falha de Fan        -  Minor     
+|	GNA-B66-4 	RIN 410		at 10.164.32.66		Alarm >> Partial Fan Breakdown
+|	GNA-B66-6 	RIN 436		at 10.164.43.176		Alarm >> /unit-11/port-1 RxInputPower (-15)
+|	GNA-B69-5 	RIN 276		at 10.164.43.17		Alarm >> Loss Of Signal On PDH Clock Source 2
+|	GNA-B69 	RIN 442		at 10.164.43.174		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	GNA-B76-5 	RIN 131		at 10.164.43.15		Alarm >> Loss Of Signal On PDH Clock Source 2
+|	GNA-B76-5 	RIN 131		at 10.164.43.15		Alarm >> Protecting CU Active
+|	GNA-B80-1 	RIN 139		at 10.164.32.92		Alarm >> Partial Fan Breakdown
+|	GNA-B82 	RIN 343		at 10.164.32.100		Alarm >> /unit-11/port-1 RxInputPower (-16)
+|	GNA-B83-0 	RIN 38		at 10.164.32.119		Alarm >> Partial Fan Breakdown
+|	GNA-B84-6 	RIN 365		at 10.164.43.82		Alarm >> Loss Of Signal On PDH Clock Source 2
+|	GNA-B85-0 	RIN 133		at 10.164.32.93		Alarm >> alarm-2   -  High_Temp           -  Critical  
+|	GNA-B85-0 	RIN 133		at 10.164.32.93		Alarm >> alarm-3   -  Ac_Main_Fail        -  Critical  
+|	GNA-B88-0 	RIN 54		at 10.164.32.142		Alarm >> alarm-1   -  Door_Open         -  Minor     
+|	GNA-B92-0 	RIN 190		at 10.164.32.160		Alarm >> alarm-1   -  Door_Open           -  Minor     
+|	GNA-B94-0 	RIN 198		at 10.164.32.178		Alarm >> alarm-2   -  Temperatura Alta  -  Critical  
+|	GNA-B94-0 	RIN 198		at 10.164.32.178		Alarm >> alarm-4   -  Falha de Fan      -  Minor     
+|	GNA-B95 	RIN 289		at 10.164.32.147		Alarm >> /unit-11/port-1 RxInputPower (-20)
+|	GNA-B95-0 	RIN 554		at 10.164.32.145		Alarm >> alarm-3   -  Falha de AC       -  Critical  
+|	GNA-B97-01 	RIN 143		at 10.164.32.201		Alarm >> /unit-13/port-1 RxInputPower (-30)
+|	GNA-B98-0 	RIN 246		at 10.164.32.183		Alarm >> alarm-1   -  Door_Open           -  Minor     
+|	GNA-B98-0 	RIN 246		at 10.164.32.183		Alarm >> /unit-13/port-1 RxInputPower (-25)
+|	GNA-B98 	RIN 247		at 10.164.32.184		Alarm >> Protecting CU Active
+|	GNA-B98 	RIN 247		at 10.164.32.184		Alarm >> /unit-13/port-1 RxInputPower (-26)
+|	GNA-B98-2 	RIN 248		at 10.164.32.185		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	GNA-B98-2 	RIN 248		at 10.164.32.185		Alarm >> /unit-13/port-1 RxInputPower (-50)
+|	GNA-B99-0 	RIN 524		at 10.164.32.186		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	GNA-C01-0 	RIN 530		at 10.164.32.204		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	GNA-C02-0 	RIN 326		at 10.164.32.206		Alarm >> /unit-13/port-1 RxInputPower (-32)
+|	GNA-C06-0 	RIN 266		at 10.164.32.212		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	GNA-C06-4 	RIN 267		at 10.164.32.213		Alarm >> Protecting CU Active
+|	GNA-C06-5 	RIN 268		at 10.164.43.45		Alarm >> /unit-13/port-1 RxInputPower (-28)
+|	GNA-C06-6 	RIN 269		at 10.164.43.108		Alarm >> /unit-13/port-1 RxInputPower (-24)
+|	GNA-C10-3 	RIN 169		at 10.164.32.248		Alarm >> Loss Of Signal On PDH Clock Source 2
+|	GNA-C10-3 	RIN 169		at 10.164.32.248		Alarm >> /unit-13/port-1 RxInputPower (-24)
+|	GNA-C15-0 	RIN 426		at 10.164.32.245		Alarm >> /unit-13/port-1 RxInputPower (-22)
+|	GNA-C15-1 	RIN 427		at 10.164.32.246		Alarm >> /unit-13/port-1 RxInputPower (-24)
+|	GNA-C17-4 	RIN 287		at 10.164.32.238		Alarm >> Protecting CU Active
+|	GNA-C18-1 	RIN 389		at 10.164.43.96		Error >> No remote access
+|	GNA-C22-4 	RIN 441		at 10.164.43.14		Alarm >> Protecting CU Active
+|	GNA-C23-0 	RIN 437		at 10.164.43.11		Alarm >> Loss Of Signal On PDH Clock Source 2
+|	GNA-C23-5 	RIN 442		at 10.164.43.171		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	GNA-C25-4 	RIN 454		at 10.164.43.24		Alarm >> Protecting CU Active
+|	GNA-C28-0 	RIN 294		at 10.164.43.49		Alarm >> Loss Of Signal On PDH Clock Source 2
+|	GNA-C28 	RIN 295		at 10.164.43.50		Alarm >> Protecting CU Active
+|	GNA-C28-5 	RIN 547		at 10.164.43.189		Alarm >> Protecting CU Active
+|	GNA-C29-4 	RIN 335		at 10.164.43.62		Alarm >> /unit-13/port-1 RxInputPower (-25)
+|	GNA-C35-5 	RIN 421		at 10.164.43.105		Alarm >> Protecting CU Active
+|	GNA-C36-4 	RIN 417		at 10.164.43.86		Alarm >> Protecting CU Active
+|	GNA-C36-6 	RIN 545		at 10.164.43.188		Alarm >> Protecting CU Active
+|	GNA-C37-4 	RIN 470		at 10.164.43.123		Alarm >> Protecting CU Active
+|	GNA-C39-4 	RIN 475		at 10.164.43.127		Alarm >> Protecting CU Active
+|	GNA-C43-4 	RIN 502		at 10.164.43.142		Alarm >> Protecting CU Active
+|	GNA-C45-0 	RIN 510		at 10.164.43.148		Alarm >> Loss Of Signal On PDH Clock Source 2
+|	GNA-C47-0 	RIN 518		at 10.164.43.156		Alarm >> Protecting CU Active
+|	GNA-I02-7 	RIN 546		at 10.164.43.185		Error >> No remote access
+|	GNA-I04 	RIN 5		at 10.161.139.96		Alarm >> Protecting CU Active
+|	GNA-V04-6 	RIN 197		at 10.164.43.118		Alarm >> Protecting CU Active
+|	GNA-V05-1 	RIN 68		at 10.161.93.248		Alarm >> Partial Fan Breakdown
+|	GNA-V07-2 	RIN 107		at 10.164.32.73		Alarm >> alarm-3   -  Falha de AC         -  Critical  
+|	GNA-V08-6 	RIN 209		at 10.161.139.185		Alarm >> /unit-13/port-1 RxInputPower (-19)
+|	GNA-V09-4 	RIN 174		at 10.161.145.198		Alarm >> Protecting CU Active
+|	GNA-V09-6 	RIN 176		at 10.164.43.28		Alarm >> Loss Of Signal On PDH Clock Source 2
+|
+| ZHONE Alarms
+|	GNA-A13 	RIN 70		at 10.161.139.25		Error >> No remote access
+|	GNA-A25 	RIN 310		at 10.161.139.21		Alarm >> power_supply_b_failure
+|	GNA-A99-2 	RIN 135		at 10.161.139.22		Alarm >> power_supply_a_failure
+|	GNA-B06 	RIN 382		at 10.161.139.15		Alarm >> power_supply_a_failure
+|	GNA-C07-0 	RIN 270		at 10.164.32.217		Alarm >> not_in_redundant_mode
+|	GNA-C07-0 	RIN 270		at 10.164.32.217		Alarm >> ["b: MXK FOUR GIGE ", ["(BOOTING)"]]
+|	GNA-C07-0 	RIN 270		at 10.164.32.217		Alarm >> Secondary - 1-b-2-0/eth - Inactive
+|	GNA-C26-0 	RIN 457		at 10.164.43.25		Alarm >> not_in_redundant_mode
+|	GNA-C26-0 	RIN 457		at 10.164.43.25		Alarm >> Secondary - 1-b-2-0/eth - Inactive
+|
++----------------------------------------------------------------------------------------------------+

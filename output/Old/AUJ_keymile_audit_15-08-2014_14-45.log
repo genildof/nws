@@ -1,0 +1,72 @@
+################## Milegate AUJ-A01-0  RIN 388 at 10.209.20.9
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (11 cards checked) **
+
+################## Milegate AUJ-A01-4  RIN 389 at 10.209.20.10
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate AUJ-A02-5  RIN 314 at 10.209.20.28
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (13 cards checked) **
+
+################## Milegate AUJ-A02-0  RIN 392 at 10.209.20.11
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate AUJ-A02-4  RIN 393 at 10.209.20.12
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate AUJ-A04-4  RIN 397 at 10.209.20.16
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (21 cards checked) **
+
+################## Milegate AUJ-A04-5  RIN 501 at 10.209.20.30
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (10 cards checked) **
+
+################## Milegate AUJ-A06-4  RIN 405 at 10.209.20.4
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate AUJ-A09  RIN 385 at 10.209.20.6
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (21 cards checked) **
+
+################## Milegate AUJ-A09-5  RIN 502 at 10.209.20.29
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (9 cards checked) **
+
+################## Milegate AUJ-I01  RIN 489 at 10.209.20.8
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (20 cards checked) **
+
+############### ** General status for AUJ ** ###############
+# Total hosts checked: 11
+# Total system alarms: 4
+# Total cards alarms: 0
+# Total redundancy errors: 0
+############################################################

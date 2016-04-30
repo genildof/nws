@@ -1,0 +1,35 @@
++-------------------------------------- General status for ACG --------------------------------------+
+|
+| Total checked NEs: 84
+| Total remote access errors: 0
+| Total NE alarms: 17
+| Total cards checked: 1443
+| Total card alarms: 1
+| Total redundancy errors: 0
+|
++----------------------------------------------------------------------------------------------------+
+|
+|
+| KEYMILE Alarms
+|	ACG-B09-3 	RIN 228		at 10.161.145.242		Alarm >> Protecting CU Active
+|	ACG-B09-3 	RIN 228		at 10.161.145.242		Alarm >> Partial Fan Breakdown
+|	ACG-B29-0 	RIN 232		at 10.161.140.196		Alarm >> Protecting CU Active
+|	ACG-B36 	RIN 13		at 10.161.93.205		Alarm >> Protecting CU Active
+|	ACG-B61-0 	RIN 154		at 10.164.32.50		Alarm >> Partial Fan Breakdown
+|	ACG-B61-6 	RIN 451		at 10.164.43.173		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	ACG-B72-5 	RIN 415		at 10.164.43.78		Alarm >> unit-8 - SUPC4 R1C - Incompatible
+|	ACG-B73-6 	RIN 261		at 10.164.43.115		Alarm >> Loss Of Signal On PDH Clock Source 2
+|	ACG-B73-2-99 	RIN 302		at 10.164.32.83		Alarm >> Protecting CU Active
+|	ACG-B81-6 	RIN 317		at 10.164.43.77		Alarm >> Loss Of Signal On PDH Clock Source 2
+|	ACG-B96-5 	RIN 277		at 10.164.32.182		Alarm >> Loss Of Signal On PDH Clock Source 2
+|	ACG-C21 	RIN 434		at 10.164.43.20		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	ACG-C21 	RIN 434		at 10.164.43.20		Alarm >> Protecting CU Active
+|	ACG-C33-0 	RIN 257		at 10.164.43.71		Alarm >> Protecting CU Active
+|	ACG-C48-4 	RIN 426		at 10.164.43.168		Alarm >> Protecting CU Active
+|	ACG-V14-2 	RIN 235		at 10.161.141.168		Alarm >> Protecting CU Active
+|	ACG-V15-5 	RIN 320		at 10.164.43.18		Alarm >> Total Fan Breakdown
+|
+| ZHONE Alarms
+|	ACG-B08 	RIN 66		at 10.161.93.200		Alarm >> fan_power_supply_a_failure
+|
++----------------------------------------------------------------------------------------------------+

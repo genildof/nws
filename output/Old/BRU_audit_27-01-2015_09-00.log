@@ -1,0 +1,56 @@
++-------------------------------------- General status for BRU --------------------------------------+
+|
+| Total checked NEs: 34
+| Total remote access errors: 0
+| Total NE alarms: 6
+| Total cards checked: 621
+| Total card alarms: 28
+| Total redundancy alarms: 5
+|
++----------------------------------------------------------------------------------------------------+
+|
+|
+| KEYMILE Alarms
+|	BRU-A01-0 	RIN 89		at 10.214.9.4		Alarm >> Protecting CU Active
+|	BRU-A01-0 	RIN 89		at 10.214.9.4		Alarm >> /unit-11/port-1 - Down
+|	BRU-A02-0 	RIN 90		at 10.214.9.5		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	BRU-A03-0 	RIN 91		at 10.214.9.6		Alarm >> Protecting CU Active
+|	BRU-A03-0 	RIN 91		at 10.214.9.6		Alarm >> /unit-13/port-1 - Down
+|	BRU-A04-0 	RIN 92		at 10.214.9.7		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	BRU-A05-0 	RIN 7		at 10.214.9.36		Alarm >> Unit Not Available
+|	BRU-A05-0 	RIN 7		at 10.214.9.36		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	BRU-A07-0 	RIN 93		at 10.214.9.8		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	BRU-A08-0 	RIN 94		at 10.214.9.9		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	BRU-A10-0 	RIN 5		at 10.214.9.34		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	BRU-A11-0 	RIN 96		at 10.214.9.11		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	BRU-A12-0 	RIN 97		at 10.214.9.12		Alarm >> unit-13 - COGE3 R1C - Plugged
+|	BRU-A13-0 	RIN 98		at 10.214.9.13		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	BRU-A14-0 	RIN 99		at 10.214.9.14		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	BRU-A15-0 	RIN 100		at 10.214.9.15		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	BRU-A16-0 	RIN 101		at 10.214.9.16		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	BRU-A17-0 	RIN 104		at 10.214.9.17		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	BRU-A18-0 	RIN 105		at 10.214.9.18		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	BRU-A19-0 	RIN 4		at 10.214.9.23		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	BRU-A20-0 	RIN 106		at 10.214.9.19		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	BRU-A21-0 	RIN 107		at 10.214.9.20		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	BRU-A22-0 	RIN 108		at 10.214.9.21		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	BRU-A23-0 	RIN 109		at 10.214.9.22		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	BRU-A24-0 	RIN 110		at 10.214.9.32		Alarm >> Protecting CU Active
+|	BRU-A24-0 	RIN 110		at 10.214.9.32		Alarm >> /unit-13/port-1 - Down
+|	BRU-A25-0 	RIN 111		at 10.214.9.24		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	BRU-A26-0 	RIN 112		at 10.214.9.25		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	BRU-A27-0 	RIN 113		at 10.214.9.26		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	BRU-A28-0 	RIN 114		at 10.214.9.27		Alarm >> Loss Of Signal On PDH Clock Source 1
+|	BRU-A28-0 	RIN 114		at 10.214.9.27		Alarm >> Protecting CU Active
+|	BRU-A28-0 	RIN 114		at 10.214.9.27		Alarm >> /unit-13/port-1 - Down
+|	BRU-A29-0 	RIN 115		at 10.214.9.28		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	BRU-A30-0 	RIN 116		at 10.214.9.29		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	BRU-A31-4 	RIN 590		at 10.214.9.37		Alarm >> /unit-11/port-1 - Down
+|	BRU-A31-0 	RIN 6		at 10.214.9.35		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	BRU-A32-0 	RIN 117		at 10.214.9.30		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	BRU-A33-0 	RIN 118		at 10.214.9.31		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	BRU-T01-0 	RIN 600		at 10.214.9.252		Alarm >> unit-13 - COGE3 R1G - Plugged
+|
+| ZHONE Alarms
+|
++----------------------------------------------------------------------------------------------------+

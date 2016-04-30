@@ -1,0 +1,18 @@
++-------------------------------------- General status for ARQ --------------------------------------+
+|
+| Total checked NEs: 3
+| Total remote access errors: 1
+| Total NE alarms: 0
+| Total cards checked: 32
+| Total card alarms: 0
+| Total redundancy alarms: 0
+|
++----------------------------------------------------------------------------------------------------+
+|
+|
+| KEYMILE Alarms
+|
+| ZHONE Alarms
+|	ARQ-A01 	RIN 2		at 10.214.57.2		Error >> No remote access
+|
++----------------------------------------------------------------------------------------------------+

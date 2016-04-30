@@ -1,0 +1,102 @@
+################## Zhone ROI-A01-0  RIN 58 at 10.164.113.4
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone ROI-A02-0  RIN 54 at 10.164.113.6
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone ROI-A03-0  RIN 62 at 10.164.113.8
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone ROI-A05-0  RIN 50 at 10.164.113.12
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (20 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone ROI-A06-0  RIN 66 at 10.164.113.16
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	Error >> Secondary - 1-b-2-0/eth - Down - Down
+
+################## Zhone ROI-A07-0  RIN 38 at 10.164.113.18
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone ROI-A08  RIN 2 at 10.164.113.10
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone ROI-A09-0  RIN 6 at 10.164.113.20
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone ROI-A10  RIN 10 at 10.164.113.22
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone ROI-A12-0  RIN 34 at 10.164.113.24
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone ROI-A13-0  RIN 14 at 10.164.113.26
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+################## Zhone ROI-I01-0  RIN 74 at 10.164.113.14
+# System status:
+#	Alarm >> system - not_in_redundant_mode - major
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+# Uplink redundancy errors:
+#	** No errors **
+
+############### ** General status for ROI ** ###############
+# Total hosts checked: 12
+# Total system alarms: 1
+# Total cards alarms: 0
+# Total redundancy errors: 1
+############################################################

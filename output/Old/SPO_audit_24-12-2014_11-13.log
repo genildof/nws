@@ -1,0 +1,127 @@
++-------------------------------------- General status for SPO --------------------------------------+
+|
+| Total checked NEs: 180
+| Total remote access errors: 0
+| Total NE alarms: 29
+| Total cards checked: 1891
+| Total card alarms: 72
+| Total redundancy alarms: 9
+|
++----------------------------------------------------------------------------------------------------+
+|
+|
+| KEYMILE Alarms
+|	SPO-A01-0 	RIN 55		at 10.214.3.60		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	SPO-A03-0 	RIN 56		at 10.214.3.62		Alarm >> Protecting CU Active
+|	SPO-A04-0 	RIN 57		at 10.214.3.64		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	SPO-A04-0 	RIN 57		at 10.214.3.64		Alarm >> /unit-11/port-1 RxInputPower (-20)
+|	SPO-A08-0 	RIN 75		at 10.214.3.84		Alarm >> Protecting CU Active
+|	SPO-A14-0 	RIN 80		at 10.214.3.94		Alarm >> unit-13 - COGE3 R1G - Plugged
+|	SPO-A15-0 	RIN 27		at 10.214.3.22		Alarm >> Protecting CU Active
+|	SPO-A16-0 	RIN 28		at 10.214.3.24		Alarm >> Protecting CU Active
+|	SPO-A17-0 	RIN 29		at 10.214.3.26		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	SPO-A18-0 	RIN 30		at 10.214.3.28		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	SPO-A19-0 	RIN 60		at 10.214.3.70		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	SPO-A20-0 	RIN 61		at 10.214.3.72		Alarm >> Protecting CU Active
+|	SPO-A21-0 	RIN 62		at 10.214.3.74		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	SPO-A27-0 	RIN 126		at 10.214.3.134		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	SPO-A28-0 	RIN 83		at 10.214.3.100		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	SPO-A29-0 	RIN 84		at 10.214.3.102		Alarm >> unit-13 - COGE3 R1G - Plugged
+|	SPO-A29-0 	RIN 84		at 10.214.3.102		Alarm >> /unit-11/port-1 RxInputPower (-16)
+|	SPO-A30-0 	RIN 63		at 10.214.3.76		Alarm >> Protecting CU Active
+|	SPO-A31-0 	RIN 32		at 10.214.3.32		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	SPO-A33-0 	RIN 86		at 10.214.3.106		Alarm >> Protecting CU Active
+|	SPO-A34-0 	RIN 87		at 10.214.3.108		Alarm >> Protecting CU Active
+|	SPO-A38-0 	RIN 12		at 10.214.3.4		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	SPO-A39-0 	RIN 13		at 10.214.3.6		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	SPO-A48-0 	RIN 36		at 10.214.3.40		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	SPO-A49-0 	RIN 37		at 10.214.3.42		Alarm >> Protecting CU Active
+|	SPO-A49-0 	RIN 37		at 10.214.3.42		Alarm >> /unit-11/port-1 RxInputPower (-20)
+|	SPO-A51-0 	RIN 14		at 10.214.3.8		Alarm >> unit-13 - COGE3 R1D - Plugged
+|	SPO-A52-0 	RIN 64		at 10.214.3.78		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	SPO-A57-0 	RIN 38		at 10.214.3.44		Alarm >> Protecting CU Active
+|	SPO-A58-0 	RIN 94		at 10.214.3.122		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	SPO-A59-0 	RIN 39		at 10.214.3.46		Alarm >> /unit-13/port-1 RxInputPower (-17)
+|	SPO-A63-0 	RIN 2		at 10.214.3.146		Alarm >> unit-13 - COGE3 R1C - Plugged
+|	SPO-A64-0 	RIN 95		at 10.214.3.124		Alarm >> Protecting CU Active
+|	SPO-A65-0 	RIN 15		at 10.214.3.10		Alarm >> unit-13 - COGE3 R1D - Plugged
+|	SPO-A66-0 	RIN 16		at 10.214.3.12		Alarm >> unit-13 - COGE3 R1E - Plugged
+|	SPO-A67-0 	RIN 96		at 10.214.3.126		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	SPO-A69-0 	RIN 42		at 10.214.3.52		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	SPO-A70-0 	RIN 43		at 10.214.3.54		Alarm >> unit-13 - COGE3 R1E - Plugged
+|	SPO-A72-0 	RIN 10		at 10.214.3.142		Alarm >> Protecting CU Active
+|	SPO-A75-0 	RIN 44		at 10.214.3.56		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	SPO-A75-0 	RIN 44		at 10.214.3.56		Alarm >> /unit-11/port-1 RxInputPower (-19)
+|	SPO-A83-0 	RIN 140		at 10.214.25.78		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	SPO-A85-0 	RIN 142		at 10.214.25.82		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	SPO-A88-0 	RIN 145		at 10.214.25.86		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	SPO-A92-0 	RIN 100		at 10.214.25.34		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	SPO-A93-0 	RIN 101		at 10.214.25.36		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	SPO-A94-0 	RIN 102		at 10.214.25.38		Alarm >> Protecting CU Active
+|	SPO-A96-0 	RIN 45		at 10.214.25.66		Alarm >> Protecting CU Active
+|	SPO-B01-0 	RIN 104		at 10.214.25.42		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	SPO-B02-0 	RIN 68		at 10.214.25.18		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	SPO-B05-0 	RIN 70		at 10.214.25.22		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	SPO-B07-0 	RIN 8		at 10.214.25.88		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	SPO-B08-0 	RIN 5		at 10.214.25.70		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	SPO-B10-0 	RIN 7		at 10.214.25.92		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	SPO-B14-0 	RIN 106		at 10.214.25.46		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	SPO-B15-0 	RIN 107		at 10.214.25.48		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	SPO-B22-0 	RIN 18		at 10.214.25.98		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	SPO-B23-0 	RIN 135		at 10.214.25.100		Alarm >> Protecting CU Active
+|	SPO-B25-0 	RIN 49		at 10.214.25.8		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	SPO-B29-0 	RIN 146		at 10.214.25.74		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	SPO-B30-0 	RIN 136		at 10.214.25.102		Alarm >> Protecting CU Active
+|	SPO-B32 	RIN 139		at 10.214.25.106		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	SPO-B34-0 	RIN 112		at 10.214.25.58		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	SPO-B35-0 	RIN 144		at 10.214.25.76		Alarm >> Protecting CU Active
+|	SPO-B36-0 	RIN 113		at 10.214.25.60		Alarm >> Protecting CU Active
+|	SPO-B37-0 	RIN 51		at 10.214.25.12		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	SPO-B39-0 	RIN 73		at 10.214.25.28		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	SPO-B42-0 	RIN 148		at 10.214.25.110		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	SPO-B44-0 	RIN 116		at 10.214.33.18		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	SPO-B45-0 	RIN 21		at 10.214.33.2		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	SPO-B49-0 	RIN 22		at 10.214.33.4		Alarm >> /unit-11/port-1 RxInputPower (-25)
+|	SPO-B51-0 	RIN 155		at 10.214.33.48		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	SPO-B52-0 	RIN 154		at 10.214.33.50		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	SPO-B57-0 	RIN 162		at 10.214.33.56		Alarm >> Protecting CU Active
+|	SPO-B58-0 	RIN 23		at 10.214.33.6		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	SPO-B59-0 	RIN 167		at 10.214.33.58		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	SPO-B61-0 	RIN 25		at 10.214.33.10		Alarm >> /unit-11/port-1 RxInputPower (-21)
+|	SPO-B64-0 	RIN 166		at 10.214.33.64		Alarm >> Protecting CU Active
+|	SPO-B67-0 	RIN 169		at 10.214.33.68		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	SPO-B69-0 	RIN 174		at 10.214.33.70		Alarm >> Protecting CU Active
+|	SPO-B71-0 	RIN 176		at 10.214.33.36		Alarm >> Protecting CU Active
+|	SPO-B72-0 	RIN 53		at 10.214.33.14		Alarm >> Protecting CU Active
+|	SPO-B76-0 	RIN 179		at 10.214.33.38		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	SPO-B78-0 	RIN 54		at 10.214.33.16		Alarm >> Protecting CU Active
+|	SPO-B80-0 	RIN 177		at 10.214.33.76		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	SPO-B81-0 	RIN 178		at 10.214.33.78		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	SPO-B82-0 	RIN 121		at 10.214.33.28		Alarm >> /unit-13/port-1 RxInputPower (-15)
+|	SPO-B86-0 	RIN 187		at 10.214.3.154		Alarm >> Protecting CU Active
+|	SPO-B86-0 	RIN 187		at 10.214.3.154		Alarm >> /unit-13/port-1 RxInputPower (-15)
+|	SPO-B87-0 	RIN 188		at 10.214.3.156		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	SPO-B90-0 	RIN 191		at 10.214.3.162		Alarm >> Protecting CU Active
+|	SPO-B91-0 	RIN 192		at 10.214.3.164		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	SPO-B92-0 	RIN 183		at 10.214.3.166		Alarm >> unit-13 - COGE3 R1F - Plugged
+|	SPO-B94-0 	RIN 184		at 10.214.3.170		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	SPO-B97-0 	RIN 195		at 10.214.3.176		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	SPO-C03-0 	RIN 199		at 10.214.3.188		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	SPO-C05-0 	RIN 201		at 10.214.3.192		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	SPO-C06-0 	RIN 202		at 10.214.3.194		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	SPO-C08-0 	RIN 204		at 10.214.3.198		Alarm >> Protecting CU Active
+|	SPO-C09-0 	RIN 205		at 10.214.3.200		Alarm >> Protecting CU Active
+|	SPO-C10-0 	RIN 206		at 10.214.3.202		Alarm >> unit-13 - COGE3 R1H - Plugged
+|	SPO-I02-0 	RIN 3		at 10.214.3.144		Alarm >> Protecting CU Active
+|	SPO-I30-4 	RIN 123		at 10.209.166.228		Alarm >> unit-13 - COGE1 R3A - Plugged
+|
+| ZHONE Alarms
+|	SPO-A78-0 	RIN 208		at 10.214.17.4		Alarm >> ["b: MXK TWO TENGIGE EIGHT GIGE CLK ", ["(NOT_PROV)"]]
+|	SPO-A79 	RIN 209		at 10.214.17.6		Alarm >> ["b: MXK TWO TENGIGE EIGHT GIGE ", ["(NOT_PROV)"]]
+|	SPO-A80-0 	RIN 210		at 10.214.17.8		Alarm >> ["b: MXK TWO TENGIGE EIGHT GIGE CLK ", ["(NOT_PROV)"]]
+|	SPO-A82 	RIN 172		at 10.214.33.86		Alarm >> ["b: MXK TWO TENGIGE EIGHT GIGE CLK ", ["(NOT_PROV)"]]
+|	SPO-I03 	RIN 4		at 10.214.33.84		Alarm >> ["b: MXK TWO TENGIGE EIGHT GIGE ", ["(NOT_PROV)"]]
+|	SPO-I04 	RIN 207		at 10.214.17.25		Alarm >> ["b: MXK TWO TENGIGE EIGHT GIGE CLK ", ["(NOT_PROV)"]]
+|	SPO-I04-1 	RIN 211		at 10.214.17.24		Alarm >> ["b: MXK TWO TENGIGE EIGHT GIGE CLK ", ["(NOT_PROV)"]]
+|
++----------------------------------------------------------------------------------------------------+

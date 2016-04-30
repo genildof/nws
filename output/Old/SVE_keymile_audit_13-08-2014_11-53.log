@@ -1,0 +1,114 @@
+################## Milegate SVE-A03-0  RIN 238 at 10.209.233.1
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate SVE-A03  RIN 239 at 10.209.233.2
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (11 cards checked) **
+
+################## Milegate SVE-A04-0  RIN 258 at 10.209.225.65
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate SVE-A04-4  RIN 259 at 10.209.225.66
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (9 cards checked) **
+
+################## Milegate SVE-A05-0  RIN 262 at 10.209.233.4
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate SVE-A05-4  RIN 263 at 10.209.233.5
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (7 cards checked) **
+
+################## Milegate SVE-A06-4  RIN 267 at 10.209.233.9
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (3 cards checked) **
+
+################## Milegate SVE-A10-0  RIN 294 at 10.209.225.89
+# System status:
+#	Alarm >> ne: Loss Of Signal On PDH Clock Source 1
+# Cards status:
+#	** No alarmed cards (13 cards checked) **
+
+################## Milegate SVE-A10-4  RIN 295 at 10.209.225.90
+# System status:
+#	Alarm >> ne: Loss Of Signal On PDH Clock Source 1
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate SVE-A11-0  RIN 290 at 10.209.225.93
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate SVE-A11  RIN 291 at 10.209.225.94
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate SVE-A13-4  RIN 271 at 10.209.225.102
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (10 cards checked) **
+
+################## Milegate SVE-A14-4  RIN 299 at 10.209.225.106
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (18 cards checked) **
+
+################## Milegate SVE-A15-0  RIN 310 at 10.209.225.12
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (18 cards checked) **
+
+################## Milegate SVE-A15-4  RIN 311 at 10.209.225.15
+# System status:
+#	Alarm >> ne: Protecting CU Active
+# Cards status:
+#	** No alarmed cards (17 cards checked) **
+
+################## Milegate SVE-A16-0  RIN 312 at 10.209.225.16
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (18 cards checked) **
+
+################## Milegate SVE-A16-4  RIN 313 at 10.209.225.19
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+################## Milegate SVE-I01-4  RIN 501 at 10.209.233.25
+# System status:
+#	** No system alarms **
+# Cards status:
+#	** No alarmed cards (19 cards checked) **
+
+############### ** General status for SVE ** ###############
+# Total hosts checked: 18
+# Total system alarms: 4
+# Total cards alarms: 0
+# Total redundancy errors: 0
+############################################################
