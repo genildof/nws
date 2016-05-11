@@ -32,8 +32,11 @@ MSG
 #=> "From: person@example.com\nDate: 01-01-2011\nTo: friend@example.com\nSubject: This is the subject line"
 
 
-require_relative '/../lib/cricket/service'
-require_relative '/../lib/zhone/zhone-api'
+require_relative File.expand_path ('../lib/keymile/keymile-api')
+require_relative File.expand_path ('../lib/zhone/zhone-api')
+
+puts "Now in #{File.dirname(__FILE__)}directory\n"
+
 
 hosts = Service::Cricket.new.get_dslam_list('SPO').select { |dslam| dslam.model.match(/Zhone/) }
 

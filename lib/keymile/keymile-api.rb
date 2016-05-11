@@ -1,6 +1,8 @@
-require_relative '/../cricket/service'
+require_relative File.expand_path ('/../cricket/service')
 require 'net/telnet'
 require 'csv'
+
+puts "Now in #{File.dirname(__FILE__)}directory\n"
 
 module Keymile
 
