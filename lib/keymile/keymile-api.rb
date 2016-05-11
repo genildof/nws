@@ -1,4 +1,4 @@
-require_relative File.expand_path ('/../cricket/service')
+require_relative File.expand_path ('../lib/cricket/service')
 require 'net/telnet'
 require 'csv'
 
