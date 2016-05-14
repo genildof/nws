@@ -35,9 +35,8 @@ if $0 == __FILE__
   require_relative File.expand_path '../lib/keymile/keymile-api'
 
   HEADER = %w(Shelf_ID RIN IP Alarm_Type Description)
-  WORKERS = 50
-  DSLAM_MODEL = [/Milegate/, /Zhone/]
-  FILENAME = '../log/infrastructure_alarms_audit.csv' % Time.now.strftime('%d-%m-%Y_%H-%M')
+  WORKERS = 100
+  FILENAME = '../log/infrastructure_alarms_audit_%s.csv' % Time.now.strftime('%d-%m-%Y_%H-%M')
   LOGFILE = '../log/infrastructure_robot_logfile.log'
   CITY_LIST = %w"SNE SBO MAU SVE SPO STS AUJ MCZ GRS OCO SOC VOM JAI VRP CAS IDU PAA RPO BRU ARQ"
   jobs_list = []
@@ -51,7 +50,7 @@ if $0 == __FILE__
 
   CITY_LIST.each do |city|
     dslam_list = Service::Cricket_Dslam_Scrapper.new.get_dslam_list(city).select { |dslam|
-      dslam.model.match(DSLAM_MODEL[0]) or dslam.model.match(DSLAM_MODEL[1]) }
+      dslam.model.match(/Milegate/) or dslam.model.match(/Zhone/) }
 
     print "%s: %d element(s) found and enqueued.\n" % [city, dslam_list.size]
     dslam_list.each { |host| jobs_list << host }
@@ -103,10 +102,10 @@ if $0 == __FILE__
           true
         }
 
-        print "\t\tFinished: %s RIN %s - %s -- %0.2f seconds\n" % [host.dms_id, host.rin, host.ip, b]
+        print "\tFinished: %s RIN %s - %s -- %0.2f seconds\n" % [host.dms_id, host.rin, host.ip, b]
       rescue => e
-        print "\t\t>> Error: %s RIN %s - %s: %s\n" % [host.dms_id, host.rin, host.ip, e.inspect]
-        remote_access_errors << "#{host.dms_id} #{host.rin} #{host.ip} #{e.inspect}"
+        print "\t>> Error: %s RIN %s - %s: %s\n" % [host.dms_id, host.rin, host.ip, e]
+        remote_access_errors << "#{host.dms_id} #{host.ip} #{host.model} #{e.inspect}"
         total_remote_access_errors =+1
       end
     end
@@ -131,7 +130,7 @@ if $0 == __FILE__
     f.puts "| Total card alarms: #{total_card_alarms.to_s}"
     f.puts "| Total redundancy alarms: #{total_redundancy_errors.to_s}"
     f.puts "| Total remote access errors: #{total_remote_access_errors.to_s}"
-    f.puts '| Access errors'
+    f.puts '| Access errors:'
     remote_access_errors.each { |error| f.puts "|\t#{error}" }
     f.puts "+#{'-' * 100}+\n\n"
   }

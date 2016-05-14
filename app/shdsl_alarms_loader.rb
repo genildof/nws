@@ -81,9 +81,9 @@ if $0 == __FILE__
           mg.disconnect
         }
 
-        print "\t\tFinished: %s RIN %s - %s -- %0.2f seconds\n" % [host.dms_id, host.rin, host.ip, b]
+        print "\tFinished: %s RIN %s - %s -- %0.2f seconds\n" % [host.dms_id, host.rin, host.ip, b]
       rescue => e
-        print "\t\t>> Error: %s RIN %s - %s: %s\n" % [host.dms_id, host.rin, host.ip, e.inspect]
+        print "\t>> Error: %s RIN %s - %s: %s\n" % [host.dms_id, host.rin, host.ip, e.inspect]
       end
     end
   }

@@ -5,7 +5,6 @@ require_relative File.expand_path '../reports/infrastructure_txt_report'
 
 # todo: Keymile -> SUEN interfaces report
 # todo: Keymile -> Active Ethernet interfaces report
-# todo: Zhone -> uplink optical value evaluation
 
 # https://blog.engineyard.com/2014/ruby-thread-pool
 # https://github.com/meh/ruby-threadpool
