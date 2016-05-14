@@ -33,6 +33,7 @@ if $0 == __FILE__
   require 'csv'
   require_relative File.expand_path '../lib/cricket/service'
   require_relative File.expand_path '../lib/keymile/keymile-api'
+  require_relative File.expand_path '../lib/zhone/zhone-api'
 
   HEADER = %w(Shelf_ID RIN IP Alarm_Type Description)
   WORKERS = 100
@@ -102,9 +103,9 @@ if $0 == __FILE__
           true
         }
 
-        print "\tFinished: %s RIN %s - %s -- %0.2f seconds\n" % [host.dms_id, host.rin, host.ip, b]
+        print "\tFinished: %s RIN %s %s %s -- %0.2f seconds\n" % [host.dms_id, host.rin, host.model, host.ip, b]
       rescue => e
-        print "\t>> Error: %s RIN %s - %s: %s\n" % [host.dms_id, host.rin, host.ip, e]
+        print "\t>> Error: %s RIN %s %s %s: %s\n" % [host.dms_id, host.rin, host.model, host.ip, e]
         remote_access_errors << "#{host.dms_id} #{host.ip} #{host.model} #{e.inspect}"
         total_remote_access_errors =+1
       end
