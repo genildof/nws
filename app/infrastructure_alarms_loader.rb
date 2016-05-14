@@ -1,4 +1,4 @@
-require_relative 'reports'
+require_relative File.expand_path ('../reports/infrastructure_txt_report')
 
 puts "Now in #{File.dirname(__FILE__)}directory\n"
 
@@ -24,7 +24,7 @@ def lets_go(cities) #cities is an array of string
       t0 = Time.now
       puts "\nThread #{city} started at #{Time.now.strftime('%d-%m-%Y %H-%M-%S')}"
       puts "Generating report for #{city}"
-      Reports.new.generate_report(city)
+      Infrastructure_TXT_Report.new.generate_report(city)
       t1 = Time.now
       time_ms = (t1 - t0) * 1000
       puts "Thread #{city} ended at #{Time.now.strftime('%d-%m-%Y %H-%M-%S')} - Time elapsed = #{time_ms}ms"
