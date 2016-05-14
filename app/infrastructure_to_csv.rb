@@ -35,7 +35,7 @@ if $0 == __FILE__
   require_relative File.expand_path 'lib/keymile/keymile-api'
   require_relative File.expand_path 'lib/zhone/zhone-api'
 
-  HEADER = %w(Shelf_ID RIN IP Alarm_Type Description)
+  HEADER = %w(Vendor Shelf_ID RIN IP Alarm_Type Description)
   WORKERS = 100
   FILENAME = 'log/infrastructure_alarms_audit_%s.csv' % Time.now.strftime('%d-%m-%Y_%H-%M')
   LOGFILE = 'log/infrastructure_robot_logfile.log'
@@ -60,9 +60,10 @@ if $0 == __FILE__
   print '\nLoading alternative inputs...'
 
   jobs_list = jobs_list.concat(Service::Dslam_Manual_Input.new.get)
+
   print 'Done.'
 
-  print "\nStarting (Workers: %d Jobs: %d)\n" % [WORKERS, jobs_list.size]
+  print "\n\n\nStarting (Workers: %d Jobs: %d)...\n\n\n" % [WORKERS, jobs_list.size]
 
   pool = ThreadPool.new(WORKERS)
 
@@ -97,18 +98,21 @@ if $0 == __FILE__
           total_card_alarms += card_alarms.size
           total_redundancy_errors += redundancy_alarms.size
 
-          system_alarms.each { |alarm| memory_array << [host.dms_id, host.rin, host.ip, 'System', alarm] }
-          card_alarms.each { |alarm| memory_array << [host.dms_id, host.rin, host.ip, 'Card', alarm] }
-          redundancy_alarms.each { |alarm| memory_array << [host.dms_id, host.rin, host.ip, 'Redundancy', alarm] }
+          system_alarms.each { |alarm| memory_array << [host.model, host.dms_id, host.rin, host.ip, 'System', alarm] }
+          card_alarms.each { |alarm| memory_array << [host.model, host.dms_id, host.rin, host.ip, 'Card', alarm] }
+          redundancy_alarms.each { |alarm| memory_array << [host.model, host.dms_id, host.rin, host.ip, 'Interface', alarm] }
 
           dslam.disconnect
 
           true
         }
 
-        print "\tFinished: %s RIN %s %s %s -- %0.2f seconds\n" % [host.dms_id, host.rin, host.model, host.ip, b]
+        print "%s %s RIN %s %s\t-- %0.2fs done\n" % [host.model, host.dms_id, host.rin, host.ip, b]
+
       rescue => e
-        print "\t>> Error: %s RIN %s %s %s: %s\n" % [host.dms_id, host.rin, host.model, host.ip, e]
+        print "\n+#{'-' * 79}"
+        print ">> Error on %s RIN %s %s %s:\n>> %s" % [host.dms_id, host.rin, host.model, host.ip, e.inspect]
+        print "\n+#{'-' * 79}\n"
         remote_access_errors << "#{host.dms_id} #{host.ip} #{host.model} #{e.inspect}"
         total_remote_access_errors =+1
       end

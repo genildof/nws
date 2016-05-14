@@ -1,4 +1,4 @@
-require_relative File.expand_path 'reports/infrastructure_txt_report'
+require_relative File.expand_path 'reports/txt_report'
 
 # Me: Does Requires statement for all files in the current directory
 # Dir[File.dirname(__FILE__) + '/*.rb'].each {|file| require file}
@@ -20,7 +20,7 @@ def lets_go(cities) #cities is an array of string
       t0 = Time.now
       puts "\nThread #{city} started at #{Time.now.strftime('%d-%m-%Y %H-%M-%S')}"
       puts "Generating report for #{city}"
-      Infrastructure_TXT_Report.new.generate_report(city)
+      TxtReport.new.generate_report(city)
       t1 = Time.now
       time_ms = (t1 - t0) * 1000
       puts "Thread #{city} ended at #{Time.now.strftime('%d-%m-%Y %H-%M-%S')} - Time elapsed = #{time_ms}ms"

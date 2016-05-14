@@ -7,7 +7,7 @@ module Service
 
   class Dslam_Manual_Input
 
-    FILENAME = 'dslam_optional_list.csv'
+    FILENAME = File.expand_path 'config/dslam_optional_list.csv'
 
     def get
       result = []
