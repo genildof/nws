@@ -5,9 +5,9 @@ module Service
   require 'csv'
   require 'mechanize'
 
-  class Input
+  class Dslam_Manual_Input
 
-    FILENAME = 'external_list.csv'
+    FILENAME = 'dslam_optional_list.csv'
 
     def get_external_list
       result = []
@@ -32,7 +32,7 @@ module Service
 
   end
 
-  class Cricket
+  class Cricket_Dslam_Scrapper
 
     # Function <tt>get_dslam_list</tt> scraps DSLAM information on Cricket page hosted at management network.
     # Sample page: http://10.200.1.220/cricket/grapher.cgi?target=%2Fdslams%2FCAS
