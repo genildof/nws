@@ -1,7 +1,4 @@
-require_relative File.expand_path ('../reports/infrastructure_txt_report')
-
-puts "Now in #{File.dirname(__FILE__)}directory\n"
-
+require_relative File.expand_path '../reports/infrastructure_txt_report'
 
 # Me: Does Requires statement for all files in the current directory
 # Dir[File.dirname(__FILE__) + '/*.rb'].each {|file| require file}

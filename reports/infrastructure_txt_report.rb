@@ -1,5 +1,5 @@
-require_relative File.expand_path ('../lib/keymile/keymile-api')
-require_relative File.expand_path ('../lib/zhone/zhone-api')
+require_relative File.expand_path '../lib/keymile/keymile-api'
+require_relative File.expand_path '../lib/zhone/zhone-api'
 
 class Infrastructure_TXT_Report
 
@@ -9,17 +9,17 @@ class Infrastructure_TXT_Report
   # @return [boolean]
   def generate_report(city)
 
-    hosts = Service::Cricket.new.get_dslam_list(city).select { |dslam|
+    hosts = Service::Cricket_Dslam_Scrapper.new.get_dslam_list(city).select { |dslam|
       dslam.model.match(DSLAM_MODEL[0]) or dslam.model.match(DSLAM_MODEL[1])
     }
 
     # If CAS add hosts of csv list
     if city == 'CAS'
       puts 'Loading manual input file for CAS...'
-      hosts = hosts.concat(Service::Input.new.get_external_list)
+      hosts = hosts.concat(Service::Dslam_Manual_Input.new.get)
     end
 
-    logfile = "../reports/#{city}_audit_#{Time.now.strftime('%d-%m-%Y_%H-%M')}.log"
+    logfile = "../log/#{city}_audit_#{Time.now.strftime('%d-%m-%Y_%H-%M')}.log"
 
     @current_host = 0
     @total_system_alarms = 0
@@ -49,7 +49,7 @@ class Infrastructure_TXT_Report
           when /Zhone/
             dslam = Zhone::MXK.new(host.ip)
           else
-            puts "Unknown DSLAM Model found: #{host.model} for #{city}"
+            puts "Unknown DSLAM Model found: #{host.model} at #{host.ip}"
         end
 
         dslam.connect

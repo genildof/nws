@@ -31,8 +31,8 @@ end
 if $0 == __FILE__
   require 'benchmark'
   require 'csv'
-  require_relative File.expand_path ('../lib/cricket/service')
-  require_relative File.expand_path ('../lib/keymile/keymile-api')
+  require_relative File.expand_path '../lib/cricket/service'
+  require_relative File.expand_path '../lib/keymile/keymile-api'
 
   HEADER = %w(Shelf_ID RIN IP Slot_ID Slot_Name Slot_Main_Mode Slot_State Slot_Alarm Slot_Prop_Alarm Port_ID Port_Main_Mode Port_State
           Port_Alarm Port_User_Label Port_Service_Label OperationalStatus NearEnd_CurrentAttenuation NearEnd_CurrentMargin
@@ -48,11 +48,11 @@ if $0 == __FILE__
   memory_array = []
 
   CITY_LIST.each do |city|
-    city_list = Service::Cricket.new.get_dslam_list(city).select { |dslam| dslam.model.match(DSLAM_MODEL) }
+    dslam_list = Service::Cricket_Dslam_Scrapper.new.get_dslam_list(city).select { |dslam| dslam.model.match(DSLAM_MODEL) }
 
-    print "%s: %d %s(s) found and enqueued.\n" % [city, city_list.size, DSLAM_MODEL]
+    print "%s: %d %s(s) found and enqueued.\n" % [city, dslam_list.size, DSLAM_MODEL]
 
-    city_list.each { |host| jobs_list << host }
+    dslam_list.each { |host| jobs_list << host }
   end
 
   print "Starting (Workers: %d Jobs: %d)\n" % [WORKERS, jobs_list.size]

@@ -9,14 +9,14 @@ module Service
 
     FILENAME = 'dslam_optional_list.csv'
 
-    def get_external_list
+    def get
       result = []
 
       begin
 
         # The [1 .. -1] argument bypass the head row
         CSV.read(FILENAME, 'r', col_sep: ';')[1 .. -1].each do |row|
-          result << Network_Element.new do
+          result << Dslam_Element.new do
             self.model = row[0]
             self.dms_id = row[1]
             self.rin = row[2]
@@ -62,7 +62,7 @@ module Service
           data = tr.inner_text
           if data.scan(regex_ip).length > 0
 
-            result << Network_Element.new do
+            result << Dslam_Element.new do
               self.rin = data.scan(regex_rin).to_s.scan(/\b\d+/).join
               self.dms_id = data.scan(regex_dms_id).join
               self.ip = data.scan(regex_ip).join
@@ -79,7 +79,7 @@ module Service
     end
   end
 
-  class Network_Element
+  class Dslam_Element
     attr_accessor(:model, :dms_id, :rin, :ip)
 
     def initialize(&block)
