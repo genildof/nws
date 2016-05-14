@@ -1,5 +1,5 @@
-require_relative File.expand_path '../lib/keymile/keymile-api'
-require_relative File.expand_path '../lib/zhone/zhone-api'
+require_relative File.expand_path 'lib/keymile/keymile-api'
+require_relative File.expand_path 'lib/zhone/zhone-api'
 
 class Infrastructure_TXT_Report
 

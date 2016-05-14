@@ -31,8 +31,8 @@ end
 if $0 == __FILE__
   require 'benchmark'
   require 'csv'
-  require_relative File.expand_path '../lib/cricket/service'
-  require_relative File.expand_path '../lib/keymile/keymile-api'
+  require_relative File.expand_path 'lib/cricket/service'
+  require_relative File.expand_path 'lib/keymile/keymile-api'
 
   HEADER = %w(Shelf_ID RIN IP Slot_ID Slot_Name Slot_Main_Mode Slot_State Slot_Alarm Slot_Prop_Alarm Port_ID Port_Main_Mode Port_State
           Port_Alarm Port_User_Label Port_Service_Label OperationalStatus NearEnd_CurrentAttenuation NearEnd_CurrentMargin

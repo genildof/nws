@@ -31,9 +31,9 @@ end
 if $0 == __FILE__
   require 'benchmark'
   require 'csv'
-  require_relative File.expand_path '../lib/cricket/service'
-  require_relative File.expand_path '../lib/keymile/keymile-api'
-  require_relative File.expand_path '../lib/zhone/zhone-api'
+  require_relative File.expand_path 'lib/cricket/service'
+  require_relative File.expand_path 'lib/keymile/keymile-api'
+  require_relative File.expand_path 'lib/zhone/zhone-api'
 
   HEADER = %w(Shelf_ID RIN IP Alarm_Type Description)
   WORKERS = 100
@@ -57,9 +57,12 @@ if $0 == __FILE__
     dslam_list.each { |host| jobs_list << host }
   end
 
-  jobs_list = jobs_list.concat(Service::Dslam_Manual_Input.new.get)
+  print '\nLoading alternative inputs...'
 
-  print "Starting (Workers: %d Jobs: %d)\n" % [WORKERS, jobs_list.size]
+  jobs_list = jobs_list.concat(Service::Dslam_Manual_Input.new.get)
+  print 'Done.'
+
+  print "\nStarting (Workers: %d Jobs: %d)\n" % [WORKERS, jobs_list.size]
 
   pool = ThreadPool.new(WORKERS)
 
