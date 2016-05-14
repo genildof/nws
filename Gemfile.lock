@@ -59,7 +59,7 @@ PLATFORMS
   java
 
 DEPENDENCIES
-  mechanize
+  mechanize (= 2.7.4)
   shoes (= 4.0.0.pre5)
 
 BUNDLED WITH
