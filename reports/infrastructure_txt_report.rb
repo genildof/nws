@@ -19,7 +19,7 @@ class Infrastructure_TXT_Report
       hosts = hosts.concat(Service::Dslam_Manual_Input.new.get)
     end
 
-    logfile = "../log/#{city}_audit_#{Time.now.strftime('%d-%m-%Y_%H-%M')}.log"
+    logfile = "log/#{city}_audit_#{Time.now.strftime('%d-%m-%Y_%H-%M')}.log"
 
     @current_host = 0
     @total_system_alarms = 0

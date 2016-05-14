@@ -37,8 +37,8 @@ if $0 == __FILE__
 
   HEADER = %w(Shelf_ID RIN IP Alarm_Type Description)
   WORKERS = 100
-  FILENAME = '../log/infrastructure_alarms_audit_%s.csv' % Time.now.strftime('%d-%m-%Y_%H-%M')
-  LOGFILE = '../log/infrastructure_robot_logfile.log'
+  FILENAME = 'log/infrastructure_alarms_audit_%s.csv' % Time.now.strftime('%d-%m-%Y_%H-%M')
+  LOGFILE = 'log/infrastructure_robot_logfile.log'
   CITY_LIST = %w"SNE SBO MAU SVE SPO STS AUJ MCZ GRS OCO SOC VOM JAI VRP CAS IDU PAA RPO BRU ARQ"
   jobs_list = []
   memory_array = []
