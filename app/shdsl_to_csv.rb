@@ -50,14 +50,14 @@ if $0 == __FILE__
   remote_access_errors = Array.new
 
   CITY_LIST.each do |city|
-    dslam_list = Service::Cricket_Dslam_Scrapper.new.get_dslam_list(city).select { |dslam| dslam.model.match(DSLAM_MODEL) }
+    dslam_list = Service::Msan_Cricket_Scrapper.new.get_msan_list(city).select { |dslam| dslam.model.match(DSLAM_MODEL) }
 
     print "%s: %d %s(s) found and enqueued.\n" % [city, dslam_list.size, DSLAM_MODEL]
     dslam_list.each { |host| jobs_list << host }
   end
 
   print "\nLoading alternative inputs..."
-  jobs_list = jobs_list.concat(Service::Dslam_Manual_Input.new.get)
+  jobs_list = jobs_list.concat(Service::Msan_Manual_Input.new.get)
   print 'Done.'
 
   print "\n\nStarting (Workers: %d Jobs: %d)...\n\n" % [WORKERS, jobs_list.size]
@@ -102,7 +102,7 @@ if $0 == __FILE__
     csv << HEADER
     memory_array.each { |service_data| csv << service_data }
   end
-  print ":\n%s recorded.\n" % [memory_array.size, FILENAME]
+  print "%s rows recorded in %s.\n" % [memory_array.size, FILENAME]
 
   # Log file
   File.open(LOGFILE, 'a') { |f|
@@ -115,8 +115,8 @@ if $0 == __FILE__
     f.puts "+#{'-' * 100}+\n\n"
   }
 
-  print "\n%s updated.\n" % LOGFILE
+  print "\nLog file %s updated.\n" % LOGFILE
 
   # Output some times
-  print 'Finished all: %0.2f seconds' % b
+  print "\nFinished all: %0.2f seconds\n" % b
 end

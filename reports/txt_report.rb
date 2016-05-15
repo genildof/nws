@@ -9,14 +9,14 @@ class TxtReport
   # @return [boolean]
   def generate_report(city)
 
-    hosts = Service::Cricket_Dslam_Scrapper.new.get_dslam_list(city).select { |dslam|
+    hosts = Service::Msan_Cricket_Scrapper.new.get_msan_list(city).select { |dslam|
       dslam.model.match(DSLAM_MODEL[0]) or dslam.model.match(DSLAM_MODEL[1])
     }
 
     # If CAS add hosts of csv list
     if city == 'CAS'
       puts 'Loading manual input file for CAS...'
-      hosts = hosts.concat(Service::Dslam_Manual_Input.new.get)
+      hosts = hosts.concat(Service::Msan_Manual_Input.new.get)
     end
 
     logfile = "log/#{city}_audit_#{Time.now.strftime('%d-%m-%Y_%H-%M')}.log"
@@ -57,7 +57,7 @@ class TxtReport
         # Verifies system alarms on the shelf
         system_alarms = dslam.get_system_alarms
         card_alarms = dslam.get_card_alarms
-        redundancy_alarms = dslam.get_redundancy_alarms
+        redundancy_alarms = dslam.get_interface_alarms
 
         @total_cards_checked += dslam.get_all_cards.size
         @total_system_alarms += system_alarms.size

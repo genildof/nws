@@ -5,9 +5,9 @@ module Service
   require 'csv'
   require 'mechanize'
 
-  class Dslam_Manual_Input
+  class Msan_Manual_Input
 
-    FILENAME = File.expand_path 'config/dslam_optional_list.csv'
+    FILENAME = File.expand_path 'config/msan_alternative_input.csv'
 
     def get
       result = []
@@ -16,7 +16,7 @@ module Service
 
         # The [1 .. -1] argument bypass the head row
         CSV.read(FILENAME, 'r', col_sep: ';')[1 .. -1].each do |row|
-          result << Dslam_Element.new do
+          result << Msan_Element.new do
             self.model = row[0]
             self.dms_id = row[1]
             self.rin = row[2]
@@ -32,16 +32,16 @@ module Service
 
   end
 
-  class Cricket_Dslam_Scrapper
+  class Msan_Cricket_Scrapper
 
-    # Function <tt>get_dslam_list</tt> scraps DSLAM information on Cricket page hosted at management network.
+    # Function <tt>get_msan_list</tt> scraps MSAN information on Cricket page hosted at management network.
     # Sample page: http://10.200.1.220/cricket/grapher.cgi?target=%2Fdslams%2FCAS
     # Regex evaluated with http://regexpal.com/
     # Scrapper engine: http://mechanize.rubyforge.org/
     # Params:
     # +cnl+:: string of CLN to be searched.
     # @return [Array] data array.
-    def get_dslam_list(cnl)
+    def get_msan_list(cnl)
 
       regex_rin = /\b[a-z]\d+[-]\w+[-]\d+\b/ # a01-rin-75
       regex_dms_id = /\b[A-Z]{3}-[-\w\d]+\W\B/ # CAS-I02 or CAS-A02-0
@@ -62,7 +62,7 @@ module Service
           data = tr.inner_text
           if data.scan(regex_ip).length > 0
 
-            result << Dslam_Element.new do
+            result << Msan_Element.new do
               self.rin = data.scan(regex_rin).to_s.scan(/\b\d+/).join
               self.dms_id = data.scan(regex_dms_id).join
               self.ip = data.scan(regex_ip).join
@@ -79,7 +79,7 @@ module Service
     end
   end
 
-  class Dslam_Element
+  class Msan_Element
     attr_accessor(:model, :dms_id, :rin, :ip)
 
     def initialize(&block)

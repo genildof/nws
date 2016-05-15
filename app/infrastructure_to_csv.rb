@@ -35,7 +35,7 @@ if $0 == __FILE__
   require_relative File.expand_path 'lib/keymile/keymile-api'
   require_relative File.expand_path 'lib/zhone/zhone-api'
 
-  HEADER = %w(MSAN Shelf_ID RIN IP Alarm_Type Description)
+  HEADER = %w(MSAN Shelf_ID RIN IP Alarm_Type Item Description Priority Comments)
   WORKERS = 100
   FILENAME = 'log/infrastructure_alarms_audit_%s.csv' % Time.now.strftime('%d-%m-%Y_%H-%M')
   LOGFILE = 'log/infrastructure_robot_logfile.log'
@@ -50,7 +50,7 @@ if $0 == __FILE__
   remote_access_errors = Array.new
 
   CITY_LIST.each do |city|
-    dslam_list = Service::Cricket_Dslam_Scrapper.new.get_dslam_list(city).select { |msan|
+    dslam_list = Service::Msan_Cricket_Scrapper.new.get_msan_list(city).select { |msan|
       msan.model.match(/Milegate/) or msan.model.match(/Zhone/) }
 
     print "%s: %d element(s) found and enqueued.\n" % [city, dslam_list.size]
@@ -58,7 +58,7 @@ if $0 == __FILE__
   end
 
   print "\nLoading alternative inputs..."
-  jobs_list = jobs_list.concat(Service::Dslam_Manual_Input.new.get)
+  jobs_list = jobs_list.concat(Service::Msan_Manual_Input.new.get)
   print 'Done.'
 
   print "\n\nStarting (Workers: %d Jobs: %d)...\n\n" % [WORKERS, jobs_list.size]
@@ -89,16 +89,19 @@ if $0 == __FILE__
           # Verifies system alarms on the shelf
           system_alarms = msan.get_system_alarms
           card_alarms = msan.get_card_alarms
-          redundancy_alarms = msan.get_redundancy_alarms
+          redundancy_alarms = msan.get_interface_alarms
 
           total_cards_checked += msan.get_all_cards.size
           total_system_alarms += system_alarms.size
           total_card_alarms += card_alarms.size
           total_redundancy_errors += redundancy_alarms.size
 
-          system_alarms.each { |alarm| memory_array << [host.model, host.dms_id, host.rin, host.ip, 'System', alarm] }
-          card_alarms.each { |alarm| memory_array << [host.model, host.dms_id, host.rin, host.ip, 'Card', alarm] }
-          redundancy_alarms.each { |alarm| memory_array << [host.model, host.dms_id, host.rin, host.ip, 'Interface', alarm] }
+          system_alarms.each { |alarm| memory_array <<
+              [host.model, host.dms_id, host.rin, host.ip, 'System', alarm[0], alarm[1], alarm[2], alarm[3]] }
+          card_alarms.each { |alarm| memory_array <<
+              [host.model, host.dms_id, host.rin, host.ip, 'Card', alarm[0], alarm[1], alarm[2], alarm[3]] }
+          redundancy_alarms.each { |alarm| memory_array <<
+              [host.model, host.dms_id, host.rin, host.ip, 'Interface', alarm[0], alarm[1], alarm[2], alarm[3]] }
 
           msan.disconnect
 
@@ -116,7 +119,7 @@ if $0 == __FILE__
     end
   }
 
-  print "\nWriting %s data rows to log file...\n"
+  print "\nWriting data rows to log file...\n"
 
   # Saves data to csv file
   CSV.open(FILENAME, 'w', col_sep: ';') do |csv|
@@ -124,7 +127,7 @@ if $0 == __FILE__
     memory_array.each { |row| csv << row }
   end
 
-  print ":\n%s recorded.\n" % [memory_array.size, FILENAME]
+  print "%s rows recorded in %s.\n" % [memory_array.size, FILENAME]
 
   # Log file
   File.open(LOGFILE, 'a') { |f|
@@ -142,9 +145,9 @@ if $0 == __FILE__
     f.puts "+#{'-' * 100}+\n\n"
   }
 
-  print "\n%s updated.\n" % LOGFILE
+  print "\nLog file %s updated.\n" % LOGFILE
 
   # Output some times
-  print 'Finished all: %0.2f seconds' % b
+  print "\nFinished all: %0.2f seconds\n" % b
 
 end

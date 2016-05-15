@@ -13,15 +13,15 @@ module Keymile
     PROMPT = /\/[$%#>]/s
     LOGIN_PROMPT = /[Ll]ogin as[: ]/
     PASSWORD_PROMPT = /[Pp]ass(?:word|phrase)[: ]/
-    OPTICAL_SIGNAL_THRESHOLD = -15
+    OPTICAL_SIGNAL_THRESHOLD = -17
 
     REGEX_SYSTEM_ALARM = /\[.+\n.+\n.+\n.+\n.+\n.+\n.+\n.+\n.+\n/
     REGEX_SYSTEM_ALARM_CAUSE = /\b[\w ]+\b(?=.+\bFaultCause\b)/
     REGEX_SYSTEM_ALARM_STATE = /\b\w+\b(?=.+\bFaultCauseState\b)/
     REGEX_EXTERNAL_ALARMS = /\balarm[- ].+\b/
-    REGEX_REDUNDANCY_SUPPORT = /\b\w+\b(?=.+\bDdmInterfaceSupport\b)/
-    REGEX_REDUNDANCY_RX_VALUE = /.\d+\b(?=.+\bRxInputPower\b)/
-    REGEX_REDUNDANCY_STATUS = /\b\w+\b(?=.+\bState\b)/
+    REGEX_INTERFACE_SUPPORT = /\b\w+\b(?=.+\bDdmInterfaceSupport\b)/
+    REGEX_INTERFACE_RX_VALUE = /.\d+\b(?=.+\bRxInputPower\b)/
+    REGEX_INTERFACE_STATUS = /\b\w+\b(?=.+\bState\b)/
     REGEX_CARDS = /\b\w+:.+/
     REGEX_SLOT_LINES = /\bunit[- ].+\b/ # If wants fan unit: /\b(?:fan|unit)[- ].+\b/
     REGEX_SHDSL_PORTS = /logport\W.*/ #/\logport-\w+\s(\|[\w\s\.:\?-]+){7}(.+)/
@@ -36,7 +36,7 @@ module Keymile
       self.ip_address = ip_address
     end
 
-    # Function <tt>connect</tt> establishes connection and authenticates on Milegate equipment.
+    # Function <tt>connect</tt> establishes connection and authenticates on Milegate MSAN.
     # @return [boolean] value
     def connect
       begin
@@ -81,7 +81,7 @@ module Keymile
     #
     # Function <tt>get_redundancy_status</tt> gets the uplink interfaces statuses and its RxInputPower values
     # @return [array] value
-    def get_redundancy_alarms
+    def get_interface_alarms
       begin
         result = Array.new
         interfaces = Array.new
@@ -102,15 +102,18 @@ module Keymile
             @telnet.waitfor('Match' => PROMPT) { |rcvdata| sample << rcvdata }
 
             # Does it supports DdmStatus function?
-            if sample.scan(REGEX_REDUNDANCY_SUPPORT)[0].to_s.match(/Supported/)
-              lines = sample.scan(REGEX_REDUNDANCY_RX_VALUE)
+            if sample.scan(REGEX_INTERFACE_SUPPORT)[0].to_s.match(/Supported/)
+              lines = sample.scan(REGEX_INTERFACE_RX_VALUE)
               # read the RxInputPower value
-              result << "#{interface} RxInputPower (#{lines[0].to_s})" unless lines[0].to_i > OPTICAL_SIGNAL_THRESHOLD
+              unless lines[0].to_i > OPTICAL_SIGNAL_THRESHOLD
+                result << [interface, "Low RxInputPower - (#{lines[0].to_s})",
+                           'Major', 'Interface principal ou redundante apresentando degradacao']
+              end
             else
-              result << 'No DdmInterfaceSupport'
+              #result << 'No DdmInterfaceSupport'
             end
           else
-            result << "#{interface} - #{admin_status}"
+            #result << [interface, "#{admin_status}", 'Major - interface redundante foi desabilitada']
           end
         }
 
@@ -134,7 +137,7 @@ module Keymile
         @telnet.puts(cmd) #{ |str| print str }
         @telnet.waitfor('Match' => PROMPT) { |rcvdata| sample << rcvdata }
 
-        sample.scan(REGEX_REDUNDANCY_STATUS)[0].to_s
+        sample.scan(REGEX_INTERFACE_STATUS)[0].to_s
       rescue => err
         puts "#{err.class} - #{err}"
       end
@@ -410,7 +413,43 @@ module Keymile
 
         sample.scan(REGEX_SYSTEM_ALARM).each { |line|
           if line.scan(REGEX_SYSTEM_ALARM_STATE)[0].match(/On/) # If alarm is On
-            result << "#{line.scan(REGEX_SYSTEM_ALARM_CAUSE)[0].to_s}" # Add it to array
+
+            alarm = line.scan(REGEX_SYSTEM_ALARM_CAUSE)[0].to_s
+
+            item = nil
+            msg = nil
+            prior = nil
+            case alarm
+              when /Partial Fan Breakdown/
+                item = 'FAN tray'
+                prior = 'Major'
+                msg = 'Substituir a bandeja de ventilacao do shelf'
+              when /Total Fan Breakdown/
+                item = 'FAN tray'
+                prior = 'Critical'
+                msg = 'Substituir a bandeja de ventilacao do shelf'
+              when /NE Temperature/
+                item = 'Shelf'
+                prior = 'Critical'
+                msg = 'Sobreaquecimento verificar bandeja de FANs do shelf e sistema de ventilacao do armario'
+              when /System Time Not Available/
+                item = 'Shelf'
+                prior = 'Minor'
+                msg = 'Revisar ordem de prioridade das fontes de clock TDM configuradas no NE'
+              when /Loss Of Signal On PDH Clock Source/
+                item = 'NE'
+                prior = 'Minor'
+                msg = 'Fonte de clock TDM apresentando LOS'
+              when /Unit Not Available/
+                item = 'FAN Tray'
+                prior = 'Critical'
+                msg = 'Bandeja de ventilacao do shelf esta inoperante'
+              else
+                item = 'none'
+            end
+
+            result << [item, alarm, prior, msg] # Add it to array
+
           end
         }
 
@@ -423,8 +462,17 @@ module Keymile
 
         sample.scan(REGEX_EXTERNAL_ALARMS).each { |line|
           values = line.split(/\|/)
-          unless values[4].match(/Cleared/)
-            result << "#{values[0]} - #{values[2]} - #{values[4]}"
+
+          unless values[4].match(/Cleared/) #if present
+
+            msg = nil
+            if values[2].to_s.match(/Falha de Fan/) || values[2].to_s.match(/Temperatura Alta/)
+              values[4] = 'Major'
+              msg = 'Alarme externo proveniente do sistema de ventilacao do armario'
+            end
+
+            result << %W(#{values[0]} #{values[2]} #{values[4]} #{msg})
+
           end
         }
 
@@ -467,7 +515,7 @@ module Keymile
     # unit-21        | STIM1 R1C | stim1_r4b04    | Ok          | Cleared   | Major          |            |               |
     # />
 
-    # Function <tt>get_slots_all</tt> gets all the system cards and its operational status.
+    # Function <tt>get_all_cards</tt> gets all the system cards and its operational status.
     # @return [array] value
     def get_all_cards
       result = Array.new
@@ -495,19 +543,26 @@ module Keymile
     end
 
 
-    # Function <tt>get_alarmed_cards</tt> gets all not running system.
+    # Function <tt>get_card_alarms</tt> gets all not running system.
     # @return [array] value
     def get_card_alarms
       result = Array.new
       alarmed_cards = get_all_cards.select { |slot| !slot.state.to_s.match(/Ok/) }
+
+      prior = 'Critical'
+      msg = 'Cartao com falha'
       alarmed_cards.each { |card|
-        result << "#{card.id} - #{card.name} - #{card.state}"
+        if card.name.to_s.match(/COGE/)
+          prior = 'Minor'
+          msg = 'Cartao nao comissionado ou desativado presente no slot'
+        end
+        result << [card.id, "#{card.name} #{card.state}", prior, msg]
       }
       result
     end
 
 
-    # Function <tt>get_slots_by_name(name)</tt> gets system cards by name.
+    # Function <tt>get_cards_by_name(name)</tt> gets system cards by name.
     # Depends on the function <tt>get_slots_all</tt>.
     # @return [array] value
     def get_cards_by_name(name)

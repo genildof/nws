@@ -13,7 +13,7 @@ module Zhone
 
     # Detection patterns constants for Zhone MXK
     REGEX_ALARM = /\bsystem.+/
-    REGEX_REDUNDANCY = /\b(?:Primary|Secondary).+\b/
+    REGEX_INTERFACE = /\b(?:Primary|Secondary).+\b/
     REGEX_CARDS = /\b\w+:.+/
 
     @telnet
@@ -66,9 +66,8 @@ module Zhone
     # system                    power_supply_a_failure                       minor
     # zSH>
 
-    # Function <tt>get_alarms</tt> gets all the system alarms.
+    # Function <tt>get_system_alarms</tt> gets all the system alarms.
     # @return [array] value
-
     def get_system_alarms
       begin
         result = Array.new
@@ -79,8 +78,26 @@ module Zhone
         @telnet.waitfor('Match' => PROMPT) { |rcvdata| sample << rcvdata }
 
         sample.scan(REGEX_ALARM).each { |line|
-          error_msg = line.split(/\s+/)
-          result << "#{error_msg[1]}"
+          description = line.split(/\s+/)[1]
+
+          unit = nil
+          msg = nil
+          prior = nil
+          case description
+            when /fan_speed_error/
+              unit = 'FAN tray'
+              prior = 'Major'
+              msg = 'substituir a bandeja de FANs do shelf'
+            when /temp_over_limit/
+              unit = 'FAN tray'
+              prior = 'Critical'
+              msg = 'shelf sobreaquecido verificar bandeja de FANs do shelf e sistema de ventilacao do armario'
+            else
+              unit = 'Shelf'
+              msg = 'Minor'
+          end
+
+          result << [unit, description, prior, msg]
         }
         result
       rescue => err
@@ -101,9 +118,9 @@ module Zhone
     #
     # zSH>
 
-    # Function <tt>get_redundancy_status</tt> gets the controller cards redundancy status.
+    # Function <tt>get_interface_alarms</tt> gets the controller cards redundancy status.
     # @return [array] value
-    def get_redundancy_alarms
+    def get_interface_alarms
       begin
         result = Array.new
         sample = ''
@@ -111,12 +128,12 @@ module Zhone
 
         @telnet.puts(cmd) { |str| print str }
         @telnet.waitfor('Match' => PROMPT) { |rcvdata| sample << rcvdata }
-        lines = sample.scan(REGEX_REDUNDANCY)
+        lines = sample.scan(REGEX_INTERFACE)
 
         lines.each { |line|
           columns = line.split(/\s+/)
           unless columns[2].to_s.match(/Active/) or columns[2].to_s.match(/Standby/)
-            result << "#{columns[0]} - #{columns[1]} - #{columns[3]}"
+            result << [columns[1], "#{columns[0]} #{columns[3]}", 'Minor', nil]
           end
         }
 
@@ -152,7 +169,7 @@ module Zhone
     # 15: MXK 24 PORT VDSL2 POTS (RUNNING)
     # zSH>
 
-    # Function <tt>get_cards_status</tt> gets all the system cards and its operational status.
+    # Function <tt>get_all_cards</tt> gets all the system cards and its operational status.
     # @return [array] value
 
     def get_all_cards
@@ -181,11 +198,22 @@ module Zhone
     end
 
 
-    # Function <tt>alarmed_cards</tt> gets all not running system cards.
+    # Function <tt>get_card_alarms</tt> gets all not running system cards.
     # @return [array] value
 
     def get_card_alarms
-      get_all_cards.select { |line| !line[1].to_s.match(/RUNNING/) }
+      alarmed_cards = get_all_cards.select { |slot| !slot[1].to_s.match(/RUNNING/) }
+
+      prior = 'Critical'
+      msg = 'Cartao com falha'
+      alarmed_cards.each { |card|
+        if card[1].to_s.match(/NOT_PROV/) || card[1].to_s.match(/RESET_HOLD/)
+          prior = 'Minor'
+          msg = 'Cartao nao comissionado ou desativado presente no slot'
+        end
+        result << [card[0], card[1], prior, msg]
+      }
+      result
     end
 
   end # MXK Class
