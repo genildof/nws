@@ -203,7 +203,7 @@ module Zhone
 
     def get_card_alarms
       alarmed_cards = get_all_cards.select { |slot| !slot[1].to_s.match(/RUNNING/) }
-
+      result = nil
       prior = 'Critical'
       msg = 'Cartao com falha'
       alarmed_cards.each { |card|
