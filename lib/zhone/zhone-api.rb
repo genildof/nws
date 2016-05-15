@@ -202,10 +202,11 @@ module Zhone
     # @return [array] value
 
     def get_card_alarms
+      result = Array.new
       alarmed_cards = get_all_cards.select { |slot| !slot[1].to_s.match(/RUNNING/) }
-      result = nil
       prior = 'Critical'
       msg = 'Cartao com falha'
+
       alarmed_cards.each { |card|
         if card[1].to_s.match(/NOT_PROV/) || card[1].to_s.match(/RESET_HOLD/)
           prior = 'Minor'
