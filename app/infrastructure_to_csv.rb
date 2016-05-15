@@ -35,7 +35,7 @@ if $0 == __FILE__
   require_relative File.expand_path 'lib/keymile/keymile-api'
   require_relative File.expand_path 'lib/zhone/zhone-api'
 
-  HEADER = %w(Vendor Shelf_ID RIN IP Alarm_Type Description)
+  HEADER = %w(MSAN Shelf_ID RIN IP Alarm_Type Description)
   WORKERS = 100
   FILENAME = 'log/infrastructure_alarms_audit_%s.csv' % Time.now.strftime('%d-%m-%Y_%H-%M')
   LOGFILE = 'log/infrastructure_robot_logfile.log'
@@ -50,20 +50,18 @@ if $0 == __FILE__
   remote_access_errors = Array.new
 
   CITY_LIST.each do |city|
-    dslam_list = Service::Cricket_Dslam_Scrapper.new.get_dslam_list(city).select { |dslam|
-      dslam.model.match(/Milegate/) or dslam.model.match(/Zhone/) }
+    dslam_list = Service::Cricket_Dslam_Scrapper.new.get_dslam_list(city).select { |msan|
+      msan.model.match(/Milegate/) or msan.model.match(/Zhone/) }
 
     print "%s: %d element(s) found and enqueued.\n" % [city, dslam_list.size]
     dslam_list.each { |host| jobs_list << host }
   end
 
-  print '\nLoading alternative inputs...'
-
+  print "\nLoading alternative inputs..."
   jobs_list = jobs_list.concat(Service::Dslam_Manual_Input.new.get)
-
   print 'Done.'
 
-  print "\n\n\nStarting (Workers: %d Jobs: %d)...\n\n\n" % [WORKERS, jobs_list.size]
+  print "\n\nStarting (Workers: %d Jobs: %d)...\n\n" % [WORKERS, jobs_list.size]
 
   pool = ThreadPool.new(WORKERS)
 
@@ -73,27 +71,27 @@ if $0 == __FILE__
       begin
         b = Benchmark.realtime {
 
-          dslam = nil
+          msan = nil
 
           case host.model
             when /Milegate/
-              dslam = Keymile::Milegate.new(host.ip)
+              msan = Keymile::Milegate.new(host.ip)
             when /Zhone/
-              dslam = Zhone::MXK.new(host.ip)
+              msan = Zhone::MXK.new(host.ip)
             else
               puts "Unknown DSLAM Model found: #{host.model} at #{host.ip}"
               remote_access_errors << "#{host.dms_id} #{host.rin} #{host.ip} Unknown DSLAM Model"
               total_remote_access_errors =+1
           end
 
-          dslam.connect
+          msan.connect
 
           # Verifies system alarms on the shelf
-          system_alarms = dslam.get_system_alarms
-          card_alarms = dslam.get_card_alarms
-          redundancy_alarms = dslam.get_redundancy_alarms
+          system_alarms = msan.get_system_alarms
+          card_alarms = msan.get_card_alarms
+          redundancy_alarms = msan.get_redundancy_alarms
 
-          total_cards_checked += dslam.get_all_cards.size
+          total_cards_checked += msan.get_all_cards.size
           total_system_alarms += system_alarms.size
           total_card_alarms += card_alarms.size
           total_redundancy_errors += redundancy_alarms.size
@@ -102,12 +100,11 @@ if $0 == __FILE__
           card_alarms.each { |alarm| memory_array << [host.model, host.dms_id, host.rin, host.ip, 'Card', alarm] }
           redundancy_alarms.each { |alarm| memory_array << [host.model, host.dms_id, host.rin, host.ip, 'Interface', alarm] }
 
-          dslam.disconnect
+          msan.disconnect
 
           true
         }
-
-        print "%s %s RIN %s %s\t-- %0.2fs done\n" % [host.model, host.dms_id, host.rin, host.ip, b]
+        print "%s %sRIN %s at %s -- %0.2fs done\n" % [host.model, host.dms_id, host.rin, host.ip, b]
 
       rescue => e
         print "\n+#{'-' * 79}"
@@ -119,13 +116,15 @@ if $0 == __FILE__
     end
   }
 
-  print "\nWriting %s data rows to %s...\n" % [memory_array.size, FILENAME]
+  print "\nWriting %s data rows to log file...\n"
 
   # Saves data to csv file
   CSV.open(FILENAME, 'w', col_sep: ';') do |csv|
     csv << HEADER
     memory_array.each { |row| csv << row }
   end
+
+  print ":\n%s recorded.\n" % [memory_array.size, FILENAME]
 
   # Log file
   File.open(LOGFILE, 'a') { |f|
@@ -143,6 +142,9 @@ if $0 == __FILE__
     f.puts "+#{'-' * 100}+\n\n"
   }
 
+  print "\n%s updated.\n" % LOGFILE
+
   # Output some times
-  puts 'Finished all: %0.2f seconds' % b
+  print 'Finished all: %0.2f seconds' % b
+
 end
