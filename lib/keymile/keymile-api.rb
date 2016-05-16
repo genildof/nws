@@ -42,7 +42,7 @@ module Keymile
       begin
         @telnet = Net::Telnet::new(
             'Prompt' => PROMPT,
-            'Timeout' => 15,
+            'Timeout' => 10,
             'Host' => self.ip_address
         ) # { |str| print str }
 
@@ -403,7 +403,7 @@ module Keymile
     def get_system_alarms
       begin
         result = Array.new
-        sample = nil
+        sample = '' #can't be nil, nil is incompatible with the << assign operator
         cmds1 = ['get fm/AlarmStatus', 'get /fan/fm/AlarmStatus']
         cmds2 = ['ls /fan -e']
 
@@ -417,7 +417,7 @@ module Keymile
 
             alarm = line.scan(REGEX_SYSTEM_ALARM_CAUSE)[0].to_s
 
-            msg = nil
+            msg = ''
             case alarm
               when /Partial Fan Breakdown/
                 item = 'FAN tray'
@@ -453,7 +453,7 @@ module Keymile
           end
         }
 
-        sample = ''
+        sample = '' #can't be nil, nil is incompatible with the << assign operator
 
         cmds2.each { |cmd|
           @telnet.puts(cmd) { |str| print str }
@@ -467,9 +467,9 @@ module Keymile
             case
               when (values[2].to_s.match(/Falha de Fan/) or values[2].to_s.match(/Temperatura Alta/))
                 values[4] = 'Critical'
-                msg = 'Falha no do sistema de ventilacao do armario - alarme externo'
+                msg = 'Alarme externo de falha no do sistema de ventilacao do armario'
               else
-                values[4] = 'Major'
+                # type code here
             end
             result << [values[0].strip!, values[2].strip!, values[4].strip!, msg]
           end

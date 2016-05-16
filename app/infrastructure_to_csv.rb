@@ -45,9 +45,9 @@ if $0 == __FILE__
   total_system_alarms = 0
   total_card_alarms = 0
   total_cards_checked = 0
-  total_redundancy_errors = 0
-  total_remote_access_errors = 0
-  remote_access_errors = Array.new
+  total_interface_errors = 0
+  total_errors = 0
+  errors = Array.new
 
   CITY_LIST.each do |city|
     dslam_list = Service::Msan_Cricket_Scrapper.new.get_msan_list(city).select { |msan|
@@ -80,8 +80,8 @@ if $0 == __FILE__
               msan = Zhone::MXK.new(host.ip)
             else
               puts "Unknown DSLAM Model found: #{host.model} at #{host.ip}"
-              remote_access_errors << "#{host.dms_id} #{host.rin} #{host.ip} Unknown DSLAM Model"
-              total_remote_access_errors =+1
+              errors << "#{host.dms_id} #{host.rin} #{host.ip} Unknown DSLAM Model"
+              total_errors =+1
           end
 
           msan.connect
@@ -94,7 +94,7 @@ if $0 == __FILE__
           total_cards_checked += msan.get_all_cards.size
           total_system_alarms += system_alarms.size
           total_card_alarms += card_alarms.size
-          total_redundancy_errors += redundancy_alarms.size
+          total_interface_errors += redundancy_alarms.size
 
           system_alarms.each { |alarm| memory_array <<
               [host.model, host.dms_id, host.rin, host.ip, 'System', alarm[0], alarm[1], alarm[2], alarm[3]] }
@@ -110,9 +110,9 @@ if $0 == __FILE__
         print "%s %sRIN %s at %s -- %0.2fs done\n" % [host.model, host.dms_id, host.rin, host.ip, b]
 
       rescue => err
-        print "\n#{host.dms_id} #{host.ip} #{host.model} #{err.class} #{err}"
-        remote_access_errors << "#{host.dms_id} #{host.ip} #{host.model} #{err.class} #{err}"
-        total_remote_access_errors += 1
+        puts "\n#{host.dms_id} #{host.ip} #{host.model} #{err.class} #{err}"
+        errors << "#{host.dms_id} #{host.ip} #{host.model} #{err.class} #{err}"
+        total_errors += 1
       end
     end
   }
@@ -136,10 +136,10 @@ if $0 == __FILE__
     f.puts "| Total NE alarms: #{total_system_alarms.to_s}"
     f.puts "| Total cards checked: #{total_cards_checked.to_s}"
     f.puts "| Total card alarms: #{total_card_alarms.to_s}"
-    f.puts "| Total redundancy alarms: #{total_redundancy_errors.to_s}"
-    f.puts "| Total remote access errors: #{total_remote_access_errors.to_s}"
-    f.puts '| Access errors:'
-    remote_access_errors.each { |error| f.puts "|\t#{error}" }
+    f.puts "| Total interface alarms: #{total_interface_errors.to_s}"
+    f.puts "| Total errors: #{total_errors.to_s}"
+    f.puts "|\n| Errors:"
+    errors.each { |error| f.puts "|#{error}" }
     f.puts "+#{'-' * 100}+\n\n"
   }
 

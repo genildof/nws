@@ -80,7 +80,7 @@ module Zhone
         sample.scan(REGEX_ALARM).each { |line|
           description = line.split(/\s+/)[1]
 
-          msg = nil
+          msg = ''
           case description
             when /fan_speed_error/
               item = 'FAN tray'
