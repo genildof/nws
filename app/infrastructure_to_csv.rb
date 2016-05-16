@@ -35,7 +35,7 @@ if $0 == __FILE__
   require_relative File.expand_path 'lib/keymile/keymile-api'
   require_relative File.expand_path 'lib/zhone/zhone-api'
 
-  HEADER = %w(MSAN Shelf_ID RIN IP Alarm_Type Item Description Priority Comments)
+  HEADER = %w(Model NE_ID RIN IP Alarm_Type Item Trouble_Description Priority Comments)
   WORKERS = 100
   FILENAME = 'log/infrastructure_alarms_audit_%s.csv' % Time.now.strftime('%d-%m-%Y_%H-%M')
   LOGFILE = 'log/infrastructure_robot_logfile.log'
@@ -61,7 +61,7 @@ if $0 == __FILE__
   jobs_list = jobs_list.concat(Service::Msan_Manual_Input.new.get)
   print 'Done.'
 
-  print "\n\nStarting (Workers: %d Jobs: %d)...\n\n" % [WORKERS, jobs_list.size]
+  print "\n\nStarting (Workers: %d Tasks: %d)...\n\n" % [WORKERS, jobs_list.size]
 
   pool = ThreadPool.new(WORKERS)
 
@@ -109,12 +109,10 @@ if $0 == __FILE__
         }
         print "%s %sRIN %s at %s -- %0.2fs done\n" % [host.model, host.dms_id, host.rin, host.ip, b]
 
-      rescue => e
-        print "\n+#{'-' * 79}"
-        print ">> Error on %s RIN %s %s %s:\n>> %s" % [host.dms_id, host.rin, host.model, host.ip, e.inspect]
-        print "\n+#{'-' * 79}\n"
-        remote_access_errors << "#{host.dms_id} #{host.ip} #{host.model} #{e.inspect}"
-        total_remote_access_errors =+1
+      rescue => err
+        print "\n#{host.dms_id} #{host.ip} #{host.model} #{err.class} #{err}"
+        remote_access_errors << "#{host.dms_id} #{host.ip} #{host.model} #{err.class} #{err}"
+        total_remote_access_errors += 1
       end
     end
   }

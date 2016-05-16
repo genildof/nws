@@ -30,7 +30,7 @@ module Zhone
       begin
         @telnet = Net::Telnet::new(
             'Prompt' => PROMPT,
-            'Timeout' => 20,
+            'Timeout' => 15,
             'Host' => self.ip_address
         ) # { |str| print str }
 
@@ -80,28 +80,25 @@ module Zhone
         sample.scan(REGEX_ALARM).each { |line|
           description = line.split(/\s+/)[1]
 
-          unit = nil
           msg = nil
-          prior = nil
           case description
             when /fan_speed_error/
-              unit = 'FAN tray'
-              prior = 'Major'
-              msg = 'substituir a bandeja de FANs do shelf'
-            when /temp_over_limit/
-              unit = 'FAN tray'
+              item = 'FAN tray'
               prior = 'Critical'
-              msg = 'shelf sobreaquecido verificar bandeja de FANs do shelf e sistema de ventilacao do armario'
+              msg = 'Falha na bandeja de FANs do shelf'
+            when /temp_over_limit/
+              item = 'FAN tray'
+              prior = 'Critical'
+              msg = 'Sobreaquecimento do shelf - verificar bandeja de FANs e sistema de ventilacao do armario'
             else
-              unit = 'Shelf'
-              msg = 'Minor'
+              item = 'Shelf'
+              prior = 'Minor'
           end
 
-          result << [unit, description, prior, msg]
+          result << [item, description, prior, msg]
         }
         result
-      rescue => err
-        puts "#{err.class} #{err}"
+
       end
     end
 
@@ -133,7 +130,7 @@ module Zhone
         lines.each { |line|
           columns = line.split(/\s+/)
           unless columns[2].to_s.match(/Active/) or columns[2].to_s.match(/Standby/)
-            result << [columns[1], "#{columns[0]} #{columns[3]}", 'Minor', nil]
+            result << [columns[1], "#{columns[0]} #{columns[3]}", 'Minor', '']
           end
         }
 
@@ -204,13 +201,15 @@ module Zhone
     def get_card_alarms
       result = Array.new
       alarmed_cards = get_all_cards.select { |slot| !slot[1].to_s.match(/RUNNING/) }
-      prior = 'Critical'
-      msg = 'Cartao com falha'
 
       alarmed_cards.each { |card|
-        if card[1].to_s.match(/NOT_PROV/) || card[1].to_s.match(/RESET_HOLD/)
-          prior = 'Minor'
-          msg = 'Cartao nao comissionado ou desativado presente no slot'
+        case
+          when (card[1].to_s.match(/NOT_PROV/) or card[1].match(/RESET/))
+            prior = 'Minor'
+            msg = 'Cartao nao comissionado ou desativado presente no slot'
+          else
+            prior = 'Critical'
+            msg = 'Cartao com falha inoperante'
         end
         result << [card[0], card[1], prior, msg]
       }

@@ -4,7 +4,6 @@ require 'csv'
 module Keymile
 
   class Milegate
-
     # Equipment constants for use on:
     # ---===### CLI Release R2A20, Build 2013-11-05 ###===---
 
@@ -13,7 +12,8 @@ module Keymile
     PROMPT = /\/[$%#>]/s
     LOGIN_PROMPT = /[Ll]ogin as[: ]/
     PASSWORD_PROMPT = /[Pp]ass(?:word|phrase)[: ]/
-    OPTICAL_SIGNAL_THRESHOLD = -17
+    MAX_OPTICAL_THRESHOLD = -18
+    MIN_OPTICAL_THRESHOLD = -40
 
     REGEX_SYSTEM_ALARM = /\[.+\n.+\n.+\n.+\n.+\n.+\n.+\n.+\n.+\n/
     REGEX_SYSTEM_ALARM_CAUSE = /\b[\w ]+\b(?=.+\bFaultCause\b)/
@@ -87,7 +87,8 @@ module Keymile
         interfaces = Array.new
 
         # Find valid uplink interfaces
-        self.get_cards_by_name(/COGE/).each { |slot| slot.state.match(/Ok/) ? interfaces << "/#{slot.id}/port-1" : false }
+        self.get_cards_by_name(/COGE/).each { |slot| slot.state.match(/Ok/) ?
+            interfaces << "/#{slot.id}/port-1" : false }
 
         # For each of those interfaces...
         interfaces.each { |interface|
@@ -104,11 +105,13 @@ module Keymile
             # Does it supports DdmStatus function?
             if sample.scan(REGEX_INTERFACE_SUPPORT)[0].to_s.match(/Supported/)
               lines = sample.scan(REGEX_INTERFACE_RX_VALUE)
+
               # read the RxInputPower value
-              unless lines[0].to_i > OPTICAL_SIGNAL_THRESHOLD
-                result << [interface, "Low RxInputPower - (#{lines[0].to_s})",
-                           'Major', 'Interface principal ou redundante apresentando degradacao']
+              if (lines[0].to_i < MAX_OPTICAL_THRESHOLD) & (lines[0].to_i > MIN_OPTICAL_THRESHOLD)
+                result << [interface, "Low RxInputPower (#{lines[0].to_s})",
+                           'Critical', 'Sinal optico degradado em interface uplink ativa do MSAN']
               end
+
             else
               #result << 'No DdmInterfaceSupport'
             end
@@ -118,9 +121,6 @@ module Keymile
         }
 
         result
-      rescue => err
-        puts "#{err.class} - #{err}"
-      end
     end
 
     # /> get /unit-13/port-1/main/AdministrativeStatus
@@ -402,7 +402,7 @@ module Keymile
     def get_system_alarms
       begin
         result = Array.new
-        sample = ''
+        sample = nil
         cmds1 = ['get fm/AlarmStatus', 'get /fan/fm/AlarmStatus']
         cmds2 = ['ls /fan -e']
 
@@ -416,36 +416,35 @@ module Keymile
 
             alarm = line.scan(REGEX_SYSTEM_ALARM_CAUSE)[0].to_s
 
-            item = nil
             msg = nil
-            prior = nil
             case alarm
               when /Partial Fan Breakdown/
                 item = 'FAN tray'
-                prior = 'Major'
-                msg = 'Substituir a bandeja de ventilacao do shelf'
+                prior = 'Critical'
+                msg = 'Falha na bandeja de FANs do shelf'
               when /Total Fan Breakdown/
                 item = 'FAN tray'
                 prior = 'Critical'
-                msg = 'Substituir a bandeja de ventilacao do shelf'
+                msg = 'Bandeja de FANs do shelf inoperante'
               when /NE Temperature/
                 item = 'Shelf'
                 prior = 'Critical'
-                msg = 'Sobreaquecimento verificar bandeja de FANs do shelf e sistema de ventilacao do armario'
+                msg = 'Sobreaquecimento do shelf - verificar bandeja de FANs e sistema de ventilacao do armario'
               when /System Time Not Available/
                 item = 'Shelf'
                 prior = 'Minor'
                 msg = 'Revisar ordem de prioridade das fontes de clock TDM configuradas no NE'
               when /Loss Of Signal On PDH Clock Source/
-                item = 'NE'
-                prior = 'Minor'
-                msg = 'Fonte de clock TDM apresentando LOS'
+                item = 'Shelf'
+                prior = 'Major'
+                msg = 'LOSS em uma das fontes de sincronismo E1 TDM'
               when /Unit Not Available/
                 item = 'FAN Tray'
                 prior = 'Critical'
                 msg = 'Bandeja de ventilacao do shelf esta inoperante'
               else
-                item = 'none'
+                item = 'Shelf'
+                prior = 'Minor'
             end
 
             result << [item, alarm, prior, msg] # Add it to array
@@ -453,7 +452,7 @@ module Keymile
           end
         }
 
-        sample = ''
+        sample = nil
 
         cmds2.each { |cmd|
           @telnet.puts(cmd) { |str| print str }
@@ -462,23 +461,21 @@ module Keymile
 
         sample.scan(REGEX_EXTERNAL_ALARMS).each { |line|
           values = line.split(/\|/)
+          msg = nil
 
           unless values[4].match(/Cleared/) #if present
-
-            msg = nil
-            if values[2].to_s.match(/Falha de Fan/) || values[2].to_s.match(/Temperatura Alta/)
-              values[4] = 'Major'
-              msg = 'Alarme externo proveniente do sistema de ventilacao do armario'
+            case
+              when (values[2].to_s.match(/Falha de Fan/) or values[2].to_s.match(/Temperatura Alta/))
+                values[4] = 'Critical'
+                msg = 'Falha no do sistema de ventilacao do armario - alarme externo'
+              else
+                values[4] = 'Major'
             end
-
-            result << %W(#{values[0]} #{values[2]} #{values[4]} #{msg})
-
+            result << [values[0].strip!, values[2].strip!, values[4].strip!, msg]
           end
         }
 
         result
-      rescue => err
-        puts "#{err.class} - #{err}"
       end
     end
 
@@ -549,15 +546,19 @@ module Keymile
       result = Array.new
       alarmed_cards = get_all_cards.select { |slot| !slot.state.to_s.match(/Ok/) }
 
-      prior = 'Critical'
-      msg = 'Cartao com falha'
-      alarmed_cards.each { |card|
-        if card.name.to_s.match(/COGE/)
-          prior = 'Minor'
-          msg = 'Cartao nao comissionado ou desativado presente no slot'
+      alarmed_cards.each do |card|
+        case
+          when card.name.to_s.match(/COGE/)
+            prior = 'Minor'
+            msg = 'Cartao nao comissionado ou desativado presente no slot'
+          else
+            prior = 'Critical'
+            msg = 'Cartao com falha inoperante'
         end
+
         result << [card.id, "#{card.name} #{card.state}", prior, msg]
-      }
+
+      end
       result
     end
 
