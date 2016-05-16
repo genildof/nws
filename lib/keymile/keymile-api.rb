@@ -121,6 +121,7 @@ module Keymile
         }
 
         result
+      end
     end
 
     # /> get /unit-13/port-1/main/AdministrativeStatus
@@ -398,7 +399,7 @@ module Keymile
     # /fan>
 
     # Function <tt>get_system_alarms</tt> gets all the system alarms.
-    # @return [array] result
+    # @returns default 1x4 [array] result
     def get_system_alarms
       begin
         result = Array.new
@@ -452,7 +453,7 @@ module Keymile
           end
         }
 
-        sample = nil
+        sample = ''
 
         cmds2.each { |cmd|
           @telnet.puts(cmd) { |str| print str }
@@ -461,8 +462,7 @@ module Keymile
 
         sample.scan(REGEX_EXTERNAL_ALARMS).each { |line|
           values = line.split(/\|/)
-          msg = nil
-
+          msg = ''
           unless values[4].match(/Cleared/) #if present
             case
               when (values[2].to_s.match(/Falha de Fan/) or values[2].to_s.match(/Temperatura Alta/))
