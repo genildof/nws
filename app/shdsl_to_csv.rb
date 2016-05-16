@@ -46,8 +46,8 @@ if $0 == __FILE__
   CITY_LIST = %w"SNE SBO MAU SVE SPO STS AUJ MCZ GRS OCO SOC VOM JAI VRP CAS IDU PAA RPO BRU ARQ"
   jobs_list = []
   memory_array = []
-  total_remote_access_errors = 0
-  remote_access_errors = Array.new
+  total_errors = 0
+  errors = Array.new
 
   CITY_LIST.each do |city|
     dslam_list = Service::Msan_Cricket_Scrapper.new.get_msan_list(city).select { |dslam| dslam.model.match(DSLAM_MODEL) }
@@ -60,7 +60,7 @@ if $0 == __FILE__
   jobs_list = jobs_list.concat(Service::Msan_Manual_Input.new.get)
   print 'Done.'
 
-  print "\n\nStarting (Workers: %d Jobs: %d)...\n\n" % [WORKERS, jobs_list.size]
+  print "\n\nStarting (Workers: %d Tasks: %d)...\n\n" % [WORKERS, jobs_list.size]
 
   pool = ThreadPool.new(WORKERS)
 
@@ -87,12 +87,10 @@ if $0 == __FILE__
         }
         print "\tFinished: %s RIN %s - %s -- %0.2f seconds\n" % [host.dms_id, host.rin, host.ip, b]
 
-      rescue => e
-        print "\n+#{'-' * 79}"
-        print ">> Error on %s RIN %s %s %s:\n>> %s" % [host.dms_id, host.rin, host.model, host.ip, e.inspect]
-        print "\n+#{'-' * 79}\n"
-        remote_access_errors << "#{host.dms_id} #{host.ip} #{host.model} #{e.inspect}"
-        total_remote_access_errors =+1
+      rescue => err
+        puts "\n#{host.dms_id} #{host.ip} #{host.model} #{err.class} #{err}"
+        errors << "#{host.dms_id} #{host.ip} #{host.model} #{err.class} #{err}"
+        total_errors += 1
       end
     end
   }
@@ -109,9 +107,9 @@ if $0 == __FILE__
 
     f.puts "Statistics for #{FILENAME}"
     f.puts "+#{'-' * 100}+"
-    f.puts "| Total remote access errors: #{total_remote_access_errors.to_s}"
-    f.puts '| Access errors:'
-    remote_access_errors.each { |error| f.puts "|\t#{error}" }
+    f.puts "| Total errors: #{total_errors.to_s}"
+    f.puts "|\n| Errors:"
+    errors.each { |error| f.puts "|#{error}" }
     f.puts "+#{'-' * 100}+\n\n"
   }
 

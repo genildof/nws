@@ -64,7 +64,7 @@ module Service
 
             result << Msan_Element.new do
               self.rin = data.scan(regex_rin).to_s.scan(/\b\d+/).join
-              self.dms_id = data.scan(regex_dms_id).join
+              self.dms_id = data.scan(regex_dms_id).join.strip!
               self.ip = data.scan(regex_ip).join
               self.model = data.scan(regex_model).join
             end
