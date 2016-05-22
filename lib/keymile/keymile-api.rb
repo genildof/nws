@@ -421,7 +421,7 @@ module Keymile
             case alarm
               when /Partial Fan Breakdown/
                 item = 'FAN tray'
-                prior = 'Critical'
+                prior = 'Major'
                 msg = 'Falha na bandeja de FANs do shelf'
               when /Total Fan Breakdown/
                 item = 'FAN tray'
@@ -463,15 +463,16 @@ module Keymile
         sample.scan(REGEX_EXTERNAL_ALARMS).each { |line|
           values = line.split(/\|/)
           msg = ''
+          prior = ''
           unless values[4].match(/Cleared/) #if present
             case
               when (values[2].to_s.match(/Falha de Fan/) or values[2].to_s.match(/Temperatura Alta/))
-                values[4] = 'Critical'
+                prior = 'Critical'
                 msg = 'Alarme externo de falha no do sistema de ventilacao do armario'
               else
-                # type code here
+                prior = values[4].strip!
             end
-            result << [values[0].strip!, values[2].strip!, values[4].strip!, msg]
+            result << [values[0].strip!, values[2].strip!, prior, msg]
           end
         }
 
