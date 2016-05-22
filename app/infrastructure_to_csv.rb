@@ -97,11 +97,12 @@ if $0 == __FILE__
           total_interface_errors += redundancy_alarms.size
 
           system_alarms.each { |alarm| memory_array <<
-              [host.model, host.dms_id, host.rin, host.ip, 'System', alarm[0], alarm[1], alarm[2], alarm[3]] }
+              #[host.model, host.dms_id, host.rin, host.ip, 'System', alarm[0], alarm[1], alarm[2], alarm[3]] }
+              [host.model, host.dms_id, host.rin, host.ip, 'System'].zip(alarm).flatten.compact }
           card_alarms.each { |alarm| memory_array <<
-              [host.model, host.dms_id, host.rin, host.ip, 'Card', alarm[0], alarm[1], alarm[2], alarm[3]] }
+              [host.model, host.dms_id, host.rin, host.ip, 'Card'].zip(alarm).flatten.compact }
           redundancy_alarms.each { |alarm| memory_array <<
-              [host.model, host.dms_id, host.rin, host.ip, 'Interface', alarm[0], alarm[1], alarm[2], alarm[3]] }
+              [host.model, host.dms_id, host.rin, host.ip, 'Interface'].zip(alarm).flatten.compact }
 
           msan.disconnect
 

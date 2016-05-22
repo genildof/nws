@@ -34,7 +34,7 @@ module Service
 
   class Msan_Cricket_Scrapper
 
-    # Function <tt>get_msan_list</tt> scraps MSAN information on Cricket page hosted at management network.
+    # Function <tt>get_msan_list</tt> scraps MSAN information from Cricket page hosted at management network.
     # Sample page: http://10.200.1.220/cricket/grapher.cgi?target=%2Fdslams%2FCAS
     # Regex evaluated with http://regexpal.com/
     # Scrapper engine: http://mechanize.rubyforge.org/
@@ -48,12 +48,12 @@ module Service
       regex_ip = /\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b/ # 10.211.161.69
       regex_model = /\b[M,Z][a-z]+\b/ # Milegate or Zhone
 
-      # URL DSLAM page for the current CNL
+      # MSAN list page for the current CNL
       url = "http://10.200.1.220/cricket/grapher.cgi?target=%2Fdslams%2F#{cnl.to_s.upcase}"
 
       result = []
 
-      # Loads GVT Cricket page
+      # Loads Cricket page
       begin
         page = Mechanize.new.get(url)
 
@@ -63,10 +63,10 @@ module Service
           if data.scan(regex_ip).length > 0
 
             result << Msan_Element.new do
-              self.rin = data.scan(regex_rin).to_s.scan(/\b\d+/).join
+              self.rin = data.scan(regex_rin).to_s.scan(/\b\d+/).join.strip!
               self.dms_id = data.scan(regex_dms_id).join.strip!
-              self.ip = data.scan(regex_ip).join
-              self.model = data.scan(regex_model).join
+              self.ip = data.scan(regex_ip).join.strip!
+              self.model = data.scan(regex_model).join.strip!
             end
 
           end

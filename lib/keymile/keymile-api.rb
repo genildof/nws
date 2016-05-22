@@ -78,9 +78,9 @@ module Keymile
     # 3.9E0                                                              \ # TxBiasCurrent
     # -5                                                                 \ # TxOutputPower
     # -5                                                                 \ # RxInputPower
-    #
-    # Function <tt>get_redundancy_status</tt> gets the uplink interfaces statuses and its RxInputPower values
-    # @return [array] value
+
+    # Function <tt>get_interface_alarms</tt> gets the uplink interfaces statuses and its RxInputPower values
+    # @returns default 1x4 [array] result
     def get_interface_alarms
       begin
         result = Array.new
@@ -121,6 +121,7 @@ module Keymile
         }
 
         result
+
       end
     end
 
@@ -528,12 +529,12 @@ module Keymile
 
         unless values[3].to_s.match(/Empty/) # If slot is not empty
           result << Slot.new do
-            self.id = values[0].strip
-            self.name = values[1].strip
-            self.main_mode = values[2].strip
-            self.state = values[3].strip
-            self.alarm = values[4].strip
-            self.prop_alarm = values[5].strip
+            self.id = values[0].strip!
+            self.name = values[1].strip!
+            self.main_mode = values[2].strip!
+            self.state = values[3].strip!
+            self.alarm = values[4].strip!
+            self.prop_alarm = values[5].strip!
           end
         end
       }
@@ -599,15 +600,15 @@ module Keymile
         values = line.split(/\|/) #.map { |e| e || '+-+-+-+-+-+-+-+-+' } # Replaces nil values of array
 
         result << SHDSL_Port.new do
-          self.id = values[0].strip
-          self.name = values[1].strip
-          self.main_mode = values[2].strip
-          self.state = values[3].strip
-          self.alarm = values[4].strip
-          self.prop_alarm = values[5].strip
-          self.user_label = values[6].strip
-          self.service_label = values[7].strip
-          self.description = values[8].strip
+          self.id = values[0].strip!
+          self.name = values[1].strip!
+          self.main_mode = values[2].strip!
+          self.state = values[3].strip!
+          self.alarm = values[4].strip!
+          self.prop_alarm = values[5].strip!
+          self.user_label = values[6].strip!
+          self.service_label = values[7].strip!
+          self.description = values[8].strip!
         end
       }
       result

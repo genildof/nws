@@ -30,7 +30,7 @@ module Zhone
       begin
         @telnet = Net::Telnet::new(
             'Prompt' => PROMPT,
-            'Timeout' => 15,
+            'Timeout' => 10,
             'Host' => self.ip_address
         ) # { |str| print str }
 
@@ -67,7 +67,7 @@ module Zhone
     # zSH>
 
     # Function <tt>get_system_alarms</tt> gets all the system alarms.
-    # @return [array] value
+    # @returns default 1x4 [array] result
     def get_system_alarms
       begin
         result = Array.new
@@ -80,7 +80,6 @@ module Zhone
         sample.scan(REGEX_ALARM).each { |line|
           description = line.split(/\s+/)[1]
 
-          msg = ''
           case description
             when /fan_speed_error/
               item = 'FAN tray'
@@ -93,6 +92,7 @@ module Zhone
             else
               item = 'Shelf'
               prior = 'Minor'
+              msg = ''
           end
 
           result << [item, description, prior, msg]
@@ -116,7 +116,7 @@ module Zhone
     # zSH>
 
     # Function <tt>get_interface_alarms</tt> gets the controller cards redundancy status.
-    # @return [array] value
+    # @returns default 1x4 [array] result
     def get_interface_alarms
       begin
         result = Array.new
@@ -130,7 +130,7 @@ module Zhone
         lines.each { |line|
           columns = line.split(/\s+/)
           unless columns[2].to_s.match(/Active/) or columns[2].to_s.match(/Standby/)
-            result << [columns[1], "#{columns[0]} #{columns[3]}", 'Minor', '']
+            result << [columns[1].strip!, "#{columns[0].strip!} #{columns[3].strip!}", 'Minor', '']
           end
         }
 
@@ -167,8 +167,7 @@ module Zhone
     # zSH>
 
     # Function <tt>get_all_cards</tt> gets all the system cards and its operational status.
-    # @return [array] value
-
+    # @returns default 1x2 [array] result
     def get_all_cards
       begin
         result = Array.new
@@ -181,23 +180,20 @@ module Zhone
         lines = sample.scan(REGEX_CARDS)
 
         lines.each do |line|
-          fields = Array.new
-
-          fields[0] = line.scan(/\b\w+:.+\s\B/)[0]
-          fields[1] = line.scan(/\B\(.+\)\B/)[0]
-
-          result << fields
+          result << [line.scan(/\b\w+:.+\s\B/)[0].strip!, line.scan(/\B\(.+\)\B/)[0].strip!]
         end
+
         result
+
       rescue => err
         puts "#{err.class} #{err}"
       end
+
     end
 
 
     # Function <tt>get_card_alarms</tt> gets all not running system cards.
-    # @return [array] value
-
+    # @returns default 1x4 [array] result
     def get_card_alarms
       result = Array.new
       alarmed_cards = get_all_cards.select { |slot| !slot[1].to_s.match(/RUNNING/) }
