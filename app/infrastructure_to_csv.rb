@@ -10,8 +10,8 @@ require 'thread'
 # NOTE: this is not thread-safe!
 class ThreadPool
   def self.process!(data, size = 2, &block)
-    Array(data).each_slice(size) { |slice|
-      slice.map { |item| Thread.new { block.call(item) } }.map { |t| t.join }
+    Array(data).each_slice(size) {|slice|
+      slice.map {|item| Thread.new {block.call(item)}}.map {|t| t.join}
     }
   end
 
@@ -28,17 +28,19 @@ end
 # adjust the +WORKERS+ to adjust how many threads are
 # being used at once
 # noinspection RubyResolve
+
 if $0 == __FILE__
   require 'benchmark'
   require 'csv'
-  require_relative File.expand_path 'lib/cricket/service'
-  require_relative File.expand_path 'lib/keymile/keymile-api'
-  require_relative File.expand_path 'lib/zhone/zhone-api'
+  require '../lib/cricket/service'
+  require '../lib/keymile/keymile-api'
+  require '../lib/zhone/zhone-api'
+  #require_relative File.expand_path 'lib/zhone/zhone-api'
 
   HEADER = %w(Model NE_ID RIN IP Alarm_Type Item Trouble_Description Priority Comments)
   WORKERS = 100
-  FILENAME = 'log/infrastructure_alarms_audit_%s.csv' % Time.now.strftime('%d-%m-%Y_%H-%M')
-  LOGFILE = 'log/infrastructure_robot_logfile.log'
+  FILENAME = '../log/infrastructure_alarms_audit_%s.csv' % Time.now.strftime('%d-%m-%Y_%H-%M')
+  LOGFILE = '../log/infrastructure_robot_logfile.log'
   CITY_LIST = %w"SNE SBO MAU SVE SPO STS AUJ MCZ GRS OCO SOC VOM JAI VRP CAS IDU PAA RPO BRU ARQ"
   jobs_list = []
   memory_array = []
@@ -50,11 +52,18 @@ if $0 == __FILE__
   errors = Array.new
 
   CITY_LIST.each do |city|
-    dslam_list = Service::Msan_Cricket_Scrapper.new.get_msan_list(city).select { |msan|
-      msan.model.match(/Milegate/) or msan.model.match(/Zhone/) }
 
-    print "%s: %d element(s) found and enqueued.\n" % [city, dslam_list.size]
-    dslam_list.each { |host| jobs_list << host }
+=begin
+    Service::Msan_Cricket_Scrapper.new.get_msan_list(city).each do |v|
+      puts v.to_s
+    end
+=end
+
+    dslam_list = Service::Msan_Cricket_Scrapper.new.get_msan_list(city).select {
+        |msan| msan.model.to_s =~ /Zhone/ or msan.model.to_s =~ /Milegate/}
+
+    print "%s: %d element(s).\n" % [city, dslam_list.size]
+    dslam_list.each {|host| jobs_list << host}
   end
 
   print "\nLoading alternative inputs..."
@@ -74,14 +83,14 @@ if $0 == __FILE__
           msan = nil
 
           case host.model
-            when /Milegate/
-              msan = Keymile::Milegate.new(host.ip)
-            when /Zhone/
-              msan = Zhone::MXK.new(host.ip)
-            else
-              puts "Unknown DSLAM Model found: #{host.model} at #{host.ip}"
-              errors << "#{host.dms_id} #{host.rin} #{host.ip} Unknown DSLAM Model"
-              total_errors =+1
+          when /Milegate/
+            msan = Keymile::Milegate.new(host.ip)
+          when /Zhone/
+            msan = Zhone::MXK.new(host.ip)
+          else
+            puts "Unknown DSLAM Model found: #{host.model} at #{host.ip}"
+            errors << "#{host.dms_id} #{host.rin} #{host.ip} Unknown DSLAM Model"
+            total_errors = +1
           end
 
           msan.connect
@@ -96,19 +105,19 @@ if $0 == __FILE__
           total_card_alarms += card_alarms.size
           total_interface_errors += redundancy_alarms.size
 
-          system_alarms.each { |alarm| memory_array <<
+          system_alarms.each {|alarm| memory_array <<
               #[host.model, host.dms_id, host.rin, host.ip, 'System', alarm[0], alarm[1], alarm[2], alarm[3]] }
-              [host.model, host.dms_id, host.rin, host.ip, 'System'].zip(alarm).flatten.compact }
-          card_alarms.each { |alarm| memory_array <<
-              [host.model, host.dms_id, host.rin, host.ip, 'Card'].zip(alarm).flatten.compact }
-          redundancy_alarms.each { |alarm| memory_array <<
-              [host.model, host.dms_id, host.rin, host.ip, 'Interface'].zip(alarm).flatten.compact }
+              [host.model, host.dms_id, host.rin, host.ip, 'System'].zip(alarm).flatten.compact}
+          card_alarms.each {|alarm| memory_array <<
+              [host.model, host.dms_id, host.rin, host.ip, 'Card'].zip(alarm).flatten.compact}
+          redundancy_alarms.each {|alarm| memory_array <<
+              [host.model, host.dms_id, host.rin, host.ip, 'Interface'].zip(alarm).flatten.compact}
 
           msan.disconnect
 
           true
         }
-        print "%s %sRIN %s at %s -- %0.2fs done\n" % [host.model, host.dms_id, host.rin, host.ip, b]
+        print "%s %s %s at %s -- %0.2fs done\n" % [host.model, host.dms_id, host.rin, host.ip, b]
 
       rescue => err
         puts "\n#{host.dms_id} #{host.ip} #{host.model} #{err.class} #{err}"
@@ -123,13 +132,13 @@ if $0 == __FILE__
   # Saves data to csv file
   CSV.open(FILENAME, 'w', col_sep: ';') do |csv|
     csv << HEADER
-    memory_array.each { |row| csv << row }
+    memory_array.each {|row| csv << row}
   end
 
   print "%s rows recorded in %s.\n" % [memory_array.size, FILENAME]
 
   # Log file
-  File.open(LOGFILE, 'a') { |f|
+  File.open(LOGFILE, 'a') {|f|
 
     f.puts "Statistics for #{FILENAME}"
     f.puts "+#{'-' * 100}+"
@@ -140,7 +149,7 @@ if $0 == __FILE__
     f.puts "| Total interface alarms: #{total_interface_errors.to_s}"
     f.puts "| Total errors: #{total_errors.to_s}"
     f.puts "|\n| Errors:"
-    errors.each { |error| f.puts "|#{error}" }
+    errors.each {|error| f.puts "|#{error}"}
     f.puts "+#{'-' * 100}+\n\n"
   }
 

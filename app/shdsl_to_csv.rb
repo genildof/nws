@@ -10,8 +10,8 @@ require 'thread'
 # NOTE: this is not thread-safe!
 class ThreadPool
   def self.process!(data, size = 2, &block)
-    Array(data).each_slice(size) { |slice|
-      slice.map { |item| Thread.new { block.call(item) } }.map { |t| t.join }
+    Array(data).each_slice(size) {|slice|
+      slice.map {|item| Thread.new {block.call(item)}}.map {|t| t.join}
     }
   end
 
@@ -31,8 +31,8 @@ end
 if $0 == __FILE__
   require 'benchmark'
   require 'csv'
-  require_relative File.expand_path 'lib/cricket/service'
-  require_relative File.expand_path 'lib/keymile/keymile-api'
+  require_relative '../lib/cricket/service'
+  require_relative '../lib/keymile/keymile-api'
 
 
   HEADER = %w(Shelf_ID RIN IP Slot_ID Slot_Name Slot_Main_Mode Slot_State Slot_Alarm Slot_Prop_Alarm Port_ID Port_Main_Mode Port_State
@@ -41,8 +41,8 @@ if $0 == __FILE__
   WORKERS = 100
   DSLAM_MODEL = 'Milegate'
   CARD_TYPE = /STIM/
-  LOGFILE = 'log/shdsl_robot_logfile.log'
-  FILENAME = 'reports/shdsl_ports_audit_%s.csv' % Time.now.strftime('%d-%m-%Y_%H-%M')
+  LOGFILE = '../log/shdsl_robot_logfile.log'
+  FILENAME = '../reports/shdsl_ports_audit_%s.csv' % Time.now.strftime('%d-%m-%Y_%H-%M')
   CITY_LIST = %w"SNE SBO MAU SVE SPO STS AUJ MCZ GRS OCO SOC VOM JAI VRP CAS IDU PAA RPO BRU ARQ"
   jobs_list = []
   memory_array = []
@@ -50,10 +50,10 @@ if $0 == __FILE__
   errors = Array.new
 
   CITY_LIST.each do |city|
-    dslam_list = Service::Msan_Cricket_Scrapper.new.get_msan_list(city).select { |dslam| dslam.model.match(DSLAM_MODEL) }
+    dslam_list = Service::Msan_Cricket_Scrapper.new.get_msan_list(city).select {|dslam| dslam.model.match(DSLAM_MODEL)}
 
     print "%s: %d %s(s) found and enqueued.\n" % [city, dslam_list.size, DSLAM_MODEL]
-    dslam_list.each { |host| jobs_list << host }
+    dslam_list.each {|host| jobs_list << host}
   end
 
   print "\nLoading alternative inputs..."
@@ -64,7 +64,7 @@ if $0 == __FILE__
 
   pool = ThreadPool.new(WORKERS)
 
-  b = Benchmark.realtime {
+  b = Benchmark.realtime do
     pool.process!(jobs_list) do |host|
 
       begin
@@ -78,7 +78,7 @@ if $0 == __FILE__
               row = [host.dms_id, host.rin, host.ip, slot.id, slot.name, slot.main_mode, slot.state, slot.alarm,
                      slot.prop_alarm, port.id, port.main_mode, port.state, port.alarm, port.user_label,
                      port.service_label] #port.description
-              msan.get_shdsl_params(slot, port).each { |values| row << values }
+              msan.get_shdsl_params(slot, port).each {|values| row << values}
               memory_array << row
             end
           end
@@ -93,23 +93,23 @@ if $0 == __FILE__
         total_errors += 1
       end
     end
-  }
+  end
 
   print "\nWriting %s data rows to log file...\n"
   CSV.open(FILENAME, 'w', col_sep: ';') do |csv|
     csv << HEADER
-    memory_array.each { |service_data| csv << service_data }
+    memory_array.each {|service_data| csv << service_data}
   end
   print "%s rows recorded in %s.\n" % [memory_array.size, FILENAME]
 
   # Log file
-  File.open(LOGFILE, 'a') { |f|
+  File.open(LOGFILE, 'a') {|f|
 
     f.puts "Statistics for #{FILENAME}"
     f.puts "+#{'-' * 100}+"
     f.puts "| Total errors: #{total_errors.to_s}"
     f.puts "|\n| Errors:"
-    errors.each { |error| f.puts "|#{error}" }
+    errors.each {|error| f.puts "|#{error}"}
     f.puts "+#{'-' * 100}+\n\n"
   }
 
