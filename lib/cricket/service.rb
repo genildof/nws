@@ -1,5 +1,4 @@
 #!/usr/bin/env ruby
-
 module Service
 
   require 'mechanize'
@@ -82,11 +81,11 @@ module Service
     end
 
     def to_s
-      "#{@model} #{@dms_id} #{@rin} #{@ip}"
+      "#{:model} #{:dms_id} #{:rin} #{:ip}"
     end
 
     def to_array
-      [@model, @dms_id, @rin, @ip]
+      [:model, :dms_id, :rin, :ip]
     end
   end
 

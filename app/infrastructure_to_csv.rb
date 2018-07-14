@@ -1,3 +1,4 @@
+#!/usr/bin/env ruby
 require 'thread'
 
 # http://www.proccli.com/2011/02/super-simple-thread-pooling-ruby
@@ -28,7 +29,6 @@ end
 # adjust the +WORKERS+ to adjust how many threads are
 # being used at once
 # noinspection RubyResolve
-
 if $0 == __FILE__
   require 'benchmark'
   require 'csv'
@@ -116,7 +116,7 @@ if $0 == __FILE__
         }
 
         # Prints partial statistics for current host
-        print "\t%s -- %0.2f seconds -- %s alarms\n" % [host.to_s, host_time.to_s, partial_alarms]
+        print "\t%s -- %0.2f seconds -- %s alarm(s)\n" % [host.to_s, host_time.to_s, partial_alarms]
 
       rescue => err
         # Prints error log

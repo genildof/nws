@@ -1,3 +1,4 @@
+#!/usr/bin/env ruby
 require 'net/telnet'
 
 module Keymile
@@ -652,7 +653,10 @@ module Keymile
 
       @telnet.waitfor('Match' => PROMPT) {|rcvdata| sample << rcvdata}
 
-      sample.scan(REGEX_DSL_VALUES).each {|value| result << "#{value.to_s.scan(/\w+/)[0]}"}
+      sample.scan(REGEX_DSL_VALUES).each do |value|
+        puts value.to_s.scan(/\w+/)[0]
+        result << "#{value.to_s.scan(/\w+/)[0]}"
+      end
 
       result
     end
