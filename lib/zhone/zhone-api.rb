@@ -99,7 +99,7 @@ module Zhone
 
           end
 
-          result << [item, description, prior, msg]
+          result << ['SYSTEM', item, description, prior, msg]
         }
         result
 
@@ -140,13 +140,11 @@ module Zhone
           # splits interface's rows into columns
           columns = row.split(/\s+/)
 
-          puts row.to_s
-
           # filters by status column
           unless columns[2].to_s.match(/Active/) or columns[2].to_s.match(/Standby/)
 
             # stores data into an 4x1 array and appends it to result variable
-            result << ['Interface', columns[1], "#{columns[2]}", 'Minor', "#{columns[0]} #{columns[3]}"]
+            result << ['INTERFACE', columns[1], "#{columns[2]}", 'Minor', "#{columns[0]} #{columns[3]}"]
           end
         }
 
@@ -227,7 +225,7 @@ module Zhone
           prior = 'Critical'
           msg = 'Cartao com falha inoperante'
         end
-        result << [card[0], card[1], prior, msg]
+        result << ['CARD', card[0], card[1], prior, msg]
       }
       result
     end

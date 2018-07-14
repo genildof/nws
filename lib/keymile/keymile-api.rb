@@ -1,5 +1,4 @@
 require 'net/telnet'
-require 'csv'
 
 module Keymile
 
@@ -41,7 +40,7 @@ module Keymile
     def connect
       @telnet = Net::Telnet::new(
           'Prompt' => PROMPT,
-          'Timeout' => 15,
+          'Timeout' => 10,
           'Host' => self.ip_address
       ) # { |str| print str }
 
@@ -102,9 +101,9 @@ module Keymile
             if sample.scan(REGEX_INTERFACE_SUPPORT)[0].to_s.match(/Supported/)
               lines = sample.scan(REGEX_INTERFACE_RX_VALUE)
 
-              # read the RxInputPower value
+              # read the RxInputPower value and appends to result
               if (lines[0].to_i < MAX_OPTICAL_THRESHOLD) & (lines[0].to_i > MIN_OPTICAL_THRESHOLD)
-                result << ['Interface', interface, "Low RxInputPower (#{lines[0].to_s})",
+                result << ['INTERFACE', interface, "Low RxInputPower (#{lines[0].to_s})",
                            'Critical', 'Sinal optico degradado em interface uplink ativa do MSAN']
               end
 
@@ -448,7 +447,7 @@ module Keymile
             prior = 'Minor'
           end
 
-          result << [item, alarm, prior, msg] # Add it to array
+          result << ['SYSTEM', item, alarm, prior, msg] # Add it to array
 
         end
       }
@@ -464,7 +463,6 @@ module Keymile
 
         values = line.split(/\|/)
         msg = ''
-        prior = ''
 
         unless values[4].match(/Cleared/) #if present
 
@@ -479,7 +477,7 @@ module Keymile
 
           end
 
-          result << [values[0].strip!, values[2].strip!, prior, msg]
+          result << ['SYSTEM', values[0].strip!, values[2].strip!, prior, msg]
 
         end
       }
@@ -571,7 +569,7 @@ module Keymile
 
         end
 
-        result << [card.id, "#{card.name} #{card.state}", prior, msg]
+        result << ['CARD', card.id, "#{card.name} #{card.state}", prior, msg]
 
       end
 
@@ -873,8 +871,6 @@ true                                                               \ # AllCompon
 true                                                               \ # EquipmentsCompatible
 false                                                              \ # UnitsIsolated
 /status>
-
-
 
 
 =end

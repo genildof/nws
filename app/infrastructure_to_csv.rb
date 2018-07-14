@@ -10,9 +10,9 @@ require 'thread'
 # NOTE: this is not thread-safe!
 class ThreadPool
   def self.process!(data, size = 2, &block)
-    Array(data).each_slice(size) {|slice|
+    Array(data).each_slice(size) do |slice|
       slice.map {|item| Thread.new {block.call(item)}}.map {|t| t.join}
-    }
+    end
   end
 
   def initialize(size)
@@ -29,32 +29,32 @@ end
 # being used at once
 # noinspection RubyResolve
 
-unless $0 != __FILE__
+if $0 == __FILE__
   require 'benchmark'
   require 'csv'
   require '../lib/cricket/service'
   require '../lib/keymile/keymile-api'
   require '../lib/zhone/zhone-api'
 
-  HEADER = %w(Model NE_ID RIN IP Alarm_Type Item Trouble_Description Priority Comments)
+  HEADER = %w(MODEL MSAN RIN IP TYPE ITEM DESCRIPTION PRIORITY COMMENTS)
   WORKERS = 100
-  FILENAME = '../log/infrastructure_alarms_audit_%s.csv' % Time.now.strftime('%d-%m-%Y_%H-%M')
-  LOGFILE = '../log/infrastructure_robot_logfile.log'
+  FILENAME = '../log/infrastructure_alarms_report_%s.csv' % Time.now.strftime('%d-%m-%Y_%H-%M')
+  LOGFILE = '../log/infrastructure_alarms_logfile_%s.log' % Time.now.strftime('%d-%m-%Y_%H-%M')
   CITY_LIST = %w"SNE SBO MAU SVE SPO STS AUJ MCZ GRS OCO SOC VOM JAI VRP CAS IDU PAA RPO BRU ARQ"
   jobs_list = []
-  memory_array = []
+  result = []
   total_system_alarms = 0
   total_card_alarms = 0
   total_cards_checked = 0
-  total_interface_errors = 0
+  total_interface_alarms = 0
   total_errors = 0
   errors = Array.new
 
-  CITY_LIST.each do |city|
-    dslam_list = Service::Msan_Cricket_Scrapper.new.get_msan_list(city).select {
+  CITY_LIST.each do |cnl|
+    dslam_list = Service::Msan_Cricket_Scrapper.new.get_msan_list(cnl).select {
         |msan| msan.model.to_s =~ /Zhone/ or msan.model.to_s =~ /Milegate/}
 
-    print "%s: %d element(s).\n" % [city, dslam_list.size]
+    print "%s: %d element(s).\n" % [cnl, dslam_list.size]
     dslam_list.each {|host| jobs_list << host}
   end
 
@@ -66,11 +66,13 @@ unless $0 != __FILE__
 
   pool = ThreadPool.new(WORKERS)
 
-  b = Benchmark.realtime {
+  total_time = Benchmark.realtime {
     pool.process!(jobs_list) do |host|
 
+      partial_alarms = 0
+
       begin
-        b = Benchmark.realtime {
+        host_time = Benchmark.realtime {
 
           msan = nil
 
@@ -83,79 +85,80 @@ unless $0 != __FILE__
             msan = Zhone::MXK.new(host.ip)
 
           else
-            puts "Unknown DSLAM Model found: #{host.model} at #{host.ip}"
-            errors << "#{host.dms_id} #{host.rin} #{host.ip} Unknown DSLAM Model"
+            puts "Unknown Model found: #{host.model} at #{host.ip}"
+            errors << "#{host.to_s} -- Unknown Model"
             total_errors = +1
           end
 
           msan.connect
 
-          # Verifies system alarms on the shelf
+          # Loads system, card and interface alarms
           system_alarms = msan.get_system_alarms
           card_alarms = msan.get_card_alarms
-          redundancy_alarms = msan.get_interface_alarms
+          interface_alarms = msan.get_interface_alarms
 
+          # Generates statistics
           total_cards_checked += msan.get_all_cards.size
           total_system_alarms += system_alarms.size
           total_card_alarms += card_alarms.size
-          total_interface_errors += redundancy_alarms.size
+          total_interface_alarms += interface_alarms.size
+          partial_alarms += (system_alarms.size + card_alarms.size + interface_alarms.size)
 
-          #system_alarms.each {|alarm| memory_array <<
-          #[host.model, host.dms_id, host.rin, host.ip, 'System', alarm[0], alarm[1], alarm[2], alarm[3]] }
-          #   [host.model, host.dms_id, host.rin, host.ip, 'System'].zip(alarm).flatten.compact}
-          #card_alarms.each {|alarm| memory_array <<
-          #   [host.model, host.dms_id, host.rin, host.ip, 'Card'].zip(alarm).flatten.compact}
-
-
-          redundancy_alarms.each do |alarm|
-            csv_line = host.to_array().concat(alarm)
-            puts csv_line.to_s
-            memory_array << csv_line
+          # Concatenates host info to alarm info and appends to temporary array
+          system_alarms.concat(card_alarms).concat(interface_alarms).each do |alarm|
+            csv_row = host.to_array.concat(alarm)
+            result << csv_row
           end
 
           msan.disconnect
 
           true
         }
-        print "\tFinished: %s %s %s %s -- %0.2f seconds\n" % [host.model, host.dms_id, host.rin, host.ip, b]
+
+        # Prints partial statistics for current host
+        print "\t%s -- %0.2f seconds -- %s alarms\n" % [host.to_s, host_time.to_s, partial_alarms]
 
       rescue => err
-        print "\tError: #{host.model} #{host.dms_id} #{host.rin} #{host.ip} #{err.class} #{err}\n"
-        errors << "#{host.model} #{host.dms_id} #{host.rin} #{host.ip} #{err.class} #{err}"
+        # Prints error log
+        print "\t%s -- %s %s\n" % [host.to_s, err.class, err]
+
+        # Increments error counter and appends log
+        errors << " #{host.to_s} -- #{err.class} #{err}"
         total_errors += 1
       end
     end
   }
 
+  statistics =
+      "Statistics for #{FILENAME}\n" +
+          "+#{'-' * 130}+\n" +
+          "| Total checked NEs: #{jobs_list.size}\n" +
+          "| Total NE alarms: #{total_system_alarms.to_s}\n" +
+          "| Total cards checked: #{total_cards_checked.to_s}\n" +
+          "| Total card alarms: #{total_card_alarms.to_s}\n" +
+          "| Total interface alarms: #{total_interface_alarms.to_s}\n" +
+          "| Total errors: #{total_errors.to_s}\n" +
+          "|\n| Errors:\n"
+  errors.each {|error| statistics << "|#{error}\n"}
+  statistics << "+#{'-' * 130}+\n"
+
+  print "\n" + statistics
+
   print "\nWriting data rows to log file...\n"
 
-  # Saves data to csv file
+  # Writes temporary arry to csv file
   CSV.open(FILENAME, 'w', col_sep: ';') do |csv|
     csv << HEADER
-    memory_array.each {|row| csv << row}
+    result.each {|row| csv << row}
   end
 
-  print "%s rows recorded in %s.\n" % [memory_array.size, FILENAME]
+  print "%s rows recorded in %s.\n" % [result.size, FILENAME]
 
-  # Log file
-  File.open(LOGFILE, 'a') {|f|
+  # Writes log file
+  File.open(LOGFILE, 'a') {|f| f.puts statistics}
+  print "\nLog file %s created.\n" % LOGFILE
 
-    f.puts "Statistics for #{FILENAME}"
-    f.puts "+#{'-' * 100}+"
-    f.puts "| Total checked NEs: #{jobs_list.size}"
-    f.puts "| Total NE alarms: #{total_system_alarms.to_s}"
-    f.puts "| Total cards checked: #{total_cards_checked.to_s}"
-    f.puts "| Total card alarms: #{total_card_alarms.to_s}"
-    f.puts "| Total interface alarms: #{total_interface_errors.to_s}"
-    f.puts "| Total errors: #{total_errors.to_s}"
-    f.puts "|\n| Errors:"
-    errors.each {|error| f.puts "|#{error}"}
-    f.puts "+#{'-' * 100}+\n\n"
-  }
-
-  print "\nLog file %s updated.\n" % LOGFILE
-
-  # Output some times
-  print "\nFinished all: %0.2f seconds\n" % b
+  # Prints total time
+  print "\nJob done, total time: %0.2f seconds\n" % total_time
 
 end

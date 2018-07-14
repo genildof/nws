@@ -2,7 +2,6 @@
 
 module Service
 
-  require 'csv'
   require 'mechanize'
 
   class Msan_Manual_Input

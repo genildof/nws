@@ -23,7 +23,7 @@ GEM
     net-http-persistent (3.0.0)
       connection_pool (~> 2.2)
     net-telnet (0.1.1)
-    nokogiri (1.8.3-java)
+    nokogiri (1.8.4-java)
     ntlm-http (0.1.1)
     shoes (3.0.1)
     unf (0.1.4-java)
