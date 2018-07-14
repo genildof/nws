@@ -51,17 +51,17 @@ if $0 == __FILE__
   errors = Array.new
   debugging = false
 
-  print "Scrapping cricket host list...\n"
+  print "Scrapping cricket host list...\n\n"
   CITY_LIST.each do |cnl|
     dslam_list = Service::Msan_Cricket_Scrapper.new.get_msan_list(cnl).select {
         |msan| msan.model.to_s =~ /Zhone/ or msan.model.to_s =~ /Milegate/}
 
-    print "%s: %d element(s).\n" % [cnl, dslam_list.size]
+    print "\t%s: %d element(s).\n" % [cnl, dslam_list.size]
     dslam_list.each {|host| jobs_list << host}
   end
-  print "Done.\n"
+  print "\nDone.\n"
 
-  print "\nLoading alternative inputs..."
+  print "\nLoading alternative inputs...\n"
   jobs_list = jobs_list.concat(Service::Msan_Manual_Input.new.get)
   print "Done.\n"
 
