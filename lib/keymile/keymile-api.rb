@@ -614,11 +614,8 @@ module Keymile
 
         result << SHDSL_Port.new do
           self.id = values[0]
-          self.name = values[1]
           self.main_mode = values[2].strip!
-          self.state = values[3]
           self.alarm = values[4]
-          self.prop_alarm = values[5]
           self.user_label = values[6]
           self.service_label = values[7]
           self.description = values[8]
@@ -654,7 +651,7 @@ module Keymile
       @telnet.waitfor('Match' => PROMPT) {|rcvdata| sample << rcvdata}
 
       sample.scan(REGEX_DSL_VALUES).each do |value|
-        puts value.to_s.scan(/\w+/)[0]
+        #puts value.to_s.scan(/\w+/)[0]
         result << "#{value.to_s.scan(/\w+/)[0]}"
       end
 
@@ -669,15 +666,22 @@ module Keymile
     def initialize(&block)
       instance_eval &block
     end
+
+    def to_array
+      [id, name, main_mode, state, alarm, prop_alarm]
+    end
   end
 
   # shdsl ports VO
   class SHDSL_Port
-    attr_accessor(:id, :name, :main_mode, :state, :alarm,
-                  :prop_alarm, :user_label, :service_label, :description)
+    attr_accessor(:id, :main_mode, :alarm, :user_label, :service_label, :description)
 
     def initialize(&block)
       instance_eval &block
+    end
+
+    def to_array
+      [id, main_mode, alarm, user_label, service_label, description]
     end
   end
 

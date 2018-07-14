@@ -36,9 +36,10 @@ if $0 == __FILE__
   require_relative '../lib/keymile/keymile-api'
 
 
-  HEADER = %w(Shelf_ID RIN IP Slot_ID Slot_Name Slot_Main_Mode Slot_State Slot_Alarm Slot_Prop_Alarm Port_ID Port_Main_Mode Port_State
-          Port_Alarm Port_User_Label Port_Service_Label OperationalStatus NearEnd_CurrentAttenuation NearEnd_CurrentMargin
-          NearEnd_CurrentPowerBackOff FarEnd_CurrentAttenuation FarEnd_CurrentMargin FarEnd_CurrentPowerBackOff) #Port_Description
+  HEADER = %w(MODEL MSAN RIN IP Slot_ID Slot_Name Slot_Main_Mode Slot_State Slot_Alarm Slot_Prop_Alarm
+              Port_ID Port_Main_Mode Port_Alarm Port_User_Label Port_Service_Label Port_Description
+              OperationalStatus NearEnd_CurrentAttenuation NearEnd_CurrentMargin NearEnd_CurrentPowerBackOff
+              FarEnd_CurrentAttenuation FarEnd_CurrentMargin FarEnd_CurrentPowerBackOff)
   WORKERS = 100
   DSLAM_MODEL = 'Milegate'
   SHDSL_CARD_NAME = /STIM/
@@ -49,20 +50,22 @@ if $0 == __FILE__
   result = []
   total_errors = 0
   errors = Array.new
+  debugging = false
 
+  print "Scrapping cricket host list...\n"
   CITY_LIST.each do |cnl|
     dslam_list = Service::Msan_Cricket_Scrapper.new.get_msan_list(cnl).select {|dslam| dslam.model.match(DSLAM_MODEL)}
 
-    print "%s: %d %s(s) found and enqueued.\n" % [cnl, dslam_list.size, DSLAM_MODEL]
+    print "%s: %d %s(s) enqueued.\n" % [cnl, dslam_list.size, DSLAM_MODEL]
     dslam_list.each {|host| jobs_list << host}
   end
+  print "Done.\n"
 
   print "\nLoading alternative inputs..."
   jobs_list = jobs_list.concat(Service::Msan_Manual_Input.new.get)
-  print 'Done.'
+  print "Done.\n"
 
-  print "\n\nStarting (Workers: %d Tasks: %d)...\n\n" % [WORKERS, jobs_list.size]
-
+  print "\nStarting (Workers: %d Tasks: %d)...\n\n" % [WORKERS, jobs_list.size]
   pool = ThreadPool.new(WORKERS)
 
   total_time = Benchmark.realtime {
@@ -81,15 +84,21 @@ if $0 == __FILE__
 
             # Iterates over each active shdsl port in the shelf
             msan.get_shdsl_ports_all(slot).each do |port|
-              row = [host.dms_id, host.rin, host.ip, slot.id, slot.name, slot.main_mode, slot.state, slot.alarm,
-                     slot.prop_alarm, port.id, port.main_mode, port.state, port.alarm, port.user_label,
-                     port.service_label] #port.description
 
-              # Picks up snr and attenuation values of each port
-              msan.get_shdsl_params(slot, port).each {|values| row << values}
+              # Concatenates host, slot and port data to current csv row
+              csv_row = host.to_array.concat(slot.to_array).concat(port.to_array)
+
+              # Concatenates collected snr and attenuation data of current port
+              msan.get_shdsl_params(slot, port).each do |shdsl_params|
+                csv_row << shdsl_params
+              end
+
+              if debugging
+                print "\t" + csv_row.to_s + "\n"
+              end
 
               # Appends to temporary array
-              result << row
+              result << csv_row
 
               # Increments port counter
               active_ports += 1
@@ -100,7 +109,7 @@ if $0 == __FILE__
         }
 
         # Prints partial statistics for current host
-        print "\t%s -- %0.2f seconds -- %s active port(s)\n" % [host.to_s, host_time.to_s, active_ports]
+        print "\t%s -- %0.2f seconds -- %s active port(s)\n" % [host.to_s, host_time, active_ports]
 
       rescue => err
         # Prints error log
@@ -129,6 +138,7 @@ if $0 == __FILE__
   # Writes temporary arry to csv file
   CSV.open(FILENAME, 'w', col_sep: ';') do |csv|
     csv << HEADER
+    result.map {|e| e ? e : ''} # replaces nil values
     result.each {|row| csv << row}
   end
 
@@ -140,5 +150,4 @@ if $0 == __FILE__
 
   # Prints total time
   print "\nJob done, total time: %0.2f seconds\n" % total_time
-
 end

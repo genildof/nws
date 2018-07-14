@@ -49,7 +49,9 @@ if $0 == __FILE__
   total_interface_alarms = 0
   total_errors = 0
   errors = Array.new
+  debugging = false
 
+  print "Scrapping cricket host list...\n"
   CITY_LIST.each do |cnl|
     dslam_list = Service::Msan_Cricket_Scrapper.new.get_msan_list(cnl).select {
         |msan| msan.model.to_s =~ /Zhone/ or msan.model.to_s =~ /Milegate/}
@@ -57,13 +59,13 @@ if $0 == __FILE__
     print "%s: %d element(s).\n" % [cnl, dslam_list.size]
     dslam_list.each {|host| jobs_list << host}
   end
+  print "Done.\n"
 
   print "\nLoading alternative inputs..."
   jobs_list = jobs_list.concat(Service::Msan_Manual_Input.new.get)
-  print 'Done.'
+  print "Done.\n"
 
-  print "\n\nStarting (Workers: %d Tasks: %d)...\n\n" % [WORKERS, jobs_list.size]
-
+  print "\nStarting (Workers: %d Tasks: %d)...\n\n" % [WORKERS, jobs_list.size]
   pool = ThreadPool.new(WORKERS)
 
   total_time = Benchmark.realtime {
@@ -107,6 +109,11 @@ if $0 == __FILE__
           # Concatenates host info to alarm info and appends to temporary array
           system_alarms.concat(card_alarms).concat(interface_alarms).each do |alarm|
             csv_row = host.to_array.concat(alarm)
+
+            if debugging
+              print "\t" + csv_row.to_s + "\n"
+            end
+
             result << csv_row
           end
 
@@ -116,7 +123,7 @@ if $0 == __FILE__
         }
 
         # Prints partial statistics for current host
-        print "\t%s -- %0.2f seconds -- %s alarm(s)\n" % [host.to_s, host_time.to_s, partial_alarms]
+        print "\t%s -- %0.2f seconds -- %s alarm(s)\n" % [host.to_s, host_time, partial_alarms]
 
       rescue => err
         # Prints error log
@@ -149,6 +156,7 @@ if $0 == __FILE__
   # Writes temporary arry to csv file
   CSV.open(FILENAME, 'w', col_sep: ';') do |csv|
     csv << HEADER
+    result.map {|e| e ? e : ''} # replaces nil values
     result.each {|row| csv << row}
   end
 
@@ -160,5 +168,4 @@ if $0 == __FILE__
 
   # Prints total time
   print "\nJob done, total time: %0.2f seconds\n" % total_time
-
 end
