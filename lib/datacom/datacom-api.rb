@@ -1,13 +1,23 @@
 require 'net/telnet'
 
-module Zhone
+module Datacom
 
-  class MXK
+  class DMSW
 
     # Session's constants for Zhone MXK
-    USERNAME = 'admin'
-    USER_PW = 'zhone'
-    PROMPT = /zSH[$%#>]/s
+
+    JUMPSRV_NMC = '10.200.1.34'
+    JUMPSRV_NMC_USER = 'nmc'
+    JUMPSRV_NMC_PW = 'nmcgvt25'
+
+    JUMPSRV = '10.200.1.29'
+    JUMPSRV_USERNAME = 'sp3510717'
+    JUMPSRV_PW = 'Lima.1010'
+
+    RADIUS_USERNAME = 'g0010717'
+    RADIUS_PW = 'Lima.10'
+
+    PROMPT = /\/[$%#>]/s
     LOGIN_PROMPT = /[Ll]ogin[: ]/
     PASSWORD_PROMPT = /[Pp]ass(?:word|phrase)[: ]/
 
@@ -140,13 +150,11 @@ module Zhone
           # splits interface's rows into columns
           columns = row.split(/\s+/)
 
-          puts row.to_s
-
           # filters by status column
           unless columns[2].to_s.match(/Active/) or columns[2].to_s.match(/Standby/)
 
             # stores data into an 4x1 array and appends it to result variable
-            result << ['Interface', columns[1], "#{columns[2]}", 'Minor', "#{columns[0]} #{columns[3]}"]
+            result << [columns[1].strip!, "#{columns[0].strip!} #{columns[3].strip!}", 'Minor', '']
           end
         }
 

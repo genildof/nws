@@ -33,8 +33,8 @@ module Service
   class Msan_Cricket_Scrapper
 
     # Function <tt>get_msan_list</tt> scraps MSAN information from Cricket page hosted at management network.
-    # Sample page: http://10.200.1.135/static/dslams/CAS/
-    # Regex tests: http://rubular.com/
+    # Scrapped page: http://10.200.1.135/static/dslams/CAS/
+    # Regex tests: https://regexr.com/
     # Scrapper engine: http://mechanize.rubyforge.org/
     # Params:
     # +cnl+:: string of CLN to be searched.
@@ -70,7 +70,6 @@ module Service
             end
           end
         end
-        puts "#{err.class} - #{err}"
       end
       result
     end
@@ -84,7 +83,11 @@ module Service
     end
 
     def to_s
-      "#{@dms_id} #{@rin} #{@ip} #{@model}"
+      "#{@model} #{@dms_id} #{@rin} #{@ip}"
+    end
+
+    def to_array
+      [@model, @dms_id, @rin, @ip]
     end
   end
 

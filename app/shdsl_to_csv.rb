@@ -42,7 +42,7 @@ if $0 == __FILE__
   DSLAM_MODEL = 'Milegate'
   CARD_TYPE = /STIM/
   LOGFILE = '../log/shdsl_robot_logfile.log'
-  FILENAME = '../reports/shdsl_ports_audit_%s.csv' % Time.now.strftime('%d-%m-%Y_%H-%M')
+  FILENAME = '../log/shdsl_ports_audit_%s.csv' % Time.now.strftime('%d-%m-%Y_%H-%M')
   CITY_LIST = %w"SNE SBO MAU SVE SPO STS AUJ MCZ GRS OCO SOC VOM JAI VRP CAS IDU PAA RPO BRU ARQ"
   jobs_list = []
   memory_array = []
@@ -85,11 +85,11 @@ if $0 == __FILE__
 
           msan.disconnect
         }
-        print "\tFinished: %s RIN %s - %s -- %0.2f seconds\n" % [host.dms_id, host.rin, host.ip, b]
+        print "\tFinished: %s %s %s %s -- %0.2f seconds\n" % [host.model, host.dms_id, host.rin, host.ip, b]
 
       rescue => err
-        puts "\n#{host.dms_id} #{host.ip} #{host.model} #{err.class} #{err}"
-        errors << "#{host.dms_id} #{host.ip} #{host.model} #{err.class} #{err}"
+        print "\tError: #{host.model} #{host.dms_id} #{host.rin} #{host.ip} #{err.class} #{err}"
+        errors << "#{host.model} #{host.dms_id} #{host.rin} #{host.ip} #{err.class} #{err}"
         total_errors += 1
       end
     end

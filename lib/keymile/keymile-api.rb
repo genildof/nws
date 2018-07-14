@@ -27,7 +27,7 @@ module Keymile
     REGEX_SHDSL_PORTS = /logport\W.*/ #/\logport-\w+\s(\|[\w\s\.:\?-]+){7}(.+)/
     REGEX_DSL_WITH_CAPTIONS = /\b\s\w{1,3}\W+\w+/
     REGEX_DSL_VALUES = /[\w|\W]\w.+\B\\\B/
-
+    #REGEX_DSL_VALUES = /(Up|Down|[^\-]\d[^\/])/
     @telnet
     attr_accessor :ip_address
 
@@ -39,19 +39,15 @@ module Keymile
     # Function <tt>connect</tt> establishes connection and authenticates on Milegate MSAN.
     # @return [boolean] value
     def connect
-      begin
-        @telnet = Net::Telnet::new(
-            'Prompt' => PROMPT,
-            'Timeout' => 10,
-            'Host' => self.ip_address
-        ) # { |str| print str }
+      @telnet = Net::Telnet::new(
+          'Prompt' => PROMPT,
+          'Timeout' => 15,
+          'Host' => self.ip_address
+      ) # { |str| print str }
 
-        @telnet.login('Name' => USERNAME, 'Password' => USER_PW,
-                      'LoginPrompt' => LOGIN_PROMPT, 'PasswordPrompt' => PASSWORD_PROMPT) # { |str| print str }
-        true
-      rescue => err
-        print "#{err.class} #{err}"
-      end
+      @telnet.login('Name' => USERNAME, 'Password' => USER_PW,
+                    'LoginPrompt' => LOGIN_PROMPT, 'PasswordPrompt' => PASSWORD_PROMPT) # { |str| print str }
+      true
     end
 
     # Function <tt>disconnect</tt> closes the session.
@@ -87,11 +83,11 @@ module Keymile
         interfaces = Array.new
 
         # Find valid uplink interfaces
-        self.get_cards_by_name(/COGE/).each { |slot| slot.state.match(/Ok/) ?
-            interfaces << "/#{slot.id}/port-1" : false }
+        self.get_cards_by_name(/COGE/).each {|slot| slot.state.match(/Ok/) ?
+                                                        interfaces << "/#{slot.id}/port-1" : false}
 
         # For each of those interfaces...
-        interfaces.each { |interface|
+        interfaces.each {|interface|
           admin_status = self.get_interface_admin_status(interface)
 
           # For administrative Up interfaces
@@ -100,7 +96,7 @@ module Keymile
             sample = ''
 
             @telnet.puts(cmd) #{ |str| print str }
-            @telnet.waitfor('Match' => PROMPT) { |rcvdata| sample << rcvdata }
+            @telnet.waitfor('Match' => PROMPT) {|rcvdata| sample << rcvdata}
 
             # Does it supports DdmStatus function?
             if sample.scan(REGEX_INTERFACE_SUPPORT)[0].to_s.match(/Supported/)
@@ -108,7 +104,7 @@ module Keymile
 
               # read the RxInputPower value
               if (lines[0].to_i < MAX_OPTICAL_THRESHOLD) & (lines[0].to_i > MIN_OPTICAL_THRESHOLD)
-                result << [interface, "Low RxInputPower (#{lines[0].to_s})",
+                result << ['Interface', interface, "Low RxInputPower (#{lines[0].to_s})",
                            'Critical', 'Sinal optico degradado em interface uplink ativa do MSAN']
               end
 
@@ -132,17 +128,13 @@ module Keymile
     # Function <tt>get_interface_admin_status</tt> gets the interface admin status.
     # @return [string] Up or Down value
     def get_interface_admin_status (interface)
-      begin
-        sample = ''
-        cmd = "get #{interface}/main/AdministrativeStatus"
+      sample = ''
+      cmd = "get #{interface}/main/AdministrativeStatus"
 
-        @telnet.puts(cmd) #{ |str| print str }
-        @telnet.waitfor('Match' => PROMPT) { |rcvdata| sample << rcvdata }
+      @telnet.puts(cmd) #{ |str| print str }
+      @telnet.waitfor('Match' => PROMPT) {|rcvdata| sample << rcvdata}
 
-        sample.scan(REGEX_INTERFACE_STATUS)[0].to_s
-      rescue => err
-        puts "#{err.class} - #{err}"
-      end
+      sample.scan(REGEX_INTERFACE_STATUS)[0].to_s
     end
 
     # /fm> get AlarmStatus
@@ -402,83 +394,97 @@ module Keymile
     # Function <tt>get_system_alarms</tt> gets all the system alarms.
     # @returns default 1x4 [array] result
     def get_system_alarms
-      begin
-        result = Array.new
-        sample = '' #can't be nil, nil is incompatible with the << assign operator
-        cmds1 = ['get fm/AlarmStatus', 'get /fan/fm/AlarmStatus']
-        cmds2 = ['ls /fan -e']
+      result = Array.new
+      sample = '' #can't be nil, nil is incompatible with the << assign operator
+      cmds1 = ['get fm/AlarmStatus', 'get /fan/fm/AlarmStatus']
+      cmds2 = ['ls /fan -e']
 
-        cmds1.each { |cmd|
-          @telnet.puts(cmd) { |str| print str }
-          @telnet.waitfor('Match' => PROMPT) { |rcvdata| sample << rcvdata }
-        }
+      cmds1.each {|cmd|
+        @telnet.puts(cmd) {|str| print str}
+        @telnet.waitfor('Match' => PROMPT) {|rcvdata| sample << rcvdata}
+      }
 
-        sample.scan(REGEX_SYSTEM_ALARM).each { |line|
-          if line.scan(REGEX_SYSTEM_ALARM_STATE)[0].match(/On/) # If alarm is On
+      sample.scan(REGEX_SYSTEM_ALARM).each {|line|
+        if line.scan(REGEX_SYSTEM_ALARM_STATE)[0].match(/On/) # If alarm is On
 
-            alarm = line.scan(REGEX_SYSTEM_ALARM_CAUSE)[0].to_s
+          alarm = line.scan(REGEX_SYSTEM_ALARM_CAUSE)[0].to_s
 
-            msg = ''
-            case alarm
-              when /Partial Fan Breakdown/
-                item = 'FAN tray'
-                prior = 'Major'
-                msg = 'Falha na bandeja de FANs do shelf'
-              when /Total Fan Breakdown/
-                item = 'FAN tray'
-                prior = 'Critical'
-                msg = 'Bandeja de FANs do shelf inoperante'
-              when /NE Temperature/
-                item = 'Shelf'
-                prior = 'Critical'
-                msg = 'Sobreaquecimento do shelf - verificar bandeja de FANs e sistema de ventilacao do armario'
-              when /System Time Not Available/
-                item = 'Shelf'
-                prior = 'Minor'
-                msg = 'Revisar ordem de prioridade das fontes de clock TDM configuradas no NE'
-              when /Loss Of Signal On PDH Clock Source/
-                item = 'Shelf'
-                prior = 'Major'
-                msg = 'LOSS em uma das fontes de sincronismo E1 TDM'
-              when /Unit Not Available/
-                item = 'FAN Tray'
-                prior = 'Critical'
-                msg = 'Bandeja de ventilacao do shelf esta inoperante'
-              else
-                item = 'Shelf'
-                prior = 'Minor'
-            end
-
-            result << [item, alarm, prior, msg] # Add it to array
-
-          end
-        }
-
-        sample = '' #can't be nil, nil is incompatible with the << assign operator
-
-        cmds2.each { |cmd|
-          @telnet.puts(cmd) { |str| print str }
-          @telnet.waitfor('Match' => PROMPT) { |rcvdata| sample << rcvdata }
-        }
-
-        sample.scan(REGEX_EXTERNAL_ALARMS).each { |line|
-          values = line.split(/\|/)
           msg = ''
-          prior = ''
-          unless values[4].match(/Cleared/) #if present
-            case
-              when (values[2].to_s.match(/Falha de Fan/) or values[2].to_s.match(/Temperatura Alta/))
-                prior = 'Critical'
-                msg = 'Alarme externo de falha no do sistema de ventilacao do armario'
-              else
-                prior = values[4].strip!
-            end
-            result << [values[0].strip!, values[2].strip!, prior, msg]
-          end
-        }
 
-        result
-      end
+          case alarm
+
+          when /Partial Fan Breakdown/
+            item = 'FAN tray'
+            prior = 'Major'
+            msg = 'Falha na bandeja de FANs do shelf'
+
+          when /Total Fan Breakdown/
+            item = 'FAN tray'
+            prior = 'Critical'
+            msg = 'Bandeja de FANs do shelf inoperante'
+
+          when /NE Temperature/
+            item = 'Shelf'
+            prior = 'Critical'
+            msg = 'Sobreaquecimento do shelf - verificar bandeja de FANs e sistema de ventilacao do armario'
+
+          when /System Time Not Available/
+            item = 'Shelf'
+            prior = 'Minor'
+            msg = 'Revisar ordem de prioridade das fontes de clock TDM configuradas no NE'
+
+          when /Loss Of Signal On PDH Clock Source/
+            item = 'Shelf'
+            prior = 'Major'
+            msg = 'LOSS em uma das fontes de sincronismo E1 TDM'
+
+          when /Unit Not Available/
+            item = 'FAN Tray'
+            prior = 'Critical'
+            msg = 'Bandeja de ventilacao do shelf esta inoperante'
+
+          else
+            item = 'Shelf'
+            prior = 'Minor'
+          end
+
+          result << [item, alarm, prior, msg] # Add it to array
+
+        end
+      }
+
+      sample = '' #can't be nil, nil is incompatible with the << assign operator
+
+      cmds2.each {|cmd|
+        @telnet.puts(cmd) {|str| print str}
+        @telnet.waitfor('Match' => PROMPT) {|rcvdata| sample << rcvdata}
+      }
+
+      sample.scan(REGEX_EXTERNAL_ALARMS).each {|line|
+
+        values = line.split(/\|/)
+        msg = ''
+        prior = ''
+
+        unless values[4].match(/Cleared/) #if present
+
+          case
+
+          when (values[2].to_s.match(/Falha de Fan/) or values[2].to_s.match(/Temperatura Alta/))
+            prior = 'Critical'
+            msg = 'Alarme externo de falha no do sistema de ventilacao do armario'
+
+          else
+            prior = values[4].strip!
+
+          end
+
+          result << [values[0].strip!, values[2].strip!, prior, msg]
+
+        end
+      }
+
+      result
     end
 
 
@@ -517,15 +523,16 @@ module Keymile
     # Function <tt>get_all_cards</tt> gets all the system cards and its operational status.
     # @return [array] value
     def get_all_cards
+
       result = Array.new
       sample = ''
       cmd = 'ls / -e'
 
-      @telnet.puts(cmd) { |str| print str }
-      @telnet.waitfor('Match' => PROMPT) { |rcvdata| sample << rcvdata }
+      @telnet.puts(cmd) {|str| print str}
+      @telnet.waitfor('Match' => PROMPT) {|rcvdata| sample << rcvdata}
 
-      sample.scan(REGEX_SLOT_LINES).each { |line|
-        values = line.split(/\|/).map { |e| e ? e : 0 } # Replaces nil values of array
+      sample.scan(REGEX_SLOT_LINES).each {|line|
+        values = line.split(/\|/).map {|e| e ? e : 0} # Replaces nil values of array
 
         unless values[3].to_s.match(/Empty/) # If slot is not empty
           result << Slot.new do
@@ -538,30 +545,38 @@ module Keymile
           end
         end
       }
+
       result
+
     end
 
 
     # Function <tt>get_card_alarms</tt> gets all not running system.
     # @return [array] value
     def get_card_alarms
+
       result = Array.new
-      alarmed_cards = get_all_cards.select { |slot| !slot.state.to_s.match(/Ok/) }
+      alarmed_cards = get_all_cards.select {|slot| !slot.state.to_s.match(/Ok/)}
 
       alarmed_cards.each do |card|
         case
-          when card.name.to_s.match(/COGE/)
-            prior = 'Minor'
-            msg = 'Cartao nao comissionado ou desativado presente no slot'
-          else
-            prior = 'Critical'
-            msg = 'Cartao com falha inoperante'
+
+        when card.name.to_s.match(/COGE/)
+          prior = 'Minor'
+          msg = 'Cartao nao comissionado ou desativado presente no slot'
+
+        else
+          prior = 'Critical'
+          msg = 'Cartao com falha inoperante'
+
         end
 
         result << [card.id, "#{card.name} #{card.state}", prior, msg]
 
       end
+
       result
+
     end
 
 
@@ -569,7 +584,7 @@ module Keymile
     # Depends on the function <tt>get_slots_all</tt>.
     # @return [array] value
     def get_cards_by_name(name)
-      get_all_cards.select { |slot| slot.name.match(name) }
+      get_all_cards.select {|slot| slot.name.match(name)}
     end
 
     <<-NOTE
@@ -590,25 +605,24 @@ module Keymile
       sample = ''
       cmd = "ls /#{slot.id}/logports -e"
 
-      @telnet.puts(cmd) { |str| print str }
-      @telnet.waitfor('Match' => PROMPT) { |rcvdata| sample << rcvdata }
+      @telnet.puts(cmd) {|str| print str}
 
-      sample.scan(REGEX_SHDSL_PORTS).each { |line|
+      @telnet.waitfor('Match' => PROMPT) {|rcvdata| sample << rcvdata}
 
-        #puts "\n#{line}\n\n"
+      sample.scan(REGEX_SHDSL_PORTS).each {|row|
 
-        values = line.split(/\|/) #.map { |e| e || '+-+-+-+-+-+-+-+-+' } # Replaces nil values of array
+        values = row.split(/\|/) #.map { |e| e || '+-+-+-+-+-+-+-+-+' } # Replaces nil values of array
 
         result << SHDSL_Port.new do
-          self.id = values[0].strip!
-          self.name = values[1].strip!
+          self.id = values[0]
+          self.name = values[1]
           self.main_mode = values[2].strip!
-          self.state = values[3].strip!
-          self.alarm = values[4].strip!
-          self.prop_alarm = values[5].strip!
-          self.user_label = values[6].strip!
-          self.service_label = values[7].strip!
-          self.description = values[8].strip!
+          self.state = values[3]
+          self.alarm = values[4]
+          self.prop_alarm = values[5]
+          self.user_label = values[6]
+          self.service_label = values[7]
+          self.description = values[8]
         end
       }
       result
@@ -630,13 +644,18 @@ module Keymile
     # Function <tt>get_shdsl_params</tt> gets shdsl line parameters.
     # @return [array] value
     def get_shdsl_params(slot, port)
+
       result = Array.new
       sample = ''
+
       cmd = "get /#{slot.id}/#{port.main_mode}/segment-1/status/SegmentStatus"
 
-      @telnet.puts(cmd) { |str| print str }
-      @telnet.waitfor('Match' => PROMPT) { |rcvdata| sample << rcvdata }
-      sample.scan(REGEX_DSL_VALUES).each { |value| result << "#{value.to_s.scan(/\w+/)[0]}" }
+      @telnet.puts(cmd) {|str| print str}
+
+      @telnet.waitfor('Match' => PROMPT) {|rcvdata| sample << rcvdata}
+
+      sample.scan(REGEX_DSL_VALUES).each {|value| result << "#{value.to_s.scan(/\w+/)[0]}"}
+
       result
     end
   end
