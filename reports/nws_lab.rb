@@ -38,7 +38,7 @@ require_relative File.expand_path ('../lib/zhone/zhone-api')
 puts "Now in #{File.dirname(__FILE__)}directory\n"
 
 
-hosts = Service::Msan_Cricket_Scrapper.new.get_msan_list('SPO').select { |dslam| dslam.model.match(/Zhone/) }
+hosts = Service::MSAN_Loader.new.get_cricket_list('SPO').select {|dslam| dslam.model.match(/Zhone/)}
 
 hosts.each { |host|
   target = "#{host.dms_id}\tRIN #{host.rin}\t\tat #{host.ip}"

@@ -3,32 +3,15 @@ module Service
 
   require 'mechanize'
 
-  class Msan_Manual_Input
+  class DMSW_Loader
 
-    FILENAME = '../config/msan_alternative_input.csv'
-
-    def get
-      result = []
-
-      begin
-
-        # The [1 .. -1] argument bypass the head row
-        CSV.read(FILENAME, 'r', col_sep: ';')[1..-1].each do |row|
-          result << Msan_Element.new do
-            self.model = row[0]
-            self.dms_id = row[1]
-            self.rin = row[2]
-            self.ip = row[3]
-          end
-        end
-      end
-
-      result
+    def get_csv_list
+      [['D2SPO01I0201', '10.211.119.160', '105'], ['D2SPO06I0202', '10.211.33.97', '106 B']]
     end
 
   end
 
-  class Msan_Cricket_Scrapper
+  class MSAN_Loader
 
     # Function <tt>get_msan_list</tt> scraps MSAN information from Cricket page hosted at management network.
     # Scrapped page: http://10.200.1.135/static/dslams/CAS/
@@ -37,7 +20,7 @@ module Service
     # Params:
     # +cnl+:: string of CLN to be searched.
     # @return [Array] data array.
-    def get_msan_list(cnl)
+    def get_cricket_list(cnl)
 
       regex_rin = /\b[a-z]\d+[-]\w+[-]\d+\b/ # a01-rin-75
       regex_dms_id = /\b[A-Z]{3}-[-\w\d]+\W\B/ # CAS-I02 or CAS-A02-0
@@ -69,8 +52,31 @@ module Service
           end
         end
       end
+
       result
     end
+
+    def get_csv_list
+
+      filename = '../config/msan_alternative_input.csv'
+      result = []
+
+      begin
+
+        # The [1 .. -1] argument bypass the head row
+        CSV.read(filename, 'r', col_sep: ';')[1..-1].each do |row|
+          result << Msan_Element.new do
+            self.model = row[0]
+            self.dms_id = row[1]
+            self.rin = row[2]
+            self.ip = row[3]
+          end
+        end
+      end
+
+      result
+    end
+
   end
 
   class Msan_Element

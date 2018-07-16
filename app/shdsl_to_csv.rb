@@ -54,7 +54,7 @@ if $0 == __FILE__
 
   print "Scrapping cricket host list...\n\n"
   CITY_LIST.each do |cnl|
-    dslam_list = Service::Msan_Cricket_Scrapper.new.get_msan_list(cnl).select {|dslam| dslam.model.match(DSLAM_MODEL)}
+    dslam_list = Service::MSAN_Loader.new.get_cricket_list(cnl).select {|dslam| dslam.model.match(DSLAM_MODEL)}
 
     print "\t%s: %d element(s)\n" % [cnl, dslam_list.size]
     dslam_list.each {|host| jobs_list << host}
@@ -62,7 +62,7 @@ if $0 == __FILE__
   print "\nDone.\n"
 
   print "\nLoading alternative inputs..."
-  jobs_list = jobs_list.concat(Service::Msan_Manual_Input.new.get)
+  jobs_list = jobs_list.concat(Service::MSAN_Loader.new.get_csv_list)
   print "Done.\n"
 
   print "\nStarting (Workers: %d Tasks: %d)...\n\n" % [WORKERS, jobs_list.size]
