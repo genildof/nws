@@ -41,8 +41,8 @@ module Datacom
     def connect
       begin
         @channel = Net::SSH.start(JUMPSRV_NMC, JUMPSRV_NMC_USER, :password => JUMPSRV_NMC_PW)
-      rescue
-        raise "Failed connecting proxy server at %s\n" % [JUMPSRV_NMC]
+          #rescue
+          #raise "Failed connecting proxy server at %s\n" % [JUMPSRV_NMC]
       end
 
       begin
@@ -50,7 +50,7 @@ module Datacom
                                        "Prompt" => LOGIN_PROMPT,
                                        'Timeout' => 10,
                                        'Host' => self.ip_address)
-        @telnet.login('Name' => USERNAME, 'Password' => USER_PW,
+        @telnet.login('Username' => USERNAME, 'Password' => USER_PW,
                       'LoginPrompt' => LOGIN_PROMPT, 'PasswordPrompt' => PASSWORD_PROMPT) # { |str| print str }
         #rescue
         # raise "Failed connecting to end host %s from gateway %s \n" % [self.ip_address, JUMPSRV_NMC]

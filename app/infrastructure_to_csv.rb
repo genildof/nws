@@ -1,8 +1,8 @@
 require 'benchmark'
 require 'csv'
-require '../lib/cricket/service'
-require '../lib/keymile/keymile-api'
-require '../lib/zhone/zhone-api'
+require '../lib/service'
+require '../lib/keymile-api'
+require '../lib/zhone-api'
 
 HEADER = %w(MODEL MSAN RIN IP TYPE ITEM DESCRIPTION PRIORITY COMMENTS)
 WORKERS = 100

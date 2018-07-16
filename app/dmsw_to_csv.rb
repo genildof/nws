@@ -1,8 +1,8 @@
 unless $0 != __FILE__
   require 'benchmark'
   require 'csv'
-  require_relative '../lib/cricket/service'
-  require_relative '../lib/datacom/datacom-api'
+  require '../lib/service'
+  require '../lib/datacom-api'
 
   HEADER = %w(HOST IP STATUS)
   WORKERS = 10
@@ -18,7 +18,7 @@ unless $0 != __FILE__
   jobs_list = Service::DMSW_Loader.new.get_csv_list
 
   print "\nStarting (Workers: %d Tasks: %d)...\n\n" % [WORKERS, jobs_list.size]
-  pool = ThreadPool.new(WORKERS)
+  pool = Service::ThreadPool.new(WORKERS)
 
   total_time = Benchmark.realtime {
     pool.process!(jobs_list) do |host|
