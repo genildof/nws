@@ -1,6 +1,6 @@
-#!/usr/bin/env ruby
 module Service
 
+  require 'thread'
   require 'mechanize'
 
   class DMSW_Loader
@@ -54,6 +54,7 @@ module Service
       end
 
       result
+
     end
 
     def get_csv_list
@@ -75,6 +76,7 @@ module Service
       end
 
       result
+
     end
 
   end
@@ -92,6 +94,30 @@ module Service
 
     def to_array
       [model, dms_id, rin, ip]
+    end
+  end
+
+  # http://www.proccli.com/2011/02/super-simple-thread-pooling-ruby
+  #
+  # Stupid simple "multi-threading" - it doesn't use mutex or queues but
+  # it does have access to local variables, which is convenient. This will
+  # break a data set into equal slices and process them, but it is not
+  # perfect in that it will not start the next set until the first is
+  # completely processed -- so, if you have 1 slow item it loses benefit
+  # NOTE: this is not thread-safe!
+  class ThreadPool
+    def self.process!(data, size = 2, &block)
+      Array(data).each_slice(size) do |slice|
+        slice.map {|item| Thread.new {block.call(item)}}.map {|t| t.join}
+      end
+    end
+
+    def initialize(size)
+      @size = size
+    end
+
+    def process!(data, &block)
+      self.class.process!(data, @size, &block)
     end
   end
 

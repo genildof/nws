@@ -1,40 +1,8 @@
-#!/usr/bin/env ruby
-require 'thread'
-
-# http://www.proccli.com/2011/02/super-simple-thread-pooling-ruby
-#
-# Stupid simple "multi-threading" - it doesn't use mutex or queues but
-# it does have access to local variables, which is convenient. This will
-# break a data set into equal slices and process them, but it is not
-# perfect in that it will not start the next set until the first is
-# completely processed -- so, if you have 1 slow item it loses benefit
-# NOTE: this is not thread-safe!
-class ThreadPool
-  def self.process!(data, size = 2, &block)
-    Array(data).each_slice(size) {|slice|
-      slice.map {|item| Thread.new {block.call(item)}}.map {|t| t.join}
-    }
-  end
-
-  def initialize(size)
-    @size = size
-  end
-
-  def process!(data, &block)
-    self.class.process!(data, @size, &block)
-  end
-end
-
-# Playing around with it on the alphabet
-# adjust the +WORKERS+ to adjust how many threads are
-# being used at once
-# noinspection RubyResolve
 unless $0 != __FILE__
   require 'benchmark'
   require 'csv'
   require_relative '../lib/cricket/service'
   require_relative '../lib/datacom/datacom-api'
-
 
   HEADER = %w(HOST IP STATUS)
   WORKERS = 10

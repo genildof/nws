@@ -1,5 +1,3 @@
-#!/usr/bin/env ruby
-require 'net/ssh'
 require 'net/ssh/telnet'
 
 module Datacom
@@ -54,8 +52,8 @@ module Datacom
                                        'Host' => self.ip_address)
         @telnet.login('Name' => USERNAME, 'Password' => USER_PW,
                       'LoginPrompt' => LOGIN_PROMPT, 'PasswordPrompt' => PASSWORD_PROMPT) # { |str| print str }
-      rescue
-        raise "Failed connecting to end host %s from gateway %s \n" % [self.ip_address, JUMPSRV_NMC]
+        #rescue
+        # raise "Failed connecting to end host %s from gateway %s \n" % [self.ip_address, JUMPSRV_NMC]
       end
 
       true
