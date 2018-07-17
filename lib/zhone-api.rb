@@ -30,7 +30,7 @@ module Zhone
       begin
         @telnet = Net::Telnet::new(
             'Prompt' => PROMPT,
-            'Timeout' => 10,
+            'Timeout' => 20,
             'Host' => self.ip_address
         ) # { |str| print str }
 

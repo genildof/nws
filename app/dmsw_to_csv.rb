@@ -13,9 +13,12 @@ unless $0 != __FILE__
   result = []
   total_errors = 0
   errors = Array.new
-  debugging = false
+  debugging = true
 
   jobs_list = Service::DMSW_Loader.new.get_csv_list
+
+  dmsw = Datacom::DMSW.new
+  dmsw.create_session
 
   print "\nStarting (Workers: %d Tasks: %d)...\n\n" % [WORKERS, jobs_list.size]
   pool = Service::ThreadPool.new(WORKERS)
@@ -25,27 +28,18 @@ unless $0 != __FILE__
 
       begin
         host_time = Benchmark.realtime {
-
           print "\tConnecting %s\n" % [host[1]]
-          dmsw = Datacom::DMSW.new(host[1]) #1 is the index of IP address inside de host array
 
-          if dmsw.connect
-            puts "Connected."
+          telnet = dmsw.connect(host[1]) #1 is the index of IP address inside de host array
+          if telnet != nil
+            result = dmsw.get_eaps_status
+            dmsw.disconnect(telnet)
           end
 
-          result = dmsw.get_eaps_status
-
-          # Prints eaps status
-          if debugging
-            puts HEADER
-            print "\t%s -- %s\n" % [host.to_s, result.to_s]
-          end
-
-          dmsw.disconnect
         }
 
         # Prints partial statistics for current host
-        print "\t%s -- %0.2f seconds\n" % [host.to_s, host_time]
+        print "\t%s -- %s -- %0.2f seconds\n" % [host.to_s, result.to_s, host_time]
 
         true
 
@@ -56,9 +50,13 @@ unless $0 != __FILE__
         # Increments error counter and appends log
         errors << " #{host.to_s} -- #{err.class} #{err}"
         total_errors += 1
+
       end
     end
   }
+
+  # Closes ssh main session
+  dmsw.close_ssh_session
 
   # Prints total time
   print "\nJob done, total time: %0.2f seconds\n" % total_time

@@ -1,3 +1,7 @@
+# Make sure HOME is set, regardless of OS, so that File.expand_path works
+# as expected with tilde characters.
+ENV['HOME'] ||= ENV['HOMEPATH'] ? "#{ENV['HOMEDRIVE']}#{ENV['HOMEPATH']}" : Dir.pwd
+
 require 'net/ssh/telnet'
 
 module Datacom
@@ -17,7 +21,7 @@ module Datacom
     RADIUS_USERNAME = 'g0010717'
     RADIUS_PW = 'Lima.10'
 
-    PROMPT = /\/[$%#>]/s
+    PROMPT = /\w+[$%#>]/s
     LOGIN_PROMPT = /[Ll]ogin[: ]/
     PASSWORD_PROMPT = /[Pp]ass(?:word|phrase)[: ]/
 
@@ -25,53 +29,80 @@ module Datacom
     REGEX_ALARM = /\bsystem.+/
     REGEX_INTERFACE = /\b(?:Primary|Secondary).+\b/
     REGEX_CARDS = /\b\w+:.+/
+    @debugging = true
 
-    @channel
+    @session
     @telnet
 
-    attr_accessor :ip_address
-
-    def initialize(ip_address)
+    def initialize()
       super()
-      self.ip_address = ip_address
     end
 
-    # Function <tt>connect</tt> establishes the socket connection and session.
+    # Function <tt>create_session</tt> creates the ssh session to the gateway host.
     # @return [boolean] value
-    def connect
-      begin
-        @channel = Net::SSH.start(JUMPSRV_NMC, JUMPSRV_NMC_USER, :password => JUMPSRV_NMC_PW)
-          #rescue
-          #raise "Failed connecting proxy server at %s\n" % [JUMPSRV_NMC]
-      end
-
-      begin
-        @telnet = Net::SSH::Telnet.new("Session" => @channel,
-                                       "Prompt" => LOGIN_PROMPT,
-                                       'Timeout' => 10,
-                                       'Host' => self.ip_address)
-        @telnet.login('Username' => USERNAME, 'Password' => USER_PW,
-                      'LoginPrompt' => LOGIN_PROMPT, 'PasswordPrompt' => PASSWORD_PROMPT) # { |str| print str }
-        #rescue
-        # raise "Failed connecting to end host %s from gateway %s \n" % [self.ip_address, JUMPSRV_NMC]
-      end
-
-      true
+    def create_session
+      @session = Net::SSH.start(JUMPSRV_NMC, JUMPSRV_NMC_USER, :password => JUMPSRV_NMC_PW)
     end
 
-    # Function <tt>disconnect</tt> closes the session.
+    # Function <tt>close_session</tt> closes the ssh session.
     # @return [boolean] value
-    def disconnect
+    def close_ssh_session
+      @session.close
+    end
+
+    # Function <tt>connect</tt> establishes final host connection over ssh session.
+    # @return [boolean] value
+    def connect(host)
+
+      sample = ''
+      @telnet = Net::SSH::Telnet.new("Session" => @session, "Prompt" => LOGIN_PROMPT, 'Timeout' => 30)
+
+      # sends telnet command
+      @telnet.puts "telnet %s" % [host]
+      @telnet.waitfor('Match' => LOGIN_PROMPT) {|rcvdata| sample << rcvdata}
+
+      # sends username
+      @telnet.puts RADIUS_USERNAME
+      @telnet.waitfor('Match' => PASSWORD_PROMPT) {|rcvdata| sample << rcvdata}
+
+      # sends password and waits for cli prompt or login error phrase
+      puts "Trying logon with radius password..."
+      @telnet.puts RADIUS_PW
+      @telnet.waitfor('Match' => /(?:\w+[$%#>]|Login incorrect)/) {|rcvdata| sample << rcvdata}
+      puts sample
+
+      # Retry login with default user & password
+      if sample.match(/\b(Login incorrect)/)
+        puts "Failed. Retrying with default password..."
+        # sends username
+        @telnet.puts 'admin'
+        @telnet.waitfor('Match' => PASSWORD_PROMPT) {|rcvdata| sample << rcvdata}
+
+        # sends password and waits for cli prompt
+        @telnet.puts 'admin'
+        @telnet.waitfor('Match' => PROMPT) {|rcvdata| sample << rcvdata}
+        if sample.match(PROMPT)
+          puts "Default password accepted."
+        else
+          puts "Second attempt failed."
+        end
+      else
+        puts "Radius password accepted."
+      end
+      @telnet
+
+    end
+
+    # Function <tt>disconnect</tt> closes the host session.
+    # @return [boolean] value
+    def disconnect(telnet)
       @telnet.close
-      @channel.close
-      true
     end
 
     # Function <tt>get_eaps_status</tt> gets eaps redundancy protocol status.
-    # @returns default 1x8 [array] - ID, Domain, State, Mode, Port, Port, VLAN, Groups/VLANs, ex.: [0, 'gvt', 'Links-Up', T, 1/25, 1/26, 4094, 1/4093]
+    # @returns default 1x8 [array] - ID, Domain, State, Mode, Port, Port, VLAN, Groups/VLANs, ex.: ["0", "gvt", "Complete", "M", "1/25", "1/26", "4094", "1/4093"]
     def get_eaps_status
 
-      result = Array.new
       sample = ''
       cmd = 'show eaps'
       row_regex = /\b\d\s.+/
@@ -93,7 +124,6 @@ module Datacom
 =end
 
       # sends cmd to host
-
       @telnet.puts(cmd) {|str| print str}
 
       # waits for cli prompt and stores returned data into sample variable

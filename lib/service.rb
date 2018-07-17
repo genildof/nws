@@ -6,7 +6,7 @@ module Service
   class DMSW_Loader
 
     def get_csv_list
-      [['D2SPO01I0201', '10.211.119.160', '105'], ['D2SPO06I0202', '10.211.33.97', '106 B']]
+      [['D2SPO06I0202', '10.211.33.97', '106 B'], ['D2SPO01I0201', '10.211.119.160', '105']]
     end
 
   end
