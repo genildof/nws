@@ -8,42 +8,41 @@ HEADER = %w(MODEL MSAN RIN IP Slot_ID Slot_Name Slot_Main_Mode Slot_State Slot_A
               OperationalStatus NearEnd_CurrentAttenuation NearEnd_CurrentMargin NearEnd_CurrentPowerBackOff
               FarEnd_CurrentAttenuation FarEnd_CurrentMargin FarEnd_CurrentPowerBackOff)
 WORKERS = 100
-DSLAM_MODEL = 'Milegate'
+DSLAM_MODEL = /Milegate/
 SHDSL_CARD_NAME = /STIM/
 LOGFILE = '../log/shdsl_ports_logfile_%s.log' % Time.now.strftime('%d-%m-%Y_%H-%M')
 FILENAME = '../log/shdsl_ports_report_%s.csv' % Time.now.strftime('%d-%m-%Y_%H-%M')
 CITY_LIST = %w"SNE SBO MAU SVE SPO STS AUJ MCZ GRS OCO SOC VOM JAI VRP CAS IDU PAA RPO BRU ARQ"
-jobs_list = []
+job_list = []
 result = []
 total_errors = 0
 errors = Array.new
 debugging = false
 
-print "Scrapping cricket host list...\n\n"
+print "Scrapping cricket page...\n"
 CITY_LIST.each do |cnl|
-  dslam_list = Service::MSAN_Loader.new.get_cricket_list(cnl).select {|dslam| dslam.model.match(DSLAM_MODEL)}
-
-  print "\t%s: %d element(s)\n" % [cnl, dslam_list.size]
-  dslam_list.each {|host| jobs_list << host}
+  hosts = Service::MSAN_Loader.new.get_cricket_list(cnl).select {|k, v| k[:model] =~ DSLAM_MODEL}
+  job_list.concat(hosts)
+  print "\t%s: %d element(s)\n" % [cnl, hosts.size]
 end
-print "\nDone.\n"
-
-print "\nLoading alternative inputs..."
-jobs_list = jobs_list.concat(Service::MSAN_Loader.new.get_csv_list)
 print "Done.\n"
 
-print "\nStarting (Workers: %d Tasks: %d)...\n\n" % [WORKERS, jobs_list.size]
+print "\nLoading alternative inputs..."
+job_list = job_list.concat(Service::MSAN_Loader.new.get_csv_list)
+print "Done.\n"
+
+print "\nStarting (Workers: %d Tasks: %d)...\n\n" % [WORKERS, job_list.size]
 pool = Service::ThreadPool.new(WORKERS)
 
 total_time = Benchmark.realtime {
-  pool.process!(jobs_list) do |host|
+  pool.process!(job_list) do |host|
 
-    active_ports = 0
+    configured_ports = 0
 
     begin
       host_time = Benchmark.realtime {
 
-        msan = Keymile::Milegate.new(host.ip)
+        msan = Keymile::Milegate.new(host[:ip])
         msan.connect
 
         # Iterates over each shdsl card found
@@ -53,7 +52,7 @@ total_time = Benchmark.realtime {
           msan.get_shdsl_ports_all(slot).each do |port|
 
             # Concatenates host, slot and port data to current csv row
-            csv_row = host.to_array.concat(slot.to_array).concat(port.to_array)
+            csv_row = host.values.concat(slot.to_array).concat(port.to_array)
 
             # Concatenates collected snr and attenuation data of current port
             msan.get_shdsl_params(slot, port).each do |shdsl_params|
@@ -68,7 +67,7 @@ total_time = Benchmark.realtime {
             result << csv_row
 
             # Increments port counter
-            active_ports += 1
+            configured_ports += 1
           end
         end
 
@@ -76,14 +75,15 @@ total_time = Benchmark.realtime {
       }
 
       # Prints partial statistics for current host
-      print "\t%s -- %0.2f seconds -- %s active port(s)\n" % [host.to_s, host_time, active_ports]
+      print "\t%s %s %s %s -- %0.2f seconds -- %s configured port(s)\n" %
+                [host[:model], host[:dms_id], host[:rin], host[:ip], host_time, configured_ports]
 
     rescue => err
       # Prints error log
-      print "\t%s -- %s %s\n" % [host.to_s, err.class, err]
+      print "\t%s %s %s %s -- %s %s\n" % [host[:model], host[:dms_id], host[:rin], host[:ip], err.class, err]
 
       # Increments error counter and appends log
-      errors << " #{host.to_s} -- #{err.class} #{err}"
+      errors << "%s %s %s %s -- %s %s\n" % [host[:model], host[:dms_id], host[:rin], host[:ip], err.class, err]
       total_errors += 1
     end
   end
@@ -92,7 +92,7 @@ total_time = Benchmark.realtime {
 statistics =
     "Statistics for #{FILENAME}\n" +
         "+#{'-' * 130}+\n" +
-        "| Total checked NEs: #{jobs_list.size}\n" +
+        "| Total checked NEs: #{job_list.size}\n" +
         "| Total errors: #{total_errors.to_s}\n" +
         "|\n| Errors:\n"
 errors.each {|error| statistics << "|#{error}\n"}

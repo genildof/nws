@@ -39,16 +39,11 @@ module Service
         # Iterates over each TR html tag in the page, scrapping RIN, DMS_ID, IP and DSLAM model to the bean
         page.search('tr').each do |tr|
           data = tr.inner_text
-          if data.scan(regex_ip).length > 0
-
-            result << Msan_Element.new do
-              self.dms_id = data.scan(regex_dms_id)[0].to_s.strip!
-              self.rin = data.scan(regex_rin)[0]
-              #self.rin = data.scan(regex_rin).to_s.scan(/\b\d+/).join.strip!
-              self.ip = data.scan(regex_ip)[0]
-              self.model = data.scan(regex_model)[0].to_s
-              #puts "#{self.rin} - #{self.dms_id} - #{self.ip} - #{self.model}"
-            end
+          unless data.scan(regex_ip).length <= 0
+            result << {model: data.scan(regex_model)[0].to_s,
+                       dms_id: data.scan(regex_dms_id)[0].to_s.strip!,
+                       rin: data.scan(regex_rin)[0],
+                       ip: data.scan(regex_ip)[0]}
           end
         end
       end
@@ -59,20 +54,12 @@ module Service
 
     def get_csv_list
 
-      filename = '../config/msan_alternative_input.csv'
+      filename = '../config/msan_alternative_imput.csv'
       result = []
 
-      begin
-
-        # The [1 .. -1] argument bypass the head row
-        CSV.read(filename, 'r', col_sep: ';')[1..-1].each do |row|
-          result << Msan_Element.new do
-            self.model = row[0]
-            self.dms_id = row[1]
-            self.rin = row[2]
-            self.ip = row[3]
-          end
-        end
+      # The [1 .. -1] argument bypass the head row
+      CSV.read(filename, 'r', col_sep: ';')[1..-1].each do |row|
+        result << {model: row[0], dms_id: row[1], rin: row[2], ip: row[3]}
       end
 
       result
@@ -81,30 +68,14 @@ module Service
 
   end
 
-  class Msan_Element
-    attr_accessor(:model, :dms_id, :rin, :ip)
-
-    def initialize(&block)
-      instance_eval &block
-    end
-
-    def to_s
-      "#{model} #{dms_id} #{rin} #{ip}"
-    end
-
-    def to_array
-      [model, dms_id, rin, ip]
-    end
-  end
-
-  # http://www.proccli.com/2011/02/super-simple-thread-pooling-ruby
-  #
-  # Stupid simple "multi-threading" - it doesn't use mutex or queues but
-  # it does have access to local variables, which is convenient. This will
-  # break a data set into equal slices and process them, but it is not
-  # perfect in that it will not start the next set until the first is
-  # completely processed -- so, if you have 1 slow item it loses benefit
-  # NOTE: this is not thread-safe!
+# http://www.proccli.com/2011/02/super-simple-thread-pooling-ruby
+#
+# Stupid simple "multi-threading" - it doesn't use mutex or queues but
+# it does have access to local variables, which is convenient. This will
+# break a data set into equal slices and process them, but it is not
+# perfect in that it will not start the next set until the first is
+# completely processed -- so, if you have 1 slow item it loses benefit
+# NOTE: this is not thread-safe!
   class ThreadPool
     def self.process!(data, size = 2, &block)
       Array(data).each_slice(size) do |slice|
