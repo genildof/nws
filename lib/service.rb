@@ -2,10 +2,22 @@ module Service
 
   require 'thread'
   require 'mechanize'
+  require 'rubyXL'
 
   class DMSW_Loader
 
-    def get_csv_list
+    def get_excel_list
+      result = []
+      filename = '../config/wor'
+      workbook = RubyXL::Parser.parse(filename)
+
+      workbook.each {|worksheet|
+        puts worksheet
+        worksheet.each {|row|
+          puts row[0]
+        }
+      }
+
       [['D2SPO06I0202', '10.211.33.97', '106 B'], ['D2SPO01I0201', '10.211.119.160', '105']]
     end
 

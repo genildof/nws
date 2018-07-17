@@ -1,6 +1,5 @@
 # unless $0 != __FILE__
 require 'benchmark'
-require 'csv'
 require '../lib/service'
 require '../lib/datacom-api'
 
@@ -14,7 +13,7 @@ result = []
 total_errors = 0
 errors = Array.new
 
-jobs_list = Service::DMSW_Loader.new.get_csv_list
+jobs_list = Service::DMSW_Loader.new.get_excel_list
 
 dmsw = Datacom::DMSW.new
 dmsw.create_session

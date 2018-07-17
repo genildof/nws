@@ -29,7 +29,7 @@ module Datacom
     REGEX_ALARM = /\bsystem.+/
     REGEX_INTERFACE = /\b(?:Primary|Secondary).+\b/
     REGEX_CARDS = /\b\w+:.+/
-    @debugging = true
+    @debugging = false
 
     @session
     @telnet
@@ -66,14 +66,14 @@ module Datacom
       @telnet.waitfor('Match' => PASSWORD_PROMPT) {|rcvdata| sample << rcvdata}
 
       # sends password and waits for cli prompt or login error phrase
-      puts "Trying logon with radius password..."
+      puts "Trying logon with radius password..." if (@debugging)
       @telnet.puts RADIUS_PW
       @telnet.waitfor('Match' => /(?:\w+[$%#>]|Login incorrect)/) {|rcvdata| sample << rcvdata}
-      puts sample
+      puts sample if (@debugging)
 
       # Retry login with default user & password
       if sample.match(/\b(Login incorrect)/)
-        puts "Failed. Retrying with default password..."
+        puts "Failed. Retrying with default password..." if (@debugging)
         # sends username
         @telnet.puts 'admin'
         @telnet.waitfor('Match' => PASSWORD_PROMPT) {|rcvdata| sample << rcvdata}
@@ -82,12 +82,12 @@ module Datacom
         @telnet.puts 'admin'
         @telnet.waitfor('Match' => PROMPT) {|rcvdata| sample << rcvdata}
         if sample.match(PROMPT)
-          puts "Default password accepted."
+          puts "Default password accepted." if (@debugging)
         else
-          puts "Second attempt failed."
+          puts "Second attempt failed." if (@debugging)
         end
       else
-        puts "Radius password accepted."
+        puts "Radius password accepted." if (@debugging)
       end
       @telnet
 
