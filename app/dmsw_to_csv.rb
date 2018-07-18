@@ -43,7 +43,7 @@ total_time = Benchmark.realtime {
       print "\t%s -- %s %s\n" % [host.to_s, err.class, err]
 
       # Increments error counter and appends log
-      errors << " #{host.to_s} -- #{err.class} #{err}"
+      errors << "#{host.to_s} -- #{err.class} #{err}"
       total_errors += 1
 
     end

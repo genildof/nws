@@ -7,16 +7,24 @@ module Service
   class DMSW_Loader
 
     def get_excel_list
-      result = []
-      filename = '../config/wor'
+      filename = '../config/DMSW.xlsx'
       workbook = RubyXL::Parser.parse(filename)
+      result = []
 
-      workbook.each {|worksheet|
-        puts worksheet
-        worksheet.each {|row|
-          puts row[0]
+      #result = workbook.worksheets[0].collect {|row| [row[1].value, row[2].value]}
+
+      workbook.worksheets[0].each {|row|
+        k = []
+        row && row.cells.each {|cell|
+          val = cell && cell.value
+          k << val
         }
+        result << k
       }
+
+      result.each {|value| puts value.to_s}
+
+      puts '**************** Fim'
 
       [['D2SPO06I0202', '10.211.33.97', '106 B'], ['D2SPO01I0201', '10.211.119.160', '105']]
     end
