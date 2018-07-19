@@ -18,19 +18,22 @@ jobs_list = Service::DMSW_Loader.new.get_excel_list
 
 jobs_list.each {|value| puts value.to_s}
 
-dmsw = Datacom::DMSW.new
-dmsw.create_session
 
 print "\nStarting (Workers: %d Tasks: %d)...\n\n" % [WORKERS, jobs_list.size]
 pool = Service::ThreadPool.new(WORKERS)
 
+dmsw = Datacom::DMSW.new
+
 total_time = Benchmark.realtime {
+
+  dmsw.create_session
+
   pool.process!(jobs_list) do |host|
 
     begin
 
       host_time = Benchmark.realtime {
-        print "\tConnecting %s\n" % [host[1]]
+        print "\tConnecting %s %s\n" % [host[1], host[4].to_s]
 
         telnet = dmsw.connect(host[0]) #1 is the index of IP address inside de host array
         if telnet != nil
@@ -42,6 +45,7 @@ total_time = Benchmark.realtime {
 
       print "\t%s %s %s %s -- %s -- %0.2f seconds\n" % [host[1], host[3], host[5], host[0], result.to_s, host_time]
 
+=begin
     rescue => err
       # Prints error log
       print "\t%s %s %s %s -- %s %s\n" % [host[1], host[3], host[5], host[0], err.class, err]
@@ -49,13 +53,15 @@ total_time = Benchmark.realtime {
       # Increments error counter and appends log
       errors << "%s %s %s %s -- %s %s" % [host[1], host[3], host[5], host[0], err.class, err]
       total_errors += 1
+=end
 
     end
   end
-}
 
 # Closes ssh main session
-dmsw.close_ssh_session
+  dmsw.close_ssh_session
+}
+
 
 # Prints total time
 print "\nJob done, total time: %0.2f seconds\n" % total_time

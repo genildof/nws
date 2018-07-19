@@ -42,7 +42,9 @@ module Datacom
     # Function <tt>create_session</tt> creates the ssh session to the gateway host.
     # @return [boolean] value
     def create_session
+      puts "Creating ssh main session..." if (@debugging)
       @session = Net::SSH.start(JUMPSRV_NMC, JUMPSRV_NMC_USER, :password => JUMPSRV_NMC_PW)
+      puts "Done." if (@debugging)
     end
 
     # Function <tt>close_session</tt> closes the ssh session.
@@ -58,6 +60,7 @@ module Datacom
       sample = ''
       @telnet = Net::SSH::Telnet.new("Session" => @session, "Prompt" => LOGIN_PROMPT, 'Timeout' => 30)
 
+      puts "Trying telnet to end host from proxy server" if (@debugging)
       # sends telnet command
       @telnet.puts "telnet %s" % [host]
       @telnet.waitfor('Match' => LOGIN_PROMPT) {|rcvdata| sample << rcvdata}
@@ -90,6 +93,7 @@ module Datacom
       else
         puts "Radius password accepted." if (@debugging)
       end
+
       @telnet
 
     end
