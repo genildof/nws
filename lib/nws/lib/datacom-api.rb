@@ -1,6 +1,7 @@
 # Make sure HOME is set, regardless of OS, so that File.expand_path works
 # as expected with tilde characters.
-ENV['HOME'] ||= ENV['HOMEPATH'] ? "#{ENV['HOMEDRIVE']}#{ENV['HOMEPATH']}" : Dir.pwd
+
+#ENV['HOME'] ||= ENV['HOMEPATH'] ? "#{ENV['HOMEDRIVE']}#{ENV['HOMEPATH']}" : Dir.pwd
 
 require 'net/ssh/telnet'
 
@@ -29,7 +30,7 @@ module Datacom
     REGEX_ALARM = /\bsystem.+/
     REGEX_INTERFACE = /\b(?:Primary|Secondary).+\b/
     REGEX_CARDS = /\b\w+:.+/
-    @debugging = false
+    @debugging = true
 
     @session
     @telnet

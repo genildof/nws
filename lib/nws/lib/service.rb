@@ -6,6 +6,10 @@ module Service
 
   class DMSW_Loader
 
+    #["106 B", "D2SPO06I0202", "HEADEND", "10.211.33.97", nil, "Anel Centro - Basilio da Gama", "SAO PAULO"]
+
+    # Function <tt>get_excel_list</tt> loads datacom excel xlsx list
+    # @return [Array] result array
     def get_excel_list
       filename = '../config/DMSW.xlsx'
       workbook = RubyXL::Parser.parse(filename)
@@ -22,11 +26,8 @@ module Service
         result << k
       }
 
-      result.each {|value| puts value.to_s}
+      result
 
-      puts '**************** Fim'
-
-      [['D2SPO06I0202', '10.211.33.97', '106 B'], ['D2SPO01I0201', '10.211.119.160', '105']]
     end
 
   end
@@ -72,6 +73,8 @@ module Service
 
     end
 
+    # Function <tt>get_csv_list</tt> loads msan alternative csv list for manual imputs
+    # @return [Array] result array
     def get_csv_list
 
       filename = '../config/msan_alternative_imput.csv'
