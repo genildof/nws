@@ -1,10 +1,11 @@
 # unless $0 != __FILE__
 require 'benchmark'
+require 'net/ssh/telnet'
 require '../lib/service'
 require '../lib/datacom-api'
 
 HEADER = %w(HOST IP STATUS)
-WORKERS = 2
+WORKERS = 10
 
 LOGFILE = '../log/dmsw_logfile_%s.log' % Time.now.strftime('%d-%m-%Y_%H-%M')
 FILENAME = '../log/dmsw_report_%s.csv' % Time.now.strftime('%d-%m-%Y_%H-%M')
@@ -18,34 +19,40 @@ jobs_list = Service::DMSW_Loader.new.get_excel_list
 
 jobs_list.each {|value| puts value.to_s}
 
-
 print "\nStarting (Workers: %d Tasks: %d)...\n\n" % [WORKERS, jobs_list.size]
 pool = Service::ThreadPool.new(WORKERS)
 
-dmsw = Datacom::DMSW.new
-
 total_time = Benchmark.realtime {
 
-  dmsw.create_session
 
   pool.process!(jobs_list) do |host|
 
+    eaps_status = []
+
+    # ----------------------------------------------------------------- thread
+    host_time = Benchmark.realtime {
+
+      print "\tConnecting %s %s\n" % [host[1], host[4].to_s]
+
+      dmsw = Datacom::DMSW.new
+      dmsw.create_session
+
+      if dmsw.connect(host[3]) #1 is the index of IP address inside de host array
+        eaps_status = (dmsw.get_eaps_status)
+        dmsw.disconnect()
+
+        # Closes ssh main session
+        dmsw.close_ssh_session
+      end
+
+    }
+    # ----------------------------------------------------------------- thread
+
+    result << host.concat(eaps_status)
+
+    # Prints partial statistics for current host
+    print "\t%s %s %s %s -- %s -- %0.2f seconds\n" % [host[1], host[3], host[5], host[0], eaps_status.to_s, host_time]
     begin
-
-      host_time = Benchmark.realtime {
-        print "\tConnecting %s %s\n" % [host[1], host[4].to_s]
-
-        telnet = dmsw.connect(host[0]) #1 is the index of IP address inside de host array
-        if telnet != nil
-          result = dmsw.get_eaps_status
-          dmsw.disconnect(telnet)
-          # Prints partial statistics for current host
-        end
-      }
-
-      print "\t%s %s %s %s -- %s -- %0.2f seconds\n" % [host[1], host[3], host[5], host[0], result.to_s, host_time]
-
-=begin
     rescue => err
       # Prints error log
       print "\t%s %s %s %s -- %s %s\n" % [host[1], host[3], host[5], host[0], err.class, err]
@@ -53,15 +60,15 @@ total_time = Benchmark.realtime {
       # Increments error counter and appends log
       errors << "%s %s %s %s -- %s %s" % [host[1], host[3], host[5], host[0], err.class, err]
       total_errors += 1
-=end
-
     end
+
   end
 
-# Closes ssh main session
-  dmsw.close_ssh_session
 }
 
+result.each do |csv_row|
+  puts csv_row.to_s
+end
 
 # Prints total time
 print "\nJob done, total time: %0.2f seconds\n" % total_time

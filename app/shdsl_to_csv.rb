@@ -39,54 +39,55 @@ total_time = Benchmark.realtime {
 
     configured_ports = 0
 
-    begin
-      host_time = Benchmark.realtime {
+    # ----------------------------------------------------------------- thread
+    host_time = Benchmark.realtime {
 
-        msan = Keymile::Milegate.new(host[:ip])
-        msan.connect
+      msan = Keymile::Milegate.new(host[:ip])
+      msan.connect
 
-        # Iterates over each shdsl card found
-        msan.get_cards_by_name(SHDSL_CARD_NAME).each do |slot|
+      # Iterates over each shdsl card found
+      msan.get_cards_by_name(SHDSL_CARD_NAME).each do |slot|
 
-          # Iterates over each active shdsl port in the shelf
-          msan.get_shdsl_ports_all(slot).each do |port|
+        # Iterates over each active shdsl port in the shelf
+        msan.get_shdsl_ports_all(slot).each do |port|
 
-            # Concatenates host, slot and port data to current csv row
-            csv_row = host.values.concat(slot.to_array).concat(port.to_array)
+          # Concatenates host, slot and port data to current csv row
+          csv_row = host.values.concat(slot.to_array).concat(port.to_array)
 
-            # Concatenates collected snr and attenuation data of current port
-            msan.get_shdsl_params(slot, port).each do |shdsl_params|
-              csv_row << shdsl_params
-            end
-
-            if debugging
-              print "\t" + csv_row.to_s + "\n"
-            end
-
-            # Appends to temporary array
-            result << csv_row
-
-            # Increments port counter
-            configured_ports += 1
+          # Concatenates collected snr and attenuation data of current port
+          msan.get_shdsl_params(slot, port).each do |shdsl_params|
+            csv_row << shdsl_params
           end
+
+          if debugging
+            print "\t" + csv_row.to_s + "\n"
+          end
+
+          # Appends to temporary array
+          result << csv_row
+
+          # Increments port counter
+          configured_ports += 1
         end
+      end
 
-        msan.disconnect
-      }
+      msan.disconnect
+    }
+    # ----------------------------------------------------------------- thread
 
-      # Prints partial statistics for current host
-      print "\t%s %s %s %s -- %0.2f seconds -- %s configured port(s)\n" %
-                [host[:model], host[:dms_id], host[:rin], host[:ip], host_time, configured_ports]
+    # Prints partial statistics for current host
+    print "\t%s %s %s %s -- %0.2f seconds -- %s configured port(s)\n" %
+              [host[:model], host[:dms_id], host[:rin], host[:ip], host_time, configured_ports]
 
-    rescue => err
-      # Prints error log
-      print "\t%s %s %s %s -- %s %s\n" % [host[:model], host[:dms_id], host[:rin], host[:ip], err.class, err]
+  rescue => err
+    # Prints error log
+    print "\t%s %s %s %s -- %s %s\n" % [host[:model], host[:dms_id], host[:rin], host[:ip], err.class, err]
 
-      # Increments error counter and appends log
-      errors << "%s %s %s %s -- %s %s" % [host[:model], host[:dms_id], host[:rin], host[:ip], err.class, err]
-      total_errors += 1
-    end
+    # Increments error counter and appends log
+    errors << "%s %s %s %s -- %s %s" % [host[:model], host[:dms_id], host[:rin], host[:ip], err.class, err]
+    total_errors += 1
   end
+
 }
 
 statistics =

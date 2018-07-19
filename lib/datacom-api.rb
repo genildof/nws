@@ -30,10 +30,10 @@ module Datacom
     REGEX_ALARM = /\bsystem.+/
     REGEX_INTERFACE = /\b(?:Primary|Secondary).+\b/
     REGEX_CARDS = /\b\w+:.+/
-    @debugging = true
 
-    @session
+    @debugging = true
     @telnet
+    @session
 
     def initialize()
       super()
@@ -42,35 +42,48 @@ module Datacom
     # Function <tt>create_session</tt> creates the ssh session to the gateway host.
     # @return [boolean] value
     def create_session
-      puts "Creating ssh main session..." if (@debugging)
+      puts "Creating ssh main session..."
       @session = Net::SSH.start(JUMPSRV_NMC, JUMPSRV_NMC_USER, :password => JUMPSRV_NMC_PW)
-      puts "Done." if (@debugging)
     end
 
     # Function <tt>close_session</tt> closes the ssh session.
     # @return [boolean] value
     def close_ssh_session
       @session.close
+      true
     end
 
     # Function <tt>connect</tt> establishes final host connection over ssh session.
     # @return [boolean] value
     def connect(host)
 
+      false
+
+=begin
+      if @session.nil?
+        self.create_session
+        puts "Session recreated."
+      end
+=end
+
       sample = ''
+      puts "Trying telnet to end host from proxy server"
       @telnet = Net::SSH::Telnet.new("Session" => @session, "Prompt" => LOGIN_PROMPT, 'Timeout' => 30)
 
-      puts "Trying telnet to end host from proxy server" if (@debugging)
+      #@session.open_channel
+
       # sends telnet command
       @telnet.puts "telnet %s" % [host]
       @telnet.waitfor('Match' => LOGIN_PROMPT) {|rcvdata| sample << rcvdata}
+
+      puts sample
 
       # sends username
       @telnet.puts RADIUS_USERNAME
       @telnet.waitfor('Match' => PASSWORD_PROMPT) {|rcvdata| sample << rcvdata}
 
       # sends password and waits for cli prompt or login error phrase
-      puts "Trying logon with radius password..." if (@debugging)
+      puts "Trying logon with radius password..."
       @telnet.puts RADIUS_PW
       @telnet.waitfor('Match' => /(?:\w+[$%#>]|Login incorrect)/) {|rcvdata| sample << rcvdata}
       puts sample if (@debugging)
@@ -86,22 +99,23 @@ module Datacom
         @telnet.puts 'admin'
         @telnet.waitfor('Match' => PROMPT) {|rcvdata| sample << rcvdata}
         if sample.match(PROMPT)
-          puts "Default password accepted." if (@debugging)
+          puts "Default password accepted."
         else
-          puts "Second attempt failed." if (@debugging)
+          puts "Second attempt failed."
         end
       else
-        puts "Radius password accepted." if (@debugging)
+        puts "Radius password accepted."
       end
 
-      @telnet
+      true
 
     end
 
     # Function <tt>disconnect</tt> closes the host session.
     # @return [boolean] value
-    def disconnect(telnet)
+    def disconnect()
       @telnet.close
+      true
     end
 
     # Function <tt>get_eaps_status</tt> gets eaps redundancy protocol status.

@@ -41,68 +41,69 @@ total_time = Benchmark.realtime {
 
     partial_alarms = 0
 
-    begin
-      host_time = Benchmark.realtime {
+    # ----------------------------------------------------------------- thread
+    host_time = Benchmark.realtime {
 
-        msan = nil
+      msan = nil
 
-        case host[:model]
+      case host[:model]
 
-        when /Milegate/
-          msan = Keymile::Milegate.new(host[:ip])
+      when /Milegate/
+        msan = Keymile::Milegate.new(host[:ip])
 
-        when /Zhone/
-          msan = Zhone::MXK.new(host[:ip])
+      when /Zhone/
+        msan = Zhone::MXK.new(host[:ip])
 
-        else
-          puts "Unknown model %s found at %s" % [host[:model], host[:ip]]
-          errors << "#{host.values.to_s} -- unknown model"
-          total_errors = +1
+      else
+        puts "Unknown model %s found at %s" % [host[:model], host[:ip]]
+        errors << "#{host.values.to_s} -- unknown model"
+        total_errors = +1
+      end
+
+      msan.connect
+
+      # Loads system, card and interface alarms
+      system_alarms = msan.get_system_alarms
+      card_alarms = msan.get_card_alarms
+      interface_alarms = msan.get_interface_alarms
+
+      # Generates statistics
+      total_cards_checked += msan.get_all_cards.size
+      total_system_alarms += system_alarms.size
+      total_card_alarms += card_alarms.size
+      total_interface_alarms += interface_alarms.size
+      partial_alarms += (system_alarms.size + card_alarms.size + interface_alarms.size)
+
+      # Concatenates host info to alarm info and appends to temporary array
+      system_alarms.concat(card_alarms).concat(interface_alarms).each do |alarm|
+        csv_row = host.values.concat(alarm)
+
+        if debugging
+          print "\t" + csv_row.to_s + "\n"
         end
 
-        msan.connect
+        result << csv_row
+      end
 
-        # Loads system, card and interface alarms
-        system_alarms = msan.get_system_alarms
-        card_alarms = msan.get_card_alarms
-        interface_alarms = msan.get_interface_alarms
+      msan.disconnect
 
-        # Generates statistics
-        total_cards_checked += msan.get_all_cards.size
-        total_system_alarms += system_alarms.size
-        total_card_alarms += card_alarms.size
-        total_interface_alarms += interface_alarms.size
-        partial_alarms += (system_alarms.size + card_alarms.size + interface_alarms.size)
+      true
+    }
+    # ----------------------------------------------------------------- thread
 
-        # Concatenates host info to alarm info and appends to temporary array
-        system_alarms.concat(card_alarms).concat(interface_alarms).each do |alarm|
-          csv_row = host.values.concat(alarm)
+    # Prints partial statistics for current host
+    print "\t%s %s %s %s -- %0.2f seconds -- %s alarm(s)\n" %
+              [host[:model], host[:dms_id], host[:rin], host[:ip], host_time, partial_alarms]
 
-          if debugging
-            print "\t" + csv_row.to_s + "\n"
-          end
+  rescue => err
+    # Prints error log
+    print "\t%s %s %s %s -- %s %s\n" % [host[:model], host[:dms_id], host[:rin], host[:ip], err.class, err]
 
-          result << csv_row
-        end
-
-        msan.disconnect
-
-        true
-      }
-
-      # Prints partial statistics for current host
-      print "\t%s %s %s %s -- %0.2f seconds -- %s alarm(s)\n" %
-                [host[:model], host[:dms_id], host[:rin], host[:ip], host_time, partial_alarms]
-
-    rescue => err
-      # Prints error log
-      print "\t%s %s %s %s -- %s %s\n" % [host[:model], host[:dms_id], host[:rin], host[:ip], err.class, err]
-
-      # Increments error counter and appends log
-      errors << "%s %s %s %s -- %s %s" % [host[:model], host[:dms_id], host[:rin], host[:ip], err.class, err]
-      total_errors += 1
-    end
+    # Increments error counter and appends log
+    errors << "%s %s %s %s -- %s %s" % [host[:model], host[:dms_id], host[:rin], host[:ip], err.class, err]
+    total_errors += 1
   end
+
 }
 
 statistics =
