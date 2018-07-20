@@ -3,7 +3,8 @@ require 'logger'
 require '../lib/service'
 require '../lib/datacom-api'
 
-HEADER = %w(HOST IP STATUS)
+#["106 B", "D2SPO06I0202", "HEADEND", "10.211.33.97", nil, "Anel Centro - Basilio da Gama", "SAO PAULO"]
+HEADER = %w(SUB HOST TYPE IP CUSTOMER RING CITY Domain State Mode Port Port VLAN Groups_VLANs)
 WORKERS = 10 # according to the nmc ssh gateway limitation
 
 LOGFILE = '../log/dmsw_logfile_%s.log' % Time.now.strftime('%d-%m-%Y_%H-%M')
@@ -14,16 +15,16 @@ total_errors = 0
 errors = Array.new
 logger = Logger.new(STDOUT)
 
-jobs_list = Service::DMSW_Loader.new.get_excel_list
+job_list = Service::DMSW_Loader.new.get_excel_list
 
-jobs_list.each {|value| puts value.to_s}
-logger.info "Starting (Workers: %d Tasks: %d)..." % [WORKERS, jobs_list.size]
+job_list.each {|value| puts value.to_s}
+logger.info "Starting (Workers: %d Tasks: %d)..." % [WORKERS, job_list.size]
 
 pool = Service::ThreadPool.new(WORKERS)
 
 total_time = Benchmark.realtime {
 
-  pool.process!(jobs_list) do |host|
+  pool.process!(job_list) do |host|
 
     eaps_status = []
 
@@ -36,6 +37,7 @@ total_time = Benchmark.realtime {
 
         if dmsw.connect(host[3]) #1 is the index of IP address inside de host array
           eaps_status = dmsw.get_eaps_status
+          eaps_status = "no eaps configured" if eaps_status.nil?
           dmsw.disconnect
         end
 
@@ -63,9 +65,29 @@ total_time = Benchmark.realtime {
 
 }
 
-result.each do |csv_row|
-  logger.info csv_row.to_s
+statistics =
+    "Statistics for #{FILENAME}\n" +
+        "+#{'-' * 130}+\n" +
+        "| Total checked NEs: #{job_list.size}\n" +
+        "| Total errors: #{total_errors.to_s}\n" +
+        "|\n| Errors:\n"
+errors.each {|error| statistics << "|#{error}\n"}
+statistics << "+#{'-' * 130}+\n"
+
+logger.info "\n" + statistics
+
+# Writes temporary arry to csv file
+CSV.open(FILENAME, 'w', col_sep: ';') do |csv|
+  csv << HEADER
+  result.map {|e| e ? e : ''} # replaces nil values
+  result.each {|row| csv << row}
 end
 
+logger.info "%s rows recorded in %s." % [result.size, FILENAME]
+
+# Writes log file
+File.open(LOGFILE, 'a') {|f| f.puts statistics}
+logger.info "Log file %s created." % LOGFILE
+
 # Prints total time
-print "\nJob done, total time: %0.2f seconds\n" % total_time
+logger.info "Job done, total time: %0.2f seconds" % total_time

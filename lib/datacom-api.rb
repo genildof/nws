@@ -102,15 +102,83 @@ module Datacom
       true
     end
 
+    # Function <tt>get_host_data</tt> executes low level commands over the connection
+    # @return [array]
+    def get_low_level_data (cmd, regex, splitter_regex)
+      # sends cmd to host
+      @telnet.puts(cmd) {|str| print str}
+
+      # waits for cli prompt and stores returned data into sample variable
+      @telnet.waitfor('Match' => PROMPT) {|rcvdata| sample << rcvdata}
+
+      @logger.info "Return of low level command:\n #{sample}" if $DEBUG
+
+      sample.scan(row_regex)[0].split(splitter_regex)
+    end
+
+    # Function <tt>get_transceivers_detail</tt> gets transceivers detail
+    # @return 1x6 [array] - port_1, Tx-Power_1, Rx-Power_1, port_2, Tx-Power_2, Rx-Power_2
+    # ex.: ["1/25", "-4.2", "-13.0", "1/26", "-7.4", "-8.1"]
+    def get_transceivers_detail
+
+      cmd = 'sh hardware-status transceivers detail'
+      regex = /((\w\/\w+)|-\d+\.\d+)/
+      data_splitter = /\s+/
+
+      get_low_level_data(cmd, regex, data_splitter)
+
+      #sample text
+=begin
+      D2BRE36BBR01#sh hardware-status transceivers detail
+      Information of port 1/25
+      Vendor information:
+                 Vendor Name:               OEM
+      Manufacturer:              OEM
+      Part Number:               WDM-0210BD
+      Serial Number:             6C1501V450
+      Media:                     Single Mode (SM)
+      Ethernet Standard:         [Not available]
+      Connector:                 LC
+      Digital Diagnostic:
+                  Temperature:               30 C
+      Voltage 3.3V:              3.3V
+      Current:                   31.6mA
+      Tx-Power:                  -4.2dBm
+      Rx-Power:                  -13.0dBm
+
+      Information of port 1/26
+      Vendor information:
+                 Vendor Name:               OEM
+      Manufacturer:              OEM
+      Part Number:               WDM-0210-AD-C
+      Serial Number:             1404L00759
+      Media:                     Single Mode (SM)
+      Ethernet Standard:         [Not available]
+      Connector:                 LC
+      Digital Diagnostic:
+                  Temperature:               31 C
+      Voltage 3.3V:              3.3V
+      Current:                   30.0mA
+      Tx-Power:                  -7.4dBm
+      Rx-Power:                  -8.1dBm
+
+      D2BRE36BBR01#
+=end
+
+    end
+
     # Function <tt>get_eaps_status</tt> gets eaps redundancy protocol status.
-    # @returns default 1x8 [array] - ID, Domain, State, Mode, Port, Port, VLAN, Groups/VLANs, ex.: ["0", "gvt", "Complete", "M", "1/25", "1/26", "4094", "1/4093"]
+    # @return 1x8 [array] - ID, Domain, State, Mode, Port, Port, VLAN, Groups/VLANs
+    # ex.: ["0", "gvt", "Complete", "M", "1/25", "1/26", "4094", "1/4093"]
     def get_eaps_status
 
-      sample = ''
       cmd = 'show eaps'
-      row_regex = /\b\d\s.+/
-      splitter_regex = /\s+/
+      regex = /\b\d\s.+/
+      data_splitter = /\s+/
 
+      self.get_low_level_data(cmd, regex, data_splitter)
+
+      #sample text
 =begin
       D2SPO10CDR01#sh eaps
       EAPS information:
@@ -125,16 +193,6 @@ module Datacom
 
       D2SPO10CDR01#
 =end
-
-      # sends cmd to host
-      @telnet.puts(cmd) {|str| print str}
-
-      # waits for cli prompt and stores returned data into sample variable
-      @telnet.waitfor('Match' => PROMPT) {|rcvdata| sample << rcvdata}
-
-      @logger.info "Return of command: #{sample}" if $DEBUG
-
-      sample.scan(row_regex)[0].split(splitter_regex)
     end
 
   end
