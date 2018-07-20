@@ -37,6 +37,7 @@ print "\nStarting (Workers: %d Tasks: %d)...\n\n" % [WORKERS, job_list.size]
 pool = Service::ThreadPool.new(WORKERS)
 
 total_time = Benchmark.realtime {
+
   pool.process!(job_list) do |host|
 
     partial_alarms = 0
