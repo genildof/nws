@@ -1,7 +1,7 @@
 require 'benchmark'
 require 'logger'
-require '../lib/service'
 require '../lib/datacom-api'
+require '../lib/service'
 
 #["106 B", "D2SPO06I0202", "HEADEND", "10.211.33.97", nil, "Anel Centro - Basilio da Gama", "SAO PAULO"]
 HEADER = %w(SUB HOST TYPE IP CUSTOMER RING CITY Domain State Mode Port Port VLAN Groups_VLANs)
@@ -17,9 +17,8 @@ logger = Logger.new(STDOUT)
 
 job_list = Service::DMSW_Loader.new.get_excel_list
 
-job_list.each {|value| puts value.to_s}
-logger.info "Starting (Workers: %d Tasks: %d)..." % [WORKERS, job_list.size]
-
+#logger.info "\nStarting (Workers: %d Tasks: %d)..." % [WORKERS, job_list.size]
+puts "passed"
 pool = Service::ThreadPool.new(WORKERS)
 
 total_time = Benchmark.realtime {

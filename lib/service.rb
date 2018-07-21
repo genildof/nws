@@ -27,7 +27,6 @@ module Service
       }
 
       result
-
     end
 
   end
