@@ -4,6 +4,19 @@ module Service
   require 'mechanize'
   require 'rubyXL'
 
+
+  # Prints a text-based "spinner" element while work occurs.
+  def get_spinner_enumerator
+    Enumerator.new do |e|
+      loop do
+        e.yield '|'
+        e.yield '/'
+        e.yield '-'
+        e.yield '\\'
+      end
+    end
+  end
+
   class DMSW_Loader
 
     #["106 B", "D2SPO06I0202", "HEADEND", "10.211.33.97", nil, "Anel Centro - Basilio da Gama", "SAO PAULO"]
@@ -74,7 +87,7 @@ module Service
 
     # Function <tt>get_csv_list</tt> loads msan alternative csv list for manual imputs
     # @return [Array] result array
-    def get_csv_list
+    def get_msan_csv_list
 
       filename = '../config/msan_alternative_imput.csv'
       result = []
@@ -90,14 +103,14 @@ module Service
 
   end
 
-# http://www.proccli.com/2011/02/super-simple-thread-pooling-ruby
-#
-# Stupid simple "multi-threading" - it doesn't use mutex or queues but
-# it does have access to local variables, which is convenient. This will
-# break a data set into equal slices and process them, but it is not
-# perfect in that it will not start the next set until the first is
-# completely processed -- so, if you have 1 slow item it loses benefit
-# NOTE: this is not thread-safe!
+  # http://www.proccli.com/2011/02/super-simple-thread-pooling-ruby
+  #
+  # Stupid simple "multi-threading" - it doesn't use mutex or queues but
+  # it does have access to local variables, which is convenient. This will
+  # break a data set into equal slices and process them, but it is not
+  # perfect in that it will not start the next set until the first is
+  # completely processed -- so, if you have 1 slow item it loses benefit
+  # NOTE: this is not thread-safe!
   class ThreadPool
     def self.process!(data, size = 2, &block)
       Array(data).each_slice(size) do |slice|

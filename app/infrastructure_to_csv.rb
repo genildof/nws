@@ -8,7 +8,11 @@ HEADER = %w(MODEL MSAN RIN IP TYPE ITEM DESCRIPTION PRIORITY COMMENTS)
 WORKERS = 100
 FILENAME = '../log/infrastructure_alarms_report_%s.csv' % Time.now.strftime('%d-%m-%Y_%H-%M')
 LOGFILE = '../log/infrastructure_alarms_logfile_%s.log' % Time.now.strftime('%d-%m-%Y_%H-%M')
+
+#CITY_LIST = %w"BSA TAG GNA RVD ANS ACG CBA VAZ ROI PMJ CPE DOS"
+
 CITY_LIST = %w"SNE SBO MAU SVE SPO STS AUJ MCZ GRS OCO SOC VOM JAI VRP CAS IDU PAA RPO BRU ARQ"
+
 job_list = []
 result = []
 total_system_alarms = 0
@@ -30,7 +34,7 @@ end
 print "Done.\n"
 
 print "\nLoading alternative imputs...\n"
-job_list = job_list.concat(Service::MSAN_Loader.new.get_csv_list)
+job_list = job_list.concat(Service::MSAN_Loader.new.get_msan_csv_list)
 print "Done.\n"
 
 print "\nStarting (Workers: %d Tasks: %d)...\n\n" % [WORKERS, job_list.size]
@@ -93,12 +97,12 @@ total_time = Benchmark.realtime {
     # ----------------------------------------------------------------- thread
 
     # Prints partial statistics for current host
-    print "\t%s %s %s %s -- %0.2f seconds -- %s alarm(s)\n" %
+    print "\r%s %s %s %s -- %0.2f seconds -- %s alarm(s)\n" %
               [host[:model], host[:dms_id], host[:rin], host[:ip], host_time, partial_alarms]
 
   rescue => err
     # Prints error log
-    print "\t%s %s %s %s -- %s %s\n" % [host[:model], host[:dms_id], host[:rin], host[:ip], err.class, err]
+    print "\r%s %s %s %s -- %s %s\n" % [host[:model], host[:dms_id], host[:rin], host[:ip], err.class, err]
 
     # Increments error counter and appends log
     errors << "%s %s %s %s -- %s %s" % [host[:model], host[:dms_id], host[:rin], host[:ip], err.class, err]
