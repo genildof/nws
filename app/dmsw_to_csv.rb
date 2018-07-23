@@ -17,12 +17,12 @@ errors = Array.new
 
 logger = Logger.new(STDOUT)
 
-spinner = self.get_spinner_enumerator
+#spinner = self.get_spinner_enumerator
 
 job_list = Service::DMSW_Loader.new.get_excel_list
 
-puts "passed."
-printf "\n%s  Starting (Workers: %d Tasks: %d)..." % [spinner.next, WORKERS, job_list.size]
+puts "passed"
+printf "\n  Starting (Workers: %d Tasks: %d)..." % [ WORKERS, job_list.size]
 
 pool = Service::ThreadPool.new(WORKERS)
 
@@ -51,7 +51,7 @@ total_time = Benchmark.realtime {
       result << host.concat(eaps_status)
 
       # Prints partial statistics for current host
-      printf "%s  %s %s %s %s -- %s -- %0.2f seconds" % [spinner.next, host[1], host[3], host[5], host[0], eaps_status.to_s, host_time]
+      printf "  %s %s %s %s -- %s -- %0.2f seconds" % [host[1], host[3], host[5], host[0], eaps_status.to_s, host_time]
 
     rescue => err
       error_msg = "%s %s %s %s -- %s %s" % [host[1], host[3], host[5], host[0], err.class, err]
