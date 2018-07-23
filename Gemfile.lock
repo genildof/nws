@@ -30,6 +30,8 @@ GEM
     net-telnet (0.1.1)
     nokogiri (1.8.4)
       mini_portile2 (~> 2.3.0)
+    nokogiri (1.8.4-x64-mingw32)
+      mini_portile2 (~> 2.3.0)
     ntlm-http (0.1.1)
     rubyXL (3.3.29)
       nokogiri (>= 1.4.4)
@@ -39,10 +41,12 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.5)
+    unf_ext (0.0.7.5-x64-mingw32)
     webrobots (0.1.2)
 
 PLATFORMS
   ruby
+  x64-mingw32
 
 DEPENDENCIES
   csv

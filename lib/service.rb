@@ -4,7 +4,6 @@ module Service
   require 'mechanize'
   require 'rubyXL'
 
-
   # Prints a text-based "spinner" element while work occurs.
   def get_spinner_enumerator
     Enumerator.new do |e|

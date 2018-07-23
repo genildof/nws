@@ -1,3 +1,4 @@
+#encoding: utf-8
 require 'benchmark'
 require 'csv'
 require '../lib/service'
@@ -12,7 +13,11 @@ DSLAM_MODEL = /Milegate/
 SHDSL_CARD_NAME = /STIM/
 LOGFILE = '../log/shdsl_ports_logfile_%s.log' % Time.now.strftime('%d-%m-%Y_%H-%M')
 FILENAME = '../log/shdsl_ports_report_%s.csv' % Time.now.strftime('%d-%m-%Y_%H-%M')
-CITY_LIST = %w"SNE SBO MAU SVE SPO STS AUJ MCZ GRS OCO SOC VOM JAI VRP CAS IDU PAA RPO BRU ARQ"
+
+CITY_LIST = %w"BSA TAG GNA RVD ANS ACG CBA VAZ ROI PMJ CPE DOS"
+
+# CITY_LIST = %w"SNE SBO MAU SVE SPO STS AUJ MCZ GRS OCO SOC VOM JAI VRP CAS IDU PAA RPO BRU ARQ"
+
 job_list = []
 result = []
 total_errors = 0
@@ -28,7 +33,7 @@ end
 print "Done.\n"
 
 print "\nLoading alternative inputs..."
-job_list = job_list.concat(Service::MSAN_Loader.new.get_csv_list)
+job_list = job_list.concat(Service::MSAN_Loader.new.get_msan_csv_list)
 print "Done.\n"
 
 print "\nStarting (Workers: %d Tasks: %d)...\n\n" % [WORKERS, job_list.size]

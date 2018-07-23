@@ -4,8 +4,6 @@ require 'csv'
 require '../lib/datacom-api'
 require '../lib/service'
 
-include Service, Datacom
-
 #["106 B", "D2SPO06I0202", "HEADEND", "10.211.33.97", nil, "Anel Centro - Basilio da Gama", "SAO PAULO"]
 HEADER = %w(SUB HOST TYPE IP CUSTOMER RING CITY Domain State Mode Port Port VLAN Groups_VLANs)
 WORKERS = 10 # according to the nmc ssh gateway limitation
@@ -21,8 +19,9 @@ logger = Logger.new(STDOUT)
 
 spinner = self.get_spinner_enumerator
 
-job_list = DMSW_Loader.new.get_excel_list
+job_list = Service::DMSW_Loader.new.get_excel_list
 
+puts "passed."
 printf "\n%s  Starting (Workers: %d Tasks: %d)..." % [spinner.next, WORKERS, job_list.size]
 
 pool = Service::ThreadPool.new(WORKERS)
@@ -38,7 +37,7 @@ total_time = Benchmark.realtime {
       # ----------------------------------------------------------------- thread
       host_time = Benchmark.realtime {
 
-        dmsw = DMSW.new
+        dmsw = Datacom::DMSW.new
 
         if dmsw.connect(host[3]) #1 is the index of IP address inside de host array
           eaps_status = dmsw.get_eaps_status
@@ -52,13 +51,13 @@ total_time = Benchmark.realtime {
       result << host.concat(eaps_status)
 
       # Prints partial statistics for current host
-      printf "\r%s  %s %s %s %s -- %s -- %0.2f seconds" % [spinner.next, host[1], host[3], host[5], host[0], eaps_status.to_s, host_time]
+      printf "%s  %s %s %s %s -- %s -- %0.2f seconds" % [spinner.next, host[1], host[3], host[5], host[0], eaps_status.to_s, host_time]
 
     rescue => err
       error_msg = "%s %s %s %s -- %s %s" % [host[1], host[3], host[5], host[0], err.class, err]
 
       # Prints error log
-      logger.info error_msg if $DEBUG
+      #logger.info error_msg if $DEBUG
 
       # Appends log
       errors << error_msg
