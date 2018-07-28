@@ -1,8 +1,9 @@
 require 'benchmark'
-#require 'logger'
 require 'csv'
 require '../lib/datacom-api'
 require '../lib/service'
+
+include Service
 
 #["106 B", "D2SPO06I0202", "HEADEND", "10.211.33.97", nil, "Anel Centro - Basilio da Gama", "SAO PAULO"]
 HEADER = %w(SUB HOST TYPE IP CUSTOMER RING CITY Domain State Mode Port Port Ctrl_VLAN Pretected_VLANs)
@@ -13,14 +14,14 @@ FILENAME = '../log/dmsw_report_%s.csv' % Time.now.strftime('%d-%m-%Y_%H-%M')
 
 result = []
 total_errors = 0
-errors = Array.new
+errors = []
 
 #logger = Logger.new(STDOUT)
 
 #spinner = self.get_spinner_enumerator
 
 print "\nLoading host list..."
-job_list = Service::DMSW_Loader.new.get_excel_list
+job_list = DMSW_Loader.get_v1_msan_excel_list
 print "\nDone."
 
 print "\nStarting (Workers: %d Tasks: %d)..." % [ WORKERS, job_list.size]

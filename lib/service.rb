@@ -43,6 +43,31 @@ module Service
 
   end
 
+    #["106 B", "D2SPO06I0202", "HEADEND", "10.211.33.97", nil, "Anel Centro - Basilio da Gama", "SAO PAULO"]
+
+    # Function <tt>get_excel_list</tt> loads datacom excel xlsx list
+    # @return [Array] result array
+    def get_v1_msan_excel_list
+      filename = '../MSAN_Outdoor_V1.xlsx'
+      workbook = RubyXL::Parser.parse(filename)
+      result = []
+
+      #result = workbook.worksheets[0].collect {|row| [row[1].value, row[2].value]}
+
+      workbook.worksheets[0].each {|row|
+        unless row.index = 0 then
+          k = []
+          row && row.cells.each {|cell|
+            k << cell && cell.value
+          }
+          result << k
+          puts k.to_s
+        end
+      }
+
+      result
+    end
+
   class MSAN_Loader
 
     # Function <tt>get_msan_list</tt> scraps MSAN information from Cricket page hosted at management network.

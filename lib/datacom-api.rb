@@ -4,7 +4,6 @@
 #ENV['HOME'] ||= ENV['HOMEPATH'] ? "#{ENV['HOMEDRIVE']}#{ENV['HOMEPATH']}" : Dir.pwd
 
 require 'net/ssh/telnet'
-require 'logger'
 
 module Datacom
 
@@ -20,8 +19,11 @@ module Datacom
     JUMPSRV_USERNAME = 'sp3510717'
     JUMPSRV_PW = 'Lima.1010'
 
-    RADIUS_USERNAME = 'g0010717'
-    RADIUS_PW = 'Lima.10'
+    #RADIUS_USERNAME = 'g0010717'
+    #RADIUS_PW = 'Lima.10'
+
+    RADIUS_USERNAME = 'g0001959'
+    RADIUS_PW = 'vivo15'
 
     PROMPT = /\w+[$%#>]/s
     LOGIN_PROMPT = /[Ll]ogin[: ]/
@@ -32,9 +34,7 @@ module Datacom
     REGEX_INTERFACE = /\b(?:Primary|Secondary).+\b/
     REGEX_CARDS = /\b\w+:.+/
 
-    @logger = Logger.new(STDOUT)
-
-    @debugging = true
+    #@logger = Logger.new(STDOUT)
 
     @telnet
     @session
@@ -47,36 +47,35 @@ module Datacom
     # @return [boolean] value
     def connect(host)
 
-      false
       sample = ''
 
-      @logger.info "Creating ssh main session... #{host}" if @debugging
+      print "\nCreating ssh main session... #{host}"
       @session = Net::SSH.start(JUMPSRV_NMC, JUMPSRV_NMC_USER, :password => JUMPSRV_NMC_PW)
 
-      @logger.info "Trying telnet to end host from proxy server" if @debugging
+      print "\nTrying telnet to end host from proxy server"
       @telnet = Net::SSH::Telnet.new("Session" => @session, "Prompt" => LOGIN_PROMPT, 'Timeout' => 30)
 
       # sends telnet command
       @telnet.puts "telnet %s" % [host]
       @telnet.waitfor('Match' => LOGIN_PROMPT) {|rcvdata| sample << rcvdata}
 
-      @logger.info "Return of command: #{sample}" if @debugging
+      print "\nReturn of command: #{sample}"
 
       # sends username
       @telnet.puts RADIUS_USERNAME
       @telnet.waitfor('Match' => PASSWORD_PROMPT) {|rcvdata| sample << rcvdata}
 
       # sends password and waits for cli prompt or login error phrase
-      @logger.info "Trying logon with radius password... #{host}" if @debugging
+      print "\nTrying logon with radius password... #{host}"
 
       @telnet.puts RADIUS_PW
       @telnet.waitfor('Match' => /(?:\w+[$%#>]|Login incorrect)/) {|rcvdata| sample << rcvdata}
 
-      @logger.info "Return of command: #{sample}" if @debugging
+      print "\nReturn of command: #{sample}"
 
       # Retry login with default user & password
       if sample.match(/\b(Login incorrect)/)
-        @logger.info "Failed. Retrying with default password... #{host}" if @debugging
+        print "\nFailed. Retrying with default password... #{host}"
         # sends username
         @telnet.puts 'admin'
         @telnet.waitfor('Match' => PASSWORD_PROMPT) {|rcvdata| sample << rcvdata}
@@ -85,12 +84,12 @@ module Datacom
         @telnet.puts 'admin'
         @telnet.waitfor('Match' => PROMPT) {|rcvdata| sample << rcvdata}
         if sample.match(PROMPT)
-          @logger.info "#{host} - Default password accepted." if @debugging
+          print "\n#{host} - Default password accepted."
         else
-          @logger.info "#{host} - Second attempt failed." if @debugging
+          print "\n#{host} - Second attempt failed."
         end
       else
-        @logger.info "#{host} Radius password accepted." if @debugging
+        print "\n#{host} Radius password accepted."
       end
 
       true
@@ -106,7 +105,7 @@ module Datacom
 
     # Function <tt>get_host_data</tt> executes low level commands over the connection
     # @return [array]
-    def get_low_level_data (cmd, regex, splitter_regex)
+    def get_low_level_data cmd, regex, splitter_regex
       sample = ''
       # sends cmd to host
       @telnet.puts(cmd) {|str| print str}
@@ -114,7 +113,7 @@ module Datacom
       # waits for cli prompt and stores returned data into sample variable
       @telnet.waitfor('Match' => PROMPT) {|rcvdata| sample << rcvdata}
 
-      @logger.info "Return of low level command:\n #{sample}" if @debugging
+      print "\n Return of low level command:\n #{sample}"
 
       sample.scan(regex)[0].split(splitter_regex)
     end
