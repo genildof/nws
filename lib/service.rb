@@ -50,13 +50,9 @@ module Service
   # @return [Array] result array
   def get_v1_msan_excel_list
     filename = '../config/MSAN_Outdoor_V1.xlsx'
-
     xlsx = Roo::Spreadsheet.open(filename)
-
-    xlsx.sheets[0].each(vendor: 'Forn. MSAN', hostname: 'Hostname') do |hash|
-      puts hash.inspect
-      # => { id: 1, name: 'John Smith' }
-    end
+    sheet = xlsx.sheet(0)
+    sheet.parse(vendor: 'Forn. MSAN', hostname: 'Hostname')
   end
 
   class MSAN_Loader

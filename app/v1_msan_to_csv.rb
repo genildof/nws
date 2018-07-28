@@ -6,76 +6,92 @@ require '../lib/service'
 include Service
 
 #["106 B", "D2SPO06I0202", "HEADEND", "10.211.33.97", nil, "Anel Centro - Basilio da Gama", "SAO PAULO"]
-HEADER = %w(SUB HOST TYPE IP CUSTOMER RING CITY Domain State Mode Port Port Ctrl_VLAN Pretected_VLANs)
-WORKERS = 5 # according to the nmc ssh gateway limitation
-
-LOGFILE = '../log/dmsw_logfile_%s.log' % Time.now.strftime('%d-%m-%Y_%H-%M')
-FILENAME = '../log/dmsw_report_%s.csv' % Time.now.strftime('%d-%m-%Y_%H-%M')
-
+HEADER = %w(VENDOR HOSTNAME SLOT PORT)
+WORKERS = 2 # according to the nmc ssh gateway limitation
+LOGFILE = '../log/%s_%s.log' % [$0, Time.now.strftime('%d-%m-%Y_%H-%M')]
+FILENAME = '../log/%s_%s.csv' % [$0, Time.now.strftime('%d-%m-%Y_%H-%M')]
 result = []
 total_errors = 0
 errors = []
 
-#logger = Logger.new(STDOUT)
+puts "\nProgram %s started at %s" % [$0, Time.now.strftime('%d-%m-%Y_%H-%M')]
 
-#spinner = self.get_spinner_enumerator
+job_list = self.get_v1_msan_excel_list
+puts "Hosts list loaded.\n"
 
-print "\nLoading host list..."
-job_list = get_v1_msan_excel_list
-print "\nDone."
-
-print "\nStarting (Workers: %d Tasks: %d)..." % [ WORKERS, job_list.size]
-
-job_list.each_char { |host|
-
-  print "\n%s %s" % [host[7].to_s, host[27].to_s]
-
-}
-
-pool = Service::ThreadPool.new(WORKERS)
+puts "\nStarting (Workers: %d Tasks: %d)...\n" % [WORKERS, job_list.size]
 
 total_time = Benchmark.realtime {
 
+  configured_ports = 0
+
+  pool = Service::ThreadPool.new(WORKERS)
+
   pool.process!(job_list) do |host|
 
-    eaps_status = []
+    host_time = Benchmark.realtime {
+
+      msan = nil
 
-    begin
+      case host[:model]
 
-      if host[2] = 'HEADEND'
-        puts "HEADEND found"
+        when /Milegate/
 
-      # ----------------------------------------------------------------- thread
-      host_time = Benchmark.realtime {
+        #msan = Keymile::Milegate.new(host[:ip])
 
-        dmsw = Datacom::DMSW.new
+        when /Huawei/
+        #msan = Zhone::MXK.new(host[:ip])
 
-        if dmsw.connect(host[3]) #1 is the index of IP address inside de host array
-          eaps_status = dmsw.get_eaps_status
-          eaps_status = "no eaps configured" if eaps_status.nil?
-          dmsw.disconnect
-        end
+        when /Nokia/
 
-      }
-      # ----------------------------------------------------------------- thread
-      result << host.concat(eaps_status)
+      else
+        error_msg = "Unknown vendor %s found at %s" % [host[:vendor], host[:hostname]]
+        errors << error_msg
+        printf "\r" + error_msg
+        total_errors = +1
+      end
 
-      # Prints partial statistics for current host
-      print "\n%s %s %s %s -- %s -- %0.2f seconds" % [host[1], host[3], host[5], host[0], eaps_status.to_s, host_time]
+=begin
+      msan.connect
+
+      # Iterates over each active shdsl port in the shelf
+      msan.get_shdsl_ports_all(slot).each do |port|
+
+        # Concatenates host, slot and port data to current csv row
+        csv_row = host.values.concat(slot.to_array).concat(port.to_array)
+
+        # Concatenates collected snr and attenuation data of current port
+        msan.get_shdsl_params(slot, port).each do |shdsl_params|
+          csv_row << shdsl_params
+        end
       end
+
+      print "\t" + csv_row.to_s + "\n"
+
+      # Appends to temporary array
+      result << csv_row
+
+      # Increments port counter
+      configured_ports += 1
+
+      msan.disconnect
+=end
+
+    }
+
+
+    # Prints partial statistics for current host
+    printf "\r%s %s -- %0.2f seconds -- %d configured port(s)  " %
+      [host[:vendor], host[:hostname], host_time, configured_ports]
+    sleep(0.002) #2ms
 
     rescue => err
-      error_msg = "%s %s %s %s -- %s %s" % [host[1], host[3], host[5], host[0], err.class, err]
-
-      # Prints error log
-      #logger.info error_msg if $DEBUG
-
-      # Appends log
+      error_msg = "%s %s -- %s %s" % [host[:vendor], host[:hostname], err.class, err]
       errors << error_msg
-
+      printf "\r" + error_msg
       total_errors += 1
+      sleep(0.002) #2ms
     end
-  end
 
 }
 
@@ -86,7 +102,7 @@ CSV.open(FILENAME, 'w', col_sep: ';') do |csv|
   result.each {|row| csv << row}
 end
 
-print "\n%s rows recorded in %s." % [result.size, FILENAME]
+puts "\n%s rows recorded in %s." % [result.size, FILENAME]
 
 statistics =
     "\nStatistics for #{FILENAME}\n" +
@@ -97,11 +113,9 @@ statistics =
 errors.each {|error| statistics << "|#{error}\n"}
 statistics << "+#{'-' * 130}+\n"
 
-print statistics
-
 # Writes log file
 File.open(LOGFILE, 'a') {|f| f.puts statistics}
-print "\nLog file %s created." % LOGFILE
+puts "Log file %s created." % LOGFILE
 
 # Prints total time
-print "\nJob done, total time: %0.2f seconds" % total_time
+puts "Job done, total time: %0.2f seconds\n" % total_time
