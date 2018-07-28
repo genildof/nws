@@ -2,6 +2,7 @@ module Service
 
   require 'thread'
   require 'mechanize'
+  require 'roo'
   require 'rubyXL'
 
   # Prints a text-based "spinner" element while work occurs.
@@ -49,21 +50,13 @@ module Service
   # @return [Array] result array
   def get_v1_msan_excel_list
     filename = '../config/MSAN_Outdoor_V1.xlsx'
-    workbook = RubyXL::Parser.parse(filename)
-    result = []
 
-    #result = workbook.worksheets[0].collect {|row| [row[1].value, row[2].value]}
+    xlsx = Roo::Spreadsheet.open(filename)
 
-    workbook.worksheets[0].each {|row|
-      k = []
-      row && row.cells.each {|cell|
-        v = cell && cell.value
-        k << v
-      }
-      result << k
-    }
-
-    result
+    xlsx.sheets[0].each(vendor: 'Forn. MSAN', hostname: 'Hostname') do |hash|
+      puts hash.inspect
+      # => { id: 1, name: 'John Smith' }
+    end
   end
 
   class MSAN_Loader

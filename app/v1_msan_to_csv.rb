@@ -24,13 +24,13 @@ print "\nLoading host list..."
 job_list = get_v1_msan_excel_list
 print "\nDone."
 
+print "\nStarting (Workers: %d Tasks: %d)..." % [ WORKERS, job_list.size]
+
 job_list.each_char { |host|
 
-  print "%s %s" % [host[7].to_s, host[27].to_s]
+  print "\n%s %s" % [host[7].to_s, host[27].to_s]
 
 }
-
-print "\nStarting (Workers: %d Tasks: %d)..." % [ WORKERS, job_list.size]
 
 pool = Service::ThreadPool.new(WORKERS)
 

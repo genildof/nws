@@ -27,12 +27,13 @@ GEM
     net-ssh (5.0.2)
     net-ssh-telnet (0.2.1)
       net-ssh (>= 2.0.1)
-    net-telnet (0.1.1)
-    nokogiri (1.8.4)
-      mini_portile2 (~> 2.3.0)
+    net-telnet (0.2.0)
     nokogiri (1.8.4-x64-mingw32)
       mini_portile2 (~> 2.3.0)
     ntlm-http (0.1.1)
+    roo (2.7.1)
+      nokogiri (~> 1)
+      rubyzip (~> 1.1, < 2.0.0)
     rubyXL (3.3.29)
       nokogiri (>= 1.4.4)
       rubyzip (>= 1.1.6)
@@ -40,12 +41,10 @@ GEM
     shoes (3.0.1)
     unf (0.1.4)
       unf_ext
-    unf_ext (0.0.7.5)
     unf_ext (0.0.7.5-x64-mingw32)
     webrobots (0.1.2)
 
 PLATFORMS
-  ruby
   x64-mingw32
 
 DEPENDENCIES
@@ -55,6 +54,7 @@ DEPENDENCIES
   net-ssh
   net-ssh-telnet
   net-telnet
+  roo
   rubyXL
   shoes
 
