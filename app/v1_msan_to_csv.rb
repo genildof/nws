@@ -21,8 +21,14 @@ errors = []
 #spinner = self.get_spinner_enumerator
 
 print "\nLoading host list..."
-job_list = DMSW_Loader.get_v1_msan_excel_list
+job_list = get_v1_msan_excel_list
 print "\nDone."
+
+job_list.each_char { |host|
+
+  print "%s %s" % [host[7].to_s, host[27].to_s]
+
+}
 
 print "\nStarting (Workers: %d Tasks: %d)..." % [ WORKERS, job_list.size]
 
