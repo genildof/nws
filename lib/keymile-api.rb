@@ -28,6 +28,7 @@ module Keymile
     REGEX_DSL_WITH_CAPTIONS = /\b\s\w{1,3}\W+\w+/
     REGEX_DSL_VALUES = /[\w|\W]\w.+\B\\\B/
     #REGEX_DSL_VALUES = /(Up|Down|[^\-]\d[^\/])/
+
     @telnet
     attr_accessor :ip_address
 
@@ -713,7 +714,7 @@ Desenvolver
 ''                                                                 \ # Label1
 ''                                                                 \ # Label2
 ''                                                                 \ # Description
-/unit-21/port-2/segment-1/main> 
+/unit-21/port-2/segment-1/main>
 
 /unit-21/logports/logport-2/cpe/chan-1/cfgm> get CtpConfiguration
                                                                    \ # CtpConfiguration

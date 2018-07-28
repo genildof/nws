@@ -37,9 +37,10 @@ job_list = job_list.concat(Service::MSAN_Loader.new.get_msan_csv_list)
 print "Done.\n"
 
 print "\nStarting (Workers: %d Tasks: %d)...\n\n" % [WORKERS, job_list.size]
-pool = Service::ThreadPool.new(WORKERS)
 
 total_time = Benchmark.realtime {
+
+  pool = Service::ThreadPool.new(WORKERS)
   pool.process!(job_list) do |host|
 
     configured_ports = 0
