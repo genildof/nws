@@ -1,13 +1,14 @@
 require 'benchmark'
 require 'csv'
-require '../lib/datacom-api'
+require '../lib/v1-Keymile-api'
 require '../lib/service'
 
 include Service
+include Keymile
 
 #["106 B", "D2SPO06I0202", "HEADEND", "10.211.33.97", nil, "Anel Centro - Basilio da Gama", "SAO PAULO"]
 HEADER = %w(VENDOR HOSTNAME SLOT PORT)
-WORKERS = 2 # according to the nmc ssh gateway limitation
+WORKERS = 1 # according to the nmc ssh gateway limitation
 LOGFILE = '../log/%s_%s.log' % [$0, Time.now.strftime('%d-%m-%Y_%H-%M')]
 FILENAME = '../log/%s_%s.csv' % [$0, Time.now.strftime('%d-%m-%Y_%H-%M')]
 result = []
@@ -25,7 +26,7 @@ total_time = Benchmark.realtime {
 
   configured_ports = 0
 
-  pool = Service::ThreadPool.new(WORKERS)
+  pool = ThreadPool.new(WORKERS)
 
   pool.process!(job_list) do |host|
 
@@ -33,11 +34,10 @@ total_time = Benchmark.realtime {
 
       msan = nil
 
-      case host[:model]
+      case host[:vendor]
 
-        when /Milegate/
-
-        #msan = Keymile::Milegate.new(host[:ip])
+        when /Keymile/
+        msan = Milegate.new
 
         when /Huawei/
         #msan = Zhone::MXK.new(host[:ip])
@@ -51,9 +51,12 @@ total_time = Benchmark.realtime {
         total_errors = +1
       end
 
-=begin
-      msan.connect
+      if msan.connect(host[:hostname])
+        puts "Connected."
+        dmsw.disconnect
+      end
 
+=begin
       # Iterates over each active shdsl port in the shelf
       msan.get_shdsl_ports_all(slot).each do |port|
 
@@ -74,21 +77,18 @@ total_time = Benchmark.realtime {
       # Increments port counter
       configured_ports += 1
 
-      msan.disconnect
 =end
 
     }
 
-
     # Prints partial statistics for current host
     printf "\r%s %s -- %0.2f seconds -- %d configured port(s)  " %
       [host[:vendor], host[:hostname], host_time, configured_ports]
-    sleep(0.002) #2ms
 
     rescue => err
       error_msg = "%s %s -- %s %s" % [host[:vendor], host[:hostname], err.class, err]
       errors << error_msg
-      printf "\r" + error_msg
+      printf "\r%s" % error_msg
       total_errors += 1
       sleep(0.002) #2ms
     end
