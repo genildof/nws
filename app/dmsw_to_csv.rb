@@ -9,8 +9,8 @@ include Service, Datacom
 # ["106 B", "D2SPO06I0202", "HEADEND", "10.211.33.97", nil, "Anel Centro - Basilio da Gama", "SAO PAULO"]
 HEADER = %w[SUB HOST TYPE IP CUSTOMER RING CITY Domain State Mode Port Port Ctrl_VLAN Pretected_VLANs].freeze
 WORKERS = 5 # according to the nmc ssh gateway limitation
-LOGFILE = format('../log/dmsw_logfile_%s.log', Time.now.strftime('%d-%m-%Y_%H-%M'))
-FILENAME = format('../log/dmsw_report_%s.csv', Time.now.strftime('%d-%m-%Y_%H-%M'))
+LOGFILE = format('../log/%s_%s.log', $PROGRAM_NAME, Time.now.strftime('%d-%m-%Y_%H-%M'))
+FILENAME = format('../log/%s_%s.csv', $PROGRAM_NAME, Time.now.strftime('%d-%m-%Y_%H-%M'))
 result = []
 total_errors = 0
 errors = []
@@ -66,12 +66,8 @@ end
 
 print format("\n%s rows recorded in %s.", result.size, FILENAME)
 
-statistics =
-  "\nStatistics for #{FILENAME}\n" \
-  "+#{'-' * 130}+\n" \
-  "| Total checked NEs: #{job_list.size}\n" \
-  "| Total errors: #{total_errors}\n" \
-  "|\n| Errors:\n"
+statistics =
+  "Statistics for #{FILENAME}\n" + "+#{'-' * 130}+\n" + "| Total checked NEs: #{job_list.size}\n" + "| Total errors: #{total_errors}\n" + "|\n| Errors:\n"
 errors.each { |error| statistics << "|#{error}\n" }
 statistics << "+#{'-' * 130}+\n"
 
