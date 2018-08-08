@@ -28,7 +28,7 @@ total_time = Benchmark.realtime do
   pool.process!(job_list) do |host|
     eaps_status = []
     begin
-      puts "HEADEND found\n" if host[:type] = 'HEADEND'
+      puts "\n#{host[:type]} - HEADEND found" if host[:type] = 'HEADEND'
 
       # ----------------------------------------------------------------- thread
       host_time = Benchmark.realtime do
@@ -39,14 +39,12 @@ total_time = Benchmark.realtime do
           eaps_status.concat(dmsw.get_login_type.to_array)
           eaps_status = 'no eaps configured' if eaps_status.nil?
           dmsw.disconnect
-        end
+          puts eaps_status.to_s
+          result << host.concat(eaps_status)
+        end
       end
       # ----------------------------------------------------------------- thread
 
-      puts eaps_status.to_s
-
-      result << host.concat(eaps_status)
-
       # Prints partial statistics for current host
       print format("\n%s %s %s %s -- %s -- %0.2f seconds", host[:hostname], host[:ip], host[:ring_name], host[:rub_ring], eaps_status.to_s, host_time)
     rescue StandardError => err
