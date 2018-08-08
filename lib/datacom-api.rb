@@ -54,7 +54,7 @@ module Datacom
       sample = ''
       @login_type = nil
 
-      print "\nCreating ssh main session... #{host}"
+      print "Creating ssh main session... #{host}"
       @session = Net::SSH.start(JUMPSRV_NMC, JUMPSRV_NMC_USER, password: JUMPSRV_NMC_PW)
 
       print "\nTrying telnet to end host from proxy server"

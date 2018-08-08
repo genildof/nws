@@ -28,7 +28,7 @@ total_time = Benchmark.realtime do
   pool.process!(job_list) do |host|
     eaps_status = []
     begin
-      puts "\n#{host[:type]} - HEADEND found" if host[:type] = 'HEADEND'
+      puts " - #{host[:ip]} - HEADEND found" if host[:type] = 'HEADEND'
 
       # ----------------------------------------------------------------- thread
       host_time = Benchmark.realtime do
