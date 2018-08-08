@@ -17,11 +17,11 @@ module Datacom
     JUMPSRV_USERNAME = 'sp3510717'.freeze
     JUMPSRV_PW = 'Lima.1010'.freeze
 
-    RADIUS_USERNAME = 'g0010717'.freeze
-    RADIUS_PW = 'Lima.10'.freeze
+    #RADIUS_USERNAME = 'g0010717'.freeze
+    #RADIUS_PW = 'Lima.10'.freeze
 
-    # RADIUS_USERNAME = 'g0001959'
-    # RADIUS_PW = 'vivo15'
+    RADIUS_USERNAME = 'g0001959'
+    RADIUS_PW = 'Vivo15'
 
     PROMPT = /\w+[$%#>]/s
     LOGIN_PROMPT = /[Ll]ogin[: ]/
@@ -36,15 +36,23 @@ module Datacom
 
     @telnet
     @session
+    @login_type
 
     def initialize
       super()
+    end
+
+    # Function <tt>get_login_type</tt> returns login_type
+    # @return [string] login_type
+    def get_login_type
+      @login_type
     end
 
     # Function <tt>connect</tt> establishes final host connection over ssh session.
     # @return [boolean] value
     def connect(host)
       sample = ''
+      @login_type = nil
 
       print "\nCreating ssh main session... #{host}"
       @session = Net::SSH.start(JUMPSRV_NMC, JUMPSRV_NMC_USER, password: JUMPSRV_NMC_PW)
@@ -56,7 +64,7 @@ module Datacom
       @telnet.puts format('telnet %s', host)
       @telnet.waitfor('Match' => LOGIN_PROMPT) { |rcvdata| sample << rcvdata }
 
-      print "\nReturn of command: #{sample}"
+      # print "\nReturn of command: #{sample}"
 
       # sends username
       @telnet.puts RADIUS_USERNAME
@@ -68,7 +76,7 @@ module Datacom
       @telnet.puts RADIUS_PW
       @telnet.waitfor('Match' => /(?:\w+[$%#>]|Login incorrect)/) { |rcvdata| sample << rcvdata }
 
-      print "\nReturn of command: #{sample}"
+      # print "\nReturn of command: #{sample}"
 
       # Retry login with default user & password
       if sample =~ /\b(Login incorrect)/
@@ -82,11 +90,13 @@ module Datacom
         @telnet.waitfor('Match' => PROMPT) { |rcvdata| sample << rcvdata }
         if sample.match(PROMPT)
           print "\n#{host} - Default password accepted."
+          @login_type = 'vendor'
         else
           print "\n#{host} - Second attempt failed."
         end
       else
         print "\n#{host} Radius password accepted."
+        @login_type = 'radius'
       end
 
       true
@@ -110,7 +120,7 @@ module Datacom
       # waits for cli prompt and stores returned data into sample variable
       @telnet.waitfor('Match' => PROMPT) { |rcvdata| sample << rcvdata }
 
-      print "\n Return of low level command:\n #{sample}"
+      #print "\n Return of low level command:\n #{sample}"
 
       sample.scan(regex)[0].split(splitter_regex)
     end

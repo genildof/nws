@@ -9,6 +9,7 @@ tn = Net::Telnet::new(
 	'Host' => '192.168.100.1'
 )	{ |str| print str }
 
+
 begin
   tn.login("admin", "genildof")	{ |str| print str }
   puts "\nOk !\n"

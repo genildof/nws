@@ -7,7 +7,7 @@ require '../lib/service'
 include Service, Datacom
 
 # ["106 B", "D2SPO06I0202", "HEADEND", "10.211.33.97", nil, "Anel Centro - Basilio da Gama", "SAO PAULO"]
-HEADER = %w[SUB HOST TYPE IP CUSTOMER RING CITY Domain State Mode Port Port Ctrl_VLAN Pretected_VLANs].freeze
+HEADER = %w[SUB HOST TYPE IP CUSTOMER RING CITY Domain State Mode Port Port Ctrl_VLAN Pretected_VLANs Login_Type]
 WORKERS = 5 # according to the nmc ssh gateway limitation
 LOGFILE = format('../log/%s_%s.log', $PROGRAM_NAME, Time.now.strftime('%d-%m-%Y_%H-%M'))
 FILENAME = format('../log/%s_%s.csv', $PROGRAM_NAME, Time.now.strftime('%d-%m-%Y_%H-%M'))
@@ -27,9 +27,8 @@ pool = ThreadPool.new(WORKERS)
 total_time = Benchmark.realtime do
   pool.process!(job_list) do |host|
     eaps_status = []
-
-    begin
-      puts 'HEADEND found' if host[:type] = 'HEADEND'
+    begin
+      puts "HEADEND found\n" if host[:type] = 'HEADEND'
 
       # ----------------------------------------------------------------- thread
       host_time = Benchmark.realtime do
@@ -37,12 +36,15 @@ total_time = Benchmark.realtime do
 
         if dmsw.connect(host[:ip]) # 1 is the index of IP address inside de host array
           eaps_status = dmsw.get_eaps_status
+          eaps_status.concat(dmsw.get_login_type.to_array)
           eaps_status = 'no eaps configured' if eaps_status.nil?
           dmsw.disconnect
         end
       end
       # ----------------------------------------------------------------- thread
-
+
+      puts eaps_status.to_s
+
       result << host.concat(eaps_status)
 
       # Prints partial statistics for current host
