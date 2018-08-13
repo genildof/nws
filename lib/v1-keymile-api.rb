@@ -1,12 +1,12 @@
 require 'net/ssh/telnet'
 
 module Keymile
-  JUMPSRV = '200.204.1.4'.freeze
-  JUMPSRV_USER = 'r101521'.freeze
-  JUMPSRV_PW = 'guerr@01'.freeze
+  JUMPSRV = '200.204.1.4'
+  JUMPSRV_USER = 'r101521'
+  JUMPSRV_PW = 'guerr@01'
 
-  HOST_USERNAME = 'manager'.freeze
-  HOST_PW = ''.freeze
+  HOST_USERNAME = 'manager'
+  HOST_PW = ''
 
   HOST_PROMPT = /\/[$%#>]/s
   LOGIN_PROMPT = /[Ll]ogin[: ]/
@@ -32,6 +32,7 @@ module Keymile
   end
 
   class Milegate
+
     attr_accessor :ssh_session
 
     def initialize(ssh_session)

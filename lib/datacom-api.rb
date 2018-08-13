@@ -6,33 +6,48 @@
 require 'net/ssh/telnet'
 
 module Datacom
+
+  JUMPSRV_NMC = '10.200.1.34'
+  JUMPSRV_NMC_USER = 'nmc'
+  JUMPSRV_NMC_PW = 'nmcgvt25'
+
+  JUMPSRV = '10.200.1.29'
+  JUMPSRV_USERNAME = 'sp3510717'
+  JUMPSRV_PW = 'Lima.1010'
+
+  #RADIUS_USERNAME = 'g0010717'
+  #RADIUS_PW = 'Lima.10'
+
+  RADIUS_USERNAME = 'g0001959'
+  RADIUS_PW = 'Vivo15'
+
+  PROMPT = /\w+[$%#>]/s
+  LOGIN_PROMPT = /[Ll]ogin[: ]/
+  PASSWORD_PROMPT = /[Pp]ass(?:word|phrase)[: ]/
+
+  # Function <tt>create_ssh_session</tt> establishes ssh connection to jump server.
+  # @return [Net::SSH] session
+  def create_ssh_session
+    Net::SSH.start(JUMPSRV_NMC, JUMPSRV_NMC_USER, password: JUMPSRV_NMC_PW, timeout: 40) # verbose: :info,
+    puts "SSH session created."
+  end
+
+  # Function <tt>disconnect</tt> closes the host session.
+  # @return [boolean] value
+  def close_ssh_session(session)
+    session.close
+    session = nil
+    true
+  end
+
   class DMSW
-    # Session's constants for Zhone MXK
 
-    JUMPSRV_NMC = '10.200.1.34'.freeze
-    JUMPSRV_NMC_USER = 'nmc'.freeze
-    JUMPSRV_NMC_PW = 'nmcgvt25'.freeze
-
-    JUMPSRV = '10.200.1.29'.freeze
-    JUMPSRV_USERNAME = 'sp3510717'.freeze
-    JUMPSRV_PW = 'Lima.1010'.freeze
-
-    #RADIUS_USERNAME = 'g0010717'.freeze
-    #RADIUS_PW = 'Lima.10'.freeze
-
-    RADIUS_USERNAME = 'g0001959'
-    RADIUS_PW = 'Vivo15'
-
-    PROMPT = /\w+[$%#>]/s
-    LOGIN_PROMPT = /[Ll]ogin[: ]/
-    PASSWORD_PROMPT = /[Pp]ass(?:word|phrase)[: ]/
-
-    # Detection patterns's constants for Zhone MXK
-    REGEX_ALARM = /\bsystem.+/
-    REGEX_INTERFACE = /\b(?:Primary|Secondary).+\b/
-    REGEX_CARDS = /\b\w+:.+/
-
-    # @logger = Logger.new(STDOUT)
+    attr_accessor :ssh_session
+
+    def initialize(ssh_session)
+      super()
+      self.ssh_session = ssh_session
+    end
 
     @telnet
     @session
@@ -54,11 +69,8 @@ module Datacom
       sample = ''
       @login_type = nil
 
-      print "Creating ssh main session... #{host}"
-      @session = Net::SSH.start(JUMPSRV_NMC, JUMPSRV_NMC_USER, password: JUMPSRV_NMC_PW)
-
-      print "\nTrying telnet to end host from proxy server"
-      @telnet = Net::SSH::Telnet.new('Session' => @session, 'Prompt' => LOGIN_PROMPT, 'Timeout' => 30)
+      print "\nConnecting to end host from jump server"
+      @telnet = Net::SSH::Telnet.new('Session' => @session, 'Prompt' => LOGIN_PROMPT, 'Timeout' => 45)
 
       # sends telnet command
       @telnet.puts format('telnet %s', host)
@@ -80,6 +92,7 @@ module Datacom
 
       # Retry login with default user & password
       if sample =~ /\b(Login incorrect)/
+        sample = ''
         print "\nFailed. Retrying with default password... #{host}"
         # sends username
         @telnet.puts 'admin'
@@ -106,7 +119,6 @@ module Datacom
     # @return [boolean] value
     def disconnect
       @telnet.close
-      @session.close
       true
     end
 
@@ -121,8 +133,7 @@ module Datacom
       @telnet.waitfor('Match' => PROMPT) { |rcvdata| sample << rcvdata }
 
       #print "\n Return of low level command:\n #{sample}"
-
-      sample.scan(regex)[0].split(splitter_regex)
+      (sample.scan(regex)[0].nil? ? nil : sample.scan(regex)[0].split(splitter_regex))
     end
 
     # Function <tt>get_transceivers_detail</tt> gets transceivers detail
