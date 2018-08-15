@@ -28,8 +28,7 @@ module Datacom
   # Function <tt>create_ssh_session</tt> establishes ssh connection to jump server.
   # @return [Net::SSH] session
   def create_ssh_session
-    Net::SSH.start(JUMPSRV_NMC, JUMPSRV_NMC_USER, password: JUMPSRV_NMC_PW, timeout: 40) # verbose: :info,
-    puts "SSH session created."
+    return Net::SSH.start(JUMPSRV_NMC, JUMPSRV_NMC_USER, password: JUMPSRV_NMC_PW, timeout: 40) # verbose: :info,
   end
 
   # Function <tt>disconnect</tt> closes the host session.
@@ -44,75 +43,39 @@ module Datacom
 
     attr_accessor :ssh_session
 
+    @telnet
+
     def initialize(ssh_session)
       super()
       self.ssh_session = ssh_session
-    end
-
-    @telnet
-    @session
-    @login_type
-
-    def initialize
-      super()
-    end
-
-    # Function <tt>get_login_type</tt> returns login_type
-    # @return [string] login_type
-    def get_login_type
-      @login_type
-    end
+    end
 
     # Function <tt>connect</tt> establishes final host connection over ssh session.
     # @return [boolean] value
-    def connect(host)
+    def connect(host, retrying)
       sample = ''
-      @login_type = nil
 
-      print "\nConnecting to end host from jump server"
-      @telnet = Net::SSH::Telnet.new('Session' => @session, 'Prompt' => LOGIN_PROMPT, 'Timeout' => 45)
+      @telnet = Net::SSH::Telnet.new('Session' => ssh_session, 'Prompt' => LOGIN_PROMPT, 'Timeout' => 60)
 
       # sends telnet command
-      @telnet.puts format('telnet %s', host)
+      @telnet.puts format('telnet %s', host[:ip])
       @telnet.waitfor('Match' => LOGIN_PROMPT) { |rcvdata| sample << rcvdata }
 
-      # print "\nReturn of command: #{sample}"
+      case retrying
+        when false
+          @telnet.puts RADIUS_USERNAME
+          @telnet.waitfor('Match' => PASSWORD_PROMPT) { |rcvdata| sample << rcvdata }
+          @telnet.puts RADIUS_PW
+          @telnet.waitfor('Match' => /(?:\w+[$%#>]|Login incorrect)/) { |rcvdata| sample << rcvdata }
 
-      # sends username
-      @telnet.puts RADIUS_USERNAME
-      @telnet.waitfor('Match' => PASSWORD_PROMPT) { |rcvdata| sample << rcvdata }
-
-      # sends password and waits for cli prompt or login error phrase
-      print "\nTrying logon with radius password... #{host}"
-
-      @telnet.puts RADIUS_PW
-      @telnet.waitfor('Match' => /(?:\w+[$%#>]|Login incorrect)/) { |rcvdata| sample << rcvdata }
-
-      # print "\nReturn of command: #{sample}"
-
-      # Retry login with default user & password
-      if sample =~ /\b(Login incorrect)/
-        sample = ''
-        print "\nFailed. Retrying with default password... #{host}"
-        # sends username
-        @telnet.puts 'admin'
-        @telnet.waitfor('Match' => PASSWORD_PROMPT) { |rcvdata| sample << rcvdata }
-
-        # sends password and waits for cli prompt
-        @telnet.puts 'admin'
-        @telnet.waitfor('Match' => PROMPT) { |rcvdata| sample << rcvdata }
-        if sample.match(PROMPT)
-          print "\n#{host} - Default password accepted."
-          @login_type = 'vendor'
-        else
-          print "\n#{host} - Second attempt failed."
-        end
-      else
-        print "\n#{host} Radius password accepted."
-        @login_type = 'radius'
+        when true
+          @telnet.puts 'admin'
+          @telnet.waitfor('Match' => PASSWORD_PROMPT) { |rcvdata| sample << rcvdata }
+          @telnet.puts 'admin'
+          @telnet.waitfor('Match' => /(?:\w+[$%#>]|Login incorrect)/) { |rcvdata| sample << rcvdata }
       end
 
-      true
+      sample.match(PROMPT) ? true : false
     end
 
     # Function <tt>disconnect</tt> closes the host session.
@@ -191,7 +154,10 @@ module Datacom
       regex = /\b\d\s.+/
       data_splitter = /\s+/
 
-      get_low_level_data(cmd, regex, data_splitter)
+      result = get_low_level_data(cmd, regex, data_splitter)
+      result.map { |e| e || '' } if !result.nil? # replaces nil values
+
+      result.nil? ? ["", "", "no eaps configured", "", "", "", "", ""] : result
 
       # sample text
       #       D2SPO10CDR01#sh eaps
