@@ -28,13 +28,13 @@ GEM
     net-ssh-telnet (0.2.1)
       net-ssh (>= 2.0.1)
     net-telnet (0.2.0)
-    nokogiri (1.8.4)
+    nokogiri (1.8.5)
       mini_portile2 (~> 2.3.0)
     ntlm-http (0.1.1)
     roo (2.7.1)
       nokogiri (~> 1)
       rubyzip (~> 1.1, < 2.0.0)
-    rubyzip (1.2.1)
+    rubyzip (1.2.2)
     shoes (3.0.1)
     unf (0.1.4)
       unf_ext
@@ -55,4 +55,4 @@ DEPENDENCIES
   shoes
 
 BUNDLED WITH
-   1.16.3
+   1.17.1

@@ -20,7 +20,7 @@ module Keymile
   # Function <tt>create_ssh_session</tt> establishes ssh connection to jump server.
   # @return [Net::SSH] session
   def create_ssh_session
-    Net::SSH.start(JUMPSRV, JUMPSRV_USER, password: JUMPSRV_PW, timeout: 20) # verbose: :info,
+    Net::SSH.start(JUMPSRV, JUMPSRV_USER, password: JUMPSRV_PW, timeout: 30) # verbose: :info,
   end
 
   # Function <tt>disconnect</tt> closes the host session.

@@ -1,18 +1,19 @@
-#encoding: utf-8
-require 'benchmark'
-require 'csv'
-require '../lib/service'
-require '../lib/keymile-api'
-
-include Service, Keymile
-
-HEADER = %w(MODEL MSAN RIN IP Slot_ID Slot_Name Slot_Main_Mode Slot_State Slot_Alarm Slot_Prop_Alarm
-              Port_ID Port_Main_Mode Port_Alarm Port_User_Label Port_Service_Label Port_Description
-              OperationalStatus NearEnd_CurrentAttenuation NearEnd_CurrentMargin NearEnd_CurrentPowerBackOff
-              FarEnd_CurrentAttenuation FarEnd_CurrentMargin FarEnd_CurrentPowerBackOff)
-WORKERS = 100
-DSLAM_MODEL = /Milegate/
-SHDSL_CARD_NAME = /STIM/
+#encoding: utf-8
+
+require 'benchmark'
+require 'csv'
+require '../lib/service'
+require '../lib/keymile-api'
+
+include Service, Keymile
+
+HEADER = %w(MODEL MSAN RIN IP Slot_ID Slot_Name Slot_Main_Mode Slot_State Slot_Alarm Slot_Prop_Alarm
+              Port_ID Port_Main_Mode Port_Alarm Port_User_Label Port_Service_Label Port_Description
+              OperationalStatus NearEnd_CurrentAttenuation NearEnd_CurrentMargin NearEnd_CurrentPowerBackOff
+              FarEnd_CurrentAttenuation FarEnd_CurrentMargin FarEnd_CurrentPowerBackOff)
+WORKERS = 100
+DSLAM_MODEL = /Milegate/
+SHDSL_CARD_NAME = /STIM/
 LOGFILE = '../log/shdsl_ports_logfile_%s.log' % Time.now.strftime('%d-%m-%Y_%H-%M')
 FILENAME = '../log/shdsl_ports_report_%s.csv' % Time.now.strftime('%d-%m-%Y_%H-%M')
 # CITY_LIST = %w"BSA TAG GNA RVD ANS ACG CBA VAZ ROI PMJ CPE DOS"
