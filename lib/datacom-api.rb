@@ -13,42 +13,42 @@ module Datacom
 
   JUMPSRV = '10.200.1.29'
   JUMPSRV_USERNAME = 'sp3510717'
-  JUMPSRV_PW = 'Lima.1010'
+  JUMPSRV_PW = 'Juliana.2020'
 
   #RADIUS_USERNAME = 'g0010717'
   #RADIUS_PW = 'Lima.10'
 
   RADIUS_USERNAME = 'g0001959'
-  RADIUS_PW = 'Vivo15'
+  RADIUS_PW = 'Vivo17'
 
   PROMPT = /\w+[$%#>]/s
   LOGIN_PROMPT = /[Ll]ogin[: ]/
   PASSWORD_PROMPT = /[Pp]ass(?:word|phrase)[: ]/
 
-  # Function <tt>create_ssh_session</tt> establishes ssh connection to jump server.
-  # @return [Net::SSH] session
-  def create_ssh_session
-    return Net::SSH.start(JUMPSRV_NMC, JUMPSRV_NMC_USER, password: JUMPSRV_NMC_PW, timeout: 40) # verbose: :info,
-  end
-
-  # Function <tt>disconnect</tt> closes the host session.
-  # @return [boolean] value
-  def close_ssh_session(session)
-    session.close
-    session = nil
-    true
-  end
+  # Function <tt>create_ssh_session</tt> establishes ssh connection to jump server.
+  # @return [Net::SSH] session
+  def create_ssh_session
+    return Net::SSH.start(JUMPSRV_NMC, JUMPSRV_NMC_USER, password: JUMPSRV_NMC_PW, timeout: 40) # verbose: :info,
+  end
+
+  # Function <tt>disconnect</tt> closes the host session.
+  # @return [boolean] value
+  def close_ssh_session(session)
+    session.close
+    session = nil
+    true
+  end
 
   class DMSW
 
-    attr_accessor :ssh_session
-
+    attr_accessor :ssh_session
+
     @telnet
 
-    def initialize(ssh_session)
-      super()
-      self.ssh_session = ssh_session
-    end
+    def initialize(ssh_session)
+      super()
+      self.ssh_session = ssh_session
+    end
 
     # Function <tt>connect</tt> establishes final host connection over ssh session.
     # @return [boolean] value
@@ -155,7 +155,8 @@ module Datacom
       data_splitter = /\s+/
 
       result = get_low_level_data(cmd, regex, data_splitter)
-      result.map { |e| e || '' } if !result.nil? # replaces nil values
+      result.map { |e| e || '' } if !result.nil? # replaces nil values
+
 
       result.nil? ? ["", "", "no eaps configured", "", "", "", "", ""] : result
 
