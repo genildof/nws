@@ -18,8 +18,8 @@ module Datacom
   #RADIUS_USERNAME = 'g0010717'
   #RADIUS_PW = 'Lima.10'
 
-  RADIUS_USERNAME = 'g0001959'
-  RADIUS_PW = 'Vivo17'
+  RADIUS_USERNAME = 'g0020367' #'g0020367/g0001959'
+  RADIUS_PW = 'Ginho3131' #'Ginho3131/Vivo18'
 
   PROMPT = /\w+[$%#>]/s
   LOGIN_PROMPT = /[Ll]ogin[: ]/

@@ -100,5 +100,5 @@ total_time = Benchmark.realtime do
 end
 
 # Prints total time
-print format("\nJob done, total time: %0.2f seconds", total_time)
+print format("\nJob done, total time: %0.2f seconds\n", total_time)
 Process.exit(0)
