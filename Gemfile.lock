@@ -28,7 +28,7 @@ GEM
     net-ssh-telnet (0.2.1)
       net-ssh (>= 2.0.1)
     net-telnet (0.2.0)
-    nokogiri (1.10.2)
+    nokogiri (1.10.7)
       mini_portile2 (~> 2.4.0)
     ntlm-http (0.1.1)
     roo (2.8.2)
